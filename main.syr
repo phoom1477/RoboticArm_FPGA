@@ -112,10 +112,10 @@ Analyzing Verilog file "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\HEX2SEG.vf"
 Parsing module <D4_16E_HXILINX_HEX2SEG>.
 Parsing module <OR6_HXILINX_HEX2SEG>.
 Parsing module <HEX2SEG>.
-Analyzing Verilog file "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\DIV_400.vf" into library work
-Parsing module <FTC_HXILINX_DIV_400>.
-Parsing module <CD4CE_HXILINX_DIV_400>.
-Parsing module <DIV_400>.
+Analyzing Verilog file "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\DIV_200.vf" into library work
+Parsing module <FTC_HXILINX_DIV_200>.
+Parsing module <CD4CE_HXILINX_DIV_200>.
+Parsing module <DIV_200>.
 Analyzing Verilog file "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\div100k.vf" into library work
 Parsing module <FJKC_HXILINX_div100k>.
 Parsing module <count09_MUSER_div100k>.
@@ -141,7 +141,7 @@ Parsing module <FTC_HXILINX_PWM_Gen>.
 Parsing module <COMPM16_HXILINX_PWM_Gen>.
 Parsing module <CD4CE_HXILINX_PWM_Gen>.
 Parsing module <COMP16_HXILINX_PWM_Gen>.
-Parsing module <DIV_400_MUSER_PWM_Gen>.
+Parsing module <DIV_200_MUSER_PWM_Gen>.
 Parsing module <PWM_Gen>.
 Analyzing Verilog file "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\Counter16_TC.vf" into library work
 Parsing module <CB4CE_HXILINX_Counter16_TC>.
@@ -166,7 +166,7 @@ Parsing module <HEX2SEG_MUSER_main>.
 Parsing module <count09_MUSER_main>.
 Parsing module <div100k_MUSER_main>.
 Parsing module <segment_upgrade_MUSER_main>.
-Parsing module <DIV_400_MUSER_main>.
+Parsing module <DIV_200_MUSER_main>.
 Parsing module <PWM_Gen_MUSER_main>.
 Parsing module <main>.
 
@@ -185,17 +185,17 @@ Elaborating module <VCC>.
 
 Elaborating module <COMPM16_HXILINX_main>.
 
-Elaborating module <DIV_400_MUSER_main>.
+Elaborating module <COMP16_HXILINX_main>.
+
+Elaborating module <GND>.
+
+Elaborating module <DIV_200_MUSER_main>.
 
 Elaborating module <FTC_HXILINX_main>.
 
 Elaborating module <CD4CE_HXILINX_main>.
 WARNING:HDLCompiler:413 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 251: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:634 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 906: Net <XLXN_9> does not have a driver.
-
-Elaborating module <COMP16_HXILINX_main>.
-
-Elaborating module <GND>.
+WARNING:HDLCompiler:634 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 905: Net <XLXN_9> does not have a driver.
 
 Elaborating module <segment_upgrade_MUSER_main>.
 
@@ -252,12 +252,12 @@ Unit <main> synthesized.
 
 Synthesizing Unit <PWM_Gen_MUSER_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_2_40" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_8_41" for instance <XLXI_8>.
-    Set property "HU_SET = XLXI_10_42" for instance <XLXI_10>.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 958: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 958: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 966: Output port <GT> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+    Set property "HU_SET = XLXI_2_26" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_8_27" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_10_28" for instance <XLXI_10>.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 952: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 952: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 960: Output port <GT> of the instance <XLXI_8> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <PWM_Gen_MUSER_main> synthesized.
@@ -281,26 +281,32 @@ Synthesizing Unit <COMPM16_HXILINX_main>.
 	inferred   2 Comparator(s).
 Unit <COMPM16_HXILINX_main> synthesized.
 
-Synthesizing Unit <DIV_400_MUSER_main>.
+Synthesizing Unit <COMP16_HXILINX_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_1_36" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_3_38" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_4_37" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_8_39" for instance <XLXI_8>.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 915: Output port <CEO> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 915: Output port <Q0> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 915: Output port <Q1> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 915: Output port <Q2> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 915: Output port <Q3> of the instance <XLXI_3> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 930: Output port <CEO> of the instance <XLXI_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 930: Output port <Q0> of the instance <XLXI_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 930: Output port <Q1> of the instance <XLXI_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 930: Output port <Q2> of the instance <XLXI_8> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 930: Output port <Q3> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+    Found 16-bit comparator equal for signal <EQ> created at line 374
+    Summary:
+	inferred   1 Comparator(s).
+Unit <COMP16_HXILINX_main> synthesized.
+
+Synthesizing Unit <DIV_200_MUSER_main>.
+    Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
+    Set property "HU_SET = XLXI_1_23" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_24" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_8_25" for instance <XLXI_8>.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 914: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 914: Output port <Q0> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 914: Output port <Q1> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 914: Output port <Q2> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 914: Output port <Q3> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 924: Output port <CEO> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 924: Output port <Q0> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 924: Output port <Q1> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 924: Output port <Q2> of the instance <XLXI_8> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 924: Output port <Q3> of the instance <XLXI_8> is unconnected or connected to loadless signal.
 WARNING:Xst:653 - Signal <XLXN_9> is used but never assigned. This sourceless signal will be automatically connected to value GND.
     Summary:
 	no macro.
-Unit <DIV_400_MUSER_main> synthesized.
+Unit <DIV_200_MUSER_main> synthesized.
 
 Synthesizing Unit <FTC_HXILINX_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
@@ -317,28 +323,21 @@ Synthesizing Unit <CD4CE_HXILINX_main>.
     Found 1-bit register for signal <Q2>.
     Found 1-bit register for signal <Q3>.
     Found 1-bit register for signal <Q0>.
-    Found 4-bit adder for signal <Q3_GND_8_o_add_4_OUT> created at line 251.
+    Found 4-bit adder for signal <Q3_GND_10_o_add_4_OUT> created at line 251.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   4 D-type flip-flop(s).
 	inferred   7 Multiplexer(s).
 Unit <CD4CE_HXILINX_main> synthesized.
 
-Synthesizing Unit <COMP16_HXILINX_main>.
-    Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Found 16-bit comparator equal for signal <EQ> created at line 374
-    Summary:
-	inferred   1 Comparator(s).
-Unit <COMP16_HXILINX_main> synthesized.
-
 Synthesizing Unit <segment_upgrade_MUSER_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_106_30" for instance <XLXI_106>.
-    Set property "HU_SET = XLXI_107_31" for instance <XLXI_107>.
-    Set property "HU_SET = XLXI_1683_0_35" for instance <XLXI_1683_0>.
-    Set property "HU_SET = XLXI_1683_1_34" for instance <XLXI_1683_1>.
-    Set property "HU_SET = XLXI_1683_2_33" for instance <XLXI_1683_2>.
-    Set property "HU_SET = XLXI_1683_3_32" for instance <XLXI_1683_3>.
+    Set property "HU_SET = XLXI_106_17" for instance <XLXI_106>.
+    Set property "HU_SET = XLXI_107_18" for instance <XLXI_107>.
+    Set property "HU_SET = XLXI_1683_0_22" for instance <XLXI_1683_0>.
+    Set property "HU_SET = XLXI_1683_1_21" for instance <XLXI_1683_1>.
+    Set property "HU_SET = XLXI_1683_2_20" for instance <XLXI_1683_2>.
+    Set property "HU_SET = XLXI_1683_3_19" for instance <XLXI_1683_3>.
 WARNING:Xst:2898 - Port 'CLR', unconnected in block instance 'XLXI_106', is tied to GND.
 INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 826: Output port <CEO> of the instance <XLXI_106> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 826: Output port <TC> of the instance <XLXI_106> is unconnected or connected to loadless signal.
@@ -390,10 +389,10 @@ Unit <div100k_MUSER_main> synthesized.
 
 Synthesizing Unit <count09_MUSER_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_1_26" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_27" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_3_28" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_8_29" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_1_13" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_14" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_15" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_8_16" for instance <XLXI_8>.
     Set property "CLOCK_DEDICATED_ROUTE = TRUE" for signal <CLK_P45>.
     Summary:
 	no macro.
@@ -417,9 +416,9 @@ Unit <M4_1E_HXILINX_main> synthesized.
 
 Synthesizing Unit <HEX2SEG_MUSER_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_1_23" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_6_24" for instance <XLXI_6>.
-    Set property "HU_SET = XLXI_8_25" for instance <XLXI_8>.
+    Set property "HU_SET = XLXI_1_10" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_6_11" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_8_12" for instance <XLXI_8>.
 INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 600: Output port <D8> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
@@ -451,7 +450,7 @@ Unit <RegPIPO_16_MUSER_main> synthesized.
 
 Synthesizing Unit <Counter16_TC_MUSER_main>.
     Related source file is "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf".
-    Set property "HU_SET = XLXI_1_22" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_1_9" for instance <XLXI_1>.
 INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 423: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" line 423: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
     Summary:
@@ -478,8 +477,8 @@ Macro Statistics
  16-bit adder                                          : 1
  2-bit adder                                           : 1
  4-bit adder                                           : 3
-# Registers                                            : 36
- 1-bit register                                        : 34
+# Registers                                            : 35
+ 1-bit register                                        : 33
  16-bit register                                       : 1
  2-bit register                                        : 1
 # Comparators                                          : 3
@@ -513,8 +512,8 @@ Macro Statistics
 # Counters                                             : 2
  16-bit up counter                                     : 1
  2-bit up counter                                      : 1
-# Registers                                            : 66
- Flip-Flops                                            : 66
+# Registers                                            : 65
+ Flip-Flops                                            : 65
 # Comparators                                          : 3
  16-bit comparator equal                               : 1
  16-bit comparator greater                             : 2
@@ -572,8 +571,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 84
- Flip-Flops                                            : 84
+# Registers                                            : 83
+ Flip-Flops                                            : 83
 
 =========================================================================
 
@@ -596,11 +595,11 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 197
+# BELS                             : 196
 #      AND4                        : 5
 #      AND4B4                      : 1
 #      GND                         : 3
-#      INV                         : 63
+#      INV                         : 62
 #      LUT1                        : 14
 #      LUT2                        : 7
 #      LUT3                        : 5
@@ -612,11 +611,11 @@ Primitive and Black Box Usage:
 #      OR5                         : 2
 #      VCC                         : 4
 #      XORCY                       : 16
-# FlipFlops/Latches                : 84
+# FlipFlops/Latches                : 83
 #      FD                          : 32
 #      FDC                         : 20
-#      FDCE                        : 30
-#      FDE                         : 2
+#      FDCE                        : 28
+#      FDE                         : 3
 # Clock Buffers                    : 2
 #      BUFGP                       : 2
 # IO Buffers                       : 13
@@ -630,16 +629,16 @@ Selected Device : 6slx9tqg144-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              84  out of  11440     0%  
- Number of Slice LUTs:                  135  out of   5720     2%  
-    Number used as Logic:               135  out of   5720     2%  
+ Number of Slice Registers:              83  out of  11440     0%  
+ Number of Slice LUTs:                  134  out of   5720     2%  
+    Number used as Logic:               134  out of   5720     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    219
-   Number with an unused Flip Flop:     135  out of    219    61%  
-   Number with an unused LUT:            84  out of    219    38%  
-   Number of fully used LUT-FF pairs:     0  out of    219     0%  
-   Number of unique control sets:        29
+ Number of LUT Flip Flop pairs used:    217
+   Number with an unused Flip Flop:     134  out of    217    61%  
+   Number with an unused LUT:            83  out of    217    38%  
+   Number of fully used LUT-FF pairs:     0  out of    217     0%  
+   Number of unique control sets:        28
 
 IO Utilization: 
  Number of IOs:                          15
@@ -666,37 +665,36 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-----------------------------------------------------------+------------------------------------------+-------+
-Clock Signal                                              | Clock buffer(FF name)                    | Load  |
-----------------------------------------------------------+------------------------------------------+-------+
-XLXI_1/XLXI_9/XLXI_8/TC(XLXI_1/XLXI_9/XLXI_8/Mmux_TC11:O) | NONE(*)(XLXI_1/XLXI_9/XLXI_3/Q3)         | 4     |
-CLK_P123                                                  | BUFGP                                    | 5     |
-XLXI_1/XLXI_9/XLXI_1/Q                                    | NONE(XLXI_1/XLXI_9/XLXI_4/Q)             | 1     |
-XLXI_1/XLXI_9/XLXI_3/TC(XLXI_1/XLXI_9/XLXI_3/Mmux_TC11:O) | NONE(*)(XLXI_1/XLXI_9/XLXI_1/Q)          | 1     |
-XLXI_1/XLXI_9/XLXI_4/Q                                    | NONE(XLXI_1/XLXI_2/Q_0)                  | 16    |
-XLXI_32/XLXI_167/XLXI_6/XLXI_2/Q                          | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_3/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_6/XLXI_8/Q                          | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_2/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_6/XLXI_1/Q                          | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_8/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_5/XLXI_2/Q                          | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_3/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_5/XLXI_8/Q                          | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_2/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_5/XLXI_1/Q                          | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_8/Q)   | 1     |
-XLXI_32/XLXI_167/XLXN_13(XLXI_32/XLXI_167/XLXI_6/XLXI_7:O)| NONE(*)(XLXI_32/XLXI_167/XLXI_5/XLXI_1/Q)| 1     |
-XLXI_32/XLXI_167/XLXI_4/XLXI_2/Q                          | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_3/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_4/XLXI_8/Q                          | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_2/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_4/XLXI_1/Q                          | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_8/Q)   | 1     |
-XLXI_32/XLXI_167/XLXN_14(XLXI_32/XLXI_167/XLXI_5/XLXI_7:O)| NONE(*)(XLXI_32/XLXI_167/XLXI_4/XLXI_1/Q)| 1     |
-XLXI_32/XLXI_167/XLXI_3/XLXI_2/Q                          | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_3/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_3/XLXI_8/Q                          | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_2/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_3/XLXI_1/Q                          | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_8/Q)   | 1     |
-XLXI_32/XLXI_167/XLXN_15(XLXI_32/XLXI_167/XLXI_4/XLXI_7:O)| NONE(*)(XLXI_32/XLXI_167/XLXI_3/XLXI_1/Q)| 1     |
-XLXI_32/XLXI_167/XLXI_2/XLXI_2/Q                          | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_3/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_2/XLXI_8/Q                          | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_2/Q)   | 1     |
-XLXI_32/XLXI_167/XLXI_2/XLXI_1/Q                          | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_8/Q)   | 1     |
-XLXI_32/XLXI_167/XLXN_16(XLXI_32/XLXI_167/XLXI_3/XLXI_7:O)| NONE(*)(XLXI_32/XLXI_167/XLXI_2/XLXI_1/Q)| 1     |
-XLXI_32/XLXN_423(XLXI_32/XLXI_167/XLXI_2/XLXI_7:O)        | NONE(*)(XLXI_32/XLXI_106/Q0_Q1_1)        | 2     |
-ESP_CLK_P23                                               | BUFGP                                    | 20    |
-XLXN_70(XLXI_37/XLXI_15:O)                                | NONE(*)(XLXI_36/XLXI_42)                 | 16    |
-----------------------------------------------------------+------------------------------------------+-------+
+-----------------------------------------------------------+------------------------------------------+-------+
+Clock Signal                                               | Clock buffer(FF name)                    | Load  |
+-----------------------------------------------------------+------------------------------------------+-------+
+XLXI_1/XLXI_42/XLXI_8/TC(XLXI_1/XLXI_42/XLXI_8/Mmux_TC11:O)| NONE(*)(XLXI_1/XLXI_42/XLXI_2/Q3)        | 4     |
+CLK_P123                                                   | BUFGP                                    | 5     |
+XLXI_1/XLXI_42/XLXI_2/TC(XLXI_1/XLXI_42/XLXI_2/Mmux_TC11:O)| NONE(*)(XLXI_1/XLXI_42/XLXI_1/Q)         | 1     |
+XLXI_1/XLXI_42/XLXI_1/Q                                    | NONE(XLXI_1/XLXI_2/Q_0)                  | 16    |
+XLXI_32/XLXI_167/XLXI_6/XLXI_2/Q                           | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_3/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_6/XLXI_8/Q                           | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_2/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_6/XLXI_1/Q                           | NONE(XLXI_32/XLXI_167/XLXI_6/XLXI_8/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_5/XLXI_2/Q                           | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_3/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_5/XLXI_8/Q                           | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_2/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_5/XLXI_1/Q                           | NONE(XLXI_32/XLXI_167/XLXI_5/XLXI_8/Q)   | 1     |
+XLXI_32/XLXI_167/XLXN_13(XLXI_32/XLXI_167/XLXI_6/XLXI_7:O) | NONE(*)(XLXI_32/XLXI_167/XLXI_5/XLXI_1/Q)| 1     |
+XLXI_32/XLXI_167/XLXI_4/XLXI_2/Q                           | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_3/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_4/XLXI_8/Q                           | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_2/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_4/XLXI_1/Q                           | NONE(XLXI_32/XLXI_167/XLXI_4/XLXI_8/Q)   | 1     |
+XLXI_32/XLXI_167/XLXN_14(XLXI_32/XLXI_167/XLXI_5/XLXI_7:O) | NONE(*)(XLXI_32/XLXI_167/XLXI_4/XLXI_1/Q)| 1     |
+XLXI_32/XLXI_167/XLXI_3/XLXI_2/Q                           | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_3/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_3/XLXI_8/Q                           | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_2/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_3/XLXI_1/Q                           | NONE(XLXI_32/XLXI_167/XLXI_3/XLXI_8/Q)   | 1     |
+XLXI_32/XLXI_167/XLXN_15(XLXI_32/XLXI_167/XLXI_4/XLXI_7:O) | NONE(*)(XLXI_32/XLXI_167/XLXI_3/XLXI_1/Q)| 1     |
+XLXI_32/XLXI_167/XLXI_2/XLXI_2/Q                           | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_3/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_2/XLXI_8/Q                           | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_2/Q)   | 1     |
+XLXI_32/XLXI_167/XLXI_2/XLXI_1/Q                           | NONE(XLXI_32/XLXI_167/XLXI_2/XLXI_8/Q)   | 1     |
+XLXI_32/XLXI_167/XLXN_16(XLXI_32/XLXI_167/XLXI_3/XLXI_7:O) | NONE(*)(XLXI_32/XLXI_167/XLXI_2/XLXI_1/Q)| 1     |
+XLXI_32/XLXN_423(XLXI_32/XLXI_167/XLXI_2/XLXI_7:O)         | NONE(*)(XLXI_32/XLXI_106/Q0_Q1_1)        | 2     |
+ESP_CLK_P23                                                | BUFGP                                    | 20    |
+XLXN_70(XLXI_37/XLXI_15:O)                                 | NONE(*)(XLXI_36/XLXI_42)                 | 16    |
+-----------------------------------------------------------+------------------------------------------+-------+
 (*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
@@ -720,22 +718,22 @@ Timing Details:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_9/XLXI_8/TC'
+Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_42/XLXI_8/TC'
   Clock period: 2.048ns (frequency: 488.317MHz)
   Total number of paths / destination ports: 11 / 4
 -------------------------------------------------------------------------
 Delay:               2.048ns (Levels of Logic = 1)
-  Source:            XLXI_1/XLXI_9/XLXI_3/Q0 (FF)
-  Destination:       XLXI_1/XLXI_9/XLXI_3/Q0 (FF)
-  Source Clock:      XLXI_1/XLXI_9/XLXI_8/TC rising
-  Destination Clock: XLXI_1/XLXI_9/XLXI_8/TC rising
+  Source:            XLXI_1/XLXI_42/XLXI_2/Q0 (FF)
+  Destination:       XLXI_1/XLXI_42/XLXI_2/Q0 (FF)
+  Source Clock:      XLXI_1/XLXI_42/XLXI_8/TC rising
+  Destination Clock: XLXI_1/XLXI_42/XLXI_8/TC rising
 
-  Data Path: XLXI_1/XLXI_9/XLXI_3/Q0 to XLXI_1/XLXI_9/XLXI_3/Q0
+  Data Path: XLXI_1/XLXI_42/XLXI_2/Q0 to XLXI_1/XLXI_42/XLXI_2/Q0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             5   0.447   0.714  Q0 (Q0)
-     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_8_o_MUX_47_o11_INV_0 (Q3_GND_8_o_MUX_47_o)
+     INV:I->O              1   0.206   0.579  Mmux_Q3_GND_10_o_MUX_47_o11_INV_0 (Q3_GND_10_o_MUX_47_o)
      FDCE:D                    0.102          Q0
     ----------------------------------------
     Total                      2.048ns (0.755ns logic, 1.293ns route)
@@ -767,59 +765,37 @@ Delay:               3.956ns (Levels of Logic = 3)
                                        (45.1% logic, 54.9% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_9/XLXI_1/Q'
+Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_42/XLXI_2/TC'
   Clock period: 2.361ns (frequency: 423.612MHz)
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
 Delay:               2.361ns (Levels of Logic = 1)
-  Source:            XLXI_1/XLXI_9/XLXI_4/Q (FF)
-  Destination:       XLXI_1/XLXI_9/XLXI_4/Q (FF)
-  Source Clock:      XLXI_1/XLXI_9/XLXI_1/Q rising
-  Destination Clock: XLXI_1/XLXI_9/XLXI_1/Q rising
+  Source:            XLXI_1/XLXI_42/XLXI_1/Q (FF)
+  Destination:       XLXI_1/XLXI_42/XLXI_1/Q (FF)
+  Source Clock:      XLXI_1/XLXI_42/XLXI_2/TC rising
+  Destination Clock: XLXI_1/XLXI_42/XLXI_2/TC rising
 
-  Data Path: XLXI_1/XLXI_9/XLXI_4/Q to XLXI_1/XLXI_9/XLXI_4/Q
+  Data Path: XLXI_1/XLXI_42/XLXI_1/Q to XLXI_1/XLXI_42/XLXI_1/Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            17   0.447   1.027  Q (Q)
+     FDE:C->Q             17   0.447   1.027  Q (Q)
      INV:I->O              1   0.206   0.579  Q_INV_2_o1_INV_0 (Q_INV_2_o)
-     FDCE:D                    0.102          Q
+     FDE:D                     0.102          Q
     ----------------------------------------
     Total                      2.361ns (0.755ns logic, 1.606ns route)
                                        (32.0% logic, 68.0% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_9/XLXI_3/TC'
-  Clock period: 1.950ns (frequency: 512.794MHz)
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Delay:               1.950ns (Levels of Logic = 1)
-  Source:            XLXI_1/XLXI_9/XLXI_1/Q (FF)
-  Destination:       XLXI_1/XLXI_9/XLXI_1/Q (FF)
-  Source Clock:      XLXI_1/XLXI_9/XLXI_3/TC rising
-  Destination Clock: XLXI_1/XLXI_9/XLXI_3/TC rising
-
-  Data Path: XLXI_1/XLXI_9/XLXI_1/Q to XLXI_1/XLXI_9/XLXI_1/Q
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDCE:C->Q             2   0.447   0.616  Q (Q)
-     INV:I->O              1   0.206   0.579  Q_INV_2_o1_INV_0 (Q_INV_2_o)
-     FDCE:D                    0.102          Q
-    ----------------------------------------
-    Total                      1.950ns (0.755ns logic, 1.195ns route)
-                                       (38.7% logic, 61.3% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_9/XLXI_4/Q'
+Timing constraint: Default period analysis for Clock 'XLXI_1/XLXI_42/XLXI_1/Q'
   Clock period: 3.503ns (frequency: 285.437MHz)
   Total number of paths / destination ports: 392 / 32
 -------------------------------------------------------------------------
 Delay:               3.503ns (Levels of Logic = 9)
   Source:            XLXI_1/XLXI_2/Q_2 (FF)
   Destination:       XLXI_1/XLXI_2/Q_0 (FF)
-  Source Clock:      XLXI_1/XLXI_9/XLXI_4/Q rising
-  Destination Clock: XLXI_1/XLXI_9/XLXI_4/Q rising
+  Source Clock:      XLXI_1/XLXI_42/XLXI_1/Q rising
+  Destination Clock: XLXI_1/XLXI_42/XLXI_1/Q rising
 
   Data Path: XLXI_1/XLXI_2/Q_2 to XLXI_1/XLXI_2/Q_0
                                 Gate     Net
@@ -1426,13 +1402,13 @@ Offset:              8.656ns (Levels of Logic = 7)
                                        (48.7% logic, 51.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/XLXI_9/XLXI_4/Q'
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_1/XLXI_42/XLXI_1/Q'
   Total number of paths / destination ports: 30 / 1
 -------------------------------------------------------------------------
 Offset:              5.978ns (Levels of Logic = 12)
   Source:            XLXI_1/XLXI_2/Q_0 (FF)
   Destination:       PWM_Servo1 (PAD)
-  Source Clock:      XLXI_1/XLXI_9/XLXI_4/Q rising
+  Source Clock:      XLXI_1/XLXI_42/XLXI_1/Q rising
 
   Data Path: XLXI_1/XLXI_2/Q_0 to PWM_Servo1
                                 Gate     Net
@@ -1480,37 +1456,29 @@ Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ESP_CLK_P23    |    2.048|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock XLXI_1/XLXI_9/XLXI_1/Q
-----------------------+---------+---------+---------+---------+
-                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------+---------+---------+---------+---------+
-XLXI_1/XLXI_9/XLXI_1/Q|    2.361|         |         |         |
-----------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock XLXI_1/XLXI_9/XLXI_3/TC
+Clock to Setup on destination clock XLXI_1/XLXI_42/XLXI_1/Q
 -----------------------+---------+---------+---------+---------+
                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------+---------+---------+---------+---------+
-XLXI_1/XLXI_9/XLXI_3/TC|    1.950|         |         |         |
+XLXI_1/XLXI_42/XLXI_1/Q|    3.503|         |         |         |
 -----------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock XLXI_1/XLXI_9/XLXI_4/Q
-----------------------+---------+---------+---------+---------+
-                      | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock          |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------+---------+---------+---------+---------+
-XLXI_1/XLXI_9/XLXI_4/Q|    3.503|         |         |         |
-----------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock XLXI_1/XLXI_42/XLXI_2/TC
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+XLXI_1/XLXI_42/XLXI_2/TC|    2.361|         |         |         |
+------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock XLXI_1/XLXI_9/XLXI_8/TC
------------------------+---------+---------+---------+---------+
-                       | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock           |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------+---------+---------+---------+---------+
-XLXI_1/XLXI_9/XLXI_8/TC|    2.048|         |         |         |
------------------------+---------+---------+---------+---------+
+Clock to Setup on destination clock XLXI_1/XLXI_42/XLXI_8/TC
+------------------------+---------+---------+---------+---------+
+                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------+---------+---------+---------+---------+
+XLXI_1/XLXI_42/XLXI_8/TC|    2.048|         |         |         |
+------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock XLXI_32/XLXI_167/XLXI_2/XLXI_1/Q
 --------------------------------+---------+---------+---------+---------+
@@ -1740,8 +1708,8 @@ ESP_CLK_P23    |    1.165|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.28 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.22 secs
  
 --> 
 

@@ -1,3 +1,4 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/DIV_200.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/DIV_200.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter16_TC.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter16_TC.sch
-sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch

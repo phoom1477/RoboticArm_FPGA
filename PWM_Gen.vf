@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : PWM_Gen.vf
-// /___/   /\     Timestamp : 12/10/2020 22:49:10
+// /___/   /\     Timestamp : 12/11/2020 01:42:24
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -147,25 +147,24 @@ module COMP16_HXILINX_PWM_Gen (EQ, A, B);
 endmodule
 `timescale 1ns / 1ps
 
-module DIV_400_MUSER_PWM_Gen(CLK_IN, 
+module DIV_200_MUSER_PWM_Gen(CLK_IN, 
                              CLK_OUT);
 
     input CLK_IN;
    output CLK_OUT;
    
-   wire XLXN_1;
-   wire XLXN_7;
-   wire XLXN_8;
+   wire XLXN_3;
+   wire XLXN_4;
    wire XLXN_9;
    wire XLXN_20;
    
-   (* HU_SET = "XLXI_1_22" *) 
-   FTC_HXILINX_PWM_Gen  XLXI_1 (.C(XLXN_7), 
+   (* HU_SET = "XLXI_1_29" *) 
+   FTC_HXILINX_PWM_Gen  XLXI_1 (.C(XLXN_3), 
                                .CLR(XLXN_9), 
                                .T(XLXN_20), 
-                               .Q(XLXN_1));
-   (* HU_SET = "XLXI_3_24" *) 
-   CD4CE_HXILINX_PWM_Gen  XLXI_3 (.C(XLXN_8), 
+                               .Q(CLK_OUT));
+   (* HU_SET = "XLXI_2_30" *) 
+   CD4CE_HXILINX_PWM_Gen  XLXI_2 (.C(XLXN_4), 
                                  .CE(XLXN_20), 
                                  .CLR(XLXN_9), 
                                  .CEO(), 
@@ -173,13 +172,8 @@ module DIV_400_MUSER_PWM_Gen(CLK_IN,
                                  .Q1(), 
                                  .Q2(), 
                                  .Q3(), 
-                                 .TC(XLXN_7));
-   (* HU_SET = "XLXI_4_23" *) 
-   FTC_HXILINX_PWM_Gen  XLXI_4 (.C(XLXN_1), 
-                               .CLR(XLXN_9), 
-                               .T(XLXN_20), 
-                               .Q(CLK_OUT));
-   (* HU_SET = "XLXI_8_25" *) 
+                                 .TC(XLXN_3));
+   (* HU_SET = "XLXI_8_31" *) 
    CD4CE_HXILINX_PWM_Gen  XLXI_8 (.C(CLK_IN), 
                                  .CE(XLXN_20), 
                                  .CLR(XLXN_9), 
@@ -188,7 +182,7 @@ module DIV_400_MUSER_PWM_Gen(CLK_IN,
                                  .Q1(), 
                                  .Q2(), 
                                  .Q3(), 
-                                 .TC(XLXN_8));
+                                 .TC(XLXN_4));
    VCC  XLXI_13 (.P(XLXN_20));
 endmodule
 `timescale 1ns / 1ps
@@ -207,7 +201,7 @@ module PWM_Gen(Duty,
    wire [15:0] XLXN_5;
    wire XLXN_7;
    
-   (* HU_SET = "XLXI_2_26" *) 
+   (* HU_SET = "XLXI_2_32" *) 
    CC16CE_HXILINX_PWM_Gen  XLXI_2 (.C(XLXN_1), 
                                   .CE(XLXN_2), 
                                   .CLR(XLXN_7), 
@@ -215,31 +209,31 @@ module PWM_Gen(Duty,
                                   .Q(XLXN_5[15:0]), 
                                   .TC());
    VCC  XLXI_4 (.P(XLXN_2));
-   (* HU_SET = "XLXI_8_27" *) 
+   (* HU_SET = "XLXI_8_33" *) 
    COMPM16_HXILINX_PWM_Gen  XLXI_8 (.A(XLXN_5[15:0]), 
                                    .B(Duty[15:0]), 
                                    .GT(), 
                                    .LT(PWM));
-   DIV_400_MUSER_PWM_Gen  XLXI_9 (.CLK_IN(FPGA_CLK), 
-                                 .CLK_OUT(XLXN_1));
-   (* HU_SET = "XLXI_10_28" *) 
+   (* HU_SET = "XLXI_10_34" *) 
    COMP16_HXILINX_PWM_Gen  XLXI_10 (.A(BIN1000[15:0]), 
                                    .B(XLXN_5[15:0]), 
                                    .EQ(XLXN_7));
    GND  XLXI_37_0 (.G(BIN1000[0]));
    GND  XLXI_37_1 (.G(BIN1000[1]));
    GND  XLXI_37_2 (.G(BIN1000[2]));
-   GND  XLXI_38 (.G(BIN1000[4]));
-   GND  XLXI_39_0 (.G(BIN1000[10]));
-   GND  XLXI_39_1 (.G(BIN1000[11]));
-   GND  XLXI_39_2 (.G(BIN1000[12]));
-   GND  XLXI_39_3 (.G(BIN1000[13]));
-   GND  XLXI_39_4 (.G(BIN1000[14]));
-   GND  XLXI_39_5 (.G(BIN1000[15]));
-   VCC  XLXI_40_0 (.P(BIN1000[5]));
-   VCC  XLXI_40_1 (.P(BIN1000[6]));
-   VCC  XLXI_40_2 (.P(BIN1000[7]));
-   VCC  XLXI_40_3 (.P(BIN1000[8]));
-   VCC  XLXI_40_4 (.P(BIN1000[9]));
-   VCC  XLXI_41 (.P(BIN1000[3]));
+   GND  XLXI_37_3 (.G(BIN1000[3]));
+   GND  XLXI_38 (.G(BIN1000[5]));
+   GND  XLXI_39_0 (.G(BIN1000[11]));
+   GND  XLXI_39_1 (.G(BIN1000[12]));
+   GND  XLXI_39_2 (.G(BIN1000[13]));
+   GND  XLXI_39_3 (.G(BIN1000[14]));
+   GND  XLXI_39_4 (.G(BIN1000[15]));
+   VCC  XLXI_40_0 (.P(BIN1000[6]));
+   VCC  XLXI_40_1 (.P(BIN1000[7]));
+   VCC  XLXI_40_2 (.P(BIN1000[8]));
+   VCC  XLXI_40_3 (.P(BIN1000[9]));
+   VCC  XLXI_40_4 (.P(BIN1000[10]));
+   VCC  XLXI_41 (.P(BIN1000[4]));
+   DIV_200_MUSER_PWM_Gen  XLXI_42 (.CLK_IN(FPGA_CLK), 
+                                  .CLK_OUT(XLXN_1));
 endmodule

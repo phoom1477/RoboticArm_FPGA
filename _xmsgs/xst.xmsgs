@@ -11,7 +11,7 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 251: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 906: Net &lt;<arg fmt="%s" index="1">XLXN_9</arg>&gt; does not have a driver.
+<msg type="warning" file="HDLCompiler" num="634" delta="old" >"C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 905: Net &lt;<arg fmt="%s" index="1">XLXN_9</arg>&gt; does not have a driver.
 </msg>
 
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 400: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
@@ -23,43 +23,43 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf" Line 48: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">958</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">952</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">958</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">952</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">966</arg>: Output port &lt;<arg fmt="%s" index="3">GT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">960</arg>: Output port &lt;<arg fmt="%s" index="3">GT</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">915</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">914</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">915</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">914</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">915</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">914</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">915</arg>: Output port &lt;<arg fmt="%s" index="3">Q2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">914</arg>: Output port &lt;<arg fmt="%s" index="3">Q2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">915</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">914</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">930</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">924</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">930</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">924</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">930</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">924</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">930</arg>: Output port &lt;<arg fmt="%s" index="3">Q2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">924</arg>: Output port &lt;<arg fmt="%s" index="3">Q2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">930</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Admin\Desktop\RoboticArm\RoboticArm\main.vf</arg>&quot; line <arg fmt="%s" index="2">924</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">XLXN_9</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">GND</arg>.
