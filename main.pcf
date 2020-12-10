@@ -1,0 +1,22 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 10 23:23:49 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ESP_CLK_P23" LOCATE = SITE "P23" LEVEL 1;
+COMP "ESP_IN_P5" LOCATE = SITE "P5" LEVEL 1;
+COMP "PWM_Servo1" LOCATE = SITE "P6" LEVEL 1;
+COMP "CLK_P123" LOCATE = SITE "P123" LEVEL 1;
+COMP "COM<0>" LOCATE = SITE "P30" LEVEL 1;
+COMP "SEG<0>" LOCATE = SITE "P41" LEVEL 1;
+COMP "COM<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "SEG<1>" LOCATE = SITE "P40" LEVEL 1;
+COMP "COM<2>" LOCATE = SITE "P43" LEVEL 1;
+COMP "SEG<2>" LOCATE = SITE "P35" LEVEL 1;
+COMP "COM<3>" LOCATE = SITE "P44" LEVEL 1;
+COMP "SEG<3>" LOCATE = SITE "P34" LEVEL 1;
+COMP "SEG<4>" LOCATE = SITE "P32" LEVEL 1;
+COMP "SEG<5>" LOCATE = SITE "P29" LEVEL 1;
+COMP "SEG<6>" LOCATE = SITE "P27" LEVEL 1;
+SCHEMATIC END;
+

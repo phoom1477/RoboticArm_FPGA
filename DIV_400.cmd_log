@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym DIV_400 C:/Users/Admin/Desktop/RoboticArm/RoboticArm/DIV_400.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/DIV_400.sym 

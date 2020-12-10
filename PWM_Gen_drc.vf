@@ -1,0 +1,245 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : PWM_Gen_drc.vf
+// /___/   /\     Timestamp : 12/10/2020 22:08:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog PWM_Gen_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch
+//Design Name: PWM_Gen
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+ 
+module CC16CE_HXILINX_PWM_Gen(CEO, Q, TC, C, CE, CLR);
+ 
+   parameter TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;
+   input 	      CE;
+   input 	      CLR;
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+        if (CLR)
+          Q <= 16'b0000_0000_0000_0000;
+        else if (CE)
+          Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_PWM_Gen(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module COMPM16_HXILINX_PWM_Gen (GT, LT, A, B);
+    
+
+   output GT;
+   output LT;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign GT = A > B  ;
+   assign LT = A < B  ;
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_PWM_Gen(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module COMP16_HXILINX_PWM_Gen (EQ, A, B);
+    
+
+   output EQ;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign EQ = (A == B) ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module DIV_400_MUSER_PWM_Gen(CLK_IN, 
+                             CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_1;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_20;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   FTC_HXILINX_PWM_Gen  XLXI_1 (.C(XLXN_7), 
+                               .CLR(XLXN_9), 
+                               .T(XLXN_20), 
+                               .Q(XLXN_1));
+   (* HU_SET = "XLXI_3_2" *) 
+   CD4CE_HXILINX_PWM_Gen  XLXI_3 (.C(XLXN_8), 
+                                 .CE(XLXN_20), 
+                                 .CLR(XLXN_9), 
+                                 .CEO(), 
+                                 .Q0(), 
+                                 .Q1(), 
+                                 .Q2(), 
+                                 .Q3(), 
+                                 .TC(XLXN_7));
+   (* HU_SET = "XLXI_4_1" *) 
+   FTC_HXILINX_PWM_Gen  XLXI_4 (.C(XLXN_1), 
+                               .CLR(XLXN_9), 
+                               .T(XLXN_20), 
+                               .Q(CLK_OUT));
+   (* HU_SET = "XLXI_8_3" *) 
+   CD4CE_HXILINX_PWM_Gen  XLXI_8 (.C(CLK_IN), 
+                                 .CE(XLXN_20), 
+                                 .CLR(XLXN_9), 
+                                 .CEO(), 
+                                 .Q0(), 
+                                 .Q1(), 
+                                 .Q2(), 
+                                 .Q3(), 
+                                 .TC(XLXN_8));
+   VCC  XLXI_13 (.P(XLXN_20));
+endmodule
+`timescale 1ns / 1ps
+
+module PWM_Gen(Duty, 
+               FPGA_CLK, 
+               PWM);
+
+    input [15:0] Duty;
+    input FPGA_CLK;
+   output PWM;
+   
+   wire [15:0] BIN50000;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire [15:0] XLXN_5;
+   wire XLXN_7;
+   
+   (* HU_SET = "XLXI_2_4" *) 
+   CC16CE_HXILINX_PWM_Gen  XLXI_2 (.C(XLXN_1), 
+                                  .CE(XLXN_2), 
+                                  .CLR(XLXN_7), 
+                                  .CEO(), 
+                                  .Q(XLXN_5[15:0]), 
+                                  .TC());
+   VCC  XLXI_4 (.P(XLXN_2));
+   (* HU_SET = "XLXI_8_5" *) 
+   COMPM16_HXILINX_PWM_Gen  XLXI_8 (.A(XLXN_5[15:0]), 
+                                   .B(Duty[15:0]), 
+                                   .GT(), 
+                                   .LT(PWM));
+   DIV_400_MUSER_PWM_Gen  XLXI_9 (.CLK_IN(FPGA_CLK), 
+                                 .CLK_OUT(XLXN_1));
+   (* HU_SET = "XLXI_10_6" *) 
+   COMP16_HXILINX_PWM_Gen  XLXI_10 (.A(BIN50000[15:0]), 
+                                   .B(XLXN_5[15:0]), 
+                                   .EQ(XLXN_7));
+   VCC  XLXI_12_0 (.P(BIN50000[14]));
+   VCC  XLXI_12_1 (.P(BIN50000[15]));
+   VCC  XLXI_13_0 (.P(BIN50000[8]));
+   VCC  XLXI_13_1 (.P(BIN50000[9]));
+   VCC  XLXI_14 (.P(BIN50000[6]));
+   VCC  XLXI_15 (.P(BIN50000[4]));
+   GND  XLXI_17_0 (.G(BIN50000[10]));
+   GND  XLXI_17_1 (.G(BIN50000[11]));
+   GND  XLXI_17_2 (.G(BIN50000[12]));
+   GND  XLXI_17_3 (.G(BIN50000[13]));
+   GND  XLXI_18 (.G(BIN50000[7]));
+   GND  XLXI_19_0 (.G(BIN50000[0]));
+   GND  XLXI_19_1 (.G(BIN50000[1]));
+   GND  XLXI_19_2 (.G(BIN50000[2]));
+   GND  XLXI_19_3 (.G(BIN50000[3]));
+   GND  XLXI_20 (.G(BIN50000[5]));
+endmodule

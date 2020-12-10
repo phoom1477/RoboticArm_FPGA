@@ -1,0 +1,11 @@
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 fDivider_to_3276800Hz.spl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/fDivider_to_3276800Hz.sym 
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 fDivider_to_3276800Hz.spl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/fDivider_to_3276800Hz.sym 
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w fDivider_to_3276800Hz.spl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/fDivider_to_3276800Hz.sym 
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w fDivider_to_3276800Hz.spl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/fDivider_to_3276800Hz.sym 
+vhdtdtfi -lib work fDivier_to_3276800Hz.vhd -prj RoboticArm -o fDivider_to_3276800Hz.spl -module fDivider_to_3276800Hz -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w fDivider_to_3276800Hz.spl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/fDivider_to_3276800Hz.sym 

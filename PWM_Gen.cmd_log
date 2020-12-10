@@ -1,0 +1,9 @@
+sch2sym -intstyle ise -family spartan6 -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog PWM_Gen_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch 
+sch2sym -intstyle ise -family spartan6 -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog PWM_Gen_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym PWM_Gen C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/PWM_Gen.sym 

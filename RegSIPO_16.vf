@@ -1,0 +1,82 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RegSIPO_16.vf
+// /___/   /\     Timestamp : 12/10/2020 23:19:10
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/RegSIPO_16.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/RegSIPO_16.sch
+//Design Name: RegSIPO_16
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RegSIPO_16(CLK, 
+                  DataIn, 
+                  DataOut);
+
+    input CLK;
+    input DataIn;
+   output [15:0] DataOut;
+   
+   wire [15:0] DataOut_DUMMY;
+   
+   assign DataOut[15:0] = DataOut_DUMMY[15:0];
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(DataIn), 
+              .Q(DataOut_DUMMY[0]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(DataOut_DUMMY[0]), 
+              .Q(DataOut_DUMMY[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+               .D(DataOut_DUMMY[1]), 
+               .Q(DataOut_DUMMY[2]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+               .D(DataOut_DUMMY[2]), 
+               .Q(DataOut_DUMMY[3]));
+   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
+               .D(DataOut_DUMMY[3]), 
+               .Q(DataOut_DUMMY[4]));
+   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
+               .D(DataOut_DUMMY[4]), 
+               .Q(DataOut_DUMMY[5]));
+   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
+               .D(DataOut_DUMMY[5]), 
+               .Q(DataOut_DUMMY[6]));
+   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
+               .D(DataOut_DUMMY[6]), 
+               .Q(DataOut_DUMMY[7]));
+   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
+               .D(DataOut_DUMMY[7]), 
+               .Q(DataOut_DUMMY[8]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
+               .D(DataOut_DUMMY[8]), 
+               .Q(DataOut_DUMMY[9]));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
+               .D(DataOut_DUMMY[9]), 
+               .Q(DataOut_DUMMY[10]));
+   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
+               .D(DataOut_DUMMY[10]), 
+               .Q(DataOut_DUMMY[11]));
+   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
+               .D(DataOut_DUMMY[11]), 
+               .Q(DataOut_DUMMY[12]));
+   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
+               .D(DataOut_DUMMY[12]), 
+               .Q(DataOut_DUMMY[13]));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
+               .D(DataOut_DUMMY[13]), 
+               .Q(DataOut_DUMMY[14]));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
+               .D(DataOut_DUMMY[14]), 
+               .Q(DataOut_DUMMY[15]));
+endmodule

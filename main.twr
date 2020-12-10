@@ -1,0 +1,84 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf main.ucf
+
+Design file:              main.ncd
+Physical constraint file: main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ESP_CLK_P23
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+ESP_IN_P5   |    1.537(R)|      SLOW  |   -0.599(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ESP_CLK_P23 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+PWM_Servo1  |        10.231(R)|      SLOW  |         4.790(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<0>      |        12.029(R)|      SLOW  |         5.392(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<1>      |        11.622(R)|      SLOW  |         5.246(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<2>      |        11.716(R)|      SLOW  |         5.351(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<3>      |        11.759(R)|      SLOW  |         5.217(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<4>      |        11.904(R)|      SLOW  |         5.262(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<5>      |        11.088(R)|      SLOW  |         4.885(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+SEG<6>      |        10.779(R)|      SLOW  |         4.786(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLK_P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_P123       |    1.699|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ESP_CLK_P23
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ESP_CLK_P23    |    1.724|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Dec 10 23:23:59 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+
