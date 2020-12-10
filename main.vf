@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : main.vf
-// /___/   /\     Timestamp : 12/10/2020 23:23:30
+// /___/   /\     Timestamp : 12/11/2020 01:11:58
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -406,6 +406,39 @@ module CB2CE_HXILINX_main(CEO, Q0, Q1, TC, C, CE, CLR);
 endmodule
 `timescale 1ns / 1ps
 
+module Counter16_TC_MUSER_main(CLK, 
+                               TC);
+
+    input CLK;
+   output TC;
+   
+   wire RESET;
+   wire XLXN_2;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   (* HU_SET = "XLXI_1_22" *) 
+   CB4CE_HXILINX_main  XLXI_1 (.C(CLK), 
+                              .CE(XLXN_2), 
+                              .CLR(RESET), 
+                              .CEO(), 
+                              .Q0(XLXN_23), 
+                              .Q1(XLXN_24), 
+                              .Q2(XLXN_25), 
+                              .Q3(XLXN_26), 
+                              .TC());
+   VCC  XLXI_2 (.P(XLXN_2));
+   GND  XLXI_10 (.G(RESET));
+   AND4B4  XLXI_15 (.I0(XLXN_26), 
+                   .I1(XLXN_25), 
+                   .I2(XLXN_24), 
+                   .I3(XLXN_23), 
+                   .O(TC));
+endmodule
+`timescale 1ns / 1ps
+
 module RegPIPO_16_MUSER_main(CLK, 
                              DataIn, 
                              DataOut);
@@ -563,7 +596,7 @@ module HEX2SEG_MUSER_main(hex_in,
                    .I2(XLXN_16), 
                    .I3(XLXN_14), 
                    .O(XLXN_20));
-   (* HU_SET = "XLXI_1_0" *) 
+   (* HU_SET = "XLXI_1_23" *) 
    D4_16E_HXILINX_main  XLXI_1 (.A0(hex_in[0]), 
                                .A1(hex_in[1]), 
                                .A2(hex_in[2]), 
@@ -591,7 +624,7 @@ module HEX2SEG_MUSER_main(hex_in,
                .I2(XLXN_13), 
                .I3(XLXN_18), 
                .O(XLXN_22));
-   (* HU_SET = "XLXI_6_1" *) 
+   (* HU_SET = "XLXI_6_24" *) 
    OR6_HXILINX_main  XLXI_6 (.I0(XLXN_12), 
                             .I1(XLXN_11), 
                             .I2(XLXN_16), 
@@ -605,7 +638,7 @@ module HEX2SEG_MUSER_main(hex_in,
                .I3(XLXN_17), 
                .I4(XLXN_18), 
                .O(XLXN_23));
-   (* HU_SET = "XLXI_8_2" *) 
+   (* HU_SET = "XLXI_8_25" *) 
    OR6_HXILINX_main  XLXI_8 (.I0(XLXN_4), 
                             .I1(XLXN_6), 
                             .I2(XLXN_7), 
@@ -673,19 +706,19 @@ module count09_MUSER_main(CLK_P45,
    assign Bit2_P80 = Bit2_P80_DUMMY;
    assign Bit3_P79 = Bit3_P79_DUMMY;
    assign Tc = Tc_DUMMY;
-   (* HU_SET = "XLXI_1_3" *) 
+   (* HU_SET = "XLXI_1_26" *) 
    FJKC_HXILINX_main  XLXI_1 (.C(CLK_P45), 
                              .CLR(Tc_DUMMY), 
                              .J(XLXN_3), 
                              .K(XLXN_3), 
                              .Q(Bit0_P82_DUMMY));
-   (* HU_SET = "XLXI_2_4" *) 
+   (* HU_SET = "XLXI_2_27" *) 
    FJKC_HXILINX_main  XLXI_2 (.C(XLXN_21), 
                              .CLR(Tc_DUMMY), 
                              .J(XLXN_3), 
                              .K(XLXN_3), 
                              .Q(Bit2_P80_DUMMY));
-   (* HU_SET = "XLXI_3_5" *) 
+   (* HU_SET = "XLXI_3_28" *) 
    FJKC_HXILINX_main  XLXI_3 (.C(XLXN_22), 
                              .CLR(Tc_DUMMY), 
                              .J(XLXN_3), 
@@ -701,7 +734,7 @@ module count09_MUSER_main(CLK_P45,
                 .I2(Bit1_P81_DUMMY), 
                 .I3(XLXN_6), 
                 .O(Tc_DUMMY));
-   (* HU_SET = "XLXI_8_6" *) 
+   (* HU_SET = "XLXI_8_29" *) 
    FJKC_HXILINX_main  XLXI_8 (.C(XLXN_20), 
                              .CLR(Tc_DUMMY), 
                              .J(XLXN_3), 
@@ -789,7 +822,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
    wire [3:0] XLXN_523;
    
    VCC  XLXI_93 (.P(XLXN_208));
-   (* HU_SET = "XLXI_106_7" *) 
+   (* HU_SET = "XLXI_106_30" *) 
    CB2CE_HXILINX_main  XLXI_106 (.C(XLXN_423), 
                                 .CE(XLXN_208), 
                                 .CLR(), 
@@ -797,7 +830,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
                                 .Q0(qweqwe), 
                                 .Q1(qweqweqw), 
                                 .TC());
-   (* HU_SET = "XLXI_107_8" *) 
+   (* HU_SET = "XLXI_107_31" *) 
    D2_4E_HXILINX_main  XLXI_107 (.A0(qweqwe), 
                                 .A1(qweqweqw), 
                                 .E(XLXN_340), 
@@ -816,7 +849,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
                  .O(COMM[3]));
    div100k_MUSER_main  XLXI_167 (.CLK_P123(CLK_P123), 
                                 .CLK_OUT(XLXN_423));
-   (* HU_SET = "XLXI_1683_0_12" *) 
+   (* HU_SET = "XLXI_1683_0_35" *) 
    M4_1E_HXILINX_main  XLXI_1683_0 (.D0(C1[0]), 
                                    .D1(C2[0]), 
                                    .D2(C3[0]), 
@@ -825,7 +858,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
                                    .S0(qweqwe), 
                                    .S1(qweqweqw), 
                                    .O(XLXN_523[0]));
-   (* HU_SET = "XLXI_1683_1_11" *) 
+   (* HU_SET = "XLXI_1683_1_34" *) 
    M4_1E_HXILINX_main  XLXI_1683_1 (.D0(C1[1]), 
                                    .D1(C2[1]), 
                                    .D2(C3[1]), 
@@ -834,7 +867,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
                                    .S0(qweqwe), 
                                    .S1(qweqweqw), 
                                    .O(XLXN_523[1]));
-   (* HU_SET = "XLXI_1683_2_10" *) 
+   (* HU_SET = "XLXI_1683_2_33" *) 
    M4_1E_HXILINX_main  XLXI_1683_2 (.D0(C1[2]), 
                                    .D1(C2[2]), 
                                    .D2(C3[2]), 
@@ -843,7 +876,7 @@ module segment_upgrade_MUSER_main(CLK_P123,
                                    .S0(qweqwe), 
                                    .S1(qweqweqw), 
                                    .O(XLXN_523[2]));
-   (* HU_SET = "XLXI_1683_3_9" *) 
+   (* HU_SET = "XLXI_1683_3_32" *) 
    M4_1E_HXILINX_main  XLXI_1683_3 (.D0(C1[3]), 
                                    .D1(C2[3]), 
                                    .D2(C3[3]), 
@@ -873,12 +906,12 @@ module DIV_400_MUSER_main(CLK_IN,
    wire XLXN_9;
    wire XLXN_20;
    
-   (* HU_SET = "XLXI_1_13" *) 
+   (* HU_SET = "XLXI_1_36" *) 
    FTC_HXILINX_main  XLXI_1 (.C(XLXN_7), 
                             .CLR(XLXN_9), 
                             .T(XLXN_20), 
                             .Q(XLXN_1));
-   (* HU_SET = "XLXI_3_15" *) 
+   (* HU_SET = "XLXI_3_38" *) 
    CD4CE_HXILINX_main  XLXI_3 (.C(XLXN_8), 
                               .CE(XLXN_20), 
                               .CLR(XLXN_9), 
@@ -888,12 +921,12 @@ module DIV_400_MUSER_main(CLK_IN,
                               .Q2(), 
                               .Q3(), 
                               .TC(XLXN_7));
-   (* HU_SET = "XLXI_4_14" *) 
+   (* HU_SET = "XLXI_4_37" *) 
    FTC_HXILINX_main  XLXI_4 (.C(XLXN_1), 
                             .CLR(XLXN_9), 
                             .T(XLXN_20), 
                             .Q(CLK_OUT));
-   (* HU_SET = "XLXI_8_16" *) 
+   (* HU_SET = "XLXI_8_39" *) 
    CD4CE_HXILINX_main  XLXI_8 (.C(CLK_IN), 
                               .CE(XLXN_20), 
                               .CLR(XLXN_9), 
@@ -921,7 +954,7 @@ module PWM_Gen_MUSER_main(Duty,
    wire [15:0] XLXN_5;
    wire XLXN_7;
    
-   (* HU_SET = "XLXI_2_17" *) 
+   (* HU_SET = "XLXI_2_40" *) 
    CC16CE_HXILINX_main  XLXI_2 (.C(XLXN_1), 
                                .CE(XLXN_2), 
                                .CLR(XLXN_7), 
@@ -929,14 +962,14 @@ module PWM_Gen_MUSER_main(Duty,
                                .Q(XLXN_5[15:0]), 
                                .TC());
    VCC  XLXI_4 (.P(XLXN_2));
-   (* HU_SET = "XLXI_8_18" *) 
+   (* HU_SET = "XLXI_8_41" *) 
    COMPM16_HXILINX_main  XLXI_8 (.A(XLXN_5[15:0]), 
                                 .B(Duty[15:0]), 
                                 .GT(), 
                                 .LT(PWM));
    DIV_400_MUSER_main  XLXI_9 (.CLK_IN(FPGA_CLK), 
                               .CLK_OUT(XLXN_1));
-   (* HU_SET = "XLXI_10_19" *) 
+   (* HU_SET = "XLXI_10_42" *) 
    COMP16_HXILINX_main  XLXI_10 (.A(BIN1000[15:0]), 
                                 .B(XLXN_5[15:0]), 
                                 .EQ(XLXN_7));
@@ -959,36 +992,6 @@ module PWM_Gen_MUSER_main(Duty,
 endmodule
 `timescale 1ns / 1ps
 
-module Counter8_TC_MUSER_main(CLK, 
-                              TC);
-
-    input CLK;
-   output TC;
-   
-   wire RESET;
-   wire XLXN_4;
-   wire XLXN_6;
-   wire XLXN_7;
-   wire XLXN_8;
-   
-   (* HU_SET = "XLXI_1_20" *) 
-   CB4CE_HXILINX_main  XLXI_1 (.C(CLK), 
-                              .CE(XLXN_4), 
-                              .CLR(RESET), 
-                              .CEO(), 
-                              .Q0(XLXN_8), 
-                              .Q1(XLXN_7), 
-                              .Q2(XLXN_6), 
-                              .Q3(RESET), 
-                              .TC());
-   VCC  XLXI_3 (.P(XLXN_4));
-   NAND3  XLXI_6 (.I0(XLXN_6), 
-                 .I1(XLXN_7), 
-                 .I2(XLXN_8), 
-                 .O(TC));
-endmodule
-`timescale 1ns / 1ps
-
 module main(CLK_P123, 
             ESP_CLK_P23, 
             ESP_IN_P5, 
@@ -1004,23 +1007,12 @@ module main(CLK_P123,
    output [6:0] SEG;
    
    wire [15:0] PWM;
-   wire XLXN_52;
-   wire XLXN_55;
-   wire XLXN_56;
    wire XLXN_70;
+   wire [15:0] XLXN_78;
    
    PWM_Gen_MUSER_main  XLXI_1 (.Duty(PWM[15:0]), 
                               .FPGA_CLK(CLK_P123), 
                               .PWM(PWM_Servo1));
-   Counter8_TC_MUSER_main  XLXI_23 (.CLK(XLXN_52), 
-                                   .TC(XLXN_70));
-   (* HU_SET = "XLXI_25_21" *) 
-   FTC_HXILINX_main  XLXI_25 (.C(ESP_CLK_P23), 
-                             .CLR(XLXN_56), 
-                             .T(XLXN_55), 
-                             .Q(XLXN_52));
-   VCC  XLXI_28 (.P(XLXN_55));
-   GND  XLXI_29 (.G(XLXN_56));
    segment_upgrade_MUSER_main  XLXI_32 (.CLK_P123(CLK_P123), 
                                        .C1(PWM[3:0]), 
                                        .C2(PWM[7:4]), 
@@ -1030,8 +1022,10 @@ module main(CLK_P123,
                                        .SEG_OUT(SEG[6:0]));
    RegSIPO_16_MUSER_main  XLXI_33 (.CLK(ESP_CLK_P23), 
                                   .DataIn(ESP_IN_P5), 
-                                  .DataOut(PWM[15:0]));
+                                  .DataOut(XLXN_78[15:0]));
    RegPIPO_16_MUSER_main  XLXI_36 (.CLK(XLXN_70), 
-                                  .DataIn(PWM[15:0]), 
-                                  .DataOut());
+                                  .DataIn(XLXN_78[15:0]), 
+                                  .DataOut(PWM[15:0]));
+   Counter16_TC_MUSER_main  XLXI_37 (.CLK(ESP_CLK_P23), 
+                                    .TC(XLXN_70));
 endmodule

@@ -36,30 +36,15 @@ Setup/Hold to clock ESP_CLK_P23
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P5   |    1.537(R)|      SLOW  |   -0.599(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
+ESP_IN_P5   |    2.158(R)|      SLOW  |   -1.005(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
-
-Clock ESP_CLK_P23 to Pad
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
-Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
-------------+-----------------+------------+-----------------+------------+------------------+--------+
-PWM_Servo1  |        10.231(R)|      SLOW  |         4.790(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<0>      |        12.029(R)|      SLOW  |         5.392(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<1>      |        11.622(R)|      SLOW  |         5.246(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<2>      |        11.716(R)|      SLOW  |         5.351(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<3>      |        11.759(R)|      SLOW  |         5.217(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<4>      |        11.904(R)|      SLOW  |         5.262(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<5>      |        11.088(R)|      SLOW  |         4.885(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-SEG<6>      |        10.779(R)|      SLOW  |         4.786(R)|      FAST  |ESP_CLK_P23_BUFGP |   0.000|
-------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK_P123
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_P123       |    1.699|         |         |         |
+CLK_P123       |    1.656|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P23
@@ -67,11 +52,11 @@ Clock to Setup on destination clock ESP_CLK_P23
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P23    |    1.724|         |         |         |
+ESP_CLK_P23    |    1.686|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Dec 10 23:23:59 2020 
+Analysis completed Fri Dec 11 01:13:54 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:

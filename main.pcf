@@ -1,9 +1,11 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Dec 10 23:23:49 2020
+// Written by: Map P.20131013 on Fri Dec 11 01:13:43 2020
 //! **************************************************************************
 
 SCHEMATIC START;
 COMP "ESP_CLK_P23" LOCATE = SITE "P23" LEVEL 1;
+PIN ESP_CLK_P23_pin<0> = BEL "ESP_CLK_P23" PINNAME PAD;
+PIN "ESP_CLK_P23_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 COMP "ESP_IN_P5" LOCATE = SITE "P5" LEVEL 1;
 COMP "PWM_Servo1" LOCATE = SITE "P6" LEVEL 1;
 COMP "CLK_P123" LOCATE = SITE "P123" LEVEL 1;
