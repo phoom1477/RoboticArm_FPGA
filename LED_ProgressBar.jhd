@@ -1,0 +1,3 @@
+MODULE LED_ProgressBar
+	SUBMODULE Compare_x8
+		INSTANCE XLXI_42

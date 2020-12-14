@@ -22,6 +22,54 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="RoboticArm.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN212.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN212.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN98.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN98.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_107.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_107.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_109.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_109.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_120.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_120.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_128.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_128.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_131.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_131.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_142.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_142.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_149.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_149.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_155.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_155.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_168.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_168.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_170.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_170.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_181.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_181.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_191.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_191.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_194.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_194.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_207.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_207.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_220.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_220.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_233.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_233.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_246.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_246.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_65.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_65.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_76.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_76.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_86.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_86.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="BIN_87.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="BIN_87.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Compare_x8.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Compare_x8.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Counter16_TC.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="Counter16_TC.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DIV_200.sym" xil_pn:origination="imported"/>
@@ -29,6 +77,17 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DIV_400.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="HEX2SEG.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="HEX2SEG.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="LED_ProgressBar.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="LED_ProgressBar.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="LED_ProgressBar_drc.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="NUM03.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="NUM03.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="NUM47.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="NUM47.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="NUM8B.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="NUM8B.vf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="NUMCF.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="NUMCF.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="PWM_Gen.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="PWM_Gen.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegPIPO_16.sym" xil_pn:origination="imported"/>
@@ -37,6 +96,9 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegSIPO_16.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="RegSIPO_16.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="RegSIPO_8.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ScaleThreshold_x8.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="ScaleThreshold_x8.vf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="ScaleThreshold_x8_drc.vf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ServoControl.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="ServoControl.vf"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
@@ -91,6 +153,7 @@
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="main_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="main_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="main_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="segment_upgrade.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="segment_upgrade.vf"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
@@ -105,54 +168,79 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607884904" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1607884904">
+    <transform xil_pn:end_ts="1607964609" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1607964609">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607886548" xil_pn:in_ck="-1799302120847526102" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2707153689032373741" xil_pn:start_ts="1607886544">
+    <transform xil_pn:end_ts="1607969199" xil_pn:in_ck="-2153386661546483696" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2707153689032373741" xil_pn:start_ts="1607969178">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="BIN212.vf"/>
+      <outfile xil_pn:name="BIN98.vf"/>
+      <outfile xil_pn:name="BIN_107.vf"/>
+      <outfile xil_pn:name="BIN_109.vf"/>
+      <outfile xil_pn:name="BIN_120.vf"/>
+      <outfile xil_pn:name="BIN_128.vf"/>
+      <outfile xil_pn:name="BIN_131.vf"/>
+      <outfile xil_pn:name="BIN_142.vf"/>
+      <outfile xil_pn:name="BIN_149.vf"/>
+      <outfile xil_pn:name="BIN_155.vf"/>
+      <outfile xil_pn:name="BIN_168.vf"/>
+      <outfile xil_pn:name="BIN_170.vf"/>
+      <outfile xil_pn:name="BIN_181.vf"/>
+      <outfile xil_pn:name="BIN_191.vf"/>
+      <outfile xil_pn:name="BIN_194.vf"/>
+      <outfile xil_pn:name="BIN_207.vf"/>
+      <outfile xil_pn:name="BIN_220.vf"/>
+      <outfile xil_pn:name="BIN_233.vf"/>
+      <outfile xil_pn:name="BIN_246.vf"/>
+      <outfile xil_pn:name="BIN_65.vf"/>
+      <outfile xil_pn:name="BIN_76.vf"/>
+      <outfile xil_pn:name="BIN_86.vf"/>
+      <outfile xil_pn:name="BIN_87.vf"/>
+      <outfile xil_pn:name="Compare_x8.vf"/>
       <outfile xil_pn:name="Counter16_TC.vf"/>
       <outfile xil_pn:name="DIV_200.vf"/>
       <outfile xil_pn:name="HEX2SEG.vf"/>
+      <outfile xil_pn:name="LED_ProgressBar.vf"/>
+      <outfile xil_pn:name="NUM03.vf"/>
+      <outfile xil_pn:name="NUM47.vf"/>
+      <outfile xil_pn:name="NUM8B.vf"/>
+      <outfile xil_pn:name="NUMCF.vf"/>
       <outfile xil_pn:name="PWM_Gen.vf"/>
       <outfile xil_pn:name="RegPIPO_16.vf"/>
       <outfile xil_pn:name="RegSIPO_16.vf"/>
+      <outfile xil_pn:name="ScaleThreshold_x8.vf"/>
       <outfile xil_pn:name="ServoControl.vf"/>
       <outfile xil_pn:name="count09.vf"/>
       <outfile xil_pn:name="div100k.vf"/>
       <outfile xil_pn:name="main.vf"/>
       <outfile xil_pn:name="segment_upgrade.vf"/>
     </transform>
-    <transform xil_pn:end_ts="1607884908" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2741413463335156534" xil_pn:start_ts="1607884908">
+    <transform xil_pn:end_ts="1607964615" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2741413463335156534" xil_pn:start_ts="1607964615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607884908" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1607884908">
+    <transform xil_pn:end_ts="1607964615" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1607964615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607884908" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3171856766572972907" xil_pn:start_ts="1607884908">
+    <transform xil_pn:end_ts="1607964615" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3171856766572972907" xil_pn:start_ts="1607964615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1607884908" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1607884908">
+    <transform xil_pn:end_ts="1607964615" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="250970745955965653" xil_pn:start_ts="1607964615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1607884908" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1935372560174771308" xil_pn:start_ts="1607884908">
+    <transform xil_pn:end_ts="1607964615" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1935372560174771308" xil_pn:start_ts="1607964615">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1607886557" xil_pn:in_ck="-3998866847256385315" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-212869733079635214" xil_pn:start_ts="1607886548">
+    <transform xil_pn:end_ts="1607969213" xil_pn:in_ck="-8663748331856084089" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-212869733079635214" xil_pn:start_ts="1607969199">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -168,27 +256,24 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1607885216" xil_pn:in_ck="4774924128945" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1607885216">
+    <transform xil_pn:end_ts="1607964753" xil_pn:in_ck="4774924128945" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="123229027435927655" xil_pn:start_ts="1607964753">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1607886562" xil_pn:in_ck="-5850685518144584932" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7577082390093301461" xil_pn:start_ts="1607886557">
+    <transform xil_pn:end_ts="1607969219" xil_pn:in_ck="-5850685518144584932" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-7577082390093301461" xil_pn:start_ts="1607969213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="main.bld"/>
       <outfile xil_pn:name="main.ngd"/>
       <outfile xil_pn:name="main_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1607886571" xil_pn:in_ck="-5850684111735966691" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1607886562">
+    <transform xil_pn:end_ts="1607969229" xil_pn:in_ck="-5850684111735966691" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="6093601622908603872" xil_pn:start_ts="1607969219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -201,10 +286,9 @@
       <outfile xil_pn:name="main_summary.xml"/>
       <outfile xil_pn:name="main_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1607886582" xil_pn:in_ck="7533346358390570678" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1607886571">
+    <transform xil_pn:end_ts="1607969242" xil_pn:in_ck="7533346358390570678" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-6780099238861732004" xil_pn:start_ts="1607969229">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="main.ncd"/>
       <outfile xil_pn:name="main.pad"/>
@@ -216,11 +300,10 @@
       <outfile xil_pn:name="main_pad.txt"/>
       <outfile xil_pn:name="main_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1607886590" xil_pn:in_ck="4774924121320" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1607886582">
+    <transform xil_pn:end_ts="1607969251" xil_pn:in_ck="4774924121320" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1607969242">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="main.bgn"/>
       <outfile xil_pn:name="main.bit"/>
@@ -230,10 +313,9 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1607886582" xil_pn:in_ck="-5850869757673574503" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1607886578">
+    <transform xil_pn:end_ts="1607969242" xil_pn:in_ck="-5850869757673574503" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1607969238">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="main.twr"/>
       <outfile xil_pn:name="main.twx"/>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Bus Id="COM">
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Bus Id="SEG">
+			<Port Id="6" Dir="OUT"/>
+			<Port Id="5" Dir="OUT"/>
+			<Port Id="4" Dir="OUT"/>
+			<Port Id="3" Dir="OUT"/>
+			<Port Id="2" Dir="OUT"/>
+			<Port Id="1" Dir="OUT"/>
+			<Port Id="0" Dir="OUT"/>
+		</Bus>
+		<Port Id="CLK_P123" Dir="IN"/>
+		<Port Id="ESP_CLK_P7" Dir="IN"/>
+		<Port Id="ESP_CLK_P8" Dir="IN"/>
+		<Port Id="ESP_CLK_P11" Dir="IN"/>
+		<Port Id="ESP_CLK_P16" Dir="IN"/>
+		<Port Id="ESP_CLK_P23" Dir="IN"/>
+		<Port Id="ESP_IN_P5" Dir="IN"/>
+		<Port Id="ESP_IN_P6" Dir="IN"/>
+		<Port Id="ESP_IN_P9" Dir="IN"/>
+		<Port Id="ESP_IN_P14" Dir="IN"/>
+		<Port Id="ESP_IN_P21" Dir="IN"/>
+		<Port Id="SEL_P45" Dir="IN"/>
+		<Port Id="LED0_P67" Dir="OUT"/>
+		<Port Id="LED1_P74" Dir="OUT"/>
+		<Port Id="LED2_P75" Dir="OUT"/>
+		<Port Id="LED3_P78" Dir="OUT"/>
+		<Port Id="LED4_P79" Dir="OUT"/>
+		<Port Id="LED5_P80" Dir="OUT"/>
+		<Port Id="LED6_P81" Dir="OUT"/>
+		<Port Id="LED7_P82" Dir="OUT"/>
+		<Port Id="PWM_Servo0" Dir="OUT"/>
+		<Port Id="PWM_Servo1" Dir="OUT"/>
+		<Port Id="PWM_Servo2" Dir="OUT"/>
+		<Port Id="PWM_Servo3" Dir="OUT"/>
+		<Port Id="PWM_Servo4" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

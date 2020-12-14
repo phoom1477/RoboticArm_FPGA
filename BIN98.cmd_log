@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym BIN98 C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN98.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN98.sym 

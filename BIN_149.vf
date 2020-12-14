@@ -1,0 +1,199 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : BIN_149.vf
+// /___/   /\     Timestamp : 12/14/2020 23:33:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_149.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_149.sch
+//Design Name: BIN_149
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NUM47_MUSER_BIN_149(N4, 
+                           N5, 
+                           N6, 
+                           N7, 
+                           Q);
+
+    input N4;
+    input N5;
+    input N6;
+    input N7;
+   output [3:0] Q;
+   
+   wire XLXN_81;
+   wire XLXN_82;
+   wire XLXN_83;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_89;
+   
+   GND  XLXI_17 (.G(Q[3]));
+   INV  XLXI_26 (.I(N4), 
+                .O(XLXN_81));
+   INV  XLXI_27 (.I(N5), 
+                .O(XLXN_82));
+   INV  XLXI_28 (.I(N6), 
+                .O(XLXN_86));
+   AND2  XLXI_32 (.I0(XLXN_82), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_83));
+   XOR2  XLXI_33 (.I0(N7), 
+                 .I1(N6), 
+                 .O(XLXN_84));
+   AND2  XLXI_34 (.I0(XLXN_84), 
+                 .I1(XLXN_83), 
+                 .O(Q[1]));
+   AND2  XLXI_35 (.I0(XLXN_86), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_88));
+   XOR2  XLXI_36 (.I0(N7), 
+                 .I1(N5), 
+                 .O(XLXN_89));
+   AND2  XLXI_37 (.I0(XLXN_89), 
+                 .I1(XLXN_88), 
+                 .O(Q[0]));
+   VCC  XLXI_38 (.P(Q[2]));
+endmodule
+`timescale 1ns / 1ps
+
+module NUM8B_MUSER_BIN_149(NA, 
+                           NB, 
+                           N8, 
+                           N9, 
+                           Q);
+
+    input NA;
+    input NB;
+    input N8;
+    input N9;
+   output [3:0] Q;
+   
+   wire XLXN_81;
+   wire XLXN_82;
+   wire XLXN_83;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_89;
+   
+   GND  XLXI_17 (.G(Q[2]));
+   INV  XLXI_26 (.I(N8), 
+                .O(XLXN_81));
+   INV  XLXI_27 (.I(N9), 
+                .O(XLXN_82));
+   INV  XLXI_28 (.I(NA), 
+                .O(XLXN_86));
+   AND2  XLXI_32 (.I0(XLXN_82), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_83));
+   XOR2  XLXI_33 (.I0(NB), 
+                 .I1(NA), 
+                 .O(XLXN_84));
+   AND2  XLXI_34 (.I0(XLXN_84), 
+                 .I1(XLXN_83), 
+                 .O(Q[1]));
+   AND2  XLXI_35 (.I0(XLXN_86), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_88));
+   XOR2  XLXI_36 (.I0(NB), 
+                 .I1(N9), 
+                 .O(XLXN_89));
+   AND2  XLXI_37 (.I0(XLXN_89), 
+                 .I1(XLXN_88), 
+                 .O(Q[0]));
+   VCC  XLXI_38 (.P(Q[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module NUM03_MUSER_BIN_149(N0, 
+                           N1, 
+                           N2, 
+                           N3, 
+                           Q);
+
+    input N0;
+    input N1;
+    input N2;
+    input N3;
+   output [3:0] Q;
+   
+   wire XLXN_81;
+   wire XLXN_82;
+   wire XLXN_83;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_89;
+   
+   GND  XLXI_16 (.G(Q[2]));
+   GND  XLXI_17 (.G(Q[3]));
+   INV  XLXI_26 (.I(N0), 
+                .O(XLXN_81));
+   INV  XLXI_27 (.I(N1), 
+                .O(XLXN_82));
+   INV  XLXI_28 (.I(N2), 
+                .O(XLXN_86));
+   AND2  XLXI_32 (.I0(XLXN_82), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_83));
+   XOR2  XLXI_33 (.I0(N3), 
+                 .I1(N2), 
+                 .O(XLXN_84));
+   AND2  XLXI_34 (.I0(XLXN_84), 
+                 .I1(XLXN_83), 
+                 .O(Q[1]));
+   AND2  XLXI_35 (.I0(XLXN_86), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_88));
+   XOR2  XLXI_36 (.I0(N3), 
+                 .I1(N1), 
+                 .O(XLXN_89));
+   AND2  XLXI_37 (.I0(XLXN_89), 
+                 .I1(XLXN_88), 
+                 .O(Q[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module BIN_149(OUTPUT);
+
+   output [15:0] OUTPUT;
+   
+   wire XLXN_8;
+   wire XLXN_9;
+   
+   NUM03_MUSER_BIN_149  XLXI_3 (.N0(XLXN_8), 
+                               .N1(XLXN_9), 
+                               .N2(XLXN_9), 
+                               .N3(XLXN_9), 
+                               .Q(OUTPUT[11:8]));
+   NUM03_MUSER_BIN_149  XLXI_7 (.N0(XLXN_8), 
+                               .N1(XLXN_9), 
+                               .N2(XLXN_9), 
+                               .N3(XLXN_9), 
+                               .Q(OUTPUT[15:12]));
+   VCC  XLXI_8 (.P(XLXN_8));
+   GND  XLXI_9 (.G(XLXN_9));
+   NUM8B_MUSER_BIN_149  XLXI_10 (.NA(XLXN_9), 
+                                .NB(XLXN_9), 
+                                .N8(XLXN_9), 
+                                .N9(XLXN_8), 
+                                .Q(OUTPUT[7:4]));
+   NUM47_MUSER_BIN_149  XLXI_11 (.N4(XLXN_9), 
+                                .N5(XLXN_8), 
+                                .N6(XLXN_9), 
+                                .N7(XLXN_9), 
+                                .Q(OUTPUT[3:0]));
+endmodule

@@ -36,7 +36,7 @@ Setup/Hold to clock ESP_CLK_P7
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P5   |   -0.707(R)|      FAST  |    2.140(R)|      SLOW  |ESP_CLK_P7_BUFGP  |   0.000|
+ESP_IN_P5   |   -1.082(R)|      FAST  |    2.573(R)|      SLOW  |ESP_CLK_P7_BUFGP  |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P8
@@ -44,7 +44,7 @@ Setup/Hold to clock ESP_CLK_P8
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P6   |   -1.222(R)|      FAST  |    2.745(R)|      SLOW  |ESP_CLK_P8_BUFGP  |   0.000|
+ESP_IN_P6   |   -0.707(R)|      FAST  |    2.180(R)|      SLOW  |ESP_CLK_P8_BUFGP  |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P11
@@ -52,7 +52,7 @@ Setup/Hold to clock ESP_CLK_P11
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P9   |   -1.290(R)|      FAST  |    2.769(R)|      SLOW  |ESP_CLK_P11_BUFGP |   0.000|
+ESP_IN_P9   |   -0.412(R)|      FAST  |    1.867(R)|      SLOW  |ESP_CLK_P11_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P16
@@ -60,7 +60,7 @@ Setup/Hold to clock ESP_CLK_P16
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P14  |    0.738(R)|      SLOW  |    0.153(R)|      SLOW  |ESP_CLK_P16_BUFGP |   0.000|
+ESP_IN_P14  |    0.840(R)|      SLOW  |    0.054(R)|      SLOW  |ESP_CLK_P16_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P23
@@ -68,7 +68,7 @@ Setup/Hold to clock ESP_CLK_P23
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P21  |    0.978(R)|      SLOW  |   -0.072(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
+ESP_IN_P21  |    0.940(R)|      SLOW  |   -0.032(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Clock SEL_P45 to Pad
@@ -76,13 +76,21 @@ Clock SEL_P45 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-SEG<0>      |        16.628(R)|      SLOW  |         8.060(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<1>      |        16.652(R)|      SLOW  |         7.924(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<2>      |        16.631(R)|      SLOW  |         7.883(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<3>      |        16.850(R)|      SLOW  |         7.799(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<4>      |        16.648(R)|      SLOW  |         7.958(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<5>      |        15.824(R)|      SLOW  |         7.214(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<6>      |        15.305(R)|      SLOW  |         7.257(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED0_P67    |        20.116(R)|      SLOW  |         7.959(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED1_P74    |        19.992(R)|      SLOW  |         7.802(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED2_P75    |        19.333(R)|      SLOW  |         7.622(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED3_P78    |        18.536(R)|      SLOW  |         7.402(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED4_P79    |        18.140(R)|      SLOW  |         7.367(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED5_P80    |        17.795(R)|      SLOW  |         7.366(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED6_P81    |        18.261(R)|      SLOW  |         7.555(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED7_P82    |        17.507(R)|      SLOW  |         9.287(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<0>      |        14.433(R)|      SLOW  |         7.253(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<1>      |        14.424(R)|      SLOW  |         7.106(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<2>      |        14.319(R)|      SLOW  |         7.245(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<3>      |        14.264(R)|      SLOW  |         6.980(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<4>      |        14.348(R)|      SLOW  |         7.087(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<5>      |        14.502(R)|      SLOW  |         7.266(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+SEG<6>      |        14.715(R)|      SLOW  |         7.422(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK_P123
@@ -90,7 +98,7 @@ Clock to Setup on destination clock CLK_P123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_P123       |    1.700|         |         |         |
+CLK_P123       |    1.799|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P7
@@ -98,7 +106,7 @@ Clock to Setup on destination clock ESP_CLK_P7
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P7     |    1.312|         |         |         |
+ESP_CLK_P7     |    1.707|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P8
@@ -106,7 +114,7 @@ Clock to Setup on destination clock ESP_CLK_P8
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P8     |    1.509|         |         |         |
+ESP_CLK_P8     |    1.531|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P11
@@ -114,7 +122,7 @@ Clock to Setup on destination clock ESP_CLK_P11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P11    |    1.314|         |         |         |
+ESP_CLK_P11    |    1.720|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P16
@@ -122,7 +130,7 @@ Clock to Setup on destination clock ESP_CLK_P16
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P16    |    1.531|         |         |         |
+ESP_CLK_P16    |    1.987|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P23
@@ -130,7 +138,7 @@ Clock to Setup on destination clock ESP_CLK_P23
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P23    |    1.710|         |         |         |
+ESP_CLK_P23    |    1.794|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SEL_P45
@@ -138,11 +146,11 @@ Clock to Setup on destination clock SEL_P45
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SEL_P45        |    1.933|         |         |         |
+SEL_P45        |    1.900|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Dec 14 02:09:41 2020 
+Analysis completed Tue Dec 15 01:07:21 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:

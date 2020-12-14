@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : NUMCF.vf
+// /___/   /\     Timestamp : 12/14/2020 23:33:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/NUMCF.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/NUMCF.sch
+//Design Name: NUMCF
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NUMCF(NC, 
+             ND, 
+             NE, 
+             NF, 
+             Q);
+
+    input NC;
+    input ND;
+    input NE;
+    input NF;
+   output [3:0] Q;
+   
+   wire XLXN_81;
+   wire XLXN_82;
+   wire XLXN_83;
+   wire XLXN_84;
+   wire XLXN_86;
+   wire XLXN_88;
+   wire XLXN_89;
+   
+   INV  XLXI_26 (.I(NC), 
+                .O(XLXN_81));
+   INV  XLXI_27 (.I(ND), 
+                .O(XLXN_82));
+   INV  XLXI_28 (.I(NE), 
+                .O(XLXN_86));
+   AND2  XLXI_32 (.I0(XLXN_82), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_83));
+   XOR2  XLXI_33 (.I0(NF), 
+                 .I1(NE), 
+                 .O(XLXN_84));
+   AND2  XLXI_34 (.I0(XLXN_84), 
+                 .I1(XLXN_83), 
+                 .O(Q[1]));
+   AND2  XLXI_35 (.I0(XLXN_86), 
+                 .I1(XLXN_81), 
+                 .O(XLXN_88));
+   XOR2  XLXI_36 (.I0(NF), 
+                 .I1(ND), 
+                 .O(XLXN_89));
+   AND2  XLXI_37 (.I0(XLXN_89), 
+                 .I1(XLXN_88), 
+                 .O(Q[0]));
+   VCC  XLXI_38 (.P(Q[2]));
+   VCC  XLXI_39 (.P(Q[3]));
+endmodule

@@ -1,0 +1,159 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LED_ProgressBar_drc.vf
+// /___/   /\     Timestamp : 12/14/2020 22:04:06
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog LED_ProgressBar_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sch
+//Design Name: LED_ProgressBar
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR7_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5, I6);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR8_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5, I6, I7);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6 || I7);
+
+endmodule
+`timescale 1ns / 1ps
+
+module LED_ProgressBar(A0, 
+                       A1, 
+                       A2, 
+                       A3, 
+                       A4, 
+                       A5, 
+                       A6, 
+                       A7, 
+                       LED0, 
+                       LED1, 
+                       LED2, 
+                       LED3, 
+                       LED4, 
+                       LED5, 
+                       LED6, 
+                       LED7);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input A4;
+    input A5;
+    input A6;
+    input A7;
+   output LED0;
+   output LED1;
+   output LED2;
+   output LED3;
+   output LED4;
+   output LED5;
+   output LED6;
+   output LED7;
+   
+   
+   (* HU_SET = "XLXI_2_0" *) 
+   OR8_HXILINX_LED_ProgressBar  XLXI_2 (.I0(A0), 
+                                       .I1(A1), 
+                                       .I2(A2), 
+                                       .I3(A3), 
+                                       .I4(A4), 
+                                       .I5(A5), 
+                                       .I6(A6), 
+                                       .I7(A7), 
+                                       .O(LED0));
+   (* HU_SET = "XLXI_3_2" *) 
+   OR7_HXILINX_LED_ProgressBar  XLXI_3 (.I0(A1), 
+                                       .I1(A2), 
+                                       .I2(A3), 
+                                       .I3(A4), 
+                                       .I4(A5), 
+                                       .I5(A6), 
+                                       .I6(A7), 
+                                       .O(LED1));
+   (* HU_SET = "XLXI_4_1" *) 
+   OR6_HXILINX_LED_ProgressBar  XLXI_4 (.I0(A2), 
+                                       .I1(A3), 
+                                       .I2(A4), 
+                                       .I3(A5), 
+                                       .I4(A6), 
+                                       .I5(A7), 
+                                       .O(LED2));
+   OR5  XLXI_5 (.I0(A3), 
+               .I1(A4), 
+               .I2(A5), 
+               .I3(A6), 
+               .I4(A7), 
+               .O(LED3));
+   OR4  XLXI_6 (.I0(A4), 
+               .I1(A5), 
+               .I2(A6), 
+               .I3(A7), 
+               .O(LED4));
+   OR3  XLXI_7 (.I0(A5), 
+               .I1(A6), 
+               .I2(A7), 
+               .O(LED5));
+   OR2  XLXI_8 (.I0(A6), 
+               .I1(A7), 
+               .O(LED6));
+   BUF  XLXI_41 (.I(A7), 
+                .O(LED7));
+endmodule

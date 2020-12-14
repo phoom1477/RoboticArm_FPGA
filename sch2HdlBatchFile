@@ -1,1 +1,2 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ScaleThreshold_x8.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ScaleThreshold_x8.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.vf,-w,C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch

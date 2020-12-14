@@ -1,0 +1,281 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LED_ProgressBar.vf
+// /___/   /\     Timestamp : 12/14/2020 23:33:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sch
+//Design Name: LED_ProgressBar
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMPMC16_HXILINX_LED_ProgressBar (GT, LT, A, B);
+    
+
+   output GT;
+   output LT;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign GT = A > B  ;
+   assign LT = A < B  ;
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR7_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5, I6);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6);
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module OR8_HXILINX_LED_ProgressBar (O, I0, I1, I2, I3, I4, I5, I6, I7);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+   input I6;
+   input I7;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5 || I6 || I7);
+
+endmodule
+`timescale 1ns / 1ps
+
+module Compare_x8_MUSER_LED_ProgressBar(CurStep, 
+                                        Step0, 
+                                        Step1, 
+                                        Step2, 
+                                        Step3, 
+                                        Step4, 
+                                        Step5, 
+                                        Step6, 
+                                        Step7, 
+                                        D0, 
+                                        D1, 
+                                        D2, 
+                                        D3, 
+                                        D4, 
+                                        D5, 
+                                        D6, 
+                                        D7);
+
+    input [15:0] CurStep;
+    input [15:0] Step0;
+    input [15:0] Step1;
+    input [15:0] Step2;
+    input [15:0] Step3;
+    input [15:0] Step4;
+    input [15:0] Step5;
+    input [15:0] Step6;
+    input [15:0] Step7;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   
+   (* HU_SET = "XLXI_24_40" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_24 (.A(CurStep[15:0]), 
+                                             .B(Step2[15:0]), 
+                                             .GT(D2), 
+                                             .LT());
+   (* HU_SET = "XLXI_25_39" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_25 (.A(CurStep[15:0]), 
+                                             .B(Step3[15:0]), 
+                                             .GT(D3), 
+                                             .LT());
+   (* HU_SET = "XLXI_26_42" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_26 (.A(CurStep[15:0]), 
+                                             .B(Step0[15:0]), 
+                                             .GT(D0), 
+                                             .LT());
+   (* HU_SET = "XLXI_27_41" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_27 (.A(CurStep[15:0]), 
+                                             .B(Step1[15:0]), 
+                                             .GT(D1), 
+                                             .LT());
+   (* HU_SET = "XLXI_32_37" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_32 (.A(CurStep[15:0]), 
+                                             .B(Step6[15:0]), 
+                                             .GT(D6), 
+                                             .LT());
+   (* HU_SET = "XLXI_33_36" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_33 (.A(CurStep[15:0]), 
+                                             .B(Step7[15:0]), 
+                                             .GT(D7), 
+                                             .LT());
+   (* HU_SET = "XLXI_34_38" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_34 (.A(CurStep[15:0]), 
+                                             .B(Step4[15:0]), 
+                                             .GT(D4), 
+                                             .LT());
+   (* HU_SET = "XLXI_35_35" *) 
+   COMPMC16_HXILINX_LED_ProgressBar  XLXI_35 (.A(CurStep[15:0]), 
+                                             .B(Step5[15:0]), 
+                                             .GT(D5), 
+                                             .LT());
+endmodule
+`timescale 1ns / 1ps
+
+module LED_ProgressBar(CurStep, 
+                       Step0, 
+                       Step1, 
+                       Step2, 
+                       Step3, 
+                       Step4, 
+                       Step5, 
+                       Step6, 
+                       Step7, 
+                       LED0, 
+                       LED1, 
+                       LED2, 
+                       LED3, 
+                       LED4, 
+                       LED5, 
+                       LED6, 
+                       LED7);
+
+    input [15:0] CurStep;
+    input [15:0] Step0;
+    input [15:0] Step1;
+    input [15:0] Step2;
+    input [15:0] Step3;
+    input [15:0] Step4;
+    input [15:0] Step5;
+    input [15:0] Step6;
+    input [15:0] Step7;
+   output LED0;
+   output LED1;
+   output LED2;
+   output LED3;
+   output LED4;
+   output LED5;
+   output LED6;
+   output LED7;
+   
+   wire A0;
+   wire A1;
+   wire A2;
+   wire A3;
+   wire A4;
+   wire A5;
+   wire A6;
+   wire A7;
+   
+   (* HU_SET = "XLXI_2_43" *) 
+   OR8_HXILINX_LED_ProgressBar  XLXI_2 (.I0(A0), 
+                                       .I1(A1), 
+                                       .I2(A2), 
+                                       .I3(A3), 
+                                       .I4(A4), 
+                                       .I5(A5), 
+                                       .I6(A6), 
+                                       .I7(A7), 
+                                       .O(LED0));
+   (* HU_SET = "XLXI_3_45" *) 
+   OR7_HXILINX_LED_ProgressBar  XLXI_3 (.I0(A1), 
+                                       .I1(A2), 
+                                       .I2(A3), 
+                                       .I3(A4), 
+                                       .I4(A5), 
+                                       .I5(A6), 
+                                       .I6(A7), 
+                                       .O(LED1));
+   (* HU_SET = "XLXI_4_44" *) 
+   OR6_HXILINX_LED_ProgressBar  XLXI_4 (.I0(A2), 
+                                       .I1(A3), 
+                                       .I2(A4), 
+                                       .I3(A5), 
+                                       .I4(A6), 
+                                       .I5(A7), 
+                                       .O(LED2));
+   OR5  XLXI_5 (.I0(A3), 
+               .I1(A4), 
+               .I2(A5), 
+               .I3(A6), 
+               .I4(A7), 
+               .O(LED3));
+   OR4  XLXI_6 (.I0(A4), 
+               .I1(A5), 
+               .I2(A6), 
+               .I3(A7), 
+               .O(LED4));
+   OR3  XLXI_7 (.I0(A5), 
+               .I1(A6), 
+               .I2(A7), 
+               .O(LED5));
+   OR2  XLXI_8 (.I0(A6), 
+               .I1(A7), 
+               .O(LED6));
+   BUF  XLXI_41 (.I(A7), 
+                .O(LED7));
+   Compare_x8_MUSER_LED_ProgressBar  XLXI_42 (.CurStep(CurStep[15:0]), 
+                                             .Step0(Step0[15:0]), 
+                                             .Step1(Step1[15:0]), 
+                                             .Step2(Step2[15:0]), 
+                                             .Step3(Step3[15:0]), 
+                                             .Step4(Step4[15:0]), 
+                                             .Step5(Step5[15:0]), 
+                                             .Step6(Step6[15:0]), 
+                                             .Step7(Step7[15:0]), 
+                                             .D0(A0), 
+                                             .D1(A1), 
+                                             .D2(A2), 
+                                             .D3(A3), 
+                                             .D4(A4), 
+                                             .D5(A5), 
+                                             .D6(A6), 
+                                             .D7(A7));
+endmodule

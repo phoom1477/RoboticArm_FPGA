@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog LED_ProgressBar_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LED_ProgressBar C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym LED_ProgressBar C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/LED_ProgressBar.sym 

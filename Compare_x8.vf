@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Compare_x8.vf
+// /___/   /\     Timestamp : 12/14/2020 23:33:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Compare_x8.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Compare_x8.sch
+//Design Name: Compare_x8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMPMC16_HXILINX_Compare_x8 (GT, LT, A, B);
+    
+
+   output GT;
+   output LT;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign GT = A > B  ;
+   assign LT = A < B  ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module Compare_x8(CurStep, 
+                  Step0, 
+                  Step1, 
+                  Step2, 
+                  Step3, 
+                  Step4, 
+                  Step5, 
+                  Step6, 
+                  Step7, 
+                  D0, 
+                  D1, 
+                  D2, 
+                  D3, 
+                  D4, 
+                  D5, 
+                  D6, 
+                  D7);
+
+    input [15:0] CurStep;
+    input [15:0] Step0;
+    input [15:0] Step1;
+    input [15:0] Step2;
+    input [15:0] Step3;
+    input [15:0] Step4;
+    input [15:0] Step5;
+    input [15:0] Step6;
+    input [15:0] Step7;
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+   output D4;
+   output D5;
+   output D6;
+   output D7;
+   
+   
+   (* HU_SET = "XLXI_24_51" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_24 (.A(CurStep[15:0]), 
+                                        .B(Step2[15:0]), 
+                                        .GT(D2), 
+                                        .LT());
+   (* HU_SET = "XLXI_25_50" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_25 (.A(CurStep[15:0]), 
+                                        .B(Step3[15:0]), 
+                                        .GT(D3), 
+                                        .LT());
+   (* HU_SET = "XLXI_26_53" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_26 (.A(CurStep[15:0]), 
+                                        .B(Step0[15:0]), 
+                                        .GT(D0), 
+                                        .LT());
+   (* HU_SET = "XLXI_27_52" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_27 (.A(CurStep[15:0]), 
+                                        .B(Step1[15:0]), 
+                                        .GT(D1), 
+                                        .LT());
+   (* HU_SET = "XLXI_32_48" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_32 (.A(CurStep[15:0]), 
+                                        .B(Step6[15:0]), 
+                                        .GT(D6), 
+                                        .LT());
+   (* HU_SET = "XLXI_33_47" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_33 (.A(CurStep[15:0]), 
+                                        .B(Step7[15:0]), 
+                                        .GT(D7), 
+                                        .LT());
+   (* HU_SET = "XLXI_34_49" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_34 (.A(CurStep[15:0]), 
+                                        .B(Step4[15:0]), 
+                                        .GT(D4), 
+                                        .LT());
+   (* HU_SET = "XLXI_35_46" *) 
+   COMPMC16_HXILINX_Compare_x8  XLXI_35 (.A(CurStep[15:0]), 
+                                        .B(Step5[15:0]), 
+                                        .GT(D5), 
+                                        .LT());
+endmodule
