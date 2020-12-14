@@ -18,9 +18,9 @@ WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_14"
    because those design objects do not contain or drive any instances of the
    correct type.
 
-WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_16"
+WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_15"
    CLOCK_DEDICATED_ROUTE>: This constraint cannot be distributed from the design
-   objects matching 'NET: UniqueName: /main/EXPANDED/XLXI_32\/XLXI_167\/XLXN_16'
+   objects matching 'NET: UniqueName: /main/EXPANDED/XLXI_32\/XLXI_167\/XLXN_15'
    because those design objects do not contain or drive any instances of the
    correct type.
 
@@ -30,9 +30,9 @@ WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_13"
    because those design objects do not contain or drive any instances of the
    correct type.
 
-WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_15"
+WARNING:ConstraintSystem:119 - Constraint <NET "XLXI_32/XLXI_167/XLXN_16"
    CLOCK_DEDICATED_ROUTE>: This constraint cannot be distributed from the design
-   objects matching 'NET: UniqueName: /main/EXPANDED/XLXI_32\/XLXI_167\/XLXN_15'
+   objects matching 'NET: UniqueName: /main/EXPANDED/XLXI_32\/XLXI_167\/XLXN_16'
    because those design objects do not contain or drive any instances of the
    correct type.
 
@@ -57,10 +57,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   5
 
-Total memory usage is 4397368 kilobytes
+Total memory usage is 4397380 kilobytes
 
 Writing NGD file "main.ngd" ...
-Total REAL time to NGDBUILD completion:  2 sec
-Total CPU time to NGDBUILD completion:   2 sec
+Total REAL time to NGDBUILD completion:  3 sec
+Total CPU time to NGDBUILD completion:   3 sec
 
 Writing NGDBUILD log file "main.bld"...

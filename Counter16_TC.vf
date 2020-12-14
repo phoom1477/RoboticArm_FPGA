@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Counter16_TC.vf
-// /___/   /\     Timestamp : 12/11/2020 01:11:57
+// /___/   /\     Timestamp : 12/11/2020 15:03:06
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -67,7 +67,7 @@ module Counter16_TC(CLK,
    wire XLXN_25;
    wire XLXN_26;
    
-   (* HU_SET = "XLXI_1_21" *) 
+   (* HU_SET = "XLXI_1_50" *) 
    CB4CE_HXILINX_Counter16_TC  XLXI_1 (.C(CLK), 
                                       .CE(XLXN_2), 
                                       .CLR(RESET), 

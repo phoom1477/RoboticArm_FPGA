@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan6" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="RegPIPO(15:12)" />
+        <signal name="RegPIPO(7:4)" />
+        <signal name="RegPIPO(3:0)" />
+        <signal name="RegPIPO(11:8)" />
+        <signal name="COM(3:0)" />
+        <signal name="RegPIPO(15:0)" />
+        <signal name="SEG(6:0)" />
+        <signal name="XLXN_4(15:0)" />
+        <signal name="PWM_Servo1" />
+        <signal name="ESP_CLK_P7">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="ESP_IN_P5" />
+        <signal name="PWM_Servo2" />
+        <signal name="PWM_Servo3" />
+        <signal name="PWM_Servo4" />
+        <signal name="PWM_Servo5" />
+        <signal name="ESP_CLK_P11">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="ESP_IN_P9" />
+        <signal name="ESP_CLK_P16">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="ESP_IN_P14" />
+        <signal name="ESP_CLK_P23">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="ESP_IN_P21" />
+        <signal name="ESP_IN_P6" />
+        <signal name="ESP_CLK_P8">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="CLK_P123" />
+        <signal name="XLXN_168(15:0)" />
+        <signal name="XLXN_170(15:0)" />
+        <signal name="XLXN_178(15:0)" />
+        <signal name="XLXN_179(15:0)" />
+        <signal name="XLXN_180(15:0)" />
+        <signal name="XLXN_181(15:0)" />
+        <signal name="XLXN_182(15:0)" />
+        <signal name="XLXN_184(15:0)" />
+        <signal name="XLXN_185" />
+        <signal name="XLXN_186" />
+        <signal name="XLXN_187" />
+        <signal name="XLXN_188" />
+        <signal name="XLXN_190" />
+        <signal name="XLXN_191" />
+        <signal name="XLXN_195" />
+        <signal name="XLXN_199" />
+        <signal name="XLXN_200" />
+        <signal name="XLXN_203" />
+        <signal name="XLXN_204" />
+        <signal name="XLXN_205" />
+        <signal name="XLXN_206" />
+        <signal name="XLXN_214" />
+        <signal name="XLXN_215" />
+        <signal name="XLXN_216" />
+        <signal name="XLXN_217(15:0)" />
+        <signal name="XLXN_218(15:0)" />
+        <signal name="XLXN_219(15:0)" />
+        <signal name="XLXN_220(15:0)" />
+        <signal name="XLXN_232" />
+        <signal name="XLXN_233" />
+        <signal name="XLXN_239" />
+        <signal name="XLXN_240" />
+        <signal name="XLXN_241" />
+        <signal name="XLXN_263" />
+        <signal name="XLXN_265" />
+        <signal name="XLXN_267" />
+        <signal name="XLXN_269" />
+        <signal name="XLXN_270" />
+        <signal name="XLXN_284" />
+        <signal name="XLXN_283" />
+        <signal name="XLXN_302" />
+        <signal name="XLXN_312" />
+        <signal name="XLXN_313" />
+        <signal name="XLXN_316" />
+        <signal name="XLXN_314" />
+        <signal name="XLXN_315" />
+        <signal name="XLXN_324" />
+        <signal name="XLXN_325(15:0)" />
+        <signal name="XLXN_323" />
+        <signal name="XLXN_322" />
+        <signal name="XLXN_332" />
+        <signal name="XLXN_321" />
+        <signal name="XLXN_358" />
+        <signal name="XLXN_357(15:0)" />
+        <signal name="XLXN_356(15:0)" />
+        <signal name="XLXN_355(15:0)" />
+        <signal name="XLXN_354(15:0)" />
+        <signal name="XLXN_352" />
+        <signal name="XLXN_351" />
+        <signal name="XLXN_353" />
+        <signal name="XLXN_349" />
+        <signal name="XLXN_348" />
+        <signal name="XLXN_350" />
+        <signal name="XLXN_338" />
+        <signal name="XLXN_339" />
+        <signal name="XLXN_336" />
+        <signal name="XLXN_337" />
+        <signal name="XLXN_335(15:0)" />
+        <signal name="XLXN_388" />
+        <signal name="XLXN_391" />
+        <signal name="XLXN_392" />
+        <signal name="XLXN_397(15:0)" />
+        <signal name="XLXN_401" />
+        <signal name="XLXN_275" />
+        <signal name="XLXN_275" />
+        <signal name="XLXN_405(15:0)" />
+        <signal name="SEL_P45" />
+        <port polarity="Output" name="COM(3:0)" />
+        <port polarity="Output" name="SEG(6:0)" />
+        <port polarity="Output" name="PWM_Servo1" />
+        <port polarity="Input" name="ESP_CLK_P7" />
+        <port polarity="Input" name="ESP_IN_P5" />
+        <port polarity="Output" name="PWM_Servo2" />
+        <port polarity="Output" name="PWM_Servo3" />
+        <port polarity="Output" name="PWM_Servo4" />
+        <port polarity="Output" name="PWM_Servo5" />
+        <port polarity="Input" name="ESP_CLK_P11" />
+        <port polarity="Input" name="ESP_IN_P9" />
+        <port polarity="Input" name="ESP_CLK_P16" />
+        <port polarity="Input" name="ESP_IN_P14" />
+        <port polarity="Input" name="ESP_CLK_P23" />
+        <port polarity="Input" name="ESP_IN_P21" />
+        <port polarity="Input" name="ESP_IN_P6" />
+        <port polarity="Input" name="ESP_CLK_P8" />
+        <port polarity="Input" name="CLK_P123" />
+        <port polarity="Input" name="SEL_P45" />
+        <blockdef name="segment_upgrade">
+            <timestamp>2020-11-4T8:36:1</timestamp>
+            <rect width="304" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-300" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="432" y1="-288" y2="-288" x1="368" />
+            <rect width="64" x="368" y="-300" height="24" />
+            <line x2="432" y1="-224" y2="-224" x1="368" />
+            <rect width="64" x="368" y="-236" height="24" />
+        </blockdef>
+        <blockdef name="ServoControl">
+            <timestamp>2020-12-11T7:48:38</timestamp>
+            <rect width="512" x="64" y="-192" height="192" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <line x2="640" y1="-160" y2="-160" x1="576" />
+            <line x2="640" y1="-96" y2="-96" x1="576" />
+            <rect width="64" x="576" y="-108" height="24" />
+        </blockdef>
+        <blockdef name="m8_1e">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="96" y1="-224" y2="-224" x1="0" />
+            <line x2="96" y1="-160" y2="-160" x1="0" />
+            <line x2="96" y1="-96" y2="-96" x1="0" />
+            <line x2="96" y1="-288" y2="-288" x1="0" />
+            <line x2="96" y1="-352" y2="-352" x1="0" />
+            <line x2="96" y1="-416" y2="-416" x1="0" />
+            <line x2="96" y1="-544" y2="-544" x1="0" />
+            <line x2="96" y1="-608" y2="-608" x1="0" />
+            <line x2="96" y1="-672" y2="-672" x1="0" />
+            <line x2="96" y1="-736" y2="-736" x1="0" />
+            <line x2="96" y1="-160" y2="-160" x1="160" />
+            <line x2="160" y1="-268" y2="-160" x1="160" />
+            <line x2="96" y1="-224" y2="-224" x1="128" />
+            <line x2="128" y1="-264" y2="-224" x1="128" />
+            <line x2="96" y1="-96" y2="-96" x1="192" />
+            <line x2="192" y1="-276" y2="-96" x1="192" />
+            <line x2="96" y1="-32" y2="-32" x1="224" />
+            <line x2="224" y1="-280" y2="-32" x1="224" />
+            <line x2="256" y1="-512" y2="-512" x1="320" />
+            <line x2="96" y1="-768" y2="-256" x1="96" />
+            <line x2="96" y1="-704" y2="-768" x1="256" />
+            <line x2="256" y1="-288" y2="-704" x1="256" />
+            <line x2="256" y1="-256" y2="-288" x1="96" />
+            <line x2="96" y1="-32" y2="-32" x1="0" />
+            <line x2="96" y1="-480" y2="-480" x1="0" />
+        </blockdef>
+        <blockdef name="vcc">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-64" x1="64" />
+            <line x2="64" y1="0" y2="-32" x1="64" />
+            <line x2="32" y1="-64" y2="-64" x1="96" />
+        </blockdef>
+        <block symbolname="segment_upgrade" name="XLXI_32">
+            <blockpin signalname="RegPIPO(15:12)" name="C1(3:0)" />
+            <blockpin signalname="RegPIPO(11:8)" name="C2(3:0)" />
+            <blockpin signalname="RegPIPO(7:4)" name="C3(3:0)" />
+            <blockpin signalname="RegPIPO(3:0)" name="C4(3:0)" />
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="SEG(6:0)" name="SEG_OUT(6:0)" />
+            <blockpin signalname="COM(3:0)" name="COMM(3:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_39">
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P11" name="ESP_CLK" />
+            <blockpin signalname="ESP_IN_P9" name="ESP_IN" />
+            <blockpin signalname="PWM_Servo2" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_217(15:0)" name="RegPIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_40">
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P16" name="ESP_CLK" />
+            <blockpin signalname="ESP_IN_P14" name="ESP_IN" />
+            <blockpin signalname="PWM_Servo3" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_218(15:0)" name="RegPIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_41">
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P23" name="ESP_CLK" />
+            <blockpin signalname="ESP_IN_P21" name="ESP_IN" />
+            <blockpin signalname="PWM_Servo4" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_219(15:0)" name="RegPIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_42">
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P8" name="ESP_CLK" />
+            <blockpin signalname="ESP_IN_P6" name="ESP_IN" />
+            <blockpin signalname="PWM_Servo5" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_220(15:0)" name="RegPIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_38">
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P7" name="ESP_CLK" />
+            <blockpin signalname="ESP_IN_P5" name="ESP_IN" />
+            <blockpin signalname="PWM_Servo1" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_178(15:0)" name="RegPIPO(15:0)" />
+        </block>
+        <block symbolname="m8_1e" name="XLXI_47(15:0)">
+            <blockpin signalname="XLXN_178(15:0)" name="D0" />
+            <blockpin signalname="XLXN_217(15:0)" name="D1" />
+            <blockpin signalname="XLXN_218(15:0)" name="D2" />
+            <blockpin signalname="XLXN_219(15:0)" name="D3" />
+            <blockpin signalname="XLXN_220(15:0)" name="D4" />
+            <blockpin name="D5" />
+            <blockpin name="D6" />
+            <blockpin name="D7" />
+            <blockpin signalname="XLXN_184(15:0)" name="E" />
+            <blockpin signalname="XLXN_356(15:0)" name="S0" />
+            <blockpin signalname="XLXN_357(15:0)" name="S1" />
+            <blockpin signalname="XLXN_405(15:0)" name="S2" />
+            <blockpin signalname="RegPIPO(15:0)" name="O" />
+        </block>
+        <block symbolname="vcc" name="XLXI_79(15:0)">
+            <blockpin signalname="XLXN_184(15:0)" name="P" />
+        </block>
+        <block symbolname="vcc" name="XLXI_82">
+            <blockpin name="P" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="7040" height="5440">
+        <branch name="RegPIPO(15:12)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3072" y="144" type="branch" />
+            <wire x2="3072" y1="144" y2="144" x1="3024" />
+            <wire x2="3312" y1="144" y2="144" x1="3072" />
+            <wire x2="3312" y1="144" y2="704" x1="3312" />
+            <wire x2="3392" y1="704" y2="704" x1="3312" />
+        </branch>
+        <branch name="RegPIPO(7:4)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3056" y="304" type="branch" />
+            <wire x2="3056" y1="304" y2="304" x1="3024" />
+            <wire x2="3184" y1="304" y2="304" x1="3056" />
+            <wire x2="3184" y1="304" y2="832" x1="3184" />
+            <wire x2="3392" y1="832" y2="832" x1="3184" />
+        </branch>
+        <branch name="RegPIPO(3:0)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3056" y="384" type="branch" />
+            <wire x2="3056" y1="384" y2="384" x1="3024" />
+            <wire x2="3120" y1="384" y2="384" x1="3056" />
+            <wire x2="3120" y1="384" y2="896" x1="3120" />
+            <wire x2="3392" y1="896" y2="896" x1="3120" />
+        </branch>
+        <branch name="RegPIPO(11:8)">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3072" y="224" type="branch" />
+            <wire x2="3072" y1="224" y2="224" x1="3024" />
+            <wire x2="3248" y1="224" y2="224" x1="3072" />
+            <wire x2="3248" y1="224" y2="768" x1="3248" />
+            <wire x2="3392" y1="768" y2="768" x1="3248" />
+        </branch>
+        <instance x="3392" y="992" name="XLXI_32" orien="R0">
+        </instance>
+        <branch name="COM(3:0)">
+            <wire x2="3984" y1="768" y2="768" x1="3824" />
+        </branch>
+        <branch name="SEG(6:0)">
+            <wire x2="3984" y1="704" y2="704" x1="3824" />
+        </branch>
+        <iomarker fontsize="28" x="3984" y="704" name="SEG(6:0)" orien="R0" />
+        <iomarker fontsize="28" x="3984" y="768" name="COM(3:0)" orien="R0" />
+        <bustap x2="3024" y1="144" y2="144" x1="2928" />
+        <bustap x2="3024" y1="384" y2="384" x1="2928" />
+        <bustap x2="3024" y1="304" y2="304" x1="2928" />
+        <bustap x2="3024" y1="224" y2="224" x1="2928" />
+        <branch name="RegPIPO(15:0)">
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="816" type="branch" />
+            <wire x2="2928" y1="848" y2="848" x1="2768" />
+            <wire x2="2928" y1="144" y2="224" x1="2928" />
+            <wire x2="2928" y1="224" y2="304" x1="2928" />
+            <wire x2="2928" y1="304" y2="384" x1="2928" />
+            <wire x2="2928" y1="384" y2="816" x1="2928" />
+            <wire x2="2928" y1="816" y2="848" x1="2928" />
+        </branch>
+        <branch name="PWM_Servo1">
+            <wire x2="1440" y1="560" y2="560" x1="1408" />
+        </branch>
+        <branch name="ESP_CLK_P7">
+            <wire x2="768" y1="624" y2="624" x1="448" />
+        </branch>
+        <branch name="ESP_IN_P5">
+            <wire x2="768" y1="560" y2="560" x1="448" />
+        </branch>
+        <branch name="PWM_Servo2">
+            <wire x2="1440" y1="1104" y2="1104" x1="1408" />
+        </branch>
+        <branch name="PWM_Servo3">
+            <wire x2="1440" y1="1552" y2="1552" x1="1408" />
+        </branch>
+        <branch name="PWM_Servo4">
+            <wire x2="1456" y1="2048" y2="2048" x1="1408" />
+        </branch>
+        <branch name="PWM_Servo5">
+            <wire x2="1440" y1="2528" y2="2528" x1="1408" />
+        </branch>
+        <branch name="ESP_CLK_P11">
+            <wire x2="768" y1="1168" y2="1168" x1="432" />
+        </branch>
+        <branch name="ESP_IN_P9">
+            <wire x2="768" y1="1104" y2="1104" x1="432" />
+        </branch>
+        <branch name="ESP_CLK_P16">
+            <wire x2="768" y1="1616" y2="1616" x1="432" />
+        </branch>
+        <branch name="ESP_IN_P14">
+            <wire x2="768" y1="1552" y2="1552" x1="432" />
+        </branch>
+        <branch name="ESP_CLK_P23">
+            <wire x2="768" y1="2112" y2="2112" x1="448" />
+        </branch>
+        <branch name="ESP_IN_P21">
+            <wire x2="768" y1="2048" y2="2048" x1="448" />
+        </branch>
+        <branch name="ESP_IN_P6">
+            <wire x2="768" y1="2528" y2="2528" x1="432" />
+        </branch>
+        <branch name="ESP_CLK_P8">
+            <wire x2="768" y1="2592" y2="2592" x1="432" />
+        </branch>
+        <instance x="768" y="1264" name="XLXI_39" orien="R0">
+        </instance>
+        <instance x="768" y="1712" name="XLXI_40" orien="R0">
+        </instance>
+        <instance x="768" y="2208" name="XLXI_41" orien="R0">
+        </instance>
+        <instance x="768" y="2688" name="XLXI_42" orien="R0">
+        </instance>
+        <instance x="768" y="720" name="XLXI_38" orien="R0">
+        </instance>
+        <iomarker fontsize="28" x="448" y="624" name="ESP_CLK_P7" orien="R180" />
+        <iomarker fontsize="28" x="448" y="560" name="ESP_IN_P5" orien="R180" />
+        <iomarker fontsize="28" x="432" y="2592" name="ESP_CLK_P8" orien="R180" />
+        <iomarker fontsize="28" x="432" y="2528" name="ESP_IN_P6" orien="R180" />
+        <iomarker fontsize="28" x="448" y="2112" name="ESP_CLK_P23" orien="R180" />
+        <iomarker fontsize="28" x="448" y="2048" name="ESP_IN_P21" orien="R180" />
+        <iomarker fontsize="28" x="432" y="1616" name="ESP_CLK_P16" orien="R180" />
+        <iomarker fontsize="28" x="432" y="1552" name="ESP_IN_P14" orien="R180" />
+        <iomarker fontsize="28" x="432" y="1168" name="ESP_CLK_P11" orien="R180" />
+        <iomarker fontsize="28" x="432" y="1104" name="ESP_IN_P9" orien="R180" />
+        <iomarker fontsize="28" x="432" y="192" name="CLK_P123" orien="R180" />
+        <branch name="XLXN_178(15:0)">
+            <wire x2="2448" y1="624" y2="624" x1="1408" />
+        </branch>
+        <branch name="CLK_P123">
+            <wire x2="640" y1="192" y2="192" x1="432" />
+            <wire x2="640" y1="192" y2="688" x1="640" />
+            <wire x2="768" y1="688" y2="688" x1="640" />
+            <wire x2="640" y1="688" y2="1232" x1="640" />
+            <wire x2="768" y1="1232" y2="1232" x1="640" />
+            <wire x2="640" y1="1232" y2="1680" x1="640" />
+            <wire x2="768" y1="1680" y2="1680" x1="640" />
+            <wire x2="640" y1="1680" y2="2176" x1="640" />
+            <wire x2="768" y1="2176" y2="2176" x1="640" />
+            <wire x2="640" y1="2176" y2="2656" x1="640" />
+            <wire x2="768" y1="2656" y2="2656" x1="640" />
+            <wire x2="2832" y1="192" y2="192" x1="640" />
+            <wire x2="2832" y1="192" y2="960" x1="2832" />
+            <wire x2="3392" y1="960" y2="960" x1="2832" />
+        </branch>
+        <branch name="XLXN_184(15:0)">
+            <wire x2="2448" y1="1328" y2="1328" x1="2272" />
+        </branch>
+        <instance x="2448" y="1360" name="XLXI_47(15:0)" orien="R0" />
+        <instance x="2272" y="1392" name="XLXI_79(15:0)" orien="R270" />
+        <iomarker fontsize="28" x="1440" y="560" name="PWM_Servo1" orien="R0" />
+        <iomarker fontsize="28" x="1440" y="1104" name="PWM_Servo2" orien="R0" />
+        <iomarker fontsize="28" x="1440" y="1552" name="PWM_Servo3" orien="R0" />
+        <iomarker fontsize="28" x="1456" y="2048" name="PWM_Servo4" orien="R0" />
+        <iomarker fontsize="28" x="1440" y="2528" name="PWM_Servo5" orien="R0" />
+        <branch name="XLXN_220(15:0)">
+            <wire x2="1920" y1="2592" y2="2592" x1="1408" />
+            <wire x2="1920" y1="880" y2="2592" x1="1920" />
+            <wire x2="2448" y1="880" y2="880" x1="1920" />
+        </branch>
+        <branch name="XLXN_219(15:0)">
+            <wire x2="1840" y1="2112" y2="2112" x1="1408" />
+            <wire x2="1840" y1="816" y2="2112" x1="1840" />
+            <wire x2="2448" y1="816" y2="816" x1="1840" />
+        </branch>
+        <branch name="XLXN_218(15:0)">
+            <wire x2="1760" y1="1616" y2="1616" x1="1408" />
+            <wire x2="1760" y1="752" y2="1616" x1="1760" />
+            <wire x2="2448" y1="752" y2="752" x1="1760" />
+        </branch>
+        <branch name="XLXN_217(15:0)">
+            <wire x2="1680" y1="1168" y2="1168" x1="1408" />
+            <wire x2="1680" y1="688" y2="1168" x1="1680" />
+            <wire x2="2448" y1="688" y2="688" x1="1680" />
+        </branch>
+        <instance x="2272" y="2256" name="XLXI_82" orien="R270" />
+        <iomarker fontsize="28" x="2288" y="2256" name="SEL_P45" orien="R180" />
+        <branch name="XLXN_405(15:0)">
+            <wire x2="2448" y1="1264" y2="1264" x1="2336" />
+            <wire x2="2336" y1="1264" y2="2160" x1="2336" />
+            <wire x2="4480" y1="2160" y2="2160" x1="2336" />
+        </branch>
+        <branch name="SEL_P45">
+            <wire x2="2304" y1="2256" y2="2256" x1="2288" />
+            <wire x2="2304" y1="2240" y2="2256" x1="2304" />
+            <wire x2="3008" y1="2240" y2="2240" x1="2304" />
+            <wire x2="3728" y1="2048" y2="2048" x1="3008" />
+            <wire x2="3008" y1="2048" y2="2240" x1="3008" />
+        </branch>
+    </sheet>
+</drawing>

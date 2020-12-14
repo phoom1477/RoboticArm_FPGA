@@ -6,13 +6,10 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_10" />
-        <signal name="XLXN_11" />
-        <signal name="XLXN_1" />
+        <signal name="XLXN_9" />
         <signal name="XLXN_7" />
         <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_19" />
+        <signal name="XLXN_1" />
         <signal name="XLXN_20" />
         <signal name="CLK_IN" />
         <signal name="CLK_OUT" />
@@ -59,12 +56,6 @@
             <blockpin signalname="XLXN_20" name="T" />
             <blockpin signalname="XLXN_1" name="Q" />
         </block>
-        <block symbolname="ftc" name="XLXI_4">
-            <blockpin signalname="XLXN_1" name="C" />
-            <blockpin signalname="XLXN_9" name="CLR" />
-            <blockpin signalname="XLXN_20" name="T" />
-            <blockpin signalname="CLK_OUT" name="Q" />
-        </block>
         <block symbolname="cd4ce" name="XLXI_3">
             <blockpin signalname="XLXN_8" name="C" />
             <blockpin signalname="XLXN_20" name="CE" />
@@ -87,58 +78,64 @@
             <blockpin name="Q3" />
             <blockpin signalname="XLXN_8" name="TC" />
         </block>
+        <block symbolname="ftc" name="XLXI_4">
+            <blockpin signalname="XLXN_1" name="C" />
+            <blockpin signalname="XLXN_9" name="CLR" />
+            <blockpin signalname="XLXN_20" name="T" />
+            <blockpin signalname="CLK_OUT" name="Q" />
+        </block>
         <block symbolname="vcc" name="XLXI_13">
             <blockpin signalname="XLXN_20" name="P" />
         </block>
     </netlist>
-    <sheet sheetnum="1" width="3520" height="2720">
+    <sheet sheetnum="1" width="2720" height="1760">
         <branch name="XLXN_9">
-            <wire x2="784" y1="1104" y2="1200" x1="784" />
-            <wire x2="1264" y1="1200" y2="1200" x1="784" />
-            <wire x2="1808" y1="1200" y2="1200" x1="1264" />
-            <wire x2="2272" y1="1200" y2="1200" x1="1808" />
-            <wire x2="1264" y1="1104" y2="1200" x1="1264" />
-            <wire x2="1808" y1="1040" y2="1200" x1="1808" />
-            <wire x2="2272" y1="1040" y2="1200" x1="2272" />
+            <wire x2="464" y1="1136" y2="1232" x1="464" />
+            <wire x2="944" y1="1232" y2="1232" x1="464" />
+            <wire x2="1488" y1="1232" y2="1232" x1="944" />
+            <wire x2="1952" y1="1232" y2="1232" x1="1488" />
+            <wire x2="944" y1="1136" y2="1232" x1="944" />
+            <wire x2="1488" y1="1072" y2="1232" x1="1488" />
+            <wire x2="1952" y1="1072" y2="1232" x1="1952" />
         </branch>
-        <instance x="1808" y="1072" name="XLXI_1" orien="R0" />
+        <instance x="1488" y="1104" name="XLXI_1" orien="R0" />
         <branch name="XLXN_7">
-            <wire x2="1792" y1="1008" y2="1008" x1="1648" />
-            <wire x2="1808" y1="944" y2="944" x1="1792" />
-            <wire x2="1792" y1="944" y2="1008" x1="1792" />
+            <wire x2="1472" y1="1040" y2="1040" x1="1328" />
+            <wire x2="1488" y1="976" y2="976" x1="1472" />
+            <wire x2="1472" y1="976" y2="1040" x1="1472" />
         </branch>
-        <instance x="1264" y="1136" name="XLXI_3" orien="R0" />
+        <instance x="944" y="1168" name="XLXI_3" orien="R0" />
         <branch name="XLXN_8">
-            <wire x2="1264" y1="1008" y2="1008" x1="1168" />
+            <wire x2="944" y1="1040" y2="1040" x1="848" />
         </branch>
-        <instance x="784" y="1136" name="XLXI_8" orien="R0" />
-        <instance x="2272" y="1072" name="XLXI_4" orien="R0" />
+        <instance x="464" y="1168" name="XLXI_8" orien="R0" />
+        <instance x="1952" y="1104" name="XLXI_4" orien="R0" />
         <branch name="XLXN_1">
-            <wire x2="2208" y1="816" y2="816" x1="2192" />
-            <wire x2="2208" y1="816" y2="944" x1="2208" />
-            <wire x2="2272" y1="944" y2="944" x1="2208" />
+            <wire x2="1888" y1="848" y2="848" x1="1872" />
+            <wire x2="1888" y1="848" y2="976" x1="1888" />
+            <wire x2="1952" y1="976" y2="976" x1="1888" />
         </branch>
-        <instance x="688" y="448" name="XLXI_13" orien="R0" />
+        <instance x="368" y="480" name="XLXI_13" orien="R0" />
         <branch name="XLXN_20">
-            <wire x2="784" y1="448" y2="448" x1="752" />
-            <wire x2="1248" y1="448" y2="448" x1="784" />
-            <wire x2="1248" y1="448" y2="944" x1="1248" />
-            <wire x2="1264" y1="944" y2="944" x1="1248" />
-            <wire x2="1792" y1="448" y2="448" x1="1248" />
-            <wire x2="1792" y1="448" y2="816" x1="1792" />
-            <wire x2="1808" y1="816" y2="816" x1="1792" />
-            <wire x2="2256" y1="448" y2="448" x1="1792" />
-            <wire x2="2256" y1="448" y2="816" x1="2256" />
-            <wire x2="2272" y1="816" y2="816" x1="2256" />
-            <wire x2="784" y1="448" y2="944" x1="784" />
+            <wire x2="464" y1="480" y2="480" x1="432" />
+            <wire x2="928" y1="480" y2="480" x1="464" />
+            <wire x2="928" y1="480" y2="976" x1="928" />
+            <wire x2="944" y1="976" y2="976" x1="928" />
+            <wire x2="1472" y1="480" y2="480" x1="928" />
+            <wire x2="1472" y1="480" y2="848" x1="1472" />
+            <wire x2="1488" y1="848" y2="848" x1="1472" />
+            <wire x2="1936" y1="480" y2="480" x1="1472" />
+            <wire x2="1936" y1="480" y2="848" x1="1936" />
+            <wire x2="1952" y1="848" y2="848" x1="1936" />
+            <wire x2="464" y1="480" y2="976" x1="464" />
         </branch>
         <branch name="CLK_IN">
-            <wire x2="784" y1="1008" y2="1008" x1="752" />
+            <wire x2="464" y1="1040" y2="1040" x1="432" />
         </branch>
-        <iomarker fontsize="28" x="752" y="1008" name="CLK_IN" orien="R180" />
         <branch name="CLK_OUT">
-            <wire x2="2688" y1="816" y2="816" x1="2656" />
+            <wire x2="2368" y1="848" y2="848" x1="2336" />
         </branch>
-        <iomarker fontsize="28" x="2688" y="816" name="CLK_OUT" orien="R0" />
+        <iomarker fontsize="28" x="432" y="1040" name="CLK_IN" orien="R180" />
+        <iomarker fontsize="28" x="2368" y="848" name="CLK_OUT" orien="R0" />
     </sheet>
 </drawing>

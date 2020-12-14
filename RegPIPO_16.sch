@@ -6,16 +6,16 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="DataOut(5)" />
-        <signal name="DataOut(6)" />
         <signal name="CLK" />
         <signal name="DataOut(15:0)" />
+        <signal name="DataOut(7)" />
         <signal name="DataOut(0)" />
         <signal name="DataOut(1)" />
         <signal name="DataOut(2)" />
         <signal name="DataOut(3)" />
         <signal name="DataOut(4)" />
-        <signal name="DataOut(7)" />
+        <signal name="DataOut(5)" />
+        <signal name="DataOut(6)" />
         <signal name="DataIn(15:0)" />
         <signal name="DataIn(0)" />
         <signal name="DataIn(1)" />
@@ -26,13 +26,13 @@
         <signal name="DataIn(6)" />
         <signal name="DataIn(7)" />
         <signal name="DataOut(15)" />
-        <signal name="DataOut(8)" />
-        <signal name="DataOut(9)" />
+        <signal name="DataOut(14)" />
+        <signal name="DataOut(13)" />
+        <signal name="DataOut(12)" />
         <signal name="DataOut(10)" />
         <signal name="DataOut(11)" />
-        <signal name="DataOut(12)" />
-        <signal name="DataOut(13)" />
-        <signal name="DataOut(14)" />
+        <signal name="DataOut(9)" />
+        <signal name="DataOut(8)" />
         <signal name="DataIn(8)" />
         <signal name="DataIn(9)" />
         <signal name="DataIn(10)" />
@@ -53,26 +53,6 @@
             <line x2="64" y1="-128" y2="-144" x1="80" />
             <line x2="80" y1="-112" y2="-128" x1="64" />
         </blockdef>
-        <block symbolname="fd" name="XLXI_1">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="DataIn(0)" name="D" />
-            <blockpin signalname="DataOut(0)" name="Q" />
-        </block>
-        <block symbolname="fd" name="XLXI_2">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="DataIn(1)" name="D" />
-            <blockpin signalname="DataOut(1)" name="Q" />
-        </block>
-        <block symbolname="fd" name="XLXI_17">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="DataIn(2)" name="D" />
-            <blockpin signalname="DataOut(2)" name="Q" />
-        </block>
-        <block symbolname="fd" name="XLXI_18">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="DataIn(3)" name="D" />
-            <blockpin signalname="DataOut(3)" name="Q" />
-        </block>
         <block symbolname="fd" name="XLXI_31">
             <blockpin signalname="CLK" name="C" />
             <blockpin signalname="DataIn(4)" name="D" />
@@ -87,6 +67,26 @@
             <blockpin signalname="CLK" name="C" />
             <blockpin signalname="DataIn(6)" name="D" />
             <blockpin signalname="DataOut(6)" name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_18">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="DataIn(3)" name="D" />
+            <blockpin signalname="DataOut(3)" name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_17">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="DataIn(2)" name="D" />
+            <blockpin signalname="DataOut(2)" name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_2">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="DataIn(1)" name="D" />
+            <blockpin signalname="DataOut(1)" name="Q" />
+        </block>
+        <block symbolname="fd" name="XLXI_1">
+            <blockpin signalname="CLK" name="C" />
+            <blockpin signalname="DataIn(0)" name="D" />
+            <blockpin signalname="DataOut(0)" name="Q" />
         </block>
         <block symbolname="fd" name="XLXI_34">
             <blockpin signalname="CLK" name="C" />
@@ -136,322 +136,325 @@
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <branch name="CLK">
-            <wire x2="656" y1="2240" y2="2240" x1="576" />
-            <wire x2="816" y1="2240" y2="2240" x1="656" />
-            <wire x2="1360" y1="2240" y2="2240" x1="816" />
-            <wire x2="2080" y1="2240" y2="2240" x1="1360" />
-            <wire x2="2720" y1="2240" y2="2240" x1="2080" />
-            <wire x2="3360" y1="2240" y2="2240" x1="2720" />
-            <wire x2="4080" y1="2240" y2="2240" x1="3360" />
-            <wire x2="4736" y1="2240" y2="2240" x1="4080" />
-            <wire x2="5376" y1="2240" y2="2240" x1="4736" />
-            <wire x2="656" y1="2240" y2="3312" x1="656" />
-            <wire x2="816" y1="3312" y2="3312" x1="656" />
-            <wire x2="1360" y1="3312" y2="3312" x1="816" />
-            <wire x2="2080" y1="3312" y2="3312" x1="1360" />
-            <wire x2="2720" y1="3312" y2="3312" x1="2080" />
-            <wire x2="3360" y1="3312" y2="3312" x1="2720" />
-            <wire x2="4080" y1="3312" y2="3312" x1="3360" />
-            <wire x2="4736" y1="3312" y2="3312" x1="4080" />
-            <wire x2="5376" y1="3312" y2="3312" x1="4736" />
-            <wire x2="896" y1="2128" y2="2128" x1="816" />
-            <wire x2="816" y1="2128" y2="2240" x1="816" />
-            <wire x2="896" y1="3200" y2="3200" x1="816" />
-            <wire x2="816" y1="3200" y2="3312" x1="816" />
-            <wire x2="1600" y1="2128" y2="2128" x1="1360" />
-            <wire x2="1360" y1="2128" y2="2240" x1="1360" />
-            <wire x2="1600" y1="3200" y2="3200" x1="1360" />
-            <wire x2="1360" y1="3200" y2="3312" x1="1360" />
-            <wire x2="2240" y1="2128" y2="2128" x1="2080" />
-            <wire x2="2080" y1="2128" y2="2240" x1="2080" />
-            <wire x2="2240" y1="3200" y2="3200" x1="2080" />
-            <wire x2="2080" y1="3200" y2="3312" x1="2080" />
-            <wire x2="2928" y1="2128" y2="2128" x1="2720" />
-            <wire x2="2720" y1="2128" y2="2240" x1="2720" />
-            <wire x2="2928" y1="3200" y2="3200" x1="2720" />
-            <wire x2="2720" y1="3200" y2="3312" x1="2720" />
-            <wire x2="3600" y1="2128" y2="2128" x1="3360" />
-            <wire x2="3360" y1="2128" y2="2240" x1="3360" />
-            <wire x2="3600" y1="3200" y2="3200" x1="3360" />
-            <wire x2="3360" y1="3200" y2="3312" x1="3360" />
-            <wire x2="4080" y1="2128" y2="2240" x1="4080" />
-            <wire x2="4288" y1="2128" y2="2128" x1="4080" />
-            <wire x2="4080" y1="3200" y2="3312" x1="4080" />
-            <wire x2="4288" y1="3200" y2="3200" x1="4080" />
-            <wire x2="4736" y1="2128" y2="2240" x1="4736" />
-            <wire x2="4928" y1="2128" y2="2128" x1="4736" />
-            <wire x2="4736" y1="3200" y2="3312" x1="4736" />
-            <wire x2="4928" y1="3200" y2="3200" x1="4736" />
-            <wire x2="5376" y1="2128" y2="2240" x1="5376" />
-            <wire x2="5552" y1="2128" y2="2128" x1="5376" />
-            <wire x2="5376" y1="3200" y2="3312" x1="5376" />
-            <wire x2="5552" y1="3200" y2="3200" x1="5376" />
+            <wire x2="720" y1="2496" y2="2496" x1="640" />
+            <wire x2="880" y1="2496" y2="2496" x1="720" />
+            <wire x2="1424" y1="2496" y2="2496" x1="880" />
+            <wire x2="2144" y1="2496" y2="2496" x1="1424" />
+            <wire x2="2784" y1="2496" y2="2496" x1="2144" />
+            <wire x2="3424" y1="2496" y2="2496" x1="2784" />
+            <wire x2="4144" y1="2496" y2="2496" x1="3424" />
+            <wire x2="4800" y1="2496" y2="2496" x1="4144" />
+            <wire x2="5440" y1="2496" y2="2496" x1="4800" />
+            <wire x2="720" y1="2496" y2="3568" x1="720" />
+            <wire x2="880" y1="3568" y2="3568" x1="720" />
+            <wire x2="1424" y1="3568" y2="3568" x1="880" />
+            <wire x2="2144" y1="3568" y2="3568" x1="1424" />
+            <wire x2="2784" y1="3568" y2="3568" x1="2144" />
+            <wire x2="3424" y1="3568" y2="3568" x1="2784" />
+            <wire x2="4144" y1="3568" y2="3568" x1="3424" />
+            <wire x2="4800" y1="3568" y2="3568" x1="4144" />
+            <wire x2="5440" y1="3568" y2="3568" x1="4800" />
+            <wire x2="960" y1="2384" y2="2384" x1="880" />
+            <wire x2="880" y1="2384" y2="2496" x1="880" />
+            <wire x2="960" y1="3456" y2="3456" x1="880" />
+            <wire x2="880" y1="3456" y2="3568" x1="880" />
+            <wire x2="1664" y1="2384" y2="2384" x1="1424" />
+            <wire x2="1424" y1="2384" y2="2496" x1="1424" />
+            <wire x2="1664" y1="3456" y2="3456" x1="1424" />
+            <wire x2="1424" y1="3456" y2="3568" x1="1424" />
+            <wire x2="2304" y1="2384" y2="2384" x1="2144" />
+            <wire x2="2144" y1="2384" y2="2496" x1="2144" />
+            <wire x2="2304" y1="3456" y2="3456" x1="2144" />
+            <wire x2="2144" y1="3456" y2="3568" x1="2144" />
+            <wire x2="2992" y1="2384" y2="2384" x1="2784" />
+            <wire x2="2784" y1="2384" y2="2496" x1="2784" />
+            <wire x2="2992" y1="3456" y2="3456" x1="2784" />
+            <wire x2="2784" y1="3456" y2="3568" x1="2784" />
+            <wire x2="3664" y1="2384" y2="2384" x1="3424" />
+            <wire x2="3424" y1="2384" y2="2496" x1="3424" />
+            <wire x2="3664" y1="3456" y2="3456" x1="3424" />
+            <wire x2="3424" y1="3456" y2="3568" x1="3424" />
+            <wire x2="4144" y1="2384" y2="2496" x1="4144" />
+            <wire x2="4352" y1="2384" y2="2384" x1="4144" />
+            <wire x2="4144" y1="3456" y2="3568" x1="4144" />
+            <wire x2="4352" y1="3456" y2="3456" x1="4144" />
+            <wire x2="4800" y1="2384" y2="2496" x1="4800" />
+            <wire x2="4992" y1="2384" y2="2384" x1="4800" />
+            <wire x2="4800" y1="3456" y2="3568" x1="4800" />
+            <wire x2="4992" y1="3456" y2="3456" x1="4800" />
+            <wire x2="5440" y1="2384" y2="2496" x1="5440" />
+            <wire x2="5616" y1="2384" y2="2384" x1="5440" />
+            <wire x2="5440" y1="3456" y2="3568" x1="5440" />
+            <wire x2="5616" y1="3456" y2="3456" x1="5440" />
         </branch>
         <branch name="DataOut(15:0)">
-            <wire x2="2080" y1="1424" y2="1424" x1="1360" />
-            <wire x2="2720" y1="1424" y2="1424" x1="2080" />
-            <wire x2="3360" y1="1424" y2="1424" x1="2720" />
-            <wire x2="4080" y1="1424" y2="1424" x1="3360" />
-            <wire x2="4720" y1="1424" y2="1424" x1="4080" />
-            <wire x2="5360" y1="1424" y2="1424" x1="4720" />
-            <wire x2="6000" y1="1424" y2="1424" x1="5360" />
-            <wire x2="6256" y1="1424" y2="1424" x1="6000" />
-            <wire x2="6320" y1="1424" y2="1424" x1="6256" />
-            <wire x2="6256" y1="1424" y2="2496" x1="6256" />
-            <wire x2="2096" y1="2496" y2="2496" x1="1360" />
-            <wire x2="2720" y1="2496" y2="2496" x1="2096" />
-            <wire x2="3360" y1="2496" y2="2496" x1="2720" />
-            <wire x2="4080" y1="2496" y2="2496" x1="3360" />
-            <wire x2="4720" y1="2496" y2="2496" x1="4080" />
-            <wire x2="5360" y1="2496" y2="2496" x1="4720" />
-            <wire x2="6000" y1="2496" y2="2496" x1="5360" />
-            <wire x2="6256" y1="2496" y2="2496" x1="6000" />
+            <wire x2="2144" y1="1680" y2="1680" x1="1424" />
+            <wire x2="2784" y1="1680" y2="1680" x1="2144" />
+            <wire x2="3424" y1="1680" y2="1680" x1="2784" />
+            <wire x2="4144" y1="1680" y2="1680" x1="3424" />
+            <wire x2="4784" y1="1680" y2="1680" x1="4144" />
+            <wire x2="5424" y1="1680" y2="1680" x1="4784" />
+            <wire x2="6064" y1="1680" y2="1680" x1="5424" />
+            <wire x2="6320" y1="1680" y2="1680" x1="6064" />
+            <wire x2="6384" y1="1680" y2="1680" x1="6320" />
+            <wire x2="6320" y1="1680" y2="2752" x1="6320" />
+            <wire x2="2160" y1="2752" y2="2752" x1="1424" />
+            <wire x2="2784" y1="2752" y2="2752" x1="2160" />
+            <wire x2="3424" y1="2752" y2="2752" x1="2784" />
+            <wire x2="4144" y1="2752" y2="2752" x1="3424" />
+            <wire x2="4784" y1="2752" y2="2752" x1="4144" />
+            <wire x2="5424" y1="2752" y2="2752" x1="4784" />
+            <wire x2="6064" y1="2752" y2="2752" x1="5424" />
+            <wire x2="6320" y1="2752" y2="2752" x1="6064" />
         </branch>
-        <bustap x2="1360" y1="1424" y2="1520" x1="1360" />
-        <bustap x2="2080" y1="1424" y2="1520" x1="2080" />
-        <bustap x2="2720" y1="1424" y2="1520" x1="2720" />
-        <bustap x2="4080" y1="1424" y2="1520" x1="4080" />
-        <bustap x2="3360" y1="1424" y2="1520" x1="3360" />
-        <bustap x2="4720" y1="1424" y2="1520" x1="4720" />
-        <bustap x2="5360" y1="1424" y2="1520" x1="5360" />
-        <bustap x2="6000" y1="1424" y2="1520" x1="6000" />
-        <iomarker fontsize="28" x="6320" y="1424" name="DataOut(15:0)" orien="R0" />
+        <bustap x2="1424" y1="1680" y2="1776" x1="1424" />
+        <bustap x2="2144" y1="1680" y2="1776" x1="2144" />
+        <bustap x2="2784" y1="1680" y2="1776" x1="2784" />
+        <bustap x2="4144" y1="1680" y2="1776" x1="4144" />
+        <bustap x2="3424" y1="1680" y2="1776" x1="3424" />
+        <bustap x2="4784" y1="1680" y2="1776" x1="4784" />
+        <bustap x2="5424" y1="1680" y2="1776" x1="5424" />
+        <bustap x2="6064" y1="1680" y2="1776" x1="6064" />
         <branch name="DataOut(7)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6000" y="1584" type="branch" />
-            <wire x2="6000" y1="2000" y2="2000" x1="5936" />
-            <wire x2="6000" y1="1520" y2="1584" x1="6000" />
-            <wire x2="6000" y1="1584" y2="2000" x1="6000" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6064" y="1840" type="branch" />
+            <wire x2="6064" y1="2256" y2="2256" x1="6000" />
+            <wire x2="6064" y1="1776" y2="1840" x1="6064" />
+            <wire x2="6064" y1="1840" y2="2256" x1="6064" />
         </branch>
         <branch name="DataOut(0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="1560" type="branch" />
-            <wire x2="1360" y1="2000" y2="2000" x1="1280" />
-            <wire x2="1360" y1="1520" y2="2000" x1="1360" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1424" y="1816" type="branch" />
+            <wire x2="1424" y1="2256" y2="2256" x1="1344" />
+            <wire x2="1424" y1="1776" y2="1824" x1="1424" />
+            <wire x2="1424" y1="1824" y2="2256" x1="1424" />
         </branch>
         <branch name="DataOut(1)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="1560" type="branch" />
-            <wire x2="2080" y1="2000" y2="2000" x1="1984" />
-            <wire x2="2080" y1="1520" y2="2000" x1="2080" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2144" y="1816" type="branch" />
+            <wire x2="2144" y1="2256" y2="2256" x1="2048" />
+            <wire x2="2144" y1="1776" y2="1824" x1="2144" />
+            <wire x2="2144" y1="1824" y2="2256" x1="2144" />
         </branch>
         <branch name="DataOut(2)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1560" type="branch" />
-            <wire x2="2720" y1="2000" y2="2000" x1="2624" />
-            <wire x2="2720" y1="1520" y2="2000" x1="2720" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2784" y="1816" type="branch" />
+            <wire x2="2784" y1="2256" y2="2256" x1="2688" />
+            <wire x2="2784" y1="1776" y2="1824" x1="2784" />
+            <wire x2="2784" y1="1824" y2="2256" x1="2784" />
         </branch>
         <branch name="DataOut(3)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3360" y="1568" type="branch" />
-            <wire x2="3360" y1="2000" y2="2000" x1="3312" />
-            <wire x2="3360" y1="1520" y2="1568" x1="3360" />
-            <wire x2="3360" y1="1568" y2="2000" x1="3360" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3424" y="1824" type="branch" />
+            <wire x2="3424" y1="2256" y2="2256" x1="3376" />
+            <wire x2="3424" y1="1776" y2="1824" x1="3424" />
+            <wire x2="3424" y1="1824" y2="2256" x1="3424" />
         </branch>
         <branch name="DataOut(4)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4080" y="1584" type="branch" />
-            <wire x2="4080" y1="2000" y2="2000" x1="3984" />
-            <wire x2="4080" y1="1520" y2="1584" x1="4080" />
-            <wire x2="4080" y1="1584" y2="2000" x1="4080" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="1840" type="branch" />
+            <wire x2="4144" y1="2256" y2="2256" x1="4048" />
+            <wire x2="4144" y1="1776" y2="1840" x1="4144" />
+            <wire x2="4144" y1="1840" y2="2256" x1="4144" />
         </branch>
         <branch name="DataOut(5)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4720" y="1584" type="branch" />
-            <wire x2="4720" y1="2000" y2="2000" x1="4672" />
-            <wire x2="4720" y1="1520" y2="1584" x1="4720" />
-            <wire x2="4720" y1="1584" y2="2000" x1="4720" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4784" y="1840" type="branch" />
+            <wire x2="4784" y1="2256" y2="2256" x1="4736" />
+            <wire x2="4784" y1="1776" y2="1840" x1="4784" />
+            <wire x2="4784" y1="1840" y2="2256" x1="4784" />
         </branch>
         <branch name="DataOut(6)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5360" y="1584" type="branch" />
-            <wire x2="5360" y1="2000" y2="2000" x1="5312" />
-            <wire x2="5360" y1="1520" y2="1584" x1="5360" />
-            <wire x2="5360" y1="1584" y2="2000" x1="5360" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5424" y="1840" type="branch" />
+            <wire x2="5424" y1="2256" y2="2256" x1="5376" />
+            <wire x2="5424" y1="1776" y2="1840" x1="5424" />
+            <wire x2="5424" y1="1840" y2="2256" x1="5424" />
         </branch>
-        <instance x="3600" y="2256" name="XLXI_31" orien="R0" />
-        <instance x="4288" y="2256" name="XLXI_32" orien="R0" />
-        <instance x="4928" y="2256" name="XLXI_33" orien="R0" />
-        <instance x="2928" y="2256" name="XLXI_18" orien="R0" />
-        <instance x="2240" y="2256" name="XLXI_17" orien="R0" />
-        <instance x="1600" y="2256" name="XLXI_2" orien="R0" />
-        <instance x="896" y="2256" name="XLXI_1" orien="R0" />
-        <instance x="5552" y="2256" name="XLXI_34" orien="R0" />
+        <instance x="3664" y="2512" name="XLXI_31" orien="R0" />
+        <instance x="4352" y="2512" name="XLXI_32" orien="R0" />
+        <instance x="4992" y="2512" name="XLXI_33" orien="R0" />
+        <instance x="2992" y="2512" name="XLXI_18" orien="R0" />
+        <instance x="2304" y="2512" name="XLXI_17" orien="R0" />
+        <instance x="1664" y="2512" name="XLXI_2" orien="R0" />
+        <instance x="960" y="2512" name="XLXI_1" orien="R0" />
+        <instance x="5616" y="2512" name="XLXI_34" orien="R0" />
         <branch name="DataIn(15:0)">
-            <wire x2="720" y1="1680" y2="1680" x1="656" />
-            <wire x2="896" y1="1680" y2="1680" x1="720" />
-            <wire x2="1600" y1="1680" y2="1680" x1="896" />
-            <wire x2="2240" y1="1680" y2="1680" x1="1600" />
-            <wire x2="2928" y1="1680" y2="1680" x1="2240" />
-            <wire x2="3600" y1="1680" y2="1680" x1="2928" />
-            <wire x2="4288" y1="1680" y2="1680" x1="3600" />
-            <wire x2="4928" y1="1680" y2="1680" x1="4288" />
-            <wire x2="5552" y1="1680" y2="1680" x1="4928" />
-            <wire x2="720" y1="1680" y2="2752" x1="720" />
-            <wire x2="896" y1="2752" y2="2752" x1="720" />
-            <wire x2="1600" y1="2752" y2="2752" x1="896" />
-            <wire x2="2240" y1="2752" y2="2752" x1="1600" />
-            <wire x2="2928" y1="2752" y2="2752" x1="2240" />
-            <wire x2="3600" y1="2752" y2="2752" x1="2928" />
-            <wire x2="4272" y1="2752" y2="2752" x1="3600" />
-            <wire x2="4288" y1="2752" y2="2752" x1="4272" />
-            <wire x2="4928" y1="2752" y2="2752" x1="4288" />
-            <wire x2="5552" y1="2752" y2="2752" x1="4928" />
+            <wire x2="784" y1="1936" y2="1936" x1="720" />
+            <wire x2="960" y1="1936" y2="1936" x1="784" />
+            <wire x2="1664" y1="1936" y2="1936" x1="960" />
+            <wire x2="2304" y1="1936" y2="1936" x1="1664" />
+            <wire x2="2992" y1="1936" y2="1936" x1="2304" />
+            <wire x2="3664" y1="1936" y2="1936" x1="2992" />
+            <wire x2="4352" y1="1936" y2="1936" x1="3664" />
+            <wire x2="4992" y1="1936" y2="1936" x1="4352" />
+            <wire x2="5616" y1="1936" y2="1936" x1="4992" />
+            <wire x2="784" y1="1936" y2="3008" x1="784" />
+            <wire x2="960" y1="3008" y2="3008" x1="784" />
+            <wire x2="1664" y1="3008" y2="3008" x1="960" />
+            <wire x2="2304" y1="3008" y2="3008" x1="1664" />
+            <wire x2="2992" y1="3008" y2="3008" x1="2304" />
+            <wire x2="3664" y1="3008" y2="3008" x1="2992" />
+            <wire x2="4336" y1="3008" y2="3008" x1="3664" />
+            <wire x2="4352" y1="3008" y2="3008" x1="4336" />
+            <wire x2="4992" y1="3008" y2="3008" x1="4352" />
+            <wire x2="5616" y1="3008" y2="3008" x1="4992" />
         </branch>
-        <bustap x2="896" y1="1680" y2="1776" x1="896" />
+        <bustap x2="960" y1="1936" y2="2032" x1="960" />
         <branch name="DataIn(0)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="896" y="1840" type="branch" />
-            <wire x2="896" y1="1776" y2="1840" x1="896" />
-            <wire x2="896" y1="1840" y2="2000" x1="896" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="960" y="2096" type="branch" />
+            <wire x2="960" y1="2032" y2="2096" x1="960" />
+            <wire x2="960" y1="2096" y2="2256" x1="960" />
         </branch>
-        <bustap x2="1600" y1="1680" y2="1776" x1="1600" />
+        <bustap x2="1664" y1="1936" y2="2032" x1="1664" />
         <branch name="DataIn(1)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="1840" type="branch" />
-            <wire x2="1600" y1="1776" y2="1840" x1="1600" />
-            <wire x2="1600" y1="1840" y2="2000" x1="1600" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="2096" type="branch" />
+            <wire x2="1664" y1="2032" y2="2096" x1="1664" />
+            <wire x2="1664" y1="2096" y2="2256" x1="1664" />
         </branch>
-        <bustap x2="2240" y1="1680" y2="1776" x1="2240" />
+        <bustap x2="2304" y1="1936" y2="2032" x1="2304" />
         <branch name="DataIn(2)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="1840" type="branch" />
-            <wire x2="2240" y1="1776" y2="1840" x1="2240" />
-            <wire x2="2240" y1="1840" y2="2000" x1="2240" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="2096" type="branch" />
+            <wire x2="2304" y1="2032" y2="2096" x1="2304" />
+            <wire x2="2304" y1="2096" y2="2256" x1="2304" />
         </branch>
-        <bustap x2="2928" y1="1680" y2="1776" x1="2928" />
+        <bustap x2="2992" y1="1936" y2="2032" x1="2992" />
         <branch name="DataIn(3)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="1840" type="branch" />
-            <wire x2="2928" y1="1776" y2="1840" x1="2928" />
-            <wire x2="2928" y1="1840" y2="2000" x1="2928" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2992" y="2096" type="branch" />
+            <wire x2="2992" y1="2032" y2="2096" x1="2992" />
+            <wire x2="2992" y1="2096" y2="2256" x1="2992" />
         </branch>
-        <bustap x2="3600" y1="1680" y2="1776" x1="3600" />
+        <bustap x2="3664" y1="1936" y2="2032" x1="3664" />
         <branch name="DataIn(4)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="1840" type="branch" />
-            <wire x2="3600" y1="1776" y2="1840" x1="3600" />
-            <wire x2="3600" y1="1840" y2="2000" x1="3600" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3664" y="2096" type="branch" />
+            <wire x2="3664" y1="2032" y2="2096" x1="3664" />
+            <wire x2="3664" y1="2096" y2="2256" x1="3664" />
         </branch>
-        <bustap x2="4288" y1="1680" y2="1776" x1="4288" />
+        <bustap x2="4352" y1="1936" y2="2032" x1="4352" />
         <branch name="DataIn(5)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4288" y="1840" type="branch" />
-            <wire x2="4288" y1="1776" y2="1840" x1="4288" />
-            <wire x2="4288" y1="1840" y2="2000" x1="4288" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4352" y="2096" type="branch" />
+            <wire x2="4352" y1="2032" y2="2096" x1="4352" />
+            <wire x2="4352" y1="2096" y2="2256" x1="4352" />
         </branch>
-        <bustap x2="4928" y1="1680" y2="1776" x1="4928" />
+        <bustap x2="4992" y1="1936" y2="2032" x1="4992" />
         <branch name="DataIn(6)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4928" y="1840" type="branch" />
-            <wire x2="4928" y1="1776" y2="1840" x1="4928" />
-            <wire x2="4928" y1="1840" y2="2000" x1="4928" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4992" y="2096" type="branch" />
+            <wire x2="4992" y1="2032" y2="2096" x1="4992" />
+            <wire x2="4992" y1="2096" y2="2256" x1="4992" />
         </branch>
-        <bustap x2="5552" y1="1680" y2="1776" x1="5552" />
+        <bustap x2="5616" y1="1936" y2="2032" x1="5616" />
         <branch name="DataIn(7)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5552" y="1840" type="branch" />
-            <wire x2="5552" y1="1776" y2="1840" x1="5552" />
-            <wire x2="5552" y1="1840" y2="2000" x1="5552" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5616" y="2096" type="branch" />
+            <wire x2="5616" y1="2032" y2="2096" x1="5616" />
+            <wire x2="5616" y1="2096" y2="2256" x1="5616" />
         </branch>
-        <iomarker fontsize="28" x="656" y="1680" name="DataIn(15:0)" orien="R180" />
-        <iomarker fontsize="28" x="576" y="2240" name="CLK" orien="R180" />
-        <instance x="3600" y="3328" name="XLXI_35" orien="R0" />
-        <instance x="4288" y="3328" name="XLXI_36" orien="R0" />
-        <instance x="4928" y="3328" name="XLXI_37" orien="R0" />
-        <instance x="2928" y="3328" name="XLXI_38" orien="R0" />
-        <instance x="2240" y="3328" name="XLXI_39" orien="R0" />
-        <instance x="1600" y="3328" name="XLXI_40" orien="R0" />
-        <instance x="896" y="3328" name="XLXI_41" orien="R0" />
-        <instance x="5552" y="3328" name="XLXI_42" orien="R0" />
+        <instance x="3664" y="3584" name="XLXI_35" orien="R0" />
+        <instance x="4352" y="3584" name="XLXI_36" orien="R0" />
+        <instance x="4992" y="3584" name="XLXI_37" orien="R0" />
+        <instance x="2992" y="3584" name="XLXI_38" orien="R0" />
+        <instance x="2304" y="3584" name="XLXI_39" orien="R0" />
+        <instance x="1664" y="3584" name="XLXI_40" orien="R0" />
+        <instance x="960" y="3584" name="XLXI_41" orien="R0" />
+        <instance x="5616" y="3584" name="XLXI_42" orien="R0" />
         <branch name="DataOut(15)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6000" y="2880" type="branch" />
-            <wire x2="6000" y1="3072" y2="3072" x1="5936" />
-            <wire x2="6000" y1="2592" y2="2880" x1="6000" />
-            <wire x2="6000" y1="2880" y2="3072" x1="6000" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="6064" y="3136" type="branch" />
+            <wire x2="6064" y1="3328" y2="3328" x1="6000" />
+            <wire x2="6064" y1="2848" y2="3136" x1="6064" />
+            <wire x2="6064" y1="3136" y2="3328" x1="6064" />
         </branch>
         <branch name="DataOut(14)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5360" y="2880" type="branch" />
-            <wire x2="5360" y1="3072" y2="3072" x1="5312" />
-            <wire x2="5360" y1="2592" y2="2880" x1="5360" />
-            <wire x2="5360" y1="2880" y2="3072" x1="5360" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5424" y="3136" type="branch" />
+            <wire x2="5424" y1="3328" y2="3328" x1="5376" />
+            <wire x2="5424" y1="2848" y2="3136" x1="5424" />
+            <wire x2="5424" y1="3136" y2="3328" x1="5424" />
         </branch>
         <branch name="DataOut(13)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4720" y="2880" type="branch" />
-            <wire x2="4720" y1="3072" y2="3072" x1="4672" />
-            <wire x2="4720" y1="2592" y2="2880" x1="4720" />
-            <wire x2="4720" y1="2880" y2="3072" x1="4720" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4784" y="3136" type="branch" />
+            <wire x2="4784" y1="3328" y2="3328" x1="4736" />
+            <wire x2="4784" y1="2848" y2="3136" x1="4784" />
+            <wire x2="4784" y1="3136" y2="3328" x1="4784" />
         </branch>
         <branch name="DataOut(12)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4080" y="2880" type="branch" />
-            <wire x2="4080" y1="3072" y2="3072" x1="3984" />
-            <wire x2="4080" y1="2592" y2="2880" x1="4080" />
-            <wire x2="4080" y1="2880" y2="3072" x1="4080" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4144" y="3136" type="branch" />
+            <wire x2="4144" y1="3328" y2="3328" x1="4048" />
+            <wire x2="4144" y1="2848" y2="3136" x1="4144" />
+            <wire x2="4144" y1="3136" y2="3328" x1="4144" />
         </branch>
         <branch name="DataOut(10)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="2880" type="branch" />
-            <wire x2="2720" y1="3072" y2="3072" x1="2624" />
-            <wire x2="2720" y1="2592" y2="2880" x1="2720" />
-            <wire x2="2720" y1="2880" y2="3072" x1="2720" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2784" y="3136" type="branch" />
+            <wire x2="2784" y1="3328" y2="3328" x1="2688" />
+            <wire x2="2784" y1="2848" y2="3136" x1="2784" />
+            <wire x2="2784" y1="3136" y2="3328" x1="2784" />
         </branch>
         <branch name="DataOut(11)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3360" y="2880" type="branch" />
-            <wire x2="3360" y1="3072" y2="3072" x1="3312" />
-            <wire x2="3360" y1="2592" y2="2880" x1="3360" />
-            <wire x2="3360" y1="2880" y2="3072" x1="3360" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3424" y="3136" type="branch" />
+            <wire x2="3424" y1="3328" y2="3328" x1="3376" />
+            <wire x2="3424" y1="2848" y2="3136" x1="3424" />
+            <wire x2="3424" y1="3136" y2="3328" x1="3424" />
         </branch>
         <branch name="DataOut(9)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2096" y="2880" type="branch" />
-            <wire x2="2080" y1="3072" y2="3072" x1="1984" />
-            <wire x2="2096" y1="3072" y2="3072" x1="2080" />
-            <wire x2="2096" y1="2592" y2="2880" x1="2096" />
-            <wire x2="2096" y1="2880" y2="3072" x1="2096" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2160" y="3136" type="branch" />
+            <wire x2="2144" y1="3328" y2="3328" x1="2048" />
+            <wire x2="2160" y1="3328" y2="3328" x1="2144" />
+            <wire x2="2160" y1="2848" y2="3136" x1="2160" />
+            <wire x2="2160" y1="3136" y2="3328" x1="2160" />
         </branch>
         <branch name="DataOut(8)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="2880" type="branch" />
-            <wire x2="1360" y1="3072" y2="3072" x1="1280" />
-            <wire x2="1360" y1="2592" y2="2880" x1="1360" />
-            <wire x2="1360" y1="2880" y2="3072" x1="1360" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1424" y="3136" type="branch" />
+            <wire x2="1424" y1="3328" y2="3328" x1="1344" />
+            <wire x2="1424" y1="2848" y2="3136" x1="1424" />
+            <wire x2="1424" y1="3136" y2="3328" x1="1424" />
         </branch>
-        <bustap x2="896" y1="2752" y2="2848" x1="896" />
+        <bustap x2="960" y1="3008" y2="3104" x1="960" />
         <branch name="DataIn(8)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="896" y="2880" type="branch" />
-            <wire x2="896" y1="2848" y2="2880" x1="896" />
-            <wire x2="896" y1="2880" y2="3072" x1="896" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="960" y="3136" type="branch" />
+            <wire x2="960" y1="3104" y2="3136" x1="960" />
+            <wire x2="960" y1="3136" y2="3328" x1="960" />
         </branch>
-        <bustap x2="1600" y1="2752" y2="2848" x1="1600" />
+        <bustap x2="1664" y1="3008" y2="3104" x1="1664" />
         <branch name="DataIn(9)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1600" y="2880" type="branch" />
-            <wire x2="1600" y1="2848" y2="2880" x1="1600" />
-            <wire x2="1600" y1="2880" y2="3072" x1="1600" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1664" y="3136" type="branch" />
+            <wire x2="1664" y1="3104" y2="3136" x1="1664" />
+            <wire x2="1664" y1="3136" y2="3328" x1="1664" />
         </branch>
-        <bustap x2="2240" y1="2752" y2="2848" x1="2240" />
+        <bustap x2="2304" y1="3008" y2="3104" x1="2304" />
         <branch name="DataIn(10)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2240" y="2896" type="branch" />
-            <wire x2="2240" y1="2848" y2="2896" x1="2240" />
-            <wire x2="2240" y1="2896" y2="3072" x1="2240" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2304" y="3152" type="branch" />
+            <wire x2="2304" y1="3104" y2="3152" x1="2304" />
+            <wire x2="2304" y1="3152" y2="3328" x1="2304" />
         </branch>
-        <bustap x2="2928" y1="2752" y2="2848" x1="2928" />
+        <bustap x2="2992" y1="3008" y2="3104" x1="2992" />
         <branch name="DataIn(11)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="2880" type="branch" />
-            <wire x2="2928" y1="2848" y2="2880" x1="2928" />
-            <wire x2="2928" y1="2880" y2="3072" x1="2928" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2992" y="3136" type="branch" />
+            <wire x2="2992" y1="3104" y2="3136" x1="2992" />
+            <wire x2="2992" y1="3136" y2="3328" x1="2992" />
         </branch>
-        <bustap x2="3600" y1="2752" y2="2848" x1="3600" />
+        <bustap x2="3664" y1="3008" y2="3104" x1="3664" />
         <branch name="DataIn(12)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3600" y="2880" type="branch" />
-            <wire x2="3600" y1="2848" y2="2880" x1="3600" />
-            <wire x2="3600" y1="2880" y2="3072" x1="3600" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="3664" y="3136" type="branch" />
+            <wire x2="3664" y1="3104" y2="3136" x1="3664" />
+            <wire x2="3664" y1="3136" y2="3328" x1="3664" />
         </branch>
-        <bustap x2="4288" y1="2752" y2="2848" x1="4288" />
+        <bustap x2="4352" y1="3008" y2="3104" x1="4352" />
         <branch name="DataIn(13)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4288" y="2880" type="branch" />
-            <wire x2="4288" y1="2848" y2="2880" x1="4288" />
-            <wire x2="4288" y1="2880" y2="3072" x1="4288" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4352" y="3136" type="branch" />
+            <wire x2="4352" y1="3104" y2="3136" x1="4352" />
+            <wire x2="4352" y1="3136" y2="3328" x1="4352" />
         </branch>
-        <bustap x2="4928" y1="2752" y2="2848" x1="4928" />
+        <bustap x2="4992" y1="3008" y2="3104" x1="4992" />
         <branch name="DataIn(14)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4928" y="2896" type="branch" />
-            <wire x2="4928" y1="2848" y2="2896" x1="4928" />
-            <wire x2="4928" y1="2896" y2="3072" x1="4928" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="4992" y="3152" type="branch" />
+            <wire x2="4992" y1="3104" y2="3152" x1="4992" />
+            <wire x2="4992" y1="3152" y2="3328" x1="4992" />
         </branch>
-        <bustap x2="5552" y1="2752" y2="2848" x1="5552" />
+        <bustap x2="5616" y1="3008" y2="3104" x1="5616" />
         <branch name="DataIn(15)">
-            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5552" y="2880" type="branch" />
-            <wire x2="5552" y1="2848" y2="2880" x1="5552" />
-            <wire x2="5552" y1="2880" y2="3072" x1="5552" />
+            <attrtext style="alignment:SOFT-TVCENTER;fontsize:28;fontname:Arial" attrname="Name" x="5616" y="3136" type="branch" />
+            <wire x2="5616" y1="3104" y2="3136" x1="5616" />
+            <wire x2="5616" y1="3136" y2="3328" x1="5616" />
         </branch>
-        <bustap x2="1360" y1="2496" y2="2592" x1="1360" />
-        <bustap x2="2096" y1="2496" y2="2592" x1="2096" />
-        <bustap x2="2720" y1="2496" y2="2592" x1="2720" />
-        <bustap x2="3360" y1="2496" y2="2592" x1="3360" />
-        <bustap x2="4080" y1="2496" y2="2592" x1="4080" />
-        <bustap x2="4720" y1="2496" y2="2592" x1="4720" />
-        <bustap x2="5360" y1="2496" y2="2592" x1="5360" />
-        <bustap x2="6000" y1="2496" y2="2592" x1="6000" />
+        <bustap x2="1424" y1="2752" y2="2848" x1="1424" />
+        <bustap x2="2160" y1="2752" y2="2848" x1="2160" />
+        <bustap x2="2784" y1="2752" y2="2848" x1="2784" />
+        <bustap x2="3424" y1="2752" y2="2848" x1="3424" />
+        <bustap x2="4144" y1="2752" y2="2848" x1="4144" />
+        <bustap x2="4784" y1="2752" y2="2848" x1="4784" />
+        <bustap x2="5424" y1="2752" y2="2848" x1="5424" />
+        <bustap x2="6064" y1="2752" y2="2848" x1="6064" />
+        <iomarker fontsize="28" x="6384" y="1680" name="DataOut(15:0)" orien="R0" />
+        <iomarker fontsize="28" x="720" y="1936" name="DataIn(15:0)" orien="R180" />
+        <iomarker fontsize="28" x="640" y="2496" name="CLK" orien="R180" />
     </sheet>
 </drawing>

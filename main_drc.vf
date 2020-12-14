@@ -6,65 +6,18 @@
 // /___/  \  /    Vendor: Xilinx 
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
-//  /   /         Filename : main.vf
-// /___/   /\     Timestamp : 12/14/2020 02:09:07
+//  /   /         Filename : main_drc.vf
+// /___/   /\     Timestamp : 12/13/2020 22:49:05
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog main_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch
 //Design Name: main
 //Device: spartan6
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
-`timescale 100 ps / 10 ps
-
-module CD4RE_HXILINX_main(CEO, Q0, Q1, Q2, Q3, TC, C, CE, R);
-   
-   parameter TERMINAL_COUNT = 4'b1001;
-   
-   output             CEO;
-   output             Q0;
-   output             Q1;
-   output             Q2;
-   output             Q3;
-   output             TC;
-
-   input 	      C;	
-   input 	      CE;	
-   input 	      R;	
-   
-   reg                Q0;
-   reg                Q1;
-   reg                Q2;
-   reg                Q3;
-   
-   always @(posedge C)
-     begin
-	if (R)
-	  {Q3, Q2, Q1, Q0} <= 4'b0000;
-
-	else if (CE)
-          begin
-             if ({Q3,Q2,Q1,Q0} == 4'b1001)
-               {Q3,Q2,Q1,Q0} <= 4'b0000;
-             else if({Q3,Q2,Q1,Q0} == 4'b1011)
-               {Q3,Q2,Q1,Q0} <= 4'b0110;
-             else if({Q3,Q2,Q1,Q0} == 4'b1101)
-               {Q3,Q2,Q1,Q0} <= 4'b0100;
-             else if({Q3,Q2,Q1,Q0} == 4'b1111)
-               {Q3,Q2,Q1,Q0} <= 4'b0010;
-            
-             else
-	      {Q3, Q2, Q1, Q0} <= {Q3, Q2, Q1, Q0} + 1;
-          end
-     end
-   
-   assign CEO = TC & CE;
-   assign TC = R ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
-   
-endmodule
 `timescale 100 ps / 10 ps
 
 module CB4CE_HXILINX_main(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
@@ -1119,11 +1072,11 @@ module main(CLK_P123,
             ESP_IN_P21, 
             SEL_P45, 
             COM, 
-            PWM_Servo0, 
             PWM_Servo1, 
             PWM_Servo2, 
             PWM_Servo3, 
             PWM_Servo4, 
+            PWM_Servo5, 
             SEG);
 
     input CLK_P123;
@@ -1142,17 +1095,15 @@ module main(CLK_P123,
     input ESP_IN_P9;
     input ESP_IN_P14;
     input ESP_IN_P21;
-   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input SEL_P45;
    output [3:0] COM;
-   output PWM_Servo0;
    output PWM_Servo1;
    output PWM_Servo2;
    output PWM_Servo3;
    output PWM_Servo4;
+   output PWM_Servo5;
    output [6:0] SEG;
    
-   wire [3:0] CurrentServo;
    wire [15:0] RegPIPO;
    wire [15:0] XLXN_178;
    wire [15:0] XLXN_184;
@@ -1164,13 +1115,13 @@ module main(CLK_P123,
    wire [15:0] XLXN_448;
    wire [15:0] XLXN_449;
    wire [15:0] XLXN_450;
-   wire XLXN_473;
-   wire XLXN_477;
-   wire XLXN_500;
-   wire XLXN_503;
+   wire XLXN_451;
+   wire XLXN_452;
+   wire XLXN_453;
+   wire XLXN_454;
    
    segment_upgrade_MUSER_main  XLXI_32 (.CLK_P123(CLK_P123), 
-                                       .C1(CurrentServo[3:0]), 
+                                       .C1(RegPIPO[15:12]), 
                                        .C2(RegPIPO[11:8]), 
                                        .C3(RegPIPO[7:4]), 
                                        .C4(RegPIPO[3:0]), 
@@ -1179,8 +1130,28 @@ module main(CLK_P123,
    ServoControl_MUSER_main  XLXI_38 (.CLK_P123(CLK_P123), 
                                     .ESP_CLK(ESP_CLK_P7), 
                                     .ESP_IN(ESP_IN_P5), 
-                                    .PWM_Servo1(PWM_Servo0), 
+                                    .PWM_Servo1(PWM_Servo1), 
                                     .RegPIPO(XLXN_178[15:0]));
+   ServoControl_MUSER_main  XLXI_39 (.CLK_P123(CLK_P123), 
+                                    .ESP_CLK(ESP_CLK_P11), 
+                                    .ESP_IN(ESP_IN_P9), 
+                                    .PWM_Servo1(PWM_Servo2), 
+                                    .RegPIPO(XLXN_217[15:0]));
+   ServoControl_MUSER_main  XLXI_40 (.CLK_P123(CLK_P123), 
+                                    .ESP_CLK(ESP_CLK_P16), 
+                                    .ESP_IN(ESP_IN_P14), 
+                                    .PWM_Servo1(PWM_Servo3), 
+                                    .RegPIPO(XLXN_218[15:0]));
+   ServoControl_MUSER_main  XLXI_41 (.CLK_P123(CLK_P123), 
+                                    .ESP_CLK(ESP_CLK_P23), 
+                                    .ESP_IN(ESP_IN_P21), 
+                                    .PWM_Servo1(PWM_Servo4), 
+                                    .RegPIPO(XLXN_219[15:0]));
+   ServoControl_MUSER_main  XLXI_42 (.CLK_P123(CLK_P123), 
+                                    .ESP_CLK(ESP_CLK_P8), 
+                                    .ESP_IN(ESP_IN_P6), 
+                                    .PWM_Servo1(PWM_Servo5), 
+                                    .RegPIPO(XLXN_220[15:0]));
    (* HU_SET = "XLXI_47_0_35" *) 
    M8_1E_HXILINX_main  XLXI_47_0 (.D0(XLXN_178[0]), 
                                  .D1(XLXN_217[0]), 
@@ -1422,141 +1393,114 @@ module main(CLK_P123,
    VCC  XLXI_79_14 (.P(XLXN_184[14]));
    VCC  XLXI_79_15 (.P(XLXN_184[15]));
    VCC  XLXI_82 (.P(XLXN_407));
-   BUF  XLXI_84_0 (.I(CurrentServo[0]), 
+   (* HU_SET = "XLXI_83_36" *) 
+   CB4CE_HXILINX_main  XLXI_83 (.C(SEL_P45), 
+                               .CE(XLXN_407), 
+                               .CLR(XLXN_454), 
+                               .CEO(), 
+                               .Q0(XLXN_451), 
+                               .Q1(XLXN_453), 
+                               .Q2(XLXN_452), 
+                               .Q3(), 
+                               .TC());
+   BUF  XLXI_84_0 (.I(XLXN_451), 
                   .O(XLXN_448[0]));
-   BUF  XLXI_84_1 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_1 (.I(XLXN_451), 
                   .O(XLXN_448[1]));
-   BUF  XLXI_84_2 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_2 (.I(XLXN_451), 
                   .O(XLXN_448[2]));
-   BUF  XLXI_84_3 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_3 (.I(XLXN_451), 
                   .O(XLXN_448[3]));
-   BUF  XLXI_84_4 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_4 (.I(XLXN_451), 
                   .O(XLXN_448[4]));
-   BUF  XLXI_84_5 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_5 (.I(XLXN_451), 
                   .O(XLXN_448[5]));
-   BUF  XLXI_84_6 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_6 (.I(XLXN_451), 
                   .O(XLXN_448[6]));
-   BUF  XLXI_84_7 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_7 (.I(XLXN_451), 
                   .O(XLXN_448[7]));
-   BUF  XLXI_84_8 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_8 (.I(XLXN_451), 
                   .O(XLXN_448[8]));
-   BUF  XLXI_84_9 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_9 (.I(XLXN_451), 
                   .O(XLXN_448[9]));
-   BUF  XLXI_84_10 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_10 (.I(XLXN_451), 
                    .O(XLXN_448[10]));
-   BUF  XLXI_84_11 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_11 (.I(XLXN_451), 
                    .O(XLXN_448[11]));
-   BUF  XLXI_84_12 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_12 (.I(XLXN_451), 
                    .O(XLXN_448[12]));
-   BUF  XLXI_84_13 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_13 (.I(XLXN_451), 
                    .O(XLXN_448[13]));
-   BUF  XLXI_84_14 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_14 (.I(XLXN_451), 
                    .O(XLXN_448[14]));
-   BUF  XLXI_84_15 (.I(CurrentServo[0]), 
+   BUF  XLXI_84_15 (.I(XLXN_451), 
                    .O(XLXN_448[15]));
-   BUF  XLXI_85_0 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_0 (.I(XLXN_453), 
                   .O(XLXN_449[0]));
-   BUF  XLXI_85_1 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_1 (.I(XLXN_453), 
                   .O(XLXN_449[1]));
-   BUF  XLXI_85_2 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_2 (.I(XLXN_453), 
                   .O(XLXN_449[2]));
-   BUF  XLXI_85_3 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_3 (.I(XLXN_453), 
                   .O(XLXN_449[3]));
-   BUF  XLXI_85_4 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_4 (.I(XLXN_453), 
                   .O(XLXN_449[4]));
-   BUF  XLXI_85_5 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_5 (.I(XLXN_453), 
                   .O(XLXN_449[5]));
-   BUF  XLXI_85_6 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_6 (.I(XLXN_453), 
                   .O(XLXN_449[6]));
-   BUF  XLXI_85_7 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_7 (.I(XLXN_453), 
                   .O(XLXN_449[7]));
-   BUF  XLXI_85_8 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_8 (.I(XLXN_453), 
                   .O(XLXN_449[8]));
-   BUF  XLXI_85_9 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_9 (.I(XLXN_453), 
                   .O(XLXN_449[9]));
-   BUF  XLXI_85_10 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_10 (.I(XLXN_453), 
                    .O(XLXN_449[10]));
-   BUF  XLXI_85_11 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_11 (.I(XLXN_453), 
                    .O(XLXN_449[11]));
-   BUF  XLXI_85_12 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_12 (.I(XLXN_453), 
                    .O(XLXN_449[12]));
-   BUF  XLXI_85_13 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_13 (.I(XLXN_453), 
                    .O(XLXN_449[13]));
-   BUF  XLXI_85_14 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_14 (.I(XLXN_453), 
                    .O(XLXN_449[14]));
-   BUF  XLXI_85_15 (.I(CurrentServo[1]), 
+   BUF  XLXI_85_15 (.I(XLXN_453), 
                    .O(XLXN_449[15]));
-   BUF  XLXI_86_0 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_0 (.I(XLXN_452), 
                   .O(XLXN_450[0]));
-   BUF  XLXI_86_1 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_1 (.I(XLXN_452), 
                   .O(XLXN_450[1]));
-   BUF  XLXI_86_2 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_2 (.I(XLXN_452), 
                   .O(XLXN_450[2]));
-   BUF  XLXI_86_3 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_3 (.I(XLXN_452), 
                   .O(XLXN_450[3]));
-   BUF  XLXI_86_4 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_4 (.I(XLXN_452), 
                   .O(XLXN_450[4]));
-   BUF  XLXI_86_5 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_5 (.I(XLXN_452), 
                   .O(XLXN_450[5]));
-   BUF  XLXI_86_6 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_6 (.I(XLXN_452), 
                   .O(XLXN_450[6]));
-   BUF  XLXI_86_7 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_7 (.I(XLXN_452), 
                   .O(XLXN_450[7]));
-   BUF  XLXI_86_8 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_8 (.I(XLXN_452), 
                   .O(XLXN_450[8]));
-   BUF  XLXI_86_9 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_9 (.I(XLXN_452), 
                   .O(XLXN_450[9]));
-   BUF  XLXI_86_10 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_10 (.I(XLXN_452), 
                    .O(XLXN_450[10]));
-   BUF  XLXI_86_11 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_11 (.I(XLXN_452), 
                    .O(XLXN_450[11]));
-   BUF  XLXI_86_12 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_12 (.I(XLXN_452), 
                    .O(XLXN_450[12]));
-   BUF  XLXI_86_13 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_13 (.I(XLXN_452), 
                    .O(XLXN_450[13]));
-   BUF  XLXI_86_14 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_14 (.I(XLXN_452), 
                    .O(XLXN_450[14]));
-   BUF  XLXI_86_15 (.I(CurrentServo[2]), 
+   BUF  XLXI_86_15 (.I(XLXN_452), 
                    .O(XLXN_450[15]));
-   INV  XLXI_90 (.I(CurrentServo[1]), 
-                .O(XLXN_473));
-   AND4  XLXI_104 (.I0(XLXN_500), 
-                  .I1(CurrentServo[2]), 
-                  .I2(XLXN_473), 
-                  .I3(XLXN_503), 
-                  .O(XLXN_477));
-   INV  XLXI_105 (.I(CurrentServo[3]), 
-                 .O(XLXN_500));
-   (* HU_SET = "XLXI_107_36" *) 
-   CD4RE_HXILINX_main  XLXI_107 (.C(SEL_P45), 
-                                .CE(XLXN_407), 
-                                .R(XLXN_477), 
-                                .CEO(), 
-                                .Q0(CurrentServo[0]), 
-                                .Q1(CurrentServo[1]), 
-                                .Q2(CurrentServo[2]), 
-                                .Q3(CurrentServo[3]), 
-                                .TC());
-   INV  XLXI_109 (.I(CurrentServo[0]), 
-                 .O(XLXN_503));
-   ServoControl_MUSER_main  XLXI_113 (.CLK_P123(CLK_P123), 
-                                     .ESP_CLK(ESP_CLK_P23), 
-                                     .ESP_IN(ESP_IN_P21), 
-                                     .PWM_Servo1(PWM_Servo3), 
-                                     .RegPIPO(XLXN_219[15:0]));
-   ServoControl_MUSER_main  XLXI_120 (.CLK_P123(CLK_P123), 
-                                     .ESP_CLK(ESP_CLK_P8), 
-                                     .ESP_IN(ESP_IN_P6), 
-                                     .PWM_Servo1(PWM_Servo4), 
-                                     .RegPIPO(XLXN_220[15:0]));
-   ServoControl_MUSER_main  XLXI_121 (.CLK_P123(CLK_P123), 
-                                     .ESP_CLK(ESP_CLK_P11), 
-                                     .ESP_IN(ESP_IN_P9), 
-                                     .PWM_Servo1(PWM_Servo1), 
-                                     .RegPIPO(XLXN_217[15:0]));
-   ServoControl_MUSER_main  XLXI_122 (.CLK_P123(CLK_P123), 
-                                     .ESP_CLK(ESP_CLK_P16), 
-                                     .ESP_IN(ESP_IN_P14), 
-                                     .PWM_Servo1(PWM_Servo2), 
-                                     .RegPIPO(XLXN_218[15:0]));
+   AND3B1  XLXI_87 (.I0(XLXN_453), 
+                   .I1(XLXN_452), 
+                   .I2(XLXN_451), 
+                   .O(XLXN_454));
 endmodule

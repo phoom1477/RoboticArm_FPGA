@@ -9,14 +9,11 @@
         <signal name="CLK" />
         <signal name="XLXN_2" />
         <signal name="RESET" />
-        <signal name="XLXN_20" />
-        <signal name="XLXN_22" />
         <signal name="XLXN_23" />
         <signal name="XLXN_24" />
         <signal name="XLXN_25" />
         <signal name="XLXN_26" />
         <signal name="TC" />
-        <signal name="XLXN_34" />
         <port polarity="Input" name="CLK" />
         <port polarity="Output" name="TC" />
         <blockdef name="cb4ce">
@@ -92,36 +89,36 @@
             <blockpin signalname="TC" name="O" />
         </block>
     </netlist>
-    <sheet sheetnum="1" width="3520" height="2720">
+    <sheet sheetnum="1" width="2720" height="1760">
         <branch name="CLK">
-            <wire x2="1552" y1="1200" y2="1200" x1="1152" />
+            <wire x2="1104" y1="960" y2="960" x1="704" />
         </branch>
         <branch name="XLXN_2">
-            <wire x2="1552" y1="1136" y2="1136" x1="1440" />
+            <wire x2="1104" y1="896" y2="896" x1="992" />
         </branch>
-        <instance x="1552" y="1328" name="XLXI_1" orien="R0" />
-        <instance x="1440" y="1200" name="XLXI_2" orien="R270" />
-        <iomarker fontsize="28" x="1152" y="1200" name="CLK" orien="R180" />
+        <instance x="1104" y="1088" name="XLXI_1" orien="R0" />
+        <instance x="992" y="960" name="XLXI_2" orien="R270" />
         <branch name="RESET">
-            <wire x2="1552" y1="1296" y2="1344" x1="1552" />
+            <wire x2="1104" y1="1056" y2="1104" x1="1104" />
         </branch>
-        <instance x="1488" y="1472" name="XLXI_10" orien="R0" />
+        <instance x="1040" y="1232" name="XLXI_10" orien="R0" />
         <branch name="XLXN_23">
-            <wire x2="2016" y1="880" y2="880" x1="1936" />
+            <wire x2="1568" y1="640" y2="640" x1="1488" />
         </branch>
         <branch name="XLXN_24">
-            <wire x2="2016" y1="944" y2="944" x1="1936" />
+            <wire x2="1568" y1="704" y2="704" x1="1488" />
         </branch>
         <branch name="XLXN_25">
-            <wire x2="2016" y1="1008" y2="1008" x1="1936" />
+            <wire x2="1568" y1="768" y2="768" x1="1488" />
         </branch>
         <branch name="XLXN_26">
-            <wire x2="2016" y1="1072" y2="1072" x1="1936" />
+            <wire x2="1568" y1="832" y2="832" x1="1488" />
         </branch>
         <branch name="TC">
-            <wire x2="2320" y1="976" y2="976" x1="2272" />
+            <wire x2="1872" y1="736" y2="736" x1="1824" />
         </branch>
-        <iomarker fontsize="28" x="2320" y="976" name="TC" orien="R0" />
-        <instance x="2016" y="1136" name="XLXI_15" orien="R0" />
+        <instance x="1568" y="896" name="XLXI_15" orien="R0" />
+        <iomarker fontsize="28" x="704" y="960" name="CLK" orien="R180" />
+        <iomarker fontsize="28" x="1872" y="736" name="TC" orien="R0" />
     </sheet>
 </drawing>

@@ -104,7 +104,7 @@
             <line x2="128" y1="-200" y2="-160" x1="128" />
         </blockdef>
         <blockdef name="HEX2SEG">
-            <timestamp>2020-10-28T15:13:18</timestamp>
+            <timestamp>2020-11-4T8:0:6</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -168,7 +168,7 @@
         <block symbolname="vcc" name="XLXI_1685(3:0)">
             <blockpin signalname="XLXN_520(3:0)" name="P" />
         </block>
-        <block symbolname="HEX2SEG" name="XLXI_1687">
+        <block symbolname="HEX2SEG" name="XLXI_1688">
             <blockpin signalname="XLXN_523(3:0)" name="hex_in(3:0)" />
             <blockpin signalname="SEG_OUT(6:0)" name="SEG(6:0)" />
         </block>
@@ -281,8 +281,6 @@
             <wire x2="2240" y1="1600" y2="1792" x1="2240" />
             <wire x2="2240" y1="1792" y2="1840" x1="2240" />
         </branch>
-        <instance x="2688" y="784" name="XLXI_1687" orien="R0">
-        </instance>
         <iomarker fontsize="28" x="2112" y="784" name="C3(3:0)" orien="R180" />
         <iomarker fontsize="28" x="2112" y="848" name="C4(3:0)" orien="R180" />
         <branch name="qweqwe">
@@ -302,5 +300,7 @@
             <wire x2="2336" y1="976" y2="976" x1="2160" />
             <wire x2="2160" y1="976" y2="1136" x1="2160" />
         </branch>
+        <instance x="2688" y="784" name="XLXI_1688" orien="R0">
+        </instance>
     </sheet>
 </drawing>

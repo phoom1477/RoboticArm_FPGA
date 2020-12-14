@@ -6,17 +6,12 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_2" />
         <signal name="XLXN_9" />
-        <signal name="XLXN_27" />
         <signal name="XLXN_3" />
         <signal name="XLXN_4" />
-        <signal name="XLXN_1" />
         <signal name="XLXN_20" />
         <signal name="CLK_IN" />
         <signal name="CLK_OUT" />
-        <signal name="XLXN_34" />
-        <signal name="XLXN_38" />
         <port polarity="Input" name="CLK_IN" />
         <port polarity="Output" name="CLK_OUT" />
         <blockdef name="ftc">

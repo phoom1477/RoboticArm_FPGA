@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : segment_upgrade.vf
-// /___/   /\     Timestamp : 12/10/2020 22:49:12
+// /___/   /\     Timestamp : 12/11/2020 15:03:05
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -280,7 +280,7 @@ module HEX2SEG_MUSER_segment_upgrade(hex_in,
                    .I2(XLXN_16), 
                    .I3(XLXN_14), 
                    .O(XLXN_20));
-   (* HU_SET = "XLXI_1_40" *) 
+   (* HU_SET = "XLXI_1_26" *) 
    D4_16E_HXILINX_segment_upgrade  XLXI_1 (.A0(hex_in[0]), 
                                           .A1(hex_in[1]), 
                                           .A2(hex_in[2]), 
@@ -308,7 +308,7 @@ module HEX2SEG_MUSER_segment_upgrade(hex_in,
                .I2(XLXN_13), 
                .I3(XLXN_18), 
                .O(XLXN_22));
-   (* HU_SET = "XLXI_6_41" *) 
+   (* HU_SET = "XLXI_6_27" *) 
    OR6_HXILINX_segment_upgrade  XLXI_6 (.I0(XLXN_12), 
                                        .I1(XLXN_11), 
                                        .I2(XLXN_16), 
@@ -322,7 +322,7 @@ module HEX2SEG_MUSER_segment_upgrade(hex_in,
                .I3(XLXN_17), 
                .I4(XLXN_18), 
                .O(XLXN_23));
-   (* HU_SET = "XLXI_8_42" *) 
+   (* HU_SET = "XLXI_8_28" *) 
    OR6_HXILINX_segment_upgrade  XLXI_8 (.I0(XLXN_4), 
                                        .I1(XLXN_6), 
                                        .I2(XLXN_7), 
@@ -390,19 +390,19 @@ module count09_MUSER_segment_upgrade(CLK_P45,
    assign Bit2_P80 = Bit2_P80_DUMMY;
    assign Bit3_P79 = Bit3_P79_DUMMY;
    assign Tc = Tc_DUMMY;
-   (* HU_SET = "XLXI_1_43" *) 
+   (* HU_SET = "XLXI_1_29" *) 
    FJKC_HXILINX_segment_upgrade  XLXI_1 (.C(CLK_P45), 
                                         .CLR(Tc_DUMMY), 
                                         .J(XLXN_3), 
                                         .K(XLXN_3), 
                                         .Q(Bit0_P82_DUMMY));
-   (* HU_SET = "XLXI_2_44" *) 
+   (* HU_SET = "XLXI_2_30" *) 
    FJKC_HXILINX_segment_upgrade  XLXI_2 (.C(XLXN_21), 
                                         .CLR(Tc_DUMMY), 
                                         .J(XLXN_3), 
                                         .K(XLXN_3), 
                                         .Q(Bit2_P80_DUMMY));
-   (* HU_SET = "XLXI_3_45" *) 
+   (* HU_SET = "XLXI_3_31" *) 
    FJKC_HXILINX_segment_upgrade  XLXI_3 (.C(XLXN_22), 
                                         .CLR(Tc_DUMMY), 
                                         .J(XLXN_3), 
@@ -418,7 +418,7 @@ module count09_MUSER_segment_upgrade(CLK_P45,
                 .I2(Bit1_P81_DUMMY), 
                 .I3(XLXN_6), 
                 .O(Tc_DUMMY));
-   (* HU_SET = "XLXI_8_46" *) 
+   (* HU_SET = "XLXI_8_32" *) 
    FJKC_HXILINX_segment_upgrade  XLXI_8 (.C(XLXN_20), 
                                         .CLR(Tc_DUMMY), 
                                         .J(XLXN_3), 
@@ -506,7 +506,7 @@ module segment_upgrade(CLK_P123,
    wire [3:0] XLXN_523;
    
    VCC  XLXI_93 (.P(XLXN_208));
-   (* HU_SET = "XLXI_106_47" *) 
+   (* HU_SET = "XLXI_106_33" *) 
    CB2CE_HXILINX_segment_upgrade  XLXI_106 (.C(XLXN_423), 
                                            .CE(XLXN_208), 
                                            .CLR(), 
@@ -514,7 +514,7 @@ module segment_upgrade(CLK_P123,
                                            .Q0(qweqwe), 
                                            .Q1(qweqweqw), 
                                            .TC());
-   (* HU_SET = "XLXI_107_48" *) 
+   (* HU_SET = "XLXI_107_34" *) 
    D2_4E_HXILINX_segment_upgrade  XLXI_107 (.A0(qweqwe), 
                                            .A1(qweqweqw), 
                                            .E(XLXN_340), 
@@ -533,7 +533,7 @@ module segment_upgrade(CLK_P123,
                  .O(COMM[3]));
    div100k_MUSER_segment_upgrade  XLXI_167 (.CLK_P123(CLK_P123), 
                                            .CLK_OUT(XLXN_423));
-   (* HU_SET = "XLXI_1683_0_52" *) 
+   (* HU_SET = "XLXI_1683_0_38" *) 
    M4_1E_HXILINX_segment_upgrade  XLXI_1683_0 (.D0(C1[0]), 
                                               .D1(C2[0]), 
                                               .D2(C3[0]), 
@@ -542,7 +542,7 @@ module segment_upgrade(CLK_P123,
                                               .S0(qweqwe), 
                                               .S1(qweqweqw), 
                                               .O(XLXN_523[0]));
-   (* HU_SET = "XLXI_1683_1_51" *) 
+   (* HU_SET = "XLXI_1683_1_37" *) 
    M4_1E_HXILINX_segment_upgrade  XLXI_1683_1 (.D0(C1[1]), 
                                               .D1(C2[1]), 
                                               .D2(C3[1]), 
@@ -551,7 +551,7 @@ module segment_upgrade(CLK_P123,
                                               .S0(qweqwe), 
                                               .S1(qweqweqw), 
                                               .O(XLXN_523[1]));
-   (* HU_SET = "XLXI_1683_2_50" *) 
+   (* HU_SET = "XLXI_1683_2_36" *) 
    M4_1E_HXILINX_segment_upgrade  XLXI_1683_2 (.D0(C1[2]), 
                                               .D1(C2[2]), 
                                               .D2(C3[2]), 
@@ -560,7 +560,7 @@ module segment_upgrade(CLK_P123,
                                               .S0(qweqwe), 
                                               .S1(qweqweqw), 
                                               .O(XLXN_523[2]));
-   (* HU_SET = "XLXI_1683_3_49" *) 
+   (* HU_SET = "XLXI_1683_3_35" *) 
    M4_1E_HXILINX_segment_upgrade  XLXI_1683_3 (.D0(C1[3]), 
                                               .D1(C2[3]), 
                                               .D2(C3[3]), 
@@ -573,6 +573,6 @@ module segment_upgrade(CLK_P123,
    VCC  XLXI_1685_1 (.P(XLXN_520[1]));
    VCC  XLXI_1685_2 (.P(XLXN_520[2]));
    VCC  XLXI_1685_3 (.P(XLXN_520[3]));
-   HEX2SEG_MUSER_segment_upgrade  XLXI_1687 (.hex_in(XLXN_523[3:0]), 
+   HEX2SEG_MUSER_segment_upgrade  XLXI_1688 (.hex_in(XLXN_523[3:0]), 
                                             .SEG(SEG_OUT[6:0]));
 endmodule

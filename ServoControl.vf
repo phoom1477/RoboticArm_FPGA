@@ -1,0 +1,459 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ServoControl.vf
+// /___/   /\     Timestamp : 12/11/2020 15:03:07
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch
+//Design Name: ServoControl
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_ServoControl(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+ 
+module CC16CE_HXILINX_ServoControl(CEO, Q, TC, C, CE, CLR);
+ 
+   parameter TERMINAL_COUNT = 16'b1111_1111_1111_1111;
+   
+   output             CEO;
+   output [15:0]      Q;
+   output             TC;
+
+   input 	      C;
+   input 	      CE;
+   input 	      CLR;
+   
+   reg    [15:0]      Q;
+   
+   always @(posedge C or posedge CLR)
+     begin
+        if (CLR)
+          Q <= 16'b0000_0000_0000_0000;
+        else if (CE)
+          Q <= Q + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : (Q == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_ServoControl(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module COMPM16_HXILINX_ServoControl (GT, LT, A, B);
+    
+
+   output GT;
+   output LT;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign GT = A > B  ;
+   assign LT = A < B  ;
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_ServoControl(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module COMP16_HXILINX_ServoControl (EQ, A, B);
+    
+
+   output EQ;
+
+   input  [15:0] A;
+   input  [15:0] B;
+
+   assign EQ = (A == B) ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module DIV_200_MUSER_ServoControl(CLK_IN, 
+                                  CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_9;
+   wire XLXN_20;
+   
+   (* HU_SET = "XLXI_1_54" *) 
+   FTC_HXILINX_ServoControl  XLXI_1 (.C(XLXN_3), 
+                                    .CLR(XLXN_9), 
+                                    .T(XLXN_20), 
+                                    .Q(CLK_OUT));
+   (* HU_SET = "XLXI_2_55" *) 
+   CD4CE_HXILINX_ServoControl  XLXI_2 (.C(XLXN_4), 
+                                      .CE(XLXN_20), 
+                                      .CLR(XLXN_9), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_3));
+   (* HU_SET = "XLXI_8_56" *) 
+   CD4CE_HXILINX_ServoControl  XLXI_8 (.C(CLK_IN), 
+                                      .CE(XLXN_20), 
+                                      .CLR(XLXN_9), 
+                                      .CEO(), 
+                                      .Q0(), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3(), 
+                                      .TC(XLXN_4));
+   VCC  XLXI_13 (.P(XLXN_20));
+endmodule
+`timescale 1ns / 1ps
+
+module PWM_Gen_MUSER_ServoControl(Duty, 
+                                  FPGA_CLK, 
+                                  PWM);
+
+    input [15:0] Duty;
+    input FPGA_CLK;
+   output PWM;
+   
+   wire [15:0] BIN2000;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire [15:0] XLXN_5;
+   wire XLXN_7;
+   
+   (* HU_SET = "XLXI_2_57" *) 
+   CC16CE_HXILINX_ServoControl  XLXI_2 (.C(XLXN_1), 
+                                       .CE(XLXN_2), 
+                                       .CLR(XLXN_7), 
+                                       .CEO(), 
+                                       .Q(XLXN_5[15:0]), 
+                                       .TC());
+   VCC  XLXI_4 (.P(XLXN_2));
+   (* HU_SET = "XLXI_8_58" *) 
+   COMPM16_HXILINX_ServoControl  XLXI_8 (.A(XLXN_5[15:0]), 
+                                        .B(Duty[15:0]), 
+                                        .GT(), 
+                                        .LT(PWM));
+   (* HU_SET = "XLXI_10_59" *) 
+   COMP16_HXILINX_ServoControl  XLXI_10 (.A(BIN2000[15:0]), 
+                                        .B(XLXN_5[15:0]), 
+                                        .EQ(XLXN_7));
+   GND  XLXI_37_0 (.G(BIN2000[0]));
+   GND  XLXI_37_1 (.G(BIN2000[1]));
+   GND  XLXI_37_2 (.G(BIN2000[2]));
+   GND  XLXI_37_3 (.G(BIN2000[3]));
+   GND  XLXI_38 (.G(BIN2000[5]));
+   GND  XLXI_39_0 (.G(BIN2000[11]));
+   GND  XLXI_39_1 (.G(BIN2000[12]));
+   GND  XLXI_39_2 (.G(BIN2000[13]));
+   GND  XLXI_39_3 (.G(BIN2000[14]));
+   GND  XLXI_39_4 (.G(BIN2000[15]));
+   VCC  XLXI_40_0 (.P(BIN2000[6]));
+   VCC  XLXI_40_1 (.P(BIN2000[7]));
+   VCC  XLXI_40_2 (.P(BIN2000[8]));
+   VCC  XLXI_40_3 (.P(BIN2000[9]));
+   VCC  XLXI_40_4 (.P(BIN2000[10]));
+   VCC  XLXI_41 (.P(BIN2000[4]));
+   DIV_200_MUSER_ServoControl  XLXI_42 (.CLK_IN(FPGA_CLK), 
+                                       .CLK_OUT(XLXN_1));
+endmodule
+`timescale 1ns / 1ps
+
+module Counter16_TC_MUSER_ServoControl(CLK, 
+                                       TC);
+
+    input CLK;
+   output TC;
+   
+   wire RESET;
+   wire XLXN_2;
+   wire XLXN_23;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   (* HU_SET = "XLXI_1_60" *) 
+   CB4CE_HXILINX_ServoControl  XLXI_1 (.C(CLK), 
+                                      .CE(XLXN_2), 
+                                      .CLR(RESET), 
+                                      .CEO(), 
+                                      .Q0(XLXN_23), 
+                                      .Q1(XLXN_24), 
+                                      .Q2(XLXN_25), 
+                                      .Q3(XLXN_26), 
+                                      .TC());
+   VCC  XLXI_2 (.P(XLXN_2));
+   GND  XLXI_10 (.G(RESET));
+   AND4B4  XLXI_15 (.I0(XLXN_26), 
+                   .I1(XLXN_25), 
+                   .I2(XLXN_24), 
+                   .I3(XLXN_23), 
+                   .O(TC));
+endmodule
+`timescale 1ns / 1ps
+
+module RegPIPO_16_MUSER_ServoControl(CLK, 
+                                     DataIn, 
+                                     DataOut);
+
+    input CLK;
+    input [15:0] DataIn;
+   output [15:0] DataOut;
+   
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(DataIn[0]), 
+              .Q(DataOut[0]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(DataIn[1]), 
+              .Q(DataOut[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+               .D(DataIn[2]), 
+               .Q(DataOut[2]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+               .D(DataIn[3]), 
+               .Q(DataOut[3]));
+   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
+               .D(DataIn[4]), 
+               .Q(DataOut[4]));
+   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
+               .D(DataIn[5]), 
+               .Q(DataOut[5]));
+   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
+               .D(DataIn[6]), 
+               .Q(DataOut[6]));
+   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
+               .D(DataIn[7]), 
+               .Q(DataOut[7]));
+   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
+               .D(DataIn[12]), 
+               .Q(DataOut[12]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
+               .D(DataIn[13]), 
+               .Q(DataOut[13]));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
+               .D(DataIn[14]), 
+               .Q(DataOut[14]));
+   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
+               .D(DataIn[11]), 
+               .Q(DataOut[11]));
+   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
+               .D(DataIn[10]), 
+               .Q(DataOut[10]));
+   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
+               .D(DataIn[9]), 
+               .Q(DataOut[9]));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
+               .D(DataIn[8]), 
+               .Q(DataOut[8]));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
+               .D(DataIn[15]), 
+               .Q(DataOut[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module RegSIPO_16_MUSER_ServoControl(CLK, 
+                                     DataIn, 
+                                     DataOut);
+
+    input CLK;
+    input DataIn;
+   output [15:0] DataOut;
+   
+   wire [15:0] DataOut_DUMMY;
+   
+   assign DataOut[15:0] = DataOut_DUMMY[15:0];
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(DataIn), 
+              .Q(DataOut_DUMMY[0]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(DataOut_DUMMY[0]), 
+              .Q(DataOut_DUMMY[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+               .D(DataOut_DUMMY[1]), 
+               .Q(DataOut_DUMMY[2]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+               .D(DataOut_DUMMY[2]), 
+               .Q(DataOut_DUMMY[3]));
+   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
+               .D(DataOut_DUMMY[3]), 
+               .Q(DataOut_DUMMY[4]));
+   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
+               .D(DataOut_DUMMY[4]), 
+               .Q(DataOut_DUMMY[5]));
+   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
+               .D(DataOut_DUMMY[5]), 
+               .Q(DataOut_DUMMY[6]));
+   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
+               .D(DataOut_DUMMY[6]), 
+               .Q(DataOut_DUMMY[7]));
+   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
+               .D(DataOut_DUMMY[7]), 
+               .Q(DataOut_DUMMY[8]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
+               .D(DataOut_DUMMY[8]), 
+               .Q(DataOut_DUMMY[9]));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
+               .D(DataOut_DUMMY[9]), 
+               .Q(DataOut_DUMMY[10]));
+   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
+               .D(DataOut_DUMMY[10]), 
+               .Q(DataOut_DUMMY[11]));
+   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
+               .D(DataOut_DUMMY[11]), 
+               .Q(DataOut_DUMMY[12]));
+   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
+               .D(DataOut_DUMMY[12]), 
+               .Q(DataOut_DUMMY[13]));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
+               .D(DataOut_DUMMY[13]), 
+               .Q(DataOut_DUMMY[14]));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
+               .D(DataOut_DUMMY[14]), 
+               .Q(DataOut_DUMMY[15]));
+endmodule
+`timescale 1ns / 1ps
+
+module ServoControl(CLK_P123, 
+                    ESP_CLK, 
+                    ESP_IN, 
+                    PWM_Servo1, 
+                    RegPIPO);
+
+    input CLK_P123;
+    input ESP_CLK;
+    input ESP_IN;
+   output PWM_Servo1;
+   output [15:0] RegPIPO;
+   
+   wire XLXN_70;
+   wire [15:0] XLXN_78;
+   wire [15:0] RegPIPO_DUMMY;
+   
+   assign RegPIPO[15:0] = RegPIPO_DUMMY[15:0];
+   PWM_Gen_MUSER_ServoControl  XLXI_1 (.Duty(RegPIPO_DUMMY[15:0]), 
+                                      .FPGA_CLK(CLK_P123), 
+                                      .PWM(PWM_Servo1));
+   RegSIPO_16_MUSER_ServoControl  XLXI_33 (.CLK(ESP_CLK), 
+                                          .DataIn(ESP_IN), 
+                                          .DataOut(XLXN_78[15:0]));
+   RegPIPO_16_MUSER_ServoControl  XLXI_36 (.CLK(XLXN_70), 
+                                          .DataIn(XLXN_78[15:0]), 
+                                          .DataOut(RegPIPO_DUMMY[15:0]));
+   Counter16_TC_MUSER_ServoControl  XLXI_37 (.CLK(ESP_CLK), 
+                                            .TC(XLXN_70));
+endmodule
