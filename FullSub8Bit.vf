@@ -1,0 +1,183 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FullSub8Bit.vf
+// /___/   /\     Timestamp : 12/15/2020 23:01:28
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullSub8Bit.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullSub8Bit.sch
+//Design Name: FullSub8Bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdder_MUSER_FullSub8Bit(A_P66, 
+                                   B_P62, 
+                                   Cout_P81, 
+                                   R_P82);
+
+    input A_P66;
+    input B_P62;
+   output Cout_P81;
+   output R_P82;
+   
+   
+   XOR2  XLXI_1 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(R_P82));
+   AND2  XLXI_3 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder_MUSER_FullSub8Bit(A_P66, 
+                                   B_P62, 
+                                   Cin_P61, 
+                                   Cout_P81, 
+                                   R_P82);
+
+    input A_P66;
+    input B_P62;
+    input Cin_P61;
+   output Cout_P81;
+   output R_P82;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   HalfAdder_MUSER_FullSub8Bit  XLXI_9 (.A_P66(A_P66), 
+                                       .B_P62(B_P62), 
+                                       .Cout_P81(XLXN_10), 
+                                       .R_P82(XLXN_6));
+   HalfAdder_MUSER_FullSub8Bit  XLXI_10 (.A_P66(XLXN_6), 
+                                        .B_P62(Cin_P61), 
+                                        .Cout_P81(XLXN_9), 
+                                        .R_P82(R_P82));
+   OR2  XLXI_11 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder4Bit_MUSER_FullSub8Bit(A, 
+                                       B, 
+                                       CI, 
+                                       CO, 
+                                       S);
+
+    input [3:0] A;
+    input [3:0] B;
+    input CI;
+   output CO;
+   output [3:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   FullAdder_MUSER_FullSub8Bit  XLXI_1 (.A_P66(A[0]), 
+                                       .B_P62(B[0]), 
+                                       .Cin_P61(CI), 
+                                       .Cout_P81(XLXN_1), 
+                                       .R_P82(S[0]));
+   FullAdder_MUSER_FullSub8Bit  XLXI_2 (.A_P66(A[1]), 
+                                       .B_P62(B[1]), 
+                                       .Cin_P61(XLXN_1), 
+                                       .Cout_P81(XLXN_2), 
+                                       .R_P82(S[1]));
+   FullAdder_MUSER_FullSub8Bit  XLXI_3 (.A_P66(A[2]), 
+                                       .B_P62(B[2]), 
+                                       .Cin_P61(XLXN_2), 
+                                       .Cout_P81(XLXN_3), 
+                                       .R_P82(S[2]));
+   FullAdder_MUSER_FullSub8Bit  XLXI_4 (.A_P66(A[3]), 
+                                       .B_P62(B[3]), 
+                                       .Cin_P61(XLXN_3), 
+                                       .Cout_P81(CO), 
+                                       .R_P82(S[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder8Bit_MUSER_FullSub8Bit(A, 
+                                       B, 
+                                       CO, 
+                                       S);
+
+    input [7:0] A;
+    input [7:0] B;
+   output CO;
+   output [7:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_16;
+   
+   FullAdder4Bit_MUSER_FullSub8Bit  XLXI_1 (.A(A[3:0]), 
+                                           .B(B[3:0]), 
+                                           .CI(XLXN_16), 
+                                           .CO(XLXN_1), 
+                                           .S(S[3:0]));
+   FullAdder4Bit_MUSER_FullSub8Bit  XLXI_2 (.A(A[7:4]), 
+                                           .B(B[7:4]), 
+                                           .CI(XLXN_1), 
+                                           .CO(CO), 
+                                           .S(S[7:4]));
+   GND  XLXI_3 (.G(XLXN_16));
+endmodule
+`timescale 1ns / 1ps
+
+module FullSub8Bit(A, 
+                   B_, 
+                   S);
+
+    input [7:0] A;
+    input [7:0] B_;
+   output [7:0] S;
+   
+   wire [7:0] dB;
+   wire [7:0] XLXN_28;
+   wire [7:0] XLXN_43;
+   
+   INV  INV__0 (.I(B_[0]), 
+               .O(XLXN_28[0]));
+   INV  INV__1 (.I(B_[1]), 
+               .O(XLXN_28[1]));
+   INV  INV__2 (.I(B_[2]), 
+               .O(XLXN_28[2]));
+   INV  INV__3 (.I(B_[3]), 
+               .O(XLXN_28[3]));
+   INV  INV__4 (.I(B_[4]), 
+               .O(XLXN_28[4]));
+   INV  INV__5 (.I(B_[5]), 
+               .O(XLXN_28[5]));
+   INV  INV__6 (.I(B_[6]), 
+               .O(XLXN_28[6]));
+   INV  INV__7 (.I(B_[7]), 
+               .O(XLXN_28[7]));
+   FullAdder8Bit_MUSER_FullSub8Bit  XLXI_1 (.A(A[7:0]), 
+                                           .B(XLXN_28[7:0]), 
+                                           .CO(), 
+                                           .S(XLXN_43[7:0]));
+   FullAdder8Bit_MUSER_FullSub8Bit  XLXI_43 (.A(XLXN_43[7:0]), 
+                                            .B(dB[7:0]), 
+                                            .CO(), 
+                                            .S(S[7:0]));
+   GND  XLXI_46_0 (.G(dB[1]));
+   GND  XLXI_46_1 (.G(dB[2]));
+   GND  XLXI_46_2 (.G(dB[3]));
+   GND  XLXI_46_3 (.G(dB[4]));
+   GND  XLXI_46_4 (.G(dB[5]));
+   GND  XLXI_46_5 (.G(dB[6]));
+   GND  XLXI_46_6 (.G(dB[7]));
+   VCC  XLXI_47 (.P(dB[0]));
+endmodule

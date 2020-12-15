@@ -1,0 +1,5 @@
+MODULE ManualControl
+	SUBMODULE Counter_FB_8Bits
+		INSTANCE XLXI_1
+	SUBMODULE FullAdder8Bit
+		INSTANCE XLXI_6

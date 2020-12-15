@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : LED_ProgressBar.vf
-// /___/   /\     Timestamp : 12/14/2020 23:33:29
+// /___/   /\     Timestamp : 12/15/2020 23:01:02
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -126,42 +126,42 @@ module Compare_x8_MUSER_LED_ProgressBar(CurStep,
    output D7;
    
    
-   (* HU_SET = "XLXI_24_40" *) 
+   (* HU_SET = "XLXI_24_9" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_24 (.A(CurStep[15:0]), 
                                              .B(Step2[15:0]), 
                                              .GT(D2), 
                                              .LT());
-   (* HU_SET = "XLXI_25_39" *) 
+   (* HU_SET = "XLXI_25_8" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_25 (.A(CurStep[15:0]), 
                                              .B(Step3[15:0]), 
                                              .GT(D3), 
                                              .LT());
-   (* HU_SET = "XLXI_26_42" *) 
+   (* HU_SET = "XLXI_26_11" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_26 (.A(CurStep[15:0]), 
                                              .B(Step0[15:0]), 
                                              .GT(D0), 
                                              .LT());
-   (* HU_SET = "XLXI_27_41" *) 
+   (* HU_SET = "XLXI_27_10" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_27 (.A(CurStep[15:0]), 
                                              .B(Step1[15:0]), 
                                              .GT(D1), 
                                              .LT());
-   (* HU_SET = "XLXI_32_37" *) 
+   (* HU_SET = "XLXI_32_6" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_32 (.A(CurStep[15:0]), 
                                              .B(Step6[15:0]), 
                                              .GT(D6), 
                                              .LT());
-   (* HU_SET = "XLXI_33_36" *) 
+   (* HU_SET = "XLXI_33_5" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_33 (.A(CurStep[15:0]), 
                                              .B(Step7[15:0]), 
                                              .GT(D7), 
                                              .LT());
-   (* HU_SET = "XLXI_34_38" *) 
+   (* HU_SET = "XLXI_34_7" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_34 (.A(CurStep[15:0]), 
                                              .B(Step4[15:0]), 
                                              .GT(D4), 
                                              .LT());
-   (* HU_SET = "XLXI_35_35" *) 
+   (* HU_SET = "XLXI_35_4" *) 
    COMPMC16_HXILINX_LED_ProgressBar  XLXI_35 (.A(CurStep[15:0]), 
                                              .B(Step5[15:0]), 
                                              .GT(D5), 
@@ -214,7 +214,7 @@ module LED_ProgressBar(CurStep,
    wire A6;
    wire A7;
    
-   (* HU_SET = "XLXI_2_43" *) 
+   (* HU_SET = "XLXI_2_12" *) 
    OR8_HXILINX_LED_ProgressBar  XLXI_2 (.I0(A0), 
                                        .I1(A1), 
                                        .I2(A2), 
@@ -224,7 +224,7 @@ module LED_ProgressBar(CurStep,
                                        .I6(A6), 
                                        .I7(A7), 
                                        .O(LED0));
-   (* HU_SET = "XLXI_3_45" *) 
+   (* HU_SET = "XLXI_3_14" *) 
    OR7_HXILINX_LED_ProgressBar  XLXI_3 (.I0(A1), 
                                        .I1(A2), 
                                        .I2(A3), 
@@ -233,7 +233,7 @@ module LED_ProgressBar(CurStep,
                                        .I5(A6), 
                                        .I6(A7), 
                                        .O(LED1));
-   (* HU_SET = "XLXI_4_44" *) 
+   (* HU_SET = "XLXI_4_13" *) 
    OR6_HXILINX_LED_ProgressBar  XLXI_4 (.I0(A2), 
                                        .I1(A3), 
                                        .I2(A4), 

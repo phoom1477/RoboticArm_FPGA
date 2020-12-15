@@ -6,14 +6,6 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_1(15:0)" />
-        <signal name="XLXN_3(15:0)" />
-        <signal name="XLXN_4(15:0)" />
-        <signal name="XLXN_5(15:0)" />
-        <signal name="XLXN_6(15:0)" />
-        <signal name="XLXN_8(15:0)" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_11(15:0)" />
         <signal name="CurStep(15:0)" />
         <signal name="Step0(15:0)" />
         <signal name="Step1(15:0)" />

@@ -36,7 +36,7 @@ Setup/Hold to clock ESP_CLK_P7
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P5   |   -1.082(R)|      FAST  |    2.573(R)|      SLOW  |ESP_CLK_P7_BUFGP  |   0.000|
+ESP_IN_P5   |   -0.459(R)|      FAST  |    1.668(R)|      SLOW  |ESP_CLK_P7_BUFGP  |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P8
@@ -44,7 +44,7 @@ Setup/Hold to clock ESP_CLK_P8
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P6   |   -0.707(R)|      FAST  |    2.180(R)|      SLOW  |ESP_CLK_P8_BUFGP  |   0.000|
+ESP_IN_P6   |   -0.741(R)|      FAST  |    2.033(R)|      SLOW  |ESP_CLK_P8_BUFGP  |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P11
@@ -52,7 +52,7 @@ Setup/Hold to clock ESP_CLK_P11
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P9   |   -0.412(R)|      FAST  |    1.867(R)|      SLOW  |ESP_CLK_P11_BUFGP |   0.000|
+ESP_IN_P9   |   -0.582(R)|      FAST  |    1.982(R)|      SLOW  |ESP_CLK_P11_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P16
@@ -60,7 +60,7 @@ Setup/Hold to clock ESP_CLK_P16
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P14  |    0.840(R)|      SLOW  |    0.054(R)|      SLOW  |ESP_CLK_P16_BUFGP |   0.000|
+ESP_IN_P14  |    0.759(R)|      SLOW  |    0.145(R)|      SLOW  |ESP_CLK_P16_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock ESP_CLK_P23
@@ -68,29 +68,133 @@ Setup/Hold to clock ESP_CLK_P23
             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
 Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------+------------+------------------+--------+
-ESP_IN_P21  |    0.940(R)|      SLOW  |   -0.032(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
+ESP_IN_P21  |    1.623(R)|      SLOW  |   -0.683(R)|      SLOW  |ESP_CLK_P23_BUFGP |   0.000|
 ------------+------------+------------+------------+------------+------------------+--------+
 
-Clock SEL_P45 to Pad
+Clock SEL_P47 to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LED0_P67    |        20.116(R)|      SLOW  |         7.959(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED1_P74    |        19.992(R)|      SLOW  |         7.802(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED2_P75    |        19.333(R)|      SLOW  |         7.622(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED3_P78    |        18.536(R)|      SLOW  |         7.402(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED4_P79    |        18.140(R)|      SLOW  |         7.367(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED5_P80    |        17.795(R)|      SLOW  |         7.366(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED6_P81    |        18.261(R)|      SLOW  |         7.555(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-LED7_P82    |        17.507(R)|      SLOW  |         9.287(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<0>      |        14.433(R)|      SLOW  |         7.253(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<1>      |        14.424(R)|      SLOW  |         7.106(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<2>      |        14.319(R)|      SLOW  |         7.245(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<3>      |        14.264(R)|      SLOW  |         6.980(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<4>      |        14.348(R)|      SLOW  |         7.087(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<5>      |        14.502(R)|      SLOW  |         7.266(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
-SEG<6>      |        14.715(R)|      SLOW  |         7.422(R)|      FAST  |SEL_P45_BUFGP     |   0.000|
+LED0_P67    |        22.041(R)|      SLOW  |         8.756(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED1_P74    |        21.886(R)|      SLOW  |         8.478(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED2_P75    |        20.883(R)|      SLOW  |         8.571(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED3_P78    |        20.567(R)|      SLOW  |         7.961(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED4_P79    |        19.648(R)|      SLOW  |         8.085(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED5_P80    |        20.114(R)|      SLOW  |         8.350(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED6_P81    |        18.787(R)|      SLOW  |         8.404(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+LED7_P82    |        18.621(R)|      SLOW  |        10.057(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<0>      |        14.004(R)|      SLOW  |         7.455(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<1>      |        13.545(R)|      SLOW  |         7.334(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<2>      |        13.848(R)|      SLOW  |         7.363(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<3>      |        13.794(R)|      SLOW  |         7.127(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<4>      |        13.659(R)|      SLOW  |         7.263(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<5>      |        14.087(R)|      SLOW  |         7.512(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+SEG<6>      |        14.115(R)|      SLOW  |         7.645(R)|      FAST  |SEL_P47_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW_DOWN_P46 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED0_P67    |        18.912(R)|      SLOW  |         8.928(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        20.416(R)|      SLOW  |        10.365(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        20.148(R)|      SLOW  |         9.909(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.995(R)|      SLOW  |         9.972(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.865(R)|      SLOW  |         9.193(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED1_P74    |        18.705(R)|      SLOW  |         8.650(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        20.209(R)|      SLOW  |        10.128(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        19.941(R)|      SLOW  |         9.562(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.788(R)|      SLOW  |         9.476(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.658(R)|      SLOW  |         8.672(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED2_P75    |        18.732(R)|      SLOW  |         8.485(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        20.236(R)|      SLOW  |         9.922(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        19.968(R)|      SLOW  |         9.466(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.815(R)|      SLOW  |         9.550(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.685(R)|      SLOW  |         8.750(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED3_P78    |        17.549(R)|      SLOW  |         8.065(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        19.053(R)|      SLOW  |         9.613(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        18.785(R)|      SLOW  |         8.977(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        18.632(R)|      SLOW  |         8.891(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        17.502(R)|      SLOW  |         8.087(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED4_P79    |        16.527(R)|      SLOW  |         7.958(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.201(R)|      SLOW  |         9.506(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.763(R)|      SLOW  |         8.870(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.634(R)|      SLOW  |         8.784(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.480(R)|      SLOW  |         7.980(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED5_P80    |        16.646(R)|      SLOW  |         8.116(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.728(R)|      SLOW  |         9.534(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.857(R)|      SLOW  |         8.898(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        18.161(R)|      SLOW  |         9.010(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.581(R)|      SLOW  |         8.344(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED6_P81    |        16.581(R)|      SLOW  |         7.859(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.663(R)|      SLOW  |         9.277(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.792(R)|      SLOW  |         8.641(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        18.096(R)|      SLOW  |         8.753(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.516(R)|      SLOW  |         8.087(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED7_P82    |        16.415(R)|      SLOW  |         8.706(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.497(R)|      SLOW  |        10.143(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.626(R)|      SLOW  |         9.687(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.930(R)|      SLOW  |         9.771(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.350(R)|      SLOW  |         8.971(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+PWM_Servo0  |        15.455(R)|      SLOW  |         8.223(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+PWM_Servo1  |        15.630(R)|      SLOW  |         8.494(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+PWM_Servo2  |        15.027(R)|      SLOW  |         8.384(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+PWM_Servo3  |        15.238(R)|      SLOW  |         8.371(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+PWM_Servo4  |        15.801(R)|      SLOW  |         8.933(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW_UP_P45 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED0_P67    |        18.565(R)|      SLOW  |         8.676(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        20.057(R)|      SLOW  |        10.202(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        19.589(R)|      SLOW  |         9.547(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.638(R)|      SLOW  |         9.769(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.556(R)|      SLOW  |         9.047(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED1_P74    |        18.358(R)|      SLOW  |         8.398(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        19.850(R)|      SLOW  |         9.965(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        19.382(R)|      SLOW  |         9.200(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.431(R)|      SLOW  |         9.273(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.349(R)|      SLOW  |         8.526(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED2_P75    |        18.385(R)|      SLOW  |         8.233(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        19.877(R)|      SLOW  |         9.759(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        19.409(R)|      SLOW  |         9.104(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        19.458(R)|      SLOW  |         9.347(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        18.376(R)|      SLOW  |         8.604(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED3_P78    |        17.202(R)|      SLOW  |         7.813(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.694(R)|      SLOW  |         9.450(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        18.226(R)|      SLOW  |         8.615(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        18.275(R)|      SLOW  |         8.688(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        17.193(R)|      SLOW  |         7.941(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED4_P79    |        16.180(R)|      SLOW  |         7.706(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        17.842(R)|      SLOW  |         9.343(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.204(R)|      SLOW  |         8.508(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.277(R)|      SLOW  |         8.581(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.171(R)|      SLOW  |         7.834(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED5_P80    |        16.299(R)|      SLOW  |         7.864(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.369(R)|      SLOW  |         9.371(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.298(R)|      SLOW  |         8.536(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.804(R)|      SLOW  |         8.807(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.272(R)|      SLOW  |         8.198(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED6_P81    |        16.234(R)|      SLOW  |         7.607(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.304(R)|      SLOW  |         9.114(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.233(R)|      SLOW  |         8.279(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.739(R)|      SLOW  |         8.550(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.207(R)|      SLOW  |         7.941(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+LED7_P82    |        16.068(R)|      SLOW  |         8.454(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+            |        18.138(R)|      SLOW  |         9.980(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+            |        17.067(R)|      SLOW  |         9.325(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+            |        17.573(R)|      SLOW  |         9.568(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+            |        16.041(R)|      SLOW  |         8.825(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
+PWM_Servo0  |        15.108(R)|      SLOW  |         7.971(R)|      FAST  |XLXI_292/XLXN_102 |   0.000|
+PWM_Servo1  |        15.271(R)|      SLOW  |         8.331(R)|      FAST  |XLXI_293/XLXN_102 |   0.000|
+PWM_Servo2  |        14.468(R)|      SLOW  |         8.022(R)|      FAST  |XLXI_294/XLXN_102 |   0.000|
+PWM_Servo3  |        14.881(R)|      SLOW  |         8.168(R)|      FAST  |XLXI_295/XLXN_102 |   0.000|
+PWM_Servo4  |        15.492(R)|      SLOW  |         8.787(R)|      FAST  |XLXI_296/XLXN_102 |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock CLK_P123
@@ -98,7 +202,7 @@ Clock to Setup on destination clock CLK_P123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-CLK_P123       |    1.799|         |         |         |
+CLK_P123       |    1.676|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P7
@@ -106,7 +210,7 @@ Clock to Setup on destination clock ESP_CLK_P7
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P7     |    1.707|         |         |         |
+ESP_CLK_P7     |    1.587|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P8
@@ -114,7 +218,7 @@ Clock to Setup on destination clock ESP_CLK_P8
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P8     |    1.531|         |         |         |
+ESP_CLK_P8     |    1.697|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P11
@@ -122,7 +226,7 @@ Clock to Setup on destination clock ESP_CLK_P11
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P11    |    1.720|         |         |         |
+ESP_CLK_P11    |    1.697|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P16
@@ -130,7 +234,7 @@ Clock to Setup on destination clock ESP_CLK_P16
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P16    |    1.987|         |         |         |
+ESP_CLK_P16    |    2.001|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock ESP_CLK_P23
@@ -138,26 +242,63 @@ Clock to Setup on destination clock ESP_CLK_P23
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-ESP_CLK_P23    |    1.794|         |         |         |
+ESP_CLK_P23    |    1.697|         |         |         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock SEL_P45
+Clock to Setup on destination clock SEL_P47
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SEL_P45        |    1.900|         |         |         |
+SEL_P47        |    2.210|         |         |         |
 ---------------+---------+---------+---------+---------+
 
+Clock to Setup on destination clock SW_DOWN_P46
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW_DOWN_P46    |    6.215|    0.083|         |         |
+SW_UP_P45      |    6.215|         |         |         |
+---------------+---------+---------+---------+---------+
 
-Analysis completed Tue Dec 15 01:07:21 2020 
+Clock to Setup on destination clock SW_UP_P45
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW_DOWN_P46    |    6.215|    0.611|         |         |
+SW_UP_P45      |    6.215|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW_MODE_P55    |LED0_P67       |   20.000|
+SW_MODE_P55    |LED1_P74       |   19.845|
+SW_MODE_P55    |LED2_P75       |   19.236|
+SW_MODE_P55    |LED3_P78       |   18.526|
+SW_MODE_P55    |LED4_P79       |   17.607|
+SW_MODE_P55    |LED5_P80       |   18.073|
+SW_MODE_P55    |LED6_P81       |   17.582|
+SW_MODE_P55    |LED7_P82       |   17.416|
+SW_MODE_P55    |PWM_Servo0     |   14.141|
+SW_MODE_P55    |PWM_Servo1     |   13.822|
+SW_MODE_P55    |PWM_Servo2     |   13.912|
+SW_MODE_P55    |PWM_Servo3     |   12.553|
+SW_MODE_P55    |PWM_Servo4     |   14.211|
+---------------+---------------+---------+
+
+
+Analysis completed Tue Dec 15 23:16:27 2020 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 4588 MB
+Peak Memory Usage: 4587 MB
 
 
 

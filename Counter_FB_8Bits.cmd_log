@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_FB_8Bits C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter_FB_8Bits.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter_FB_8Bits.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter_FB_8Bits C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter_FB_8Bits.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/Counter_FB_8Bits.sym 

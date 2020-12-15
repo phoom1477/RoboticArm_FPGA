@@ -58,9 +58,6 @@
         <signal name="T6(15:0)" />
         <signal name="T7(15:0)" />
         <signal name="T3(15:0)" />
-        <signal name="XLXN_85" />
-        <signal name="XLXN_86" />
-        <signal name="XLXN_87" />
         <port polarity="Input" name="S0(15:0)" />
         <port polarity="Input" name="S1(15:0)" />
         <port polarity="Input" name="S2(15:0)" />

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : HEX2SEG.vf
-// /___/   /\     Timestamp : 12/11/2020 15:03:06
+// /___/   /\     Timestamp : 12/15/2020 23:01:04
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -145,7 +145,7 @@ module HEX2SEG(hex_in,
                    .I2(XLXN_16), 
                    .I3(XLXN_14), 
                    .O(XLXN_20));
-   (* HU_SET = "XLXI_1_51" *) 
+   (* HU_SET = "XLXI_1_36" *) 
    D4_16E_HXILINX_HEX2SEG  XLXI_1 (.A0(hex_in[0]), 
                                   .A1(hex_in[1]), 
                                   .A2(hex_in[2]), 
@@ -173,7 +173,7 @@ module HEX2SEG(hex_in,
                .I2(XLXN_13), 
                .I3(XLXN_18), 
                .O(XLXN_22));
-   (* HU_SET = "XLXI_6_52" *) 
+   (* HU_SET = "XLXI_6_37" *) 
    OR6_HXILINX_HEX2SEG  XLXI_6 (.I0(XLXN_12), 
                                .I1(XLXN_11), 
                                .I2(XLXN_16), 
@@ -187,7 +187,7 @@ module HEX2SEG(hex_in,
                .I3(XLXN_17), 
                .I4(XLXN_18), 
                .O(XLXN_23));
-   (* HU_SET = "XLXI_8_53" *) 
+   (* HU_SET = "XLXI_8_38" *) 
    OR6_HXILINX_HEX2SEG  XLXI_8 (.I0(XLXN_4), 
                                .I1(XLXN_6), 
                                .I2(XLXN_7), 

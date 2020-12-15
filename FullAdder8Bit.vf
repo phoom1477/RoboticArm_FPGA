@@ -1,0 +1,136 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FullAdder8Bit.vf
+// /___/   /\     Timestamp : 12/15/2020 23:01:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullAdder8Bit.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullAdder8Bit.sch
+//Design Name: FullAdder8Bit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdder_MUSER_FullAdder8Bit(A_P66, 
+                                     B_P62, 
+                                     Cout_P81, 
+                                     R_P82);
+
+    input A_P66;
+    input B_P62;
+   output Cout_P81;
+   output R_P82;
+   
+   
+   XOR2  XLXI_1 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(R_P82));
+   AND2  XLXI_3 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder_MUSER_FullAdder8Bit(A_P66, 
+                                     B_P62, 
+                                     Cin_P61, 
+                                     Cout_P81, 
+                                     R_P82);
+
+    input A_P66;
+    input B_P62;
+    input Cin_P61;
+   output Cout_P81;
+   output R_P82;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   HalfAdder_MUSER_FullAdder8Bit  XLXI_9 (.A_P66(A_P66), 
+                                         .B_P62(B_P62), 
+                                         .Cout_P81(XLXN_10), 
+                                         .R_P82(XLXN_6));
+   HalfAdder_MUSER_FullAdder8Bit  XLXI_10 (.A_P66(XLXN_6), 
+                                          .B_P62(Cin_P61), 
+                                          .Cout_P81(XLXN_9), 
+                                          .R_P82(R_P82));
+   OR2  XLXI_11 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder4Bit_MUSER_FullAdder8Bit(A, 
+                                         B, 
+                                         CI, 
+                                         CO, 
+                                         S);
+
+    input [3:0] A;
+    input [3:0] B;
+    input CI;
+   output CO;
+   output [3:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   FullAdder_MUSER_FullAdder8Bit  XLXI_1 (.A_P66(A[0]), 
+                                         .B_P62(B[0]), 
+                                         .Cin_P61(CI), 
+                                         .Cout_P81(XLXN_1), 
+                                         .R_P82(S[0]));
+   FullAdder_MUSER_FullAdder8Bit  XLXI_2 (.A_P66(A[1]), 
+                                         .B_P62(B[1]), 
+                                         .Cin_P61(XLXN_1), 
+                                         .Cout_P81(XLXN_2), 
+                                         .R_P82(S[1]));
+   FullAdder_MUSER_FullAdder8Bit  XLXI_3 (.A_P66(A[2]), 
+                                         .B_P62(B[2]), 
+                                         .Cin_P61(XLXN_2), 
+                                         .Cout_P81(XLXN_3), 
+                                         .R_P82(S[2]));
+   FullAdder_MUSER_FullAdder8Bit  XLXI_4 (.A_P66(A[3]), 
+                                         .B_P62(B[3]), 
+                                         .Cin_P61(XLXN_3), 
+                                         .Cout_P81(CO), 
+                                         .R_P82(S[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder8Bit(A, 
+                     B, 
+                     CO, 
+                     S);
+
+    input [7:0] A;
+    input [7:0] B;
+   output CO;
+   output [7:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_16;
+   
+   FullAdder4Bit_MUSER_FullAdder8Bit  XLXI_1 (.A(A[3:0]), 
+                                             .B(B[3:0]), 
+                                             .CI(XLXN_16), 
+                                             .CO(XLXN_1), 
+                                             .S(S[3:0]));
+   FullAdder4Bit_MUSER_FullAdder8Bit  XLXI_2 (.A(A[7:4]), 
+                                             .B(B[7:4]), 
+                                             .CI(XLXN_1), 
+                                             .CO(CO), 
+                                             .S(S[7:4]));
+   GND  XLXI_3 (.G(XLXN_16));
+endmodule

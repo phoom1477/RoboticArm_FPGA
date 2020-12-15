@@ -1,0 +1,460 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ManualControl.vf
+// /___/   /\     Timestamp : 12/15/2020 23:05:35
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch
+//Design Name: ManualControl
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMPM8_HXILINX_ManualControl (GT, LT, A, B);
+    
+
+   output GT;
+   output LT;
+
+   input  [7:0] A;
+   input  [7:0] B;
+
+
+   assign GT = A > B  ;
+   assign LT = A < B  ;
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module M2_1_HXILINX_ManualControl (O, D0, D1, S0);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  S0;
+
+   reg O;
+
+   always @ ( D0 or D1 or S0)
+   begin
+      case(S0)
+      1'b0 : O <= D0;
+      1'b1 : O <= D1;
+      endcase
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module HalfAdder_MUSER_ManualControl(A_P66, 
+                                     B_P62, 
+                                     Cout_P81, 
+                                     R_P82);
+
+    input A_P66;
+    input B_P62;
+   output Cout_P81;
+   output R_P82;
+   
+   
+   XOR2  XLXI_1 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(R_P82));
+   AND2  XLXI_3 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder_MUSER_ManualControl(A_P66, 
+                                     B_P62, 
+                                     Cin_P61, 
+                                     Cout_P81, 
+                                     R_P82);
+
+    input A_P66;
+    input B_P62;
+    input Cin_P61;
+   output Cout_P81;
+   output R_P82;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   HalfAdder_MUSER_ManualControl  XLXI_9 (.A_P66(A_P66), 
+                                         .B_P62(B_P62), 
+                                         .Cout_P81(XLXN_10), 
+                                         .R_P82(XLXN_6));
+   HalfAdder_MUSER_ManualControl  XLXI_10 (.A_P66(XLXN_6), 
+                                          .B_P62(Cin_P61), 
+                                          .Cout_P81(XLXN_9), 
+                                          .R_P82(R_P82));
+   OR2  XLXI_11 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder4Bit_MUSER_ManualControl(A, 
+                                         B, 
+                                         CI, 
+                                         CO, 
+                                         S);
+
+    input [3:0] A;
+    input [3:0] B;
+    input CI;
+   output CO;
+   output [3:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   FullAdder_MUSER_ManualControl  XLXI_1 (.A_P66(A[0]), 
+                                         .B_P62(B[0]), 
+                                         .Cin_P61(CI), 
+                                         .Cout_P81(XLXN_1), 
+                                         .R_P82(S[0]));
+   FullAdder_MUSER_ManualControl  XLXI_2 (.A_P66(A[1]), 
+                                         .B_P62(B[1]), 
+                                         .Cin_P61(XLXN_1), 
+                                         .Cout_P81(XLXN_2), 
+                                         .R_P82(S[1]));
+   FullAdder_MUSER_ManualControl  XLXI_3 (.A_P66(A[2]), 
+                                         .B_P62(B[2]), 
+                                         .Cin_P61(XLXN_2), 
+                                         .Cout_P81(XLXN_3), 
+                                         .R_P82(S[2]));
+   FullAdder_MUSER_ManualControl  XLXI_4 (.A_P66(A[3]), 
+                                         .B_P62(B[3]), 
+                                         .Cin_P61(XLXN_3), 
+                                         .Cout_P81(CO), 
+                                         .R_P82(S[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder8Bit_MUSER_ManualControl(A, 
+                                         B, 
+                                         CO, 
+                                         S);
+
+    input [7:0] A;
+    input [7:0] B;
+   output CO;
+   output [7:0] S;
+   
+   wire XLXN_1;
+   wire XLXN_16;
+   
+   FullAdder4Bit_MUSER_ManualControl  XLXI_1 (.A(A[3:0]), 
+                                             .B(B[3:0]), 
+                                             .CI(XLXN_16), 
+                                             .CO(XLXN_1), 
+                                             .S(S[3:0]));
+   FullAdder4Bit_MUSER_ManualControl  XLXI_2 (.A(A[7:4]), 
+                                             .B(B[7:4]), 
+                                             .CI(XLXN_1), 
+                                             .CO(CO), 
+                                             .S(S[7:4]));
+   GND  XLXI_3 (.G(XLXN_16));
+endmodule
+`timescale 1ns / 1ps
+
+module RegPIPO_8_MUSER_ManualControl(CLK, 
+                                     CLR, 
+                                     DataIn, 
+                                     DataOut);
+
+    input CLK;
+    input CLR;
+    input [7:0] DataIn;
+   output [7:0] DataOut;
+   
+   
+   FDC  XLXI_36 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[0]), 
+                .Q(DataOut[0]));
+   FDC  XLXI_38 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[1]), 
+                .Q(DataOut[1]));
+   FDC  XLXI_39 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[2]), 
+                .Q(DataOut[2]));
+   FDC  XLXI_40 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[3]), 
+                .Q(DataOut[3]));
+   FDC  XLXI_41 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[4]), 
+                .Q(DataOut[4]));
+   FDC  XLXI_42 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[5]), 
+                .Q(DataOut[5]));
+   FDC  XLXI_44 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[6]), 
+                .Q(DataOut[6]));
+   FDC  XLXI_45 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[7]), 
+                .Q(DataOut[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module FullSub8Bit_MUSER_ManualControl(A, 
+                                       B_, 
+                                       S);
+
+    input [7:0] A;
+    input [7:0] B_;
+   output [7:0] S;
+   
+   wire [7:0] dB;
+   wire [7:0] XLXN_28;
+   wire [7:0] XLXN_43;
+   
+   INV  INV__0 (.I(B_[0]), 
+               .O(XLXN_28[0]));
+   INV  INV__1 (.I(B_[1]), 
+               .O(XLXN_28[1]));
+   INV  INV__2 (.I(B_[2]), 
+               .O(XLXN_28[2]));
+   INV  INV__3 (.I(B_[3]), 
+               .O(XLXN_28[3]));
+   INV  INV__4 (.I(B_[4]), 
+               .O(XLXN_28[4]));
+   INV  INV__5 (.I(B_[5]), 
+               .O(XLXN_28[5]));
+   INV  INV__6 (.I(B_[6]), 
+               .O(XLXN_28[6]));
+   INV  INV__7 (.I(B_[7]), 
+               .O(XLXN_28[7]));
+   FullAdder8Bit_MUSER_ManualControl  XLXI_1 (.A(A[7:0]), 
+                                             .B(XLXN_28[7:0]), 
+                                             .CO(), 
+                                             .S(XLXN_43[7:0]));
+   FullAdder8Bit_MUSER_ManualControl  XLXI_43 (.A(XLXN_43[7:0]), 
+                                              .B(dB[7:0]), 
+                                              .CO(), 
+                                              .S(S[7:0]));
+   GND  XLXI_46_0 (.G(dB[1]));
+   GND  XLXI_46_1 (.G(dB[2]));
+   GND  XLXI_46_2 (.G(dB[3]));
+   GND  XLXI_46_3 (.G(dB[4]));
+   GND  XLXI_46_4 (.G(dB[5]));
+   GND  XLXI_46_5 (.G(dB[6]));
+   GND  XLXI_46_6 (.G(dB[7]));
+   VCC  XLXI_47 (.P(dB[0]));
+endmodule
+`timescale 1ns / 1ps
+
+module Counter_FB_8Bits_MUSER_ManualControl(CB, 
+                                            CLK, 
+                                            CLR, 
+                                            C_Out);
+
+    input CB;
+    input CLK;
+    input CLR;
+   output [7:0] C_Out;
+   
+   wire [7:0] one;
+   wire [7:0] one1;
+   wire [7:0] SEL;
+   wire [7:0] SUM;
+   wire XLXN_4;
+   wire [7:0] XLXN_20;
+   wire [7:0] XLXN_73;
+   wire XLXN_133;
+   wire [7:0] C_Out_DUMMY;
+   
+   assign C_Out[7:0] = C_Out_DUMMY[7:0];
+   GND  XLXI_3 (.G(XLXN_4));
+   FullSub8Bit_MUSER_ManualControl  XLXI_8 (.A(C_Out_DUMMY[7:0]), 
+                                           .B_(one1[7:0]), 
+                                           .S(XLXN_73[7:0]));
+   VCC  XLXI_9 (.P(one1[0]));
+   GND  XLXI_10_0 (.G(one1[1]));
+   GND  XLXI_10_1 (.G(one1[2]));
+   GND  XLXI_10_2 (.G(one1[3]));
+   GND  XLXI_10_3 (.G(one1[4]));
+   GND  XLXI_10_4 (.G(one1[5]));
+   GND  XLXI_10_5 (.G(one1[6]));
+   GND  XLXI_10_6 (.G(one1[7]));
+   (* HU_SET = "XLXI_13_0_25" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_0 (.D0(SUM[0]), 
+                                         .D1(XLXN_73[0]), 
+                                         .S0(SEL[0]), 
+                                         .O(XLXN_20[0]));
+   (* HU_SET = "XLXI_13_1_24" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_1 (.D0(SUM[1]), 
+                                         .D1(XLXN_73[1]), 
+                                         .S0(SEL[1]), 
+                                         .O(XLXN_20[1]));
+   (* HU_SET = "XLXI_13_2_23" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_2 (.D0(SUM[2]), 
+                                         .D1(XLXN_73[2]), 
+                                         .S0(SEL[2]), 
+                                         .O(XLXN_20[2]));
+   (* HU_SET = "XLXI_13_3_22" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_3 (.D0(SUM[3]), 
+                                         .D1(XLXN_73[3]), 
+                                         .S0(SEL[3]), 
+                                         .O(XLXN_20[3]));
+   (* HU_SET = "XLXI_13_4_21" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_4 (.D0(SUM[4]), 
+                                         .D1(XLXN_73[4]), 
+                                         .S0(SEL[4]), 
+                                         .O(XLXN_20[4]));
+   (* HU_SET = "XLXI_13_5_20" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_5 (.D0(SUM[5]), 
+                                         .D1(XLXN_73[5]), 
+                                         .S0(SEL[5]), 
+                                         .O(XLXN_20[5]));
+   (* HU_SET = "XLXI_13_6_19" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_6 (.D0(SUM[6]), 
+                                         .D1(XLXN_73[6]), 
+                                         .S0(SEL[6]), 
+                                         .O(XLXN_20[6]));
+   (* HU_SET = "XLXI_13_7_18" *) 
+   M2_1_HXILINX_ManualControl  XLXI_13_7 (.D0(SUM[7]), 
+                                         .D1(XLXN_73[7]), 
+                                         .S0(SEL[7]), 
+                                         .O(XLXN_20[7]));
+   BUF  XLXI_15_0 (.I(CB), 
+                  .O(SEL[0]));
+   BUF  XLXI_15_1 (.I(CB), 
+                  .O(SEL[1]));
+   BUF  XLXI_15_2 (.I(CB), 
+                  .O(SEL[2]));
+   BUF  XLXI_15_3 (.I(CB), 
+                  .O(SEL[3]));
+   BUF  XLXI_15_4 (.I(CB), 
+                  .O(SEL[4]));
+   BUF  XLXI_15_5 (.I(CB), 
+                  .O(SEL[5]));
+   BUF  XLXI_15_6 (.I(CB), 
+                  .O(SEL[6]));
+   BUF  XLXI_15_7 (.I(CB), 
+                  .O(SEL[7]));
+   RegPIPO_8_MUSER_ManualControl  XLXI_20 (.CLK(CLK), 
+                                          .CLR(CLR), 
+                                          .DataIn(XLXN_20[7:0]), 
+                                          .DataOut(C_Out_DUMMY[7:0]));
+   FullAdder4Bit_MUSER_ManualControl  XLXI_25 (.A(C_Out_DUMMY[3:0]), 
+                                              .B(one[3:0]), 
+                                              .CI(XLXN_4), 
+                                              .CO(XLXN_133), 
+                                              .S(SUM[3:0]));
+   FullAdder4Bit_MUSER_ManualControl  XLXI_26 (.A(C_Out_DUMMY[7:4]), 
+                                              .B(one[7:4]), 
+                                              .CI(XLXN_133), 
+                                              .CO(), 
+                                              .S(SUM[7:4]));
+   VCC  XLXI_51 (.P(one[0]));
+   GND  XLXI_52_0 (.G(one[1]));
+   GND  XLXI_52_1 (.G(one[2]));
+   GND  XLXI_52_2 (.G(one[3]));
+   GND  XLXI_52_3 (.G(one[4]));
+   GND  XLXI_52_4 (.G(one[5]));
+   GND  XLXI_52_5 (.G(one[6]));
+   GND  XLXI_52_6 (.G(one[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module ManualControl(DOWN, 
+                     EN, 
+                     EndValue, 
+                     StartValue, 
+                     UP, 
+                     OUTPUT);
+
+    input DOWN;
+    input EN;
+    input [7:0] EndValue;
+    input [7:0] StartValue;
+    input UP;
+   output [7:0] OUTPUT;
+   
+   wire [7:0] XLXN_75;
+   wire XLXN_114;
+   wire XLXN_120;
+   wire XLXN_121;
+   wire XLXN_124;
+   wire [7:0] XLXN_132;
+   wire XLXN_196;
+   wire XLXN_199;
+   wire XLXN_200;
+   wire XLXN_203;
+   
+   Counter_FB_8Bits_MUSER_ManualControl  XLXI_1 (.CB(DOWN), 
+                                                .CLK(XLXN_203), 
+                                                .CLR(XLXN_196), 
+                                                .C_Out(XLXN_75[7:0]));
+   OR2  XLXI_2 (.I0(DOWN), 
+               .I1(UP), 
+               .O(XLXN_199));
+   FullAdder8Bit_MUSER_ManualControl  XLXI_6 (.A(XLXN_75[7:0]), 
+                                             .B(StartValue[7:0]), 
+                                             .CO(), 
+                                             .S(XLXN_132[7:0]));
+   (* HU_SET = "XLXI_18_26" *) 
+   COMPM8_HXILINX_ManualControl  XLXI_18 (.A(XLXN_132[7:0]), 
+                                         .B(EndValue[7:0]), 
+                                         .GT(), 
+                                         .LT(XLXN_124));
+   (* HU_SET = "XLXI_19_27" *) 
+   COMPM8_HXILINX_ManualControl  XLXI_19 (.A(XLXN_132[7:0]), 
+                                         .B(StartValue[7:0]), 
+                                         .GT(XLXN_114), 
+                                         .LT());
+   AND2  XLXI_39 (.I0(UP), 
+                 .I1(XLXN_124), 
+                 .O(XLXN_120));
+   AND2  XLXI_40 (.I0(DOWN), 
+                 .I1(XLXN_114), 
+                 .O(XLXN_121));
+   OR2  XLXI_49 (.I0(XLXN_121), 
+                .I1(XLXN_120), 
+                .O(XLXN_200));
+   GND  XLXI_50 (.G(XLXN_196));
+   BUF  XLXI_51_0 (.I(XLXN_132[0]), 
+                  .O(OUTPUT[0]));
+   BUF  XLXI_51_1 (.I(XLXN_132[1]), 
+                  .O(OUTPUT[1]));
+   BUF  XLXI_51_2 (.I(XLXN_132[2]), 
+                  .O(OUTPUT[2]));
+   BUF  XLXI_51_3 (.I(XLXN_132[3]), 
+                  .O(OUTPUT[3]));
+   BUF  XLXI_51_4 (.I(XLXN_132[4]), 
+                  .O(OUTPUT[4]));
+   BUF  XLXI_51_5 (.I(XLXN_132[5]), 
+                  .O(OUTPUT[5]));
+   BUF  XLXI_51_6 (.I(XLXN_132[6]), 
+                  .O(OUTPUT[6]));
+   BUF  XLXI_51_7 (.I(XLXN_132[7]), 
+                  .O(OUTPUT[7]));
+   AND3  XLXI_53 (.I0(XLXN_200), 
+                 .I1(XLXN_199), 
+                 .I2(EN), 
+                 .O(XLXN_203));
+endmodule

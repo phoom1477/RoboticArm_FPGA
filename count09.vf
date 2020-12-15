@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : count09.vf
-// /___/   /\     Timestamp : 12/11/2020 15:03:06
+// /___/   /\     Timestamp : 12/15/2020 23:01:01
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -89,19 +89,19 @@ module count09(CLK_P45,
    assign Bit2_P80 = Bit2_P80_DUMMY;
    assign Bit3_P79 = Bit3_P79_DUMMY;
    assign Tc = Tc_DUMMY;
-   (* HU_SET = "XLXI_1_43" *) 
+   (* HU_SET = "XLXI_1_0" *) 
    FJKC_HXILINX_count09  XLXI_1 (.C(CLK_P45), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
                                 .K(XLXN_3), 
                                 .Q(Bit0_P82_DUMMY));
-   (* HU_SET = "XLXI_2_44" *) 
+   (* HU_SET = "XLXI_2_1" *) 
    FJKC_HXILINX_count09  XLXI_2 (.C(XLXN_21), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
                                 .K(XLXN_3), 
                                 .Q(Bit2_P80_DUMMY));
-   (* HU_SET = "XLXI_3_45" *) 
+   (* HU_SET = "XLXI_3_2" *) 
    FJKC_HXILINX_count09  XLXI_3 (.C(XLXN_22), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
@@ -117,7 +117,7 @@ module count09(CLK_P45,
                 .I2(Bit1_P81_DUMMY), 
                 .I3(XLXN_6), 
                 .O(Tc_DUMMY));
-   (* HU_SET = "XLXI_8_46" *) 
+   (* HU_SET = "XLXI_8_3" *) 
    FJKC_HXILINX_count09  XLXI_8 (.C(XLXN_20), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 

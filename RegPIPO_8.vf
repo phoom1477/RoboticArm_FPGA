@@ -1,0 +1,66 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RegPIPO_8.vf
+// /___/   /\     Timestamp : 12/15/2020 23:01:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/RegPIPO_8.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/RegPIPO_8.sch
+//Design Name: RegPIPO_8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RegPIPO_8(CLK, 
+                 CLR, 
+                 DataIn, 
+                 DataOut);
+
+    input CLK;
+    input CLR;
+    input [7:0] DataIn;
+   output [7:0] DataOut;
+   
+   
+   FDC  XLXI_36 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[0]), 
+                .Q(DataOut[0]));
+   FDC  XLXI_38 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[1]), 
+                .Q(DataOut[1]));
+   FDC  XLXI_39 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[2]), 
+                .Q(DataOut[2]));
+   FDC  XLXI_40 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[3]), 
+                .Q(DataOut[3]));
+   FDC  XLXI_41 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[4]), 
+                .Q(DataOut[4]));
+   FDC  XLXI_42 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[5]), 
+                .Q(DataOut[5]));
+   FDC  XLXI_44 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[6]), 
+                .Q(DataOut[6]));
+   FDC  XLXI_45 (.C(CLK), 
+                .CLR(CLR), 
+                .D(DataIn[7]), 
+                .Q(DataOut[7]));
+endmodule

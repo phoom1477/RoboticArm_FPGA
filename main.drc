@@ -1,50 +1,53 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Dec 15 01:07:25 2020
+Tue Dec 15 23:16:31 2020
 
 drc -z main.ncd main.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_38/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
+   XLXI_292/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_122/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
+   XLXI_292/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_122/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
+   XLXI_296/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_120/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
+   XLXI_293/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_120/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
+   XLXI_293/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_38/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
+   XLXI_295/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_121/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
+   XLXI_295/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_121/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
+   XLXI_294/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_113/XLXI_1/XLXI_42/XLXN_4 is sourced by a combinatorial pin. This is not
+   XLXI_294/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_113/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
+   XLXI_296/XLXI_1/XLXI_42/XLXN_3 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_293/XLXN_102 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_132/XLXI_167/XLXN_15
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
@@ -54,26 +57,53 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_132/XLXI_167/XLXN_16
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_132/XLXI_167/XLXN_14
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_295/XLXN_102 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_132/XLXI_167/XLXN_13
    is sourced by a combinatorial pin. This is not good design practice. Use the
    CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_294/XLXN_102 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_132/XLXN_423 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_121/XLXN_70 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_292/XLXN_102 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_296/XLXN_102 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_295/XLXI_41/XLXN_203
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_293/XLXI_41/XLXN_203
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_296/XLXI_41/XLXN_203
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_294/XLXI_41/XLXN_203
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_292/XLXI_41/XLXN_203
+   is sourced by a combinatorial pin. This is not good design practice. Use the
+   CE pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_295/XLXN_70 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_113/XLXN_70 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_294/XLXN_70 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_120/XLXN_70 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_292/XLXN_70 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_38/XLXN_70 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_296/XLXN_70 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_122/XLXN_70 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_293/XLXN_70 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-DRC detected 0 errors and 20 warnings.  Please see the previously displayed
+DRC detected 0 errors and 30 warnings.  Please see the previously displayed
 individual error or warning messages for more details.

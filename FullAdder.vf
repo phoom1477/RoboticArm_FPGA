@@ -1,0 +1,70 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : FullAdder.vf
+// /___/   /\     Timestamp : 12/15/2020 23:01:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullAdder.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/FullAdder.sch
+//Design Name: FullAdder
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module HalfAdder_MUSER_FullAdder(A_P66, 
+                                 B_P62, 
+                                 Cout_P81, 
+                                 R_P82);
+
+    input A_P66;
+    input B_P62;
+   output Cout_P81;
+   output R_P82;
+   
+   
+   XOR2  XLXI_1 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(R_P82));
+   AND2  XLXI_3 (.I0(B_P62), 
+                .I1(A_P66), 
+                .O(Cout_P81));
+endmodule
+`timescale 1ns / 1ps
+
+module FullAdder(A_P66, 
+                 B_P62, 
+                 Cin_P61, 
+                 Cout_P81, 
+                 R_P82);
+
+    input A_P66;
+    input B_P62;
+    input Cin_P61;
+   output Cout_P81;
+   output R_P82;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_10;
+   
+   HalfAdder_MUSER_FullAdder  XLXI_9 (.A_P66(A_P66), 
+                                     .B_P62(B_P62), 
+                                     .Cout_P81(XLXN_10), 
+                                     .R_P82(XLXN_6));
+   HalfAdder_MUSER_FullAdder  XLXI_10 (.A_P66(XLXN_6), 
+                                      .B_P62(Cin_P61), 
+                                      .Cout_P81(XLXN_9), 
+                                      .R_P82(R_P82));
+   OR2  XLXI_11 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .O(Cout_P81));
+endmodule

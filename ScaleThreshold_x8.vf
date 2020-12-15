@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ScaleThreshold_x8.vf
-// /___/   /\     Timestamp : 12/15/2020 01:06:27
+// /___/   /\     Timestamp : 12/15/2020 23:01:20
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -1060,7 +1060,7 @@ module ScaleThreshold_x8(S0,
    wire [15:0] XLXN_83;
    wire [15:0] XLXN_84;
    
-   (* HU_SET = "XLXI_47_0_127" *) 
+   (* HU_SET = "XLXI_47_0_180" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_0 (.D0(XLXN_43[0]), 
                                               .D1(XLXN_69[0]), 
                                               .D2(XLXN_53[0]), 
@@ -1074,7 +1074,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T0[0]));
-   (* HU_SET = "XLXI_47_1_126" *) 
+   (* HU_SET = "XLXI_47_1_179" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_1 (.D0(XLXN_43[1]), 
                                               .D1(XLXN_69[1]), 
                                               .D2(XLXN_53[1]), 
@@ -1088,7 +1088,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T0[1]));
-   (* HU_SET = "XLXI_47_2_125" *) 
+   (* HU_SET = "XLXI_47_2_178" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_2 (.D0(XLXN_43[2]), 
                                               .D1(XLXN_69[2]), 
                                               .D2(XLXN_53[2]), 
@@ -1102,7 +1102,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T0[2]));
-   (* HU_SET = "XLXI_47_3_124" *) 
+   (* HU_SET = "XLXI_47_3_177" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_3 (.D0(XLXN_43[3]), 
                                               .D1(XLXN_69[3]), 
                                               .D2(XLXN_53[3]), 
@@ -1116,7 +1116,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T0[3]));
-   (* HU_SET = "XLXI_47_4_123" *) 
+   (* HU_SET = "XLXI_47_4_176" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_4 (.D0(XLXN_43[4]), 
                                               .D1(XLXN_69[4]), 
                                               .D2(XLXN_53[4]), 
@@ -1130,7 +1130,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T0[4]));
-   (* HU_SET = "XLXI_47_5_122" *) 
+   (* HU_SET = "XLXI_47_5_175" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_5 (.D0(XLXN_43[5]), 
                                               .D1(XLXN_69[5]), 
                                               .D2(XLXN_53[5]), 
@@ -1144,7 +1144,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T0[5]));
-   (* HU_SET = "XLXI_47_6_121" *) 
+   (* HU_SET = "XLXI_47_6_174" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_6 (.D0(XLXN_43[6]), 
                                               .D1(XLXN_69[6]), 
                                               .D2(XLXN_53[6]), 
@@ -1158,7 +1158,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T0[6]));
-   (* HU_SET = "XLXI_47_7_120" *) 
+   (* HU_SET = "XLXI_47_7_173" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_7 (.D0(XLXN_43[7]), 
                                               .D1(XLXN_69[7]), 
                                               .D2(XLXN_53[7]), 
@@ -1172,7 +1172,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T0[7]));
-   (* HU_SET = "XLXI_47_8_119" *) 
+   (* HU_SET = "XLXI_47_8_172" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_8 (.D0(XLXN_43[8]), 
                                               .D1(XLXN_69[8]), 
                                               .D2(XLXN_53[8]), 
@@ -1186,7 +1186,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T0[8]));
-   (* HU_SET = "XLXI_47_9_118" *) 
+   (* HU_SET = "XLXI_47_9_171" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_9 (.D0(XLXN_43[9]), 
                                               .D1(XLXN_69[9]), 
                                               .D2(XLXN_53[9]), 
@@ -1200,7 +1200,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T0[9]));
-   (* HU_SET = "XLXI_47_10_117" *) 
+   (* HU_SET = "XLXI_47_10_170" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_10 (.D0(XLXN_43[10]), 
                                                .D1(XLXN_69[10]), 
                                                .D2(XLXN_53[10]), 
@@ -1214,7 +1214,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T0[10]));
-   (* HU_SET = "XLXI_47_11_116" *) 
+   (* HU_SET = "XLXI_47_11_169" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_11 (.D0(XLXN_43[11]), 
                                                .D1(XLXN_69[11]), 
                                                .D2(XLXN_53[11]), 
@@ -1228,7 +1228,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T0[11]));
-   (* HU_SET = "XLXI_47_12_115" *) 
+   (* HU_SET = "XLXI_47_12_168" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_12 (.D0(XLXN_43[12]), 
                                                .D1(XLXN_69[12]), 
                                                .D2(XLXN_53[12]), 
@@ -1242,7 +1242,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T0[12]));
-   (* HU_SET = "XLXI_47_13_114" *) 
+   (* HU_SET = "XLXI_47_13_167" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_13 (.D0(XLXN_43[13]), 
                                                .D1(XLXN_69[13]), 
                                                .D2(XLXN_53[13]), 
@@ -1256,7 +1256,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T0[13]));
-   (* HU_SET = "XLXI_47_14_113" *) 
+   (* HU_SET = "XLXI_47_14_166" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_14 (.D0(XLXN_43[14]), 
                                                .D1(XLXN_69[14]), 
                                                .D2(XLXN_53[14]), 
@@ -1270,7 +1270,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T0[14]));
-   (* HU_SET = "XLXI_47_15_112" *) 
+   (* HU_SET = "XLXI_47_15_165" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_47_15 (.D0(XLXN_43[15]), 
                                                .D1(XLXN_69[15]), 
                                                .D2(XLXN_53[15]), 
@@ -1284,7 +1284,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T0[15]));
-   (* HU_SET = "XLXI_49_0_15" *) 
+   (* HU_SET = "XLXI_49_0_68" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_0 (.D0(XLXN_44[0]), 
                                               .D1(XLXN_71[0]), 
                                               .D2(XLXN_54[0]), 
@@ -1298,7 +1298,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T1[0]));
-   (* HU_SET = "XLXI_49_1_14" *) 
+   (* HU_SET = "XLXI_49_1_67" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_1 (.D0(XLXN_44[1]), 
                                               .D1(XLXN_71[1]), 
                                               .D2(XLXN_54[1]), 
@@ -1312,7 +1312,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T1[1]));
-   (* HU_SET = "XLXI_49_2_13" *) 
+   (* HU_SET = "XLXI_49_2_66" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_2 (.D0(XLXN_44[2]), 
                                               .D1(XLXN_71[2]), 
                                               .D2(XLXN_54[2]), 
@@ -1326,7 +1326,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T1[2]));
-   (* HU_SET = "XLXI_49_3_12" *) 
+   (* HU_SET = "XLXI_49_3_65" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_3 (.D0(XLXN_44[3]), 
                                               .D1(XLXN_71[3]), 
                                               .D2(XLXN_54[3]), 
@@ -1340,7 +1340,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T1[3]));
-   (* HU_SET = "XLXI_49_4_11" *) 
+   (* HU_SET = "XLXI_49_4_64" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_4 (.D0(XLXN_44[4]), 
                                               .D1(XLXN_71[4]), 
                                               .D2(XLXN_54[4]), 
@@ -1354,7 +1354,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T1[4]));
-   (* HU_SET = "XLXI_49_5_10" *) 
+   (* HU_SET = "XLXI_49_5_63" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_5 (.D0(XLXN_44[5]), 
                                               .D1(XLXN_71[5]), 
                                               .D2(XLXN_54[5]), 
@@ -1368,7 +1368,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T1[5]));
-   (* HU_SET = "XLXI_49_6_9" *) 
+   (* HU_SET = "XLXI_49_6_62" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_6 (.D0(XLXN_44[6]), 
                                               .D1(XLXN_71[6]), 
                                               .D2(XLXN_54[6]), 
@@ -1382,7 +1382,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T1[6]));
-   (* HU_SET = "XLXI_49_7_8" *) 
+   (* HU_SET = "XLXI_49_7_61" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_7 (.D0(XLXN_44[7]), 
                                               .D1(XLXN_71[7]), 
                                               .D2(XLXN_54[7]), 
@@ -1396,7 +1396,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T1[7]));
-   (* HU_SET = "XLXI_49_8_7" *) 
+   (* HU_SET = "XLXI_49_8_60" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_8 (.D0(XLXN_44[8]), 
                                               .D1(XLXN_71[8]), 
                                               .D2(XLXN_54[8]), 
@@ -1410,7 +1410,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T1[8]));
-   (* HU_SET = "XLXI_49_9_6" *) 
+   (* HU_SET = "XLXI_49_9_59" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_9 (.D0(XLXN_44[9]), 
                                               .D1(XLXN_71[9]), 
                                               .D2(XLXN_54[9]), 
@@ -1424,7 +1424,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T1[9]));
-   (* HU_SET = "XLXI_49_10_5" *) 
+   (* HU_SET = "XLXI_49_10_58" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_10 (.D0(XLXN_44[10]), 
                                                .D1(XLXN_71[10]), 
                                                .D2(XLXN_54[10]), 
@@ -1438,7 +1438,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T1[10]));
-   (* HU_SET = "XLXI_49_11_4" *) 
+   (* HU_SET = "XLXI_49_11_57" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_11 (.D0(XLXN_44[11]), 
                                                .D1(XLXN_71[11]), 
                                                .D2(XLXN_54[11]), 
@@ -1452,7 +1452,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T1[11]));
-   (* HU_SET = "XLXI_49_12_3" *) 
+   (* HU_SET = "XLXI_49_12_56" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_12 (.D0(XLXN_44[12]), 
                                                .D1(XLXN_71[12]), 
                                                .D2(XLXN_54[12]), 
@@ -1466,7 +1466,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T1[12]));
-   (* HU_SET = "XLXI_49_13_2" *) 
+   (* HU_SET = "XLXI_49_13_55" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_13 (.D0(XLXN_44[13]), 
                                                .D1(XLXN_71[13]), 
                                                .D2(XLXN_54[13]), 
@@ -1480,7 +1480,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T1[13]));
-   (* HU_SET = "XLXI_49_14_1" *) 
+   (* HU_SET = "XLXI_49_14_54" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_14 (.D0(XLXN_44[14]), 
                                                .D1(XLXN_71[14]), 
                                                .D2(XLXN_54[14]), 
@@ -1494,7 +1494,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T1[14]));
-   (* HU_SET = "XLXI_49_15_0" *) 
+   (* HU_SET = "XLXI_49_15_53" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_49_15 (.D0(XLXN_44[15]), 
                                                .D1(XLXN_71[15]), 
                                                .D2(XLXN_54[15]), 
@@ -1508,7 +1508,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T1[15]));
-   (* HU_SET = "XLXI_50_0_31" *) 
+   (* HU_SET = "XLXI_50_0_84" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_0 (.D0(XLXN_45[0]), 
                                               .D1(XLXN_74[0]), 
                                               .D2(XLXN_55[0]), 
@@ -1522,7 +1522,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T2[0]));
-   (* HU_SET = "XLXI_50_1_30" *) 
+   (* HU_SET = "XLXI_50_1_83" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_1 (.D0(XLXN_45[1]), 
                                               .D1(XLXN_74[1]), 
                                               .D2(XLXN_55[1]), 
@@ -1536,7 +1536,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T2[1]));
-   (* HU_SET = "XLXI_50_2_29" *) 
+   (* HU_SET = "XLXI_50_2_82" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_2 (.D0(XLXN_45[2]), 
                                               .D1(XLXN_74[2]), 
                                               .D2(XLXN_55[2]), 
@@ -1550,7 +1550,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T2[2]));
-   (* HU_SET = "XLXI_50_3_28" *) 
+   (* HU_SET = "XLXI_50_3_81" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_3 (.D0(XLXN_45[3]), 
                                               .D1(XLXN_74[3]), 
                                               .D2(XLXN_55[3]), 
@@ -1564,7 +1564,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T2[3]));
-   (* HU_SET = "XLXI_50_4_27" *) 
+   (* HU_SET = "XLXI_50_4_80" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_4 (.D0(XLXN_45[4]), 
                                               .D1(XLXN_74[4]), 
                                               .D2(XLXN_55[4]), 
@@ -1578,7 +1578,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T2[4]));
-   (* HU_SET = "XLXI_50_5_26" *) 
+   (* HU_SET = "XLXI_50_5_79" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_5 (.D0(XLXN_45[5]), 
                                               .D1(XLXN_74[5]), 
                                               .D2(XLXN_55[5]), 
@@ -1592,7 +1592,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T2[5]));
-   (* HU_SET = "XLXI_50_6_25" *) 
+   (* HU_SET = "XLXI_50_6_78" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_6 (.D0(XLXN_45[6]), 
                                               .D1(XLXN_74[6]), 
                                               .D2(XLXN_55[6]), 
@@ -1606,7 +1606,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T2[6]));
-   (* HU_SET = "XLXI_50_7_24" *) 
+   (* HU_SET = "XLXI_50_7_77" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_7 (.D0(XLXN_45[7]), 
                                               .D1(XLXN_74[7]), 
                                               .D2(XLXN_55[7]), 
@@ -1620,7 +1620,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T2[7]));
-   (* HU_SET = "XLXI_50_8_23" *) 
+   (* HU_SET = "XLXI_50_8_76" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_8 (.D0(XLXN_45[8]), 
                                               .D1(XLXN_74[8]), 
                                               .D2(XLXN_55[8]), 
@@ -1634,7 +1634,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T2[8]));
-   (* HU_SET = "XLXI_50_9_22" *) 
+   (* HU_SET = "XLXI_50_9_75" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_9 (.D0(XLXN_45[9]), 
                                               .D1(XLXN_74[9]), 
                                               .D2(XLXN_55[9]), 
@@ -1648,7 +1648,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T2[9]));
-   (* HU_SET = "XLXI_50_10_21" *) 
+   (* HU_SET = "XLXI_50_10_74" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_10 (.D0(XLXN_45[10]), 
                                                .D1(XLXN_74[10]), 
                                                .D2(XLXN_55[10]), 
@@ -1662,7 +1662,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T2[10]));
-   (* HU_SET = "XLXI_50_11_20" *) 
+   (* HU_SET = "XLXI_50_11_73" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_11 (.D0(XLXN_45[11]), 
                                                .D1(XLXN_74[11]), 
                                                .D2(XLXN_55[11]), 
@@ -1676,7 +1676,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T2[11]));
-   (* HU_SET = "XLXI_50_12_19" *) 
+   (* HU_SET = "XLXI_50_12_72" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_12 (.D0(XLXN_45[12]), 
                                                .D1(XLXN_74[12]), 
                                                .D2(XLXN_55[12]), 
@@ -1690,7 +1690,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T2[12]));
-   (* HU_SET = "XLXI_50_13_18" *) 
+   (* HU_SET = "XLXI_50_13_71" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_13 (.D0(XLXN_45[13]), 
                                                .D1(XLXN_74[13]), 
                                                .D2(XLXN_55[13]), 
@@ -1704,7 +1704,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T2[13]));
-   (* HU_SET = "XLXI_50_14_17" *) 
+   (* HU_SET = "XLXI_50_14_70" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_14 (.D0(XLXN_45[14]), 
                                                .D1(XLXN_74[14]), 
                                                .D2(XLXN_55[14]), 
@@ -1718,7 +1718,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T2[14]));
-   (* HU_SET = "XLXI_50_15_16" *) 
+   (* HU_SET = "XLXI_50_15_69" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_50_15 (.D0(XLXN_45[15]), 
                                                .D1(XLXN_74[15]), 
                                                .D2(XLXN_55[15]), 
@@ -1732,7 +1732,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T2[15]));
-   (* HU_SET = "XLXI_51_0_47" *) 
+   (* HU_SET = "XLXI_51_0_100" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_0 (.D0(XLXN_46[0]), 
                                               .D1(XLXN_75[0]), 
                                               .D2(XLXN_56[0]), 
@@ -1746,7 +1746,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T3[0]));
-   (* HU_SET = "XLXI_51_1_46" *) 
+   (* HU_SET = "XLXI_51_1_99" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_1 (.D0(XLXN_46[1]), 
                                               .D1(XLXN_75[1]), 
                                               .D2(XLXN_56[1]), 
@@ -1760,7 +1760,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T3[1]));
-   (* HU_SET = "XLXI_51_2_45" *) 
+   (* HU_SET = "XLXI_51_2_98" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_2 (.D0(XLXN_46[2]), 
                                               .D1(XLXN_75[2]), 
                                               .D2(XLXN_56[2]), 
@@ -1774,7 +1774,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T3[2]));
-   (* HU_SET = "XLXI_51_3_44" *) 
+   (* HU_SET = "XLXI_51_3_97" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_3 (.D0(XLXN_46[3]), 
                                               .D1(XLXN_75[3]), 
                                               .D2(XLXN_56[3]), 
@@ -1788,7 +1788,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T3[3]));
-   (* HU_SET = "XLXI_51_4_43" *) 
+   (* HU_SET = "XLXI_51_4_96" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_4 (.D0(XLXN_46[4]), 
                                               .D1(XLXN_75[4]), 
                                               .D2(XLXN_56[4]), 
@@ -1802,7 +1802,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T3[4]));
-   (* HU_SET = "XLXI_51_5_42" *) 
+   (* HU_SET = "XLXI_51_5_95" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_5 (.D0(XLXN_46[5]), 
                                               .D1(XLXN_75[5]), 
                                               .D2(XLXN_56[5]), 
@@ -1816,7 +1816,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T3[5]));
-   (* HU_SET = "XLXI_51_6_41" *) 
+   (* HU_SET = "XLXI_51_6_94" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_6 (.D0(XLXN_46[6]), 
                                               .D1(XLXN_75[6]), 
                                               .D2(XLXN_56[6]), 
@@ -1830,7 +1830,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T3[6]));
-   (* HU_SET = "XLXI_51_7_40" *) 
+   (* HU_SET = "XLXI_51_7_93" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_7 (.D0(XLXN_46[7]), 
                                               .D1(XLXN_75[7]), 
                                               .D2(XLXN_56[7]), 
@@ -1844,7 +1844,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T3[7]));
-   (* HU_SET = "XLXI_51_8_39" *) 
+   (* HU_SET = "XLXI_51_8_92" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_8 (.D0(XLXN_46[8]), 
                                               .D1(XLXN_75[8]), 
                                               .D2(XLXN_56[8]), 
@@ -1858,7 +1858,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T3[8]));
-   (* HU_SET = "XLXI_51_9_38" *) 
+   (* HU_SET = "XLXI_51_9_91" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_9 (.D0(XLXN_46[9]), 
                                               .D1(XLXN_75[9]), 
                                               .D2(XLXN_56[9]), 
@@ -1872,7 +1872,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T3[9]));
-   (* HU_SET = "XLXI_51_10_37" *) 
+   (* HU_SET = "XLXI_51_10_90" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_10 (.D0(XLXN_46[10]), 
                                                .D1(XLXN_75[10]), 
                                                .D2(XLXN_56[10]), 
@@ -1886,7 +1886,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T3[10]));
-   (* HU_SET = "XLXI_51_11_36" *) 
+   (* HU_SET = "XLXI_51_11_89" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_11 (.D0(XLXN_46[11]), 
                                                .D1(XLXN_75[11]), 
                                                .D2(XLXN_56[11]), 
@@ -1900,7 +1900,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T3[11]));
-   (* HU_SET = "XLXI_51_12_35" *) 
+   (* HU_SET = "XLXI_51_12_88" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_12 (.D0(XLXN_46[12]), 
                                                .D1(XLXN_75[12]), 
                                                .D2(XLXN_56[12]), 
@@ -1914,7 +1914,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T3[12]));
-   (* HU_SET = "XLXI_51_13_34" *) 
+   (* HU_SET = "XLXI_51_13_87" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_13 (.D0(XLXN_46[13]), 
                                                .D1(XLXN_75[13]), 
                                                .D2(XLXN_56[13]), 
@@ -1928,7 +1928,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T3[13]));
-   (* HU_SET = "XLXI_51_14_33" *) 
+   (* HU_SET = "XLXI_51_14_86" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_14 (.D0(XLXN_46[14]), 
                                                .D1(XLXN_75[14]), 
                                                .D2(XLXN_56[14]), 
@@ -1942,7 +1942,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T3[14]));
-   (* HU_SET = "XLXI_51_15_32" *) 
+   (* HU_SET = "XLXI_51_15_85" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_51_15 (.D0(XLXN_46[15]), 
                                                .D1(XLXN_75[15]), 
                                                .D2(XLXN_56[15]), 
@@ -1956,7 +1956,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T3[15]));
-   (* HU_SET = "XLXI_58_0_63" *) 
+   (* HU_SET = "XLXI_58_0_116" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_0 (.D0(XLXN_47[0]), 
                                               .D1(XLXN_70[0]), 
                                               .D2(XLXN_60[0]), 
@@ -1970,7 +1970,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T4[0]));
-   (* HU_SET = "XLXI_58_1_62" *) 
+   (* HU_SET = "XLXI_58_1_115" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_1 (.D0(XLXN_47[1]), 
                                               .D1(XLXN_70[1]), 
                                               .D2(XLXN_60[1]), 
@@ -1984,7 +1984,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T4[1]));
-   (* HU_SET = "XLXI_58_2_61" *) 
+   (* HU_SET = "XLXI_58_2_114" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_2 (.D0(XLXN_47[2]), 
                                               .D1(XLXN_70[2]), 
                                               .D2(XLXN_60[2]), 
@@ -1998,7 +1998,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T4[2]));
-   (* HU_SET = "XLXI_58_3_60" *) 
+   (* HU_SET = "XLXI_58_3_113" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_3 (.D0(XLXN_47[3]), 
                                               .D1(XLXN_70[3]), 
                                               .D2(XLXN_60[3]), 
@@ -2012,7 +2012,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T4[3]));
-   (* HU_SET = "XLXI_58_4_59" *) 
+   (* HU_SET = "XLXI_58_4_112" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_4 (.D0(XLXN_47[4]), 
                                               .D1(XLXN_70[4]), 
                                               .D2(XLXN_60[4]), 
@@ -2026,7 +2026,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T4[4]));
-   (* HU_SET = "XLXI_58_5_58" *) 
+   (* HU_SET = "XLXI_58_5_111" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_5 (.D0(XLXN_47[5]), 
                                               .D1(XLXN_70[5]), 
                                               .D2(XLXN_60[5]), 
@@ -2040,7 +2040,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T4[5]));
-   (* HU_SET = "XLXI_58_6_57" *) 
+   (* HU_SET = "XLXI_58_6_110" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_6 (.D0(XLXN_47[6]), 
                                               .D1(XLXN_70[6]), 
                                               .D2(XLXN_60[6]), 
@@ -2054,7 +2054,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T4[6]));
-   (* HU_SET = "XLXI_58_7_56" *) 
+   (* HU_SET = "XLXI_58_7_109" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_7 (.D0(XLXN_47[7]), 
                                               .D1(XLXN_70[7]), 
                                               .D2(XLXN_60[7]), 
@@ -2068,7 +2068,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T4[7]));
-   (* HU_SET = "XLXI_58_8_55" *) 
+   (* HU_SET = "XLXI_58_8_108" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_8 (.D0(XLXN_47[8]), 
                                               .D1(XLXN_70[8]), 
                                               .D2(XLXN_60[8]), 
@@ -2082,7 +2082,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T4[8]));
-   (* HU_SET = "XLXI_58_9_54" *) 
+   (* HU_SET = "XLXI_58_9_107" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_9 (.D0(XLXN_47[9]), 
                                               .D1(XLXN_70[9]), 
                                               .D2(XLXN_60[9]), 
@@ -2096,7 +2096,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T4[9]));
-   (* HU_SET = "XLXI_58_10_53" *) 
+   (* HU_SET = "XLXI_58_10_106" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_10 (.D0(XLXN_47[10]), 
                                                .D1(XLXN_70[10]), 
                                                .D2(XLXN_60[10]), 
@@ -2110,7 +2110,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T4[10]));
-   (* HU_SET = "XLXI_58_11_52" *) 
+   (* HU_SET = "XLXI_58_11_105" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_11 (.D0(XLXN_47[11]), 
                                                .D1(XLXN_70[11]), 
                                                .D2(XLXN_60[11]), 
@@ -2124,7 +2124,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T4[11]));
-   (* HU_SET = "XLXI_58_12_51" *) 
+   (* HU_SET = "XLXI_58_12_104" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_12 (.D0(XLXN_47[12]), 
                                                .D1(XLXN_70[12]), 
                                                .D2(XLXN_60[12]), 
@@ -2138,7 +2138,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T4[12]));
-   (* HU_SET = "XLXI_58_13_50" *) 
+   (* HU_SET = "XLXI_58_13_103" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_13 (.D0(XLXN_47[13]), 
                                                .D1(XLXN_70[13]), 
                                                .D2(XLXN_60[13]), 
@@ -2152,7 +2152,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T4[13]));
-   (* HU_SET = "XLXI_58_14_49" *) 
+   (* HU_SET = "XLXI_58_14_102" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_14 (.D0(XLXN_47[14]), 
                                                .D1(XLXN_70[14]), 
                                                .D2(XLXN_60[14]), 
@@ -2166,7 +2166,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T4[14]));
-   (* HU_SET = "XLXI_58_15_48" *) 
+   (* HU_SET = "XLXI_58_15_101" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_58_15 (.D0(XLXN_47[15]), 
                                                .D1(XLXN_70[15]), 
                                                .D2(XLXN_60[15]), 
@@ -2180,7 +2180,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T4[15]));
-   (* HU_SET = "XLXI_59_0_79" *) 
+   (* HU_SET = "XLXI_59_0_132" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_0 (.D0(XLXN_52[0]), 
                                               .D1(XLXN_72[0]), 
                                               .D2(XLXN_59[0]), 
@@ -2194,7 +2194,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T5[0]));
-   (* HU_SET = "XLXI_59_1_78" *) 
+   (* HU_SET = "XLXI_59_1_131" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_1 (.D0(XLXN_52[1]), 
                                               .D1(XLXN_72[1]), 
                                               .D2(XLXN_59[1]), 
@@ -2208,7 +2208,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T5[1]));
-   (* HU_SET = "XLXI_59_2_77" *) 
+   (* HU_SET = "XLXI_59_2_130" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_2 (.D0(XLXN_52[2]), 
                                               .D1(XLXN_72[2]), 
                                               .D2(XLXN_59[2]), 
@@ -2222,7 +2222,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T5[2]));
-   (* HU_SET = "XLXI_59_3_76" *) 
+   (* HU_SET = "XLXI_59_3_129" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_3 (.D0(XLXN_52[3]), 
                                               .D1(XLXN_72[3]), 
                                               .D2(XLXN_59[3]), 
@@ -2236,7 +2236,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T5[3]));
-   (* HU_SET = "XLXI_59_4_75" *) 
+   (* HU_SET = "XLXI_59_4_128" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_4 (.D0(XLXN_52[4]), 
                                               .D1(XLXN_72[4]), 
                                               .D2(XLXN_59[4]), 
@@ -2250,7 +2250,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T5[4]));
-   (* HU_SET = "XLXI_59_5_74" *) 
+   (* HU_SET = "XLXI_59_5_127" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_5 (.D0(XLXN_52[5]), 
                                               .D1(XLXN_72[5]), 
                                               .D2(XLXN_59[5]), 
@@ -2264,7 +2264,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T5[5]));
-   (* HU_SET = "XLXI_59_6_73" *) 
+   (* HU_SET = "XLXI_59_6_126" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_6 (.D0(XLXN_52[6]), 
                                               .D1(XLXN_72[6]), 
                                               .D2(XLXN_59[6]), 
@@ -2278,7 +2278,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T5[6]));
-   (* HU_SET = "XLXI_59_7_72" *) 
+   (* HU_SET = "XLXI_59_7_125" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_7 (.D0(XLXN_52[7]), 
                                               .D1(XLXN_72[7]), 
                                               .D2(XLXN_59[7]), 
@@ -2292,7 +2292,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T5[7]));
-   (* HU_SET = "XLXI_59_8_71" *) 
+   (* HU_SET = "XLXI_59_8_124" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_8 (.D0(XLXN_52[8]), 
                                               .D1(XLXN_72[8]), 
                                               .D2(XLXN_59[8]), 
@@ -2306,7 +2306,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T5[8]));
-   (* HU_SET = "XLXI_59_9_70" *) 
+   (* HU_SET = "XLXI_59_9_123" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_9 (.D0(XLXN_52[9]), 
                                               .D1(XLXN_72[9]), 
                                               .D2(XLXN_59[9]), 
@@ -2320,7 +2320,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T5[9]));
-   (* HU_SET = "XLXI_59_10_69" *) 
+   (* HU_SET = "XLXI_59_10_122" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_10 (.D0(XLXN_52[10]), 
                                                .D1(XLXN_72[10]), 
                                                .D2(XLXN_59[10]), 
@@ -2334,7 +2334,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T5[10]));
-   (* HU_SET = "XLXI_59_11_68" *) 
+   (* HU_SET = "XLXI_59_11_121" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_11 (.D0(XLXN_52[11]), 
                                                .D1(XLXN_72[11]), 
                                                .D2(XLXN_59[11]), 
@@ -2348,7 +2348,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T5[11]));
-   (* HU_SET = "XLXI_59_12_67" *) 
+   (* HU_SET = "XLXI_59_12_120" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_12 (.D0(XLXN_52[12]), 
                                                .D1(XLXN_72[12]), 
                                                .D2(XLXN_59[12]), 
@@ -2362,7 +2362,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T5[12]));
-   (* HU_SET = "XLXI_59_13_66" *) 
+   (* HU_SET = "XLXI_59_13_119" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_13 (.D0(XLXN_52[13]), 
                                                .D1(XLXN_72[13]), 
                                                .D2(XLXN_59[13]), 
@@ -2376,7 +2376,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T5[13]));
-   (* HU_SET = "XLXI_59_14_65" *) 
+   (* HU_SET = "XLXI_59_14_118" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_14 (.D0(XLXN_52[14]), 
                                                .D1(XLXN_72[14]), 
                                                .D2(XLXN_59[14]), 
@@ -2390,7 +2390,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T5[14]));
-   (* HU_SET = "XLXI_59_15_64" *) 
+   (* HU_SET = "XLXI_59_15_117" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_59_15 (.D0(XLXN_52[15]), 
                                                .D1(XLXN_72[15]), 
                                                .D2(XLXN_59[15]), 
@@ -2404,7 +2404,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T5[15]));
-   (* HU_SET = "XLXI_60_0_95" *) 
+   (* HU_SET = "XLXI_60_0_148" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_0 (.D0(XLXN_51[0]), 
                                               .D1(XLXN_73[0]), 
                                               .D2(XLXN_58[0]), 
@@ -2418,7 +2418,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T6[0]));
-   (* HU_SET = "XLXI_60_1_94" *) 
+   (* HU_SET = "XLXI_60_1_147" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_1 (.D0(XLXN_51[1]), 
                                               .D1(XLXN_73[1]), 
                                               .D2(XLXN_58[1]), 
@@ -2432,7 +2432,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T6[1]));
-   (* HU_SET = "XLXI_60_2_93" *) 
+   (* HU_SET = "XLXI_60_2_146" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_2 (.D0(XLXN_51[2]), 
                                               .D1(XLXN_73[2]), 
                                               .D2(XLXN_58[2]), 
@@ -2446,7 +2446,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T6[2]));
-   (* HU_SET = "XLXI_60_3_92" *) 
+   (* HU_SET = "XLXI_60_3_145" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_3 (.D0(XLXN_51[3]), 
                                               .D1(XLXN_73[3]), 
                                               .D2(XLXN_58[3]), 
@@ -2460,7 +2460,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T6[3]));
-   (* HU_SET = "XLXI_60_4_91" *) 
+   (* HU_SET = "XLXI_60_4_144" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_4 (.D0(XLXN_51[4]), 
                                               .D1(XLXN_73[4]), 
                                               .D2(XLXN_58[4]), 
@@ -2474,7 +2474,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T6[4]));
-   (* HU_SET = "XLXI_60_5_90" *) 
+   (* HU_SET = "XLXI_60_5_143" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_5 (.D0(XLXN_51[5]), 
                                               .D1(XLXN_73[5]), 
                                               .D2(XLXN_58[5]), 
@@ -2488,7 +2488,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T6[5]));
-   (* HU_SET = "XLXI_60_6_89" *) 
+   (* HU_SET = "XLXI_60_6_142" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_6 (.D0(XLXN_51[6]), 
                                               .D1(XLXN_73[6]), 
                                               .D2(XLXN_58[6]), 
@@ -2502,7 +2502,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T6[6]));
-   (* HU_SET = "XLXI_60_7_88" *) 
+   (* HU_SET = "XLXI_60_7_141" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_7 (.D0(XLXN_51[7]), 
                                               .D1(XLXN_73[7]), 
                                               .D2(XLXN_58[7]), 
@@ -2516,7 +2516,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T6[7]));
-   (* HU_SET = "XLXI_60_8_87" *) 
+   (* HU_SET = "XLXI_60_8_140" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_8 (.D0(XLXN_51[8]), 
                                               .D1(XLXN_73[8]), 
                                               .D2(XLXN_58[8]), 
@@ -2530,7 +2530,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T6[8]));
-   (* HU_SET = "XLXI_60_9_86" *) 
+   (* HU_SET = "XLXI_60_9_139" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_9 (.D0(XLXN_51[9]), 
                                               .D1(XLXN_73[9]), 
                                               .D2(XLXN_58[9]), 
@@ -2544,7 +2544,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T6[9]));
-   (* HU_SET = "XLXI_60_10_85" *) 
+   (* HU_SET = "XLXI_60_10_138" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_10 (.D0(XLXN_51[10]), 
                                                .D1(XLXN_73[10]), 
                                                .D2(XLXN_58[10]), 
@@ -2558,7 +2558,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T6[10]));
-   (* HU_SET = "XLXI_60_11_84" *) 
+   (* HU_SET = "XLXI_60_11_137" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_11 (.D0(XLXN_51[11]), 
                                                .D1(XLXN_73[11]), 
                                                .D2(XLXN_58[11]), 
@@ -2572,7 +2572,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T6[11]));
-   (* HU_SET = "XLXI_60_12_83" *) 
+   (* HU_SET = "XLXI_60_12_136" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_12 (.D0(XLXN_51[12]), 
                                                .D1(XLXN_73[12]), 
                                                .D2(XLXN_58[12]), 
@@ -2586,7 +2586,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T6[12]));
-   (* HU_SET = "XLXI_60_13_82" *) 
+   (* HU_SET = "XLXI_60_13_135" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_13 (.D0(XLXN_51[13]), 
                                                .D1(XLXN_73[13]), 
                                                .D2(XLXN_58[13]), 
@@ -2600,7 +2600,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T6[13]));
-   (* HU_SET = "XLXI_60_14_81" *) 
+   (* HU_SET = "XLXI_60_14_134" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_14 (.D0(XLXN_51[14]), 
                                                .D1(XLXN_73[14]), 
                                                .D2(XLXN_58[14]), 
@@ -2614,7 +2614,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T6[14]));
-   (* HU_SET = "XLXI_60_15_80" *) 
+   (* HU_SET = "XLXI_60_15_133" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_60_15 (.D0(XLXN_51[15]), 
                                                .D1(XLXN_73[15]), 
                                                .D2(XLXN_58[15]), 
@@ -2628,7 +2628,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[15]), 
                                                .S2(S2[15]), 
                                                .O(T6[15]));
-   (* HU_SET = "XLXI_61_0_111" *) 
+   (* HU_SET = "XLXI_61_0_164" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_0 (.D0(XLXN_50[0]), 
                                               .D1(XLXN_76[0]), 
                                               .D2(XLXN_57[0]), 
@@ -2642,7 +2642,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[0]), 
                                               .S2(S2[0]), 
                                               .O(T7[0]));
-   (* HU_SET = "XLXI_61_1_110" *) 
+   (* HU_SET = "XLXI_61_1_163" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_1 (.D0(XLXN_50[1]), 
                                               .D1(XLXN_76[1]), 
                                               .D2(XLXN_57[1]), 
@@ -2656,7 +2656,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[1]), 
                                               .S2(S2[1]), 
                                               .O(T7[1]));
-   (* HU_SET = "XLXI_61_2_109" *) 
+   (* HU_SET = "XLXI_61_2_162" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_2 (.D0(XLXN_50[2]), 
                                               .D1(XLXN_76[2]), 
                                               .D2(XLXN_57[2]), 
@@ -2670,7 +2670,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[2]), 
                                               .S2(S2[2]), 
                                               .O(T7[2]));
-   (* HU_SET = "XLXI_61_3_108" *) 
+   (* HU_SET = "XLXI_61_3_161" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_3 (.D0(XLXN_50[3]), 
                                               .D1(XLXN_76[3]), 
                                               .D2(XLXN_57[3]), 
@@ -2684,7 +2684,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[3]), 
                                               .S2(S2[3]), 
                                               .O(T7[3]));
-   (* HU_SET = "XLXI_61_4_107" *) 
+   (* HU_SET = "XLXI_61_4_160" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_4 (.D0(XLXN_50[4]), 
                                               .D1(XLXN_76[4]), 
                                               .D2(XLXN_57[4]), 
@@ -2698,7 +2698,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[4]), 
                                               .S2(S2[4]), 
                                               .O(T7[4]));
-   (* HU_SET = "XLXI_61_5_106" *) 
+   (* HU_SET = "XLXI_61_5_159" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_5 (.D0(XLXN_50[5]), 
                                               .D1(XLXN_76[5]), 
                                               .D2(XLXN_57[5]), 
@@ -2712,7 +2712,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[5]), 
                                               .S2(S2[5]), 
                                               .O(T7[5]));
-   (* HU_SET = "XLXI_61_6_105" *) 
+   (* HU_SET = "XLXI_61_6_158" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_6 (.D0(XLXN_50[6]), 
                                               .D1(XLXN_76[6]), 
                                               .D2(XLXN_57[6]), 
@@ -2726,7 +2726,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[6]), 
                                               .S2(S2[6]), 
                                               .O(T7[6]));
-   (* HU_SET = "XLXI_61_7_104" *) 
+   (* HU_SET = "XLXI_61_7_157" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_7 (.D0(XLXN_50[7]), 
                                               .D1(XLXN_76[7]), 
                                               .D2(XLXN_57[7]), 
@@ -2740,7 +2740,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[7]), 
                                               .S2(S2[7]), 
                                               .O(T7[7]));
-   (* HU_SET = "XLXI_61_8_103" *) 
+   (* HU_SET = "XLXI_61_8_156" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_8 (.D0(XLXN_50[8]), 
                                               .D1(XLXN_76[8]), 
                                               .D2(XLXN_57[8]), 
@@ -2754,7 +2754,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[8]), 
                                               .S2(S2[8]), 
                                               .O(T7[8]));
-   (* HU_SET = "XLXI_61_9_102" *) 
+   (* HU_SET = "XLXI_61_9_155" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_9 (.D0(XLXN_50[9]), 
                                               .D1(XLXN_76[9]), 
                                               .D2(XLXN_57[9]), 
@@ -2768,7 +2768,7 @@ module ScaleThreshold_x8(S0,
                                               .S1(S1[9]), 
                                               .S2(S2[9]), 
                                               .O(T7[9]));
-   (* HU_SET = "XLXI_61_10_101" *) 
+   (* HU_SET = "XLXI_61_10_154" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_10 (.D0(XLXN_50[10]), 
                                                .D1(XLXN_76[10]), 
                                                .D2(XLXN_57[10]), 
@@ -2782,7 +2782,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[10]), 
                                                .S2(S2[10]), 
                                                .O(T7[10]));
-   (* HU_SET = "XLXI_61_11_100" *) 
+   (* HU_SET = "XLXI_61_11_153" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_11 (.D0(XLXN_50[11]), 
                                                .D1(XLXN_76[11]), 
                                                .D2(XLXN_57[11]), 
@@ -2796,7 +2796,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[11]), 
                                                .S2(S2[11]), 
                                                .O(T7[11]));
-   (* HU_SET = "XLXI_61_12_99" *) 
+   (* HU_SET = "XLXI_61_12_152" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_12 (.D0(XLXN_50[12]), 
                                                .D1(XLXN_76[12]), 
                                                .D2(XLXN_57[12]), 
@@ -2810,7 +2810,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[12]), 
                                                .S2(S2[12]), 
                                                .O(T7[12]));
-   (* HU_SET = "XLXI_61_13_98" *) 
+   (* HU_SET = "XLXI_61_13_151" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_13 (.D0(XLXN_50[13]), 
                                                .D1(XLXN_76[13]), 
                                                .D2(XLXN_57[13]), 
@@ -2824,7 +2824,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[13]), 
                                                .S2(S2[13]), 
                                                .O(T7[13]));
-   (* HU_SET = "XLXI_61_14_97" *) 
+   (* HU_SET = "XLXI_61_14_150" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_14 (.D0(XLXN_50[14]), 
                                                .D1(XLXN_76[14]), 
                                                .D2(XLXN_57[14]), 
@@ -2838,7 +2838,7 @@ module ScaleThreshold_x8(S0,
                                                .S1(S1[14]), 
                                                .S2(S2[14]), 
                                                .O(T7[14]));
-   (* HU_SET = "XLXI_61_15_96" *) 
+   (* HU_SET = "XLXI_61_15_149" *) 
    M8_1E_HXILINX_ScaleThreshold_x8  XLXI_61_15 (.D0(XLXN_50[15]), 
                                                .D1(XLXN_76[15]), 
                                                .D2(XLXN_57[15]), 

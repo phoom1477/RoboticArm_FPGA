@@ -13,7 +13,6 @@
         <signal name="OUTPUT(15:12)" />
         <signal name="XLXN_8" />
         <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
         <port polarity="Output" name="OUTPUT(15:0)" />
         <blockdef name="NUM03">
             <timestamp>2020-11-20T3:48:55</timestamp>
@@ -102,31 +101,34 @@
         </instance>
         <branch name="OUTPUT(15:0)">
             <wire x2="2096" y1="432" y2="432" x1="1760" />
-            <wire x2="1760" y1="432" y2="1680" x1="1760" />
+            <wire x2="1760" y1="432" y2="544" x1="1760" />
+            <wire x2="1760" y1="544" y2="944" x1="1760" />
+            <wire x2="1760" y1="944" y2="1312" x1="1760" />
+            <wire x2="1760" y1="1312" y2="1680" x1="1760" />
         </branch>
         <bustap x2="1664" y1="544" y2="544" x1="1760" />
         <branch name="OUTPUT(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="544" type="branch" />
-            <wire x2="1619" y1="544" y2="544" x1="1488" />
-            <wire x2="1664" y1="544" y2="544" x1="1619" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="544" type="branch" />
+            <wire x2="1616" y1="544" y2="544" x1="1488" />
+            <wire x2="1664" y1="544" y2="544" x1="1616" />
         </branch>
         <bustap x2="1664" y1="944" y2="944" x1="1760" />
         <branch name="OUTPUT(7:4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="944" type="branch" />
-            <wire x2="1619" y1="944" y2="944" x1="1488" />
-            <wire x2="1664" y1="944" y2="944" x1="1619" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="944" type="branch" />
+            <wire x2="1616" y1="944" y2="944" x1="1488" />
+            <wire x2="1664" y1="944" y2="944" x1="1616" />
         </branch>
         <bustap x2="1664" y1="1312" y2="1312" x1="1760" />
         <branch name="OUTPUT(11:8)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="1312" type="branch" />
-            <wire x2="1619" y1="1312" y2="1312" x1="1488" />
-            <wire x2="1664" y1="1312" y2="1312" x1="1619" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="1312" type="branch" />
+            <wire x2="1616" y1="1312" y2="1312" x1="1488" />
+            <wire x2="1664" y1="1312" y2="1312" x1="1616" />
         </branch>
         <bustap x2="1664" y1="1680" y2="1680" x1="1760" />
         <branch name="OUTPUT(15:12)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="1680" type="branch" />
-            <wire x2="1619" y1="1680" y2="1680" x1="1488" />
-            <wire x2="1664" y1="1680" y2="1680" x1="1619" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1619" y="1680" type="branch" />
+            <wire x2="1616" y1="1680" y2="1680" x1="1488" />
+            <wire x2="1664" y1="1680" y2="1680" x1="1616" />
         </branch>
         <instance x="672" y="496" name="XLXI_8" orien="R0" />
         <instance x="960" y="384" name="XLXI_9" orien="R180" />

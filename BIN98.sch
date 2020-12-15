@@ -91,31 +91,34 @@
         </instance>
         <branch name="OUTPUT(15:0)">
             <wire x2="2256" y1="544" y2="544" x1="1920" />
-            <wire x2="1920" y1="544" y2="1792" x1="1920" />
+            <wire x2="1920" y1="544" y2="656" x1="1920" />
+            <wire x2="1920" y1="656" y2="1056" x1="1920" />
+            <wire x2="1920" y1="1056" y2="1424" x1="1920" />
+            <wire x2="1920" y1="1424" y2="1792" x1="1920" />
         </branch>
         <bustap x2="1824" y1="656" y2="656" x1="1920" />
         <branch name="OUTPUT(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="656" type="branch" />
-            <wire x2="1779" y1="656" y2="656" x1="1648" />
-            <wire x2="1824" y1="656" y2="656" x1="1779" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="656" type="branch" />
+            <wire x2="1776" y1="656" y2="656" x1="1648" />
+            <wire x2="1824" y1="656" y2="656" x1="1776" />
         </branch>
         <bustap x2="1824" y1="1056" y2="1056" x1="1920" />
         <branch name="OUTPUT(7:4)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1056" type="branch" />
-            <wire x2="1779" y1="1056" y2="1056" x1="1648" />
-            <wire x2="1824" y1="1056" y2="1056" x1="1779" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1056" type="branch" />
+            <wire x2="1776" y1="1056" y2="1056" x1="1648" />
+            <wire x2="1824" y1="1056" y2="1056" x1="1776" />
         </branch>
         <bustap x2="1824" y1="1424" y2="1424" x1="1920" />
         <branch name="OUTPUT(11:8)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1424" type="branch" />
-            <wire x2="1779" y1="1424" y2="1424" x1="1648" />
-            <wire x2="1824" y1="1424" y2="1424" x1="1779" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1424" type="branch" />
+            <wire x2="1776" y1="1424" y2="1424" x1="1648" />
+            <wire x2="1824" y1="1424" y2="1424" x1="1776" />
         </branch>
         <bustap x2="1824" y1="1792" y2="1792" x1="1920" />
         <branch name="OUTPUT(15:12)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1792" type="branch" />
-            <wire x2="1779" y1="1792" y2="1792" x1="1648" />
-            <wire x2="1824" y1="1792" y2="1792" x1="1779" />
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1779" y="1792" type="branch" />
+            <wire x2="1776" y1="1792" y2="1792" x1="1648" />
+            <wire x2="1824" y1="1792" y2="1792" x1="1776" />
         </branch>
         <instance x="832" y="608" name="XLXI_8" orien="R0" />
         <instance x="1120" y="496" name="XLXI_9" orien="R180" />
