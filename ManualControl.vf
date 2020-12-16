@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ManualControl.vf
-// /___/   /\     Timestamp : 12/15/2020 23:05:35
+// /___/   /\     Timestamp : 12/16/2020 02:36:46
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -34,6 +34,53 @@ module COMPM8_HXILINX_ManualControl (GT, LT, A, B);
    assign LT = A < B  ;
 
 endmodule
+`timescale 100 ps / 10 ps
+
+module CD4CE_HXILINX_ManualControl(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   parameter TERMINAL_COUNT = 4'b1001;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+
+	else if (CE)
+          begin
+             if ({Q3,Q2,Q1,Q0} == 4'b1001)
+               {Q3,Q2,Q1,Q0} <= 4'b0000;
+             else if({Q3,Q2,Q1,Q0} == 4'b1011)
+               {Q3,Q2,Q1,Q0} <= 4'b0110;
+             else if({Q3,Q2,Q1,Q0} == 4'b1101)
+               {Q3,Q2,Q1,Q0} <= 4'b0100;
+             else if({Q3,Q2,Q1,Q0} == 4'b1111)
+               {Q3,Q2,Q1,Q0} <= 4'b0010;
+            
+             else
+	      {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+          end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
 `timescale  100 ps / 10 ps
 
 module M2_1_HXILINX_ManualControl (O, D0, D1, S0);
@@ -55,6 +102,94 @@ module M2_1_HXILINX_ManualControl (O, D0, D1, S0);
       endcase
    end
     
+endmodule
+`timescale 1ns / 1ps
+
+module DIV_500k_MUSER_ManualControl(CLK_IN, 
+                                    CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_1;
+   wire XLXN_8;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_27;
+   wire XLXN_53;
+   wire XLXN_55;
+   wire XLXN_56;
+   wire XLXN_58;
+   wire XLXN_67;
+   wire CLK_OUT_DUMMY;
+   
+   assign CLK_OUT = CLK_OUT_DUMMY;
+   (* HU_SET = "XLXI_1_437" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_1 (.C(XLXN_1), 
+                                       .CE(XLXN_55), 
+                                       .CLR(XLXN_8), 
+                                       .CEO(), 
+                                       .Q0(), 
+                                       .Q1(), 
+                                       .Q2(), 
+                                       .Q3(), 
+                                       .TC(XLXN_24));
+   (* HU_SET = "XLXI_2_438" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_2 (.C(CLK_IN), 
+                                       .CE(XLXN_55), 
+                                       .CLR(XLXN_8), 
+                                       .CEO(), 
+                                       .Q0(), 
+                                       .Q1(), 
+                                       .Q2(), 
+                                       .Q3(), 
+                                       .TC(XLXN_1));
+   VCC  XLXI_13 (.P(XLXN_55));
+   GND  XLXI_14 (.G(XLXN_8));
+   (* HU_SET = "XLXI_15_439" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_15 (.C(XLXN_24), 
+                                        .CE(XLXN_55), 
+                                        .CLR(XLXN_8), 
+                                        .CEO(), 
+                                        .Q0(), 
+                                        .Q1(), 
+                                        .Q2(), 
+                                        .Q3(), 
+                                        .TC(XLXN_25));
+   (* HU_SET = "XLXI_16_440" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_16 (.C(XLXN_25), 
+                                        .CE(XLXN_55), 
+                                        .CLR(XLXN_8), 
+                                        .CEO(), 
+                                        .Q0(), 
+                                        .Q1(), 
+                                        .Q2(), 
+                                        .Q3(), 
+                                        .TC(XLXN_27));
+   (* HU_SET = "XLXI_17_441" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_17 (.C(XLXN_27), 
+                                        .CE(XLXN_55), 
+                                        .CLR(XLXN_8), 
+                                        .CEO(), 
+                                        .Q0(), 
+                                        .Q1(), 
+                                        .Q2(), 
+                                        .Q3(), 
+                                        .TC(XLXN_53));
+   (* HU_SET = "XLXI_26_442" *) 
+   CD4CE_HXILINX_ManualControl  XLXI_26 (.C(XLXN_53), 
+                                        .CE(XLXN_55), 
+                                        .CLR(CLK_OUT_DUMMY), 
+                                        .CEO(), 
+                                        .Q0(XLXN_56), 
+                                        .Q1(XLXN_58), 
+                                        .Q2(XLXN_67), 
+                                        .Q3(), 
+                                        .TC());
+   AND3B1  XLXI_27 (.I0(XLXN_58), 
+                   .I1(XLXN_67), 
+                   .I2(XLXN_56), 
+                   .O(CLK_OUT_DUMMY));
 endmodule
 `timescale 1ns / 1ps
 
@@ -300,42 +435,42 @@ module Counter_FB_8Bits_MUSER_ManualControl(CB,
    GND  XLXI_10_4 (.G(one1[5]));
    GND  XLXI_10_5 (.G(one1[6]));
    GND  XLXI_10_6 (.G(one1[7]));
-   (* HU_SET = "XLXI_13_0_25" *) 
+   (* HU_SET = "XLXI_13_0_450" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_0 (.D0(SUM[0]), 
                                          .D1(XLXN_73[0]), 
                                          .S0(SEL[0]), 
                                          .O(XLXN_20[0]));
-   (* HU_SET = "XLXI_13_1_24" *) 
+   (* HU_SET = "XLXI_13_1_449" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_1 (.D0(SUM[1]), 
                                          .D1(XLXN_73[1]), 
                                          .S0(SEL[1]), 
                                          .O(XLXN_20[1]));
-   (* HU_SET = "XLXI_13_2_23" *) 
+   (* HU_SET = "XLXI_13_2_448" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_2 (.D0(SUM[2]), 
                                          .D1(XLXN_73[2]), 
                                          .S0(SEL[2]), 
                                          .O(XLXN_20[2]));
-   (* HU_SET = "XLXI_13_3_22" *) 
+   (* HU_SET = "XLXI_13_3_447" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_3 (.D0(SUM[3]), 
                                          .D1(XLXN_73[3]), 
                                          .S0(SEL[3]), 
                                          .O(XLXN_20[3]));
-   (* HU_SET = "XLXI_13_4_21" *) 
+   (* HU_SET = "XLXI_13_4_446" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_4 (.D0(SUM[4]), 
                                          .D1(XLXN_73[4]), 
                                          .S0(SEL[4]), 
                                          .O(XLXN_20[4]));
-   (* HU_SET = "XLXI_13_5_20" *) 
+   (* HU_SET = "XLXI_13_5_445" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_5 (.D0(SUM[5]), 
                                          .D1(XLXN_73[5]), 
                                          .S0(SEL[5]), 
                                          .O(XLXN_20[5]));
-   (* HU_SET = "XLXI_13_6_19" *) 
+   (* HU_SET = "XLXI_13_6_444" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_6 (.D0(SUM[6]), 
                                          .D1(XLXN_73[6]), 
                                          .S0(SEL[6]), 
                                          .O(XLXN_20[6]));
-   (* HU_SET = "XLXI_13_7_18" *) 
+   (* HU_SET = "XLXI_13_7_443" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_7 (.D0(SUM[7]), 
                                          .D1(XLXN_73[7]), 
                                          .S0(SEL[7]), 
@@ -384,6 +519,7 @@ endmodule
 module ManualControl(DOWN, 
                      EN, 
                      EndValue, 
+                     FPGA_CLK, 
                      StartValue, 
                      UP, 
                      OUTPUT);
@@ -391,6 +527,7 @@ module ManualControl(DOWN,
     input DOWN;
     input EN;
     input [7:0] EndValue;
+    input FPGA_CLK;
     input [7:0] StartValue;
     input UP;
    output [7:0] OUTPUT;
@@ -400,14 +537,15 @@ module ManualControl(DOWN,
    wire XLXN_120;
    wire XLXN_121;
    wire XLXN_124;
-   wire [7:0] XLXN_132;
    wire XLXN_196;
    wire XLXN_199;
    wire XLXN_200;
-   wire XLXN_203;
+   wire [7:0] XLXN_209;
+   wire XLXN_245;
+   wire XLXN_256;
    
    Counter_FB_8Bits_MUSER_ManualControl  XLXI_1 (.CB(DOWN), 
-                                                .CLK(XLXN_203), 
+                                                .CLK(XLXN_256), 
                                                 .CLR(XLXN_196), 
                                                 .C_Out(XLXN_75[7:0]));
    OR2  XLXI_2 (.I0(DOWN), 
@@ -416,14 +554,14 @@ module ManualControl(DOWN,
    FullAdder8Bit_MUSER_ManualControl  XLXI_6 (.A(XLXN_75[7:0]), 
                                              .B(StartValue[7:0]), 
                                              .CO(), 
-                                             .S(XLXN_132[7:0]));
-   (* HU_SET = "XLXI_18_26" *) 
-   COMPM8_HXILINX_ManualControl  XLXI_18 (.A(XLXN_132[7:0]), 
+                                             .S(XLXN_209[7:0]));
+   (* HU_SET = "XLXI_18_452" *) 
+   COMPM8_HXILINX_ManualControl  XLXI_18 (.A(XLXN_209[7:0]), 
                                          .B(EndValue[7:0]), 
                                          .GT(), 
                                          .LT(XLXN_124));
-   (* HU_SET = "XLXI_19_27" *) 
-   COMPM8_HXILINX_ManualControl  XLXI_19 (.A(XLXN_132[7:0]), 
+   (* HU_SET = "XLXI_19_451" *) 
+   COMPM8_HXILINX_ManualControl  XLXI_19 (.A(XLXN_209[7:0]), 
                                          .B(StartValue[7:0]), 
                                          .GT(XLXN_114), 
                                          .LT());
@@ -437,24 +575,27 @@ module ManualControl(DOWN,
                 .I1(XLXN_120), 
                 .O(XLXN_200));
    GND  XLXI_50 (.G(XLXN_196));
-   BUF  XLXI_51_0 (.I(XLXN_132[0]), 
+   BUF  XLXI_51_0 (.I(XLXN_209[0]), 
                   .O(OUTPUT[0]));
-   BUF  XLXI_51_1 (.I(XLXN_132[1]), 
+   BUF  XLXI_51_1 (.I(XLXN_209[1]), 
                   .O(OUTPUT[1]));
-   BUF  XLXI_51_2 (.I(XLXN_132[2]), 
+   BUF  XLXI_51_2 (.I(XLXN_209[2]), 
                   .O(OUTPUT[2]));
-   BUF  XLXI_51_3 (.I(XLXN_132[3]), 
+   BUF  XLXI_51_3 (.I(XLXN_209[3]), 
                   .O(OUTPUT[3]));
-   BUF  XLXI_51_4 (.I(XLXN_132[4]), 
+   BUF  XLXI_51_4 (.I(XLXN_209[4]), 
                   .O(OUTPUT[4]));
-   BUF  XLXI_51_5 (.I(XLXN_132[5]), 
+   BUF  XLXI_51_5 (.I(XLXN_209[5]), 
                   .O(OUTPUT[5]));
-   BUF  XLXI_51_6 (.I(XLXN_132[6]), 
+   BUF  XLXI_51_6 (.I(XLXN_209[6]), 
                   .O(OUTPUT[6]));
-   BUF  XLXI_51_7 (.I(XLXN_132[7]), 
+   BUF  XLXI_51_7 (.I(XLXN_209[7]), 
                   .O(OUTPUT[7]));
-   AND3  XLXI_53 (.I0(XLXN_200), 
-                 .I1(XLXN_199), 
-                 .I2(EN), 
-                 .O(XLXN_203));
+   AND4  XLXI_59 (.I0(XLXN_245), 
+                 .I1(XLXN_200), 
+                 .I2(XLXN_199), 
+                 .I3(EN), 
+                 .O(XLXN_256));
+   DIV_500k_MUSER_ManualControl  XLXI_60 (.CLK_IN(FPGA_CLK), 
+                                         .CLK_OUT(XLXN_245));
 endmodule

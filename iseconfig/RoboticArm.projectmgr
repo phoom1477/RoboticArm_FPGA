@@ -39,7 +39,6 @@
          <ClosedNode>/PWM_Generator C:|Users|Admin|Desktop|RoboticArm|RoboticArm|PWM_Generator.sch</ClosedNode>
          <ClosedNode>/ScaleThreshold_x8 C:|Users|Admin|Desktop|RoboticArm|RoboticArm|ScaleThreshold_x8.sch</ClosedNode>
          <ClosedNode>/ServoControl C:|Users|Admin|Desktop|RoboticArm|RoboticArm|ServoControl.sch</ClosedNode>
-         <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_1 - PWM_Gen</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_113 - ServoControl/XLXI_1 - PWM_Gen</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_113 - ServoControl/XLXI_41 - ManualControl</ClosedNode>
@@ -76,14 +75,14 @@
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_224 - BIN_215</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_225 - BIN_215</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_226 - BIN_250</ClosedNode>
-         <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_292 - ServoControl</ClosedNode>
-         <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_292 - ServoControl/XLXI_1 - PWM_Gen</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_292 - ServoControl/XLXI_41 - ManualControl/XLXI_1 - Counter_FB_8Bits</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_292 - ServoControl/XLXI_41 - ManualControl/XLXI_6 - FullAdder8Bit</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_293 - ServoControl</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_294 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_295 - ServoControl</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_295 - ServoControl/XLXI_41 - ManualControl/XLXI_1 - Counter_FB_8Bits</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_295 - ServoControl/XLXI_41 - ManualControl/XLXI_6 - FullAdder8Bit</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_296 - ServoControl</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_296 - ServoControl/XLXI_1 - PWM_Gen</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_296 - ServoControl/XLXI_41 - ManualControl/XLXI_1 - Counter_FB_8Bits/XLXI_25 - FullAdder4Bit</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_296 - ServoControl/XLXI_41 - ManualControl/XLXI_1 - Counter_FB_8Bits/XLXI_26 - FullAdder4Bit</ClosedNode>
@@ -96,9 +95,9 @@
       <SelectedItems>
          <SelectedItem>main (C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000d4000000020000000000000000000000000200000064ffffffff000000810000000300000002000000d40000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a30000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
       <CurrentItem>main (C:/Users/Admin/Desktop/RoboticArm/RoboticArm/main.sch)</CurrentItem>
    </ItemView>
@@ -107,13 +106,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Update All Schematic Files</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000173000000010000000100000000000000000000000064ffffffff000000810000000000000001000001730000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Update All Schematic Files</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -145,12 +144,11 @@
          <ClosedNode>Implement Design/Map</ClosedNode>
          <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
          <ClosedNode>Implement Design/Translate</ClosedNode>
-         <ClosedNode>Synthesize - XST</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >7</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000162000000010000000100000000000000000000000064ffffffff000000810000000000000001000001620000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
@@ -177,13 +175,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000173000000010000000100000000000000000000000064ffffffff000000810000000000000001000001730000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>

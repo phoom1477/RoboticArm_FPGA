@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : div100k.vf
-// /___/   /\     Timestamp : 12/15/2020 23:01:03
+// /___/   /\     Timestamp : 12/16/2020 02:36:19
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -89,19 +89,19 @@ module count09_MUSER_div100k(CLK_P45,
    assign Bit2_P80 = Bit2_P80_DUMMY;
    assign Bit3_P79 = Bit3_P79_DUMMY;
    assign Tc = Tc_DUMMY;
-   (* HU_SET = "XLXI_1_28" *) 
+   (* HU_SET = "XLXI_1_245" *) 
    FJKC_HXILINX_div100k  XLXI_1 (.C(CLK_P45), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
                                 .K(XLXN_3), 
                                 .Q(Bit0_P82_DUMMY));
-   (* HU_SET = "XLXI_2_29" *) 
+   (* HU_SET = "XLXI_2_246" *) 
    FJKC_HXILINX_div100k  XLXI_2 (.C(XLXN_21), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
                                 .K(XLXN_3), 
                                 .Q(Bit2_P80_DUMMY));
-   (* HU_SET = "XLXI_3_30" *) 
+   (* HU_SET = "XLXI_3_247" *) 
    FJKC_HXILINX_div100k  XLXI_3 (.C(XLXN_22), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 
@@ -117,7 +117,7 @@ module count09_MUSER_div100k(CLK_P45,
                 .I2(Bit1_P81_DUMMY), 
                 .I3(XLXN_6), 
                 .O(Tc_DUMMY));
-   (* HU_SET = "XLXI_8_31" *) 
+   (* HU_SET = "XLXI_8_248" *) 
    FJKC_HXILINX_div100k  XLXI_8 (.C(XLXN_20), 
                                 .CLR(Tc_DUMMY), 
                                 .J(XLXN_3), 

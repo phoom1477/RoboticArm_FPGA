@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Counter_FB_8Bits.vf
-// /___/   /\     Timestamp : 12/15/2020 23:05:28
+// /___/   /\     Timestamp : 12/16/2020 02:36:42
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -284,42 +284,42 @@ module Counter_FB_8Bits(CB,
    GND  XLXI_10_4 (.G(one1[5]));
    GND  XLXI_10_5 (.G(one1[6]));
    GND  XLXI_10_6 (.G(one1[7]));
-   (* HU_SET = "XLXI_13_0_7" *) 
+   (* HU_SET = "XLXI_13_0_430" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_0 (.D0(SUM[0]), 
                                             .D1(XLXN_73[0]), 
                                             .S0(SEL[0]), 
                                             .O(XLXN_20[0]));
-   (* HU_SET = "XLXI_13_1_6" *) 
+   (* HU_SET = "XLXI_13_1_429" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_1 (.D0(SUM[1]), 
                                             .D1(XLXN_73[1]), 
                                             .S0(SEL[1]), 
                                             .O(XLXN_20[1]));
-   (* HU_SET = "XLXI_13_2_5" *) 
+   (* HU_SET = "XLXI_13_2_428" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_2 (.D0(SUM[2]), 
                                             .D1(XLXN_73[2]), 
                                             .S0(SEL[2]), 
                                             .O(XLXN_20[2]));
-   (* HU_SET = "XLXI_13_3_4" *) 
+   (* HU_SET = "XLXI_13_3_427" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_3 (.D0(SUM[3]), 
                                             .D1(XLXN_73[3]), 
                                             .S0(SEL[3]), 
                                             .O(XLXN_20[3]));
-   (* HU_SET = "XLXI_13_4_3" *) 
+   (* HU_SET = "XLXI_13_4_426" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_4 (.D0(SUM[4]), 
                                             .D1(XLXN_73[4]), 
                                             .S0(SEL[4]), 
                                             .O(XLXN_20[4]));
-   (* HU_SET = "XLXI_13_5_2" *) 
+   (* HU_SET = "XLXI_13_5_425" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_5 (.D0(SUM[5]), 
                                             .D1(XLXN_73[5]), 
                                             .S0(SEL[5]), 
                                             .O(XLXN_20[5]));
-   (* HU_SET = "XLXI_13_6_1" *) 
+   (* HU_SET = "XLXI_13_6_424" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_6 (.D0(SUM[6]), 
                                             .D1(XLXN_73[6]), 
                                             .S0(SEL[6]), 
                                             .O(XLXN_20[6]));
-   (* HU_SET = "XLXI_13_7_0" *) 
+   (* HU_SET = "XLXI_13_7_423" *) 
    M2_1_HXILINX_Counter_FB_8Bits  XLXI_13_7 (.D0(SUM[7]), 
                                             .D1(XLXN_73[7]), 
                                             .S0(SEL[7]), 

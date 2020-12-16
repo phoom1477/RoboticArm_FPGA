@@ -1,7 +1,7 @@
 # PlanAhead Generated physical constraints 
-NET "SW_UP_P45" LOC = P45;
-NET "SW_DOWN_P46" LOC = P46;
-NET "SEL_P47" LOC = P47;
+NET "SW_UP_P47" LOC = P47;
+NET "SW_DOWN_P48" LOC = P48;
+NET "SEL_P45" LOC = P45;
 
 NET "SW_MODE_P55" LOC = P55;
 NET "CLK_P123" LOC = P123;

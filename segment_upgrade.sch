@@ -11,8 +11,6 @@
         <signal name="XLXN_340" />
         <signal name="CLK_P123" />
         <signal name="XLXN_499" />
-        <signal name="XLXN_502" />
-        <signal name="XLXN_503" />
         <signal name="XLXN_504" />
         <signal name="C2(3:0)" />
         <signal name="C1(3:0)" />
@@ -123,26 +121,9 @@
         <block symbolname="vcc" name="XLXI_93">
             <blockpin signalname="XLXN_208" name="P" />
         </block>
-        <block symbolname="d2_4e" name="XLXI_107">
-            <blockpin signalname="qweqwe" name="A0" />
-            <blockpin signalname="qweqweqw" name="A1" />
-            <blockpin signalname="XLXN_340" name="E" />
-            <blockpin signalname="XLXN_499" name="D0" />
-            <blockpin signalname="XLXN_502" name="D1" />
-            <blockpin signalname="XLXN_503" name="D2" />
-            <blockpin signalname="XLXN_504" name="D3" />
-        </block>
         <block symbolname="inv" name="XLXI_163">
             <blockpin signalname="XLXN_499" name="I" />
             <blockpin signalname="COMM(0)" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_164">
-            <blockpin signalname="XLXN_502" name="I" />
-            <blockpin signalname="COMM(1)" name="O" />
-        </block>
-        <block symbolname="inv" name="XLXI_165">
-            <blockpin signalname="XLXN_503" name="I" />
-            <blockpin signalname="COMM(2)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_166">
             <blockpin signalname="XLXN_504" name="I" />
@@ -172,6 +153,21 @@
             <blockpin signalname="XLXN_523(3:0)" name="hex_in(3:0)" />
             <blockpin signalname="SEG_OUT(6:0)" name="SEG(6:0)" />
         </block>
+        <block symbolname="d2_4e" name="XLXI_107">
+            <blockpin signalname="qweqwe" name="A0" />
+            <blockpin signalname="qweqweqw" name="A1" />
+            <blockpin signalname="XLXN_340" name="E" />
+            <blockpin signalname="XLXN_499" name="D0" />
+            <blockpin name="D1" />
+            <blockpin name="D2" />
+            <blockpin signalname="XLXN_504" name="D3" />
+        </block>
+        <block symbolname="vcc" name="XLXI_1691">
+            <blockpin signalname="COMM(1)" name="P" />
+        </block>
+        <block symbolname="vcc" name="XLXI_1692">
+            <blockpin signalname="COMM(2)" name="P" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <branch name="XLXN_423">
@@ -194,24 +190,11 @@
             <wire x2="1296" y1="1616" y2="1616" x1="1264" />
             <wire x2="1312" y1="1968" y2="1984" x1="1312" />
         </branch>
-        <instance x="1296" y="1744" name="XLXI_107" orien="R0" />
         <instance x="1712" y="1296" name="XLXI_163" orien="R0" />
         <branch name="XLXN_499">
             <wire x2="1696" y1="1424" y2="1424" x1="1680" />
             <wire x2="1712" y1="1264" y2="1264" x1="1696" />
             <wire x2="1696" y1="1264" y2="1424" x1="1696" />
-        </branch>
-        <instance x="1712" y="1632" name="XLXI_165" orien="R0" />
-        <branch name="XLXN_503">
-            <wire x2="1696" y1="1552" y2="1552" x1="1680" />
-            <wire x2="1696" y1="1552" y2="1600" x1="1696" />
-            <wire x2="1712" y1="1600" y2="1600" x1="1696" />
-        </branch>
-        <instance x="1712" y="1472" name="XLXI_164" orien="R0" />
-        <branch name="XLXN_502">
-            <wire x2="1696" y1="1488" y2="1488" x1="1680" />
-            <wire x2="1712" y1="1440" y2="1440" x1="1696" />
-            <wire x2="1696" y1="1440" y2="1488" x1="1696" />
         </branch>
         <instance x="1712" y="1824" name="XLXI_166" orien="R0" />
         <branch name="XLXN_504">
@@ -260,13 +243,13 @@
         <bustap x2="2144" y1="1440" y2="1440" x1="2240" />
         <branch name="COMM(1)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1440" type="branch" />
-            <wire x2="2016" y1="1440" y2="1440" x1="1936" />
+            <wire x2="2016" y1="1440" y2="1440" x1="1920" />
             <wire x2="2144" y1="1440" y2="1440" x1="2016" />
         </branch>
         <bustap x2="2144" y1="1600" y2="1600" x1="2240" />
         <branch name="COMM(2)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2016" y="1600" type="branch" />
-            <wire x2="2016" y1="1600" y2="1600" x1="1936" />
+            <wire x2="2016" y1="1600" y2="1600" x1="1920" />
             <wire x2="2144" y1="1600" y2="1600" x1="2016" />
         </branch>
         <bustap x2="2144" y1="1792" y2="1792" x1="2240" />
@@ -302,5 +285,8 @@
         </branch>
         <instance x="2688" y="784" name="XLXI_1688" orien="R0">
         </instance>
+        <instance x="1296" y="1744" name="XLXI_107" orien="R0" />
+        <instance x="1920" y="1504" name="XLXI_1691" orien="R270" />
+        <instance x="1920" y="1664" name="XLXI_1692" orien="R270" />
     </sheet>
 </drawing>

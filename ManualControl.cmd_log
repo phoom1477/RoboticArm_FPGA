@@ -9,3 +9,9 @@ sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/D
 sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ManualControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ManualControl.sym 

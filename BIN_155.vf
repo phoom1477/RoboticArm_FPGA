@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : BIN_155.vf
-// /___/   /\     Timestamp : 12/15/2020 23:01:13
+// /___/   /\     Timestamp : 12/16/2020 02:36:36
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -137,10 +137,10 @@ module BIN_155(OUTPUT);
                                .Q(OUTPUT[15:12]));
    VCC  XLXI_8 (.P(XLXN_10));
    GND  XLXI_9 (.G(XLXN_8));
-   NUM8B_MUSER_BIN_155  XLXI_33 (.NA(XLXN_10), 
+   NUM8B_MUSER_BIN_155  XLXI_33 (.NA(XLXN_8), 
                                 .NB(XLXN_8), 
                                 .N8(XLXN_8), 
-                                .N9(XLXN_8), 
+                                .N9(XLXN_10), 
                                 .Q(OUTPUT[7:4]));
    NUM8B_MUSER_BIN_155  XLXI_34 (.NA(XLXN_8), 
                                 .NB(XLXN_10), 

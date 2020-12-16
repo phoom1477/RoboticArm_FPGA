@@ -20,16 +20,13 @@
         <signal name="EndValue(7:0)" />
         <signal name="StartValue(15:0)" />
         <signal name="EndValue(15:0)" />
-        <signal name="XLXN_102" />
         <signal name="Manual_EN" />
         <signal name="MODE" />
         <signal name="XLXN_103(15:0)" />
         <signal name="XLXN_109(15:0)" />
         <signal name="Reg_PIPO(15:0)" />
-        <signal name="XLXN_111" />
         <signal name="ManualOut(15:0)" />
         <signal name="ManualOut(7:0)" />
-        <signal name="XLXN_114(7:0)" />
         <signal name="ManualOut(15:8)" />
         <port polarity="Input" name="ESP_IN" />
         <port polarity="Input" name="CLK_P123" />
@@ -87,7 +84,8 @@
             <line x2="96" y1="-160" y2="-160" x1="0" />
         </blockdef>
         <blockdef name="ManualControl">
-            <timestamp>2020-12-15T16:4:52</timestamp>
+            <timestamp>2020-12-15T18:47:6</timestamp>
+            <line x2="0" y1="96" y2="96" x1="64" />
             <line x2="0" y1="32" y2="32" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -97,18 +95,7 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <rect width="64" x="0" y="-108" height="24" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
-            <rect width="256" x="64" y="-256" height="320" />
-        </blockdef>
-        <blockdef name="or2">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-64" y2="-64" x1="0" />
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="192" y1="-96" y2="-96" x1="256" />
-            <arc ex="192" ey="-96" sx="112" sy="-48" r="88" cx="116" cy="-136" />
-            <arc ex="48" ey="-144" sx="48" sy="-48" r="56" cx="16" cy="-96" />
-            <line x2="48" y1="-144" y2="-144" x1="112" />
-            <arc ex="112" ey="-144" sx="192" sy="-96" r="88" cx="116" cy="-56" />
-            <line x2="48" y1="-48" y2="-48" x1="112" />
+            <rect width="256" x="64" y="-256" height="384" />
         </blockdef>
         <blockdef name="buf">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -153,22 +140,18 @@
             <blockpin signalname="XLXN_109(15:0)" name="O" />
         </block>
         <block symbolname="RegPIPO_16" name="XLXI_38">
-            <blockpin signalname="XLXN_102" name="CLK" />
+            <blockpin signalname="CLK_P123" name="CLK" />
             <blockpin signalname="XLXN_79(15:0)" name="DataOut(15:0)" />
             <blockpin signalname="ManualOut(15:0)" name="DataIn(15:0)" />
         </block>
         <block symbolname="ManualControl" name="XLXI_41">
             <blockpin signalname="SW_DOWN" name="DOWN" />
             <blockpin signalname="SW_UP" name="UP" />
-            <blockpin signalname="EndValue(7:0)" name="EndValue(7:0)" />
-            <blockpin signalname="StartValue(7:0)" name="StartValue(7:0)" />
             <blockpin signalname="Manual_EN" name="EN" />
+            <blockpin signalname="StartValue(7:0)" name="StartValue(7:0)" />
+            <blockpin signalname="EndValue(7:0)" name="EndValue(7:0)" />
+            <blockpin signalname="CLK_P123" name="FPGA_CLK" />
             <blockpin signalname="ManualOut(7:0)" name="OUTPUT(7:0)" />
-        </block>
-        <block symbolname="or2" name="XLXI_43">
-            <blockpin signalname="SW_DOWN" name="I0" />
-            <blockpin signalname="SW_UP" name="I1" />
-            <blockpin signalname="XLXN_102" name="O" />
         </block>
         <block symbolname="buf" name="XLXI_45(15:0)">
             <blockpin signalname="MODE" name="I" />
@@ -187,7 +170,13 @@
             <wire x2="1696" y1="1456" y2="1456" x1="816" />
         </branch>
         <branch name="CLK_P123">
-            <wire x2="4256" y1="2032" y2="2032" x1="816" />
+            <wire x2="1536" y1="2032" y2="2032" x1="816" />
+            <wire x2="4256" y1="2032" y2="2032" x1="1536" />
+            <wire x2="1680" y1="800" y2="800" x1="1536" />
+            <wire x2="1536" y1="800" y2="848" x1="1536" />
+            <wire x2="1536" y1="848" y2="2032" x1="1536" />
+            <wire x2="2336" y1="848" y2="848" x1="1536" />
+            <wire x2="2512" y1="848" y2="848" x1="2336" />
             <wire x2="4272" y1="1104" y2="1104" x1="4256" />
             <wire x2="4256" y1="1104" y2="2032" x1="4256" />
         </branch>
@@ -235,18 +224,6 @@
         </instance>
         <instance x="1680" y="704" name="XLXI_41" orien="R0">
         </instance>
-        <branch name="SW_UP">
-            <wire x2="960" y1="480" y2="480" x1="800" />
-            <wire x2="1680" y1="480" y2="480" x1="960" />
-            <wire x2="960" y1="480" y2="816" x1="960" />
-            <wire x2="2080" y1="816" y2="816" x1="960" />
-        </branch>
-        <branch name="SW_DOWN">
-            <wire x2="992" y1="544" y2="544" x1="800" />
-            <wire x2="1680" y1="544" y2="544" x1="992" />
-            <wire x2="992" y1="544" y2="880" x1="992" />
-            <wire x2="2080" y1="880" y2="880" x1="992" />
-        </branch>
         <iomarker fontsize="28" x="800" y="480" name="SW_UP" orien="R180" />
         <iomarker fontsize="28" x="800" y="544" name="SW_DOWN" orien="R180" />
         <bustap x2="1264" y1="672" y2="672" x1="1168" />
@@ -269,10 +246,6 @@
         </branch>
         <iomarker fontsize="28" x="800" y="608" name="StartValue(15:0)" orien="R180" />
         <iomarker fontsize="28" x="800" y="672" name="EndValue(15:0)" orien="R180" />
-        <branch name="XLXN_102">
-            <wire x2="2512" y1="848" y2="848" x1="2336" />
-        </branch>
-        <instance x="2080" y="944" name="XLXI_43" orien="R0" />
         <branch name="Manual_EN">
             <wire x2="1680" y1="736" y2="736" x1="784" />
         </branch>
@@ -306,8 +279,7 @@
         <bustap x2="2256" y1="480" y2="480" x1="2352" />
         <branch name="ManualOut(7:0)">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="2176" y="480" type="branch" />
-            <wire x2="2144" y1="480" y2="480" x1="2064" />
-            <wire x2="2176" y1="480" y2="480" x1="2144" />
+            <wire x2="2176" y1="480" y2="480" x1="2064" />
             <wire x2="2256" y1="480" y2="480" x1="2176" />
         </branch>
         <bustap x2="2256" y1="656" y2="656" x1="2352" />
@@ -317,5 +289,11 @@
             <wire x2="2256" y1="656" y2="656" x1="2240" />
         </branch>
         <instance x="2032" y="592" name="XLXI_48(7:0)" orien="R90" />
+        <branch name="SW_DOWN">
+            <wire x2="1680" y1="544" y2="544" x1="800" />
+        </branch>
+        <branch name="SW_UP">
+            <wire x2="1680" y1="480" y2="480" x1="800" />
+        </branch>
     </sheet>
 </drawing>

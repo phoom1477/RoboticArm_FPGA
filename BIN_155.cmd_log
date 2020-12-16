@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family spartan6 -w -refsym BIN_155 C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_155.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_155.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym BIN_155 C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_155.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/BIN_155.sym 

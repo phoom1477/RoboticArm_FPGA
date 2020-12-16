@@ -50,6 +50,15 @@
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
+        <blockdef name="gnd">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-64" y2="-96" x1="64" />
+            <line x2="52" y1="-48" y2="-48" x1="76" />
+            <line x2="60" y1="-32" y2="-32" x1="68" />
+            <line x2="40" y1="-64" y2="-64" x1="88" />
+            <line x2="64" y1="-64" y2="-80" x1="64" />
+            <line x2="64" y1="-128" y2="-96" x1="64" />
+        </blockdef>
         <block symbolname="ftc" name="XLXI_1">
             <blockpin signalname="XLXN_7" name="C" />
             <blockpin signalname="XLXN_9" name="CLR" />
@@ -86,6 +95,9 @@
         </block>
         <block symbolname="vcc" name="XLXI_13">
             <blockpin signalname="XLXN_20" name="P" />
+        </block>
+        <block symbolname="gnd" name="XLXI_14">
+            <blockpin signalname="XLXN_9" name="G" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="2720" height="1760">
@@ -137,5 +149,6 @@
         </branch>
         <iomarker fontsize="28" x="432" y="1040" name="CLK_IN" orien="R180" />
         <iomarker fontsize="28" x="2368" y="848" name="CLK_OUT" orien="R0" />
+        <instance x="400" y="1360" name="XLXI_14" orien="R0" />
     </sheet>
 </drawing>

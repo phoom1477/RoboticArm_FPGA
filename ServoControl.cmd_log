@@ -12,3 +12,9 @@ sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/De
 sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
 sch2hdl -intstyle ise -family spartan6 -verilog ServoControl_drc.vf -w C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym ServoControl C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sch C:/Users/Admin/Desktop/RoboticArm/RoboticArm/ServoControl.sym 
