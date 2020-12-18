@@ -95,17 +95,43 @@
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_357 - ServoControl</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_358 - ServoControl</ClosedNode>
          <ClosedNode>/main C:|Users|Admin|Desktop|RoboticArm|RoboticArm|main.sch/XLXI_38 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_132 - segment_upgrade</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_217 - BIN_65</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_218 - BIN_65</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_219 - BIN_65</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_220 - BIN_65</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_221 - BIN_155</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_222 - BIN_215</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_223 - BIN_145</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_224 - BIN_215</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_225 - BIN_215</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_226 - BIN_250</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_330 - FullAdder4Bit</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_352 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_354 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_357 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_358 - ServoControl</ClosedNode>
+         <ClosedNode>/main C:|Users|Admin|Desktop|SourceCode|FPGA_src|RoboticArm|main.sch/XLXI_361 - ServoControl</ClosedNode>
          <ClosedNode>/segment_upgrade C:|Users|Admin|Desktop|RoboticArm|RoboticArm|segment_upgrade.sch</ClosedNode>
          <ClosedNode>PROJECT</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main (C:/Users/Admin/Desktop/FPGA_SRC/RoboticArm/main.sch)</SelectedItem>
+         <SelectedItem>XLXI_217 - BIN_65 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_65.sch)</SelectedItem>
+         <SelectedItem>XLXI_218 - BIN_65 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_65.sch)</SelectedItem>
+         <SelectedItem>XLXI_219 - BIN_65 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_65.sch)</SelectedItem>
+         <SelectedItem>XLXI_220 - BIN_65 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_65.sch)</SelectedItem>
+         <SelectedItem>XLXI_221 - BIN_155 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_155.sch)</SelectedItem>
+         <SelectedItem>XLXI_222 - BIN_215 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_215.sch)</SelectedItem>
+         <SelectedItem>XLXI_224 - BIN_215 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_215.sch)</SelectedItem>
+         <SelectedItem>XLXI_225 - BIN_215 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_215.sch)</SelectedItem>
+         <SelectedItem>XLXI_223 - BIN_145 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_145.sch)</SelectedItem>
+         <SelectedItem>XLXI_226 - BIN_250 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_250.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001a3000000020000000000000000000000000200000064ffffffff000000810000000300000002000001a30000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000171000000020000000000000000000000000200000064ffffffff000000810000000300000002000001710000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (C:/Users/Admin/Desktop/FPGA_SRC/RoboticArm/main.sch)</CurrentItem>
+      <CurrentItem>XLXI_226 - BIN_250 (C:/Users/Admin/Desktop/SourceCode/FPGA_src/RoboticArm/BIN_250.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -152,13 +178,13 @@
          <ClosedNode>Implement Design/Translate</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000162000000010000000100000000000000000000000064ffffffff000000810000000000000001000001620000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000173000000010000000100000000000000000000000064ffffffff000000810000000000000001000001730000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
