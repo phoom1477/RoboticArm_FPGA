@@ -71,6 +71,6 @@ Project Link [ESP Part]: [https://github.com/MrNithi/digital-system-fundamentals
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [contributors-shield]: https://img.shields.io/github/contributors/phoom1477/RoboticArmController_FPGA
-[contributors-url]: https://github.com/MrNithi/digital-system-fundamentals-assignment/graphs/contributors
+[contributors-url]: https://github.com/phoom1477/RoboticArmController_FPGA/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg
-[license-url]: https://github.com/phoom1477/RoboticArmController_FPGA/blob/main/LICENSE
+[license-url]: https://github.com/phoom1477/RoboticArmController_FPGA/blob/master/LICENSE
