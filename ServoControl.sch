@@ -47,15 +47,6 @@
             <line x2="0" y1="-96" y2="-96" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
         </blockdef>
-        <blockdef name="RegPIPO_16">
-            <timestamp>2020-12-10T16:15:53</timestamp>
-            <rect width="256" x="64" y="-128" height="128" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="0" y="-108" height="24" />
-        </blockdef>
         <blockdef name="Counter16_TC">
             <timestamp>2020-12-10T18:11:44</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -114,15 +105,19 @@
             <line x2="64" y1="-64" y2="-80" x1="64" />
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
+        <blockdef name="RegPIPO_16">
+            <timestamp>2020-12-10T16:15:53</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+        </blockdef>
         <block symbolname="RegSIPO_16" name="XLXI_33">
             <blockpin signalname="XLXN_78(15:0)" name="DataOut(15:0)" />
             <blockpin signalname="ESP_IN" name="DataIn" />
             <blockpin signalname="ESP_CLK" name="CLK" />
-        </block>
-        <block symbolname="RegPIPO_16" name="XLXI_36">
-            <blockpin signalname="XLXN_70" name="CLK" />
-            <blockpin signalname="XLXN_103(15:0)" name="DataOut(15:0)" />
-            <blockpin signalname="XLXN_78(15:0)" name="DataIn(15:0)" />
         </block>
         <block symbolname="Counter16_TC" name="XLXI_37">
             <blockpin signalname="ESP_CLK" name="CLK" />
@@ -138,11 +133,6 @@
             <blockpin signalname="XLXN_103(15:0)" name="D1" />
             <blockpin signalname="XLXN_84(15:0)" name="S0" />
             <blockpin signalname="XLXN_109(15:0)" name="O" />
-        </block>
-        <block symbolname="RegPIPO_16" name="XLXI_38">
-            <blockpin signalname="CLK_P123" name="CLK" />
-            <blockpin signalname="XLXN_79(15:0)" name="DataOut(15:0)" />
-            <blockpin signalname="ManualOut(15:0)" name="DataIn(15:0)" />
         </block>
         <block symbolname="ManualControl" name="XLXI_41">
             <blockpin signalname="SW_DOWN" name="DOWN" />
@@ -164,6 +154,16 @@
         <block symbolname="gnd" name="XLXI_48(7:0)">
             <blockpin signalname="ManualOut(15:8)" name="G" />
         </block>
+        <block symbolname="RegPIPO_16" name="XLXI_51">
+            <blockpin signalname="XLXN_70" name="CLK" />
+            <blockpin signalname="XLXN_103(15:0)" name="DataOut(15:0)" />
+            <blockpin signalname="XLXN_78(15:0)" name="DataIn(15:0)" />
+        </block>
+        <block symbolname="RegPIPO_16" name="XLXI_52">
+            <blockpin signalname="CLK_P123" name="CLK" />
+            <blockpin signalname="XLXN_79(15:0)" name="DataOut(15:0)" />
+            <blockpin signalname="ManualOut(15:0)" name="DataIn(15:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="5440" height="3520">
         <branch name="ESP_IN">
@@ -181,8 +181,6 @@
             <wire x2="4256" y1="1104" y2="2032" x1="4256" />
         </branch>
         <instance x="1696" y="1552" name="XLXI_33" orien="R0">
-        </instance>
-        <instance x="2512" y="1552" name="XLXI_36" orien="R0">
         </instance>
         <branch name="XLXN_78(15:0)">
             <wire x2="2512" y1="1456" y2="1456" x1="2080" />
@@ -220,8 +218,6 @@
         <iomarker fontsize="28" x="816" y="1456" name="ESP_IN" orien="R180" />
         <iomarker fontsize="28" x="816" y="1072" name="MODE" orien="R180" />
         <iomarker fontsize="28" x="816" y="2032" name="CLK_P123" orien="R180" />
-        <instance x="2512" y="880" name="XLXI_38" orien="R0">
-        </instance>
         <instance x="1680" y="704" name="XLXI_41" orien="R0">
         </instance>
         <iomarker fontsize="28" x="800" y="480" name="SW_UP" orien="R180" />
@@ -295,5 +291,9 @@
         <branch name="SW_UP">
             <wire x2="1680" y1="480" y2="480" x1="800" />
         </branch>
+        <instance x="2512" y="1552" name="XLXI_51" orien="R0">
+        </instance>
+        <instance x="2512" y="880" name="XLXI_52" orien="R0">
+        </instance>
     </sheet>
 </drawing>

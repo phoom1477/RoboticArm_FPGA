@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Compare_x8.vf
-// /___/   /\     Timestamp : 12/16/2020 02:35:48
+// /___/   /\     Timestamp : 12/16/2020 21:48:29
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -72,42 +72,42 @@ module Compare_x8(CurStep,
    output D7;
    
    
-   (* HU_SET = "XLXI_24_20" *) 
+   (* HU_SET = "XLXI_24_456" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_24 (.A(CurStep[15:0]), 
                                         .B(Step2[15:0]), 
                                         .GT(D2), 
                                         .LT());
-   (* HU_SET = "XLXI_25_19" *) 
+   (* HU_SET = "XLXI_25_455" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_25 (.A(CurStep[15:0]), 
                                         .B(Step3[15:0]), 
                                         .GT(D3), 
                                         .LT());
-   (* HU_SET = "XLXI_26_22" *) 
+   (* HU_SET = "XLXI_26_458" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_26 (.A(CurStep[15:0]), 
                                         .B(Step0[15:0]), 
                                         .GT(D0), 
                                         .LT());
-   (* HU_SET = "XLXI_27_21" *) 
+   (* HU_SET = "XLXI_27_457" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_27 (.A(CurStep[15:0]), 
                                         .B(Step1[15:0]), 
                                         .GT(D1), 
                                         .LT());
-   (* HU_SET = "XLXI_32_17" *) 
+   (* HU_SET = "XLXI_32_453" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_32 (.A(CurStep[15:0]), 
                                         .B(Step6[15:0]), 
                                         .GT(D6), 
                                         .LT());
-   (* HU_SET = "XLXI_33_16" *) 
+   (* HU_SET = "XLXI_33_452" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_33 (.A(CurStep[15:0]), 
                                         .B(Step7[15:0]), 
                                         .GT(D7), 
                                         .LT());
-   (* HU_SET = "XLXI_34_18" *) 
+   (* HU_SET = "XLXI_34_454" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_34 (.A(CurStep[15:0]), 
                                         .B(Step4[15:0]), 
                                         .GT(D4), 
                                         .LT());
-   (* HU_SET = "XLXI_35_15" *) 
+   (* HU_SET = "XLXI_35_451" *) 
    COMPMC16_HXILINX_Compare_x8  XLXI_35 (.A(CurStep[15:0]), 
                                         .B(Step5[15:0]), 
                                         .GT(D5), 

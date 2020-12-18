@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : DIV_500k.vf
-// /___/   /\     Timestamp : 12/16/2020 02:36:47
+// /___/   /\     Timestamp : 12/16/2020 21:47:50
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -86,7 +86,7 @@ module DIV_500k(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_453" *) 
+   (* HU_SET = "XLXI_1_167" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_1 (.C(XLXN_1), 
                                   .CE(XLXN_55), 
                                   .CLR(XLXN_8), 
@@ -96,7 +96,7 @@ module DIV_500k(CLK_IN,
                                   .Q2(), 
                                   .Q3(), 
                                   .TC(XLXN_24));
-   (* HU_SET = "XLXI_2_454" *) 
+   (* HU_SET = "XLXI_2_168" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_2 (.C(CLK_IN), 
                                   .CE(XLXN_55), 
                                   .CLR(XLXN_8), 
@@ -108,7 +108,7 @@ module DIV_500k(CLK_IN,
                                   .TC(XLXN_1));
    VCC  XLXI_13 (.P(XLXN_55));
    GND  XLXI_14 (.G(XLXN_8));
-   (* HU_SET = "XLXI_15_455" *) 
+   (* HU_SET = "XLXI_15_169" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_15 (.C(XLXN_24), 
                                    .CE(XLXN_55), 
                                    .CLR(XLXN_8), 
@@ -118,7 +118,7 @@ module DIV_500k(CLK_IN,
                                    .Q2(), 
                                    .Q3(), 
                                    .TC(XLXN_25));
-   (* HU_SET = "XLXI_16_456" *) 
+   (* HU_SET = "XLXI_16_170" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_16 (.C(XLXN_25), 
                                    .CE(XLXN_55), 
                                    .CLR(XLXN_8), 
@@ -128,7 +128,7 @@ module DIV_500k(CLK_IN,
                                    .Q2(), 
                                    .Q3(), 
                                    .TC(XLXN_27));
-   (* HU_SET = "XLXI_17_457" *) 
+   (* HU_SET = "XLXI_17_171" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_17 (.C(XLXN_27), 
                                    .CE(XLXN_55), 
                                    .CLR(XLXN_8), 
@@ -138,7 +138,7 @@ module DIV_500k(CLK_IN,
                                    .Q2(), 
                                    .Q3(), 
                                    .TC(XLXN_53));
-   (* HU_SET = "XLXI_26_458" *) 
+   (* HU_SET = "XLXI_26_172" *) 
    CD4CE_HXILINX_DIV_500k  XLXI_26 (.C(XLXN_53), 
                                    .CE(XLXN_55), 
                                    .CLR(CLK_OUT_DUMMY), 

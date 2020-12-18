@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ManualControl.vf
-// /___/   /\     Timestamp : 12/16/2020 02:36:46
+// /___/   /\     Timestamp : 12/16/2020 21:47:50
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -124,7 +124,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_437" *) 
+   (* HU_SET = "XLXI_1_151" *) 
    CD4CE_HXILINX_ManualControl  XLXI_1 (.C(XLXN_1), 
                                        .CE(XLXN_55), 
                                        .CLR(XLXN_8), 
@@ -134,7 +134,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
                                        .Q2(), 
                                        .Q3(), 
                                        .TC(XLXN_24));
-   (* HU_SET = "XLXI_2_438" *) 
+   (* HU_SET = "XLXI_2_152" *) 
    CD4CE_HXILINX_ManualControl  XLXI_2 (.C(CLK_IN), 
                                        .CE(XLXN_55), 
                                        .CLR(XLXN_8), 
@@ -146,7 +146,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
                                        .TC(XLXN_1));
    VCC  XLXI_13 (.P(XLXN_55));
    GND  XLXI_14 (.G(XLXN_8));
-   (* HU_SET = "XLXI_15_439" *) 
+   (* HU_SET = "XLXI_15_153" *) 
    CD4CE_HXILINX_ManualControl  XLXI_15 (.C(XLXN_24), 
                                         .CE(XLXN_55), 
                                         .CLR(XLXN_8), 
@@ -156,7 +156,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
                                         .Q2(), 
                                         .Q3(), 
                                         .TC(XLXN_25));
-   (* HU_SET = "XLXI_16_440" *) 
+   (* HU_SET = "XLXI_16_154" *) 
    CD4CE_HXILINX_ManualControl  XLXI_16 (.C(XLXN_25), 
                                         .CE(XLXN_55), 
                                         .CLR(XLXN_8), 
@@ -166,7 +166,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
                                         .Q2(), 
                                         .Q3(), 
                                         .TC(XLXN_27));
-   (* HU_SET = "XLXI_17_441" *) 
+   (* HU_SET = "XLXI_17_155" *) 
    CD4CE_HXILINX_ManualControl  XLXI_17 (.C(XLXN_27), 
                                         .CE(XLXN_55), 
                                         .CLR(XLXN_8), 
@@ -176,7 +176,7 @@ module DIV_500k_MUSER_ManualControl(CLK_IN,
                                         .Q2(), 
                                         .Q3(), 
                                         .TC(XLXN_53));
-   (* HU_SET = "XLXI_26_442" *) 
+   (* HU_SET = "XLXI_26_156" *) 
    CD4CE_HXILINX_ManualControl  XLXI_26 (.C(XLXN_53), 
                                         .CE(XLXN_55), 
                                         .CLR(CLK_OUT_DUMMY), 
@@ -435,42 +435,42 @@ module Counter_FB_8Bits_MUSER_ManualControl(CB,
    GND  XLXI_10_4 (.G(one1[5]));
    GND  XLXI_10_5 (.G(one1[6]));
    GND  XLXI_10_6 (.G(one1[7]));
-   (* HU_SET = "XLXI_13_0_450" *) 
+   (* HU_SET = "XLXI_13_0_164" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_0 (.D0(SUM[0]), 
                                          .D1(XLXN_73[0]), 
                                          .S0(SEL[0]), 
                                          .O(XLXN_20[0]));
-   (* HU_SET = "XLXI_13_1_449" *) 
+   (* HU_SET = "XLXI_13_1_163" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_1 (.D0(SUM[1]), 
                                          .D1(XLXN_73[1]), 
                                          .S0(SEL[1]), 
                                          .O(XLXN_20[1]));
-   (* HU_SET = "XLXI_13_2_448" *) 
+   (* HU_SET = "XLXI_13_2_162" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_2 (.D0(SUM[2]), 
                                          .D1(XLXN_73[2]), 
                                          .S0(SEL[2]), 
                                          .O(XLXN_20[2]));
-   (* HU_SET = "XLXI_13_3_447" *) 
+   (* HU_SET = "XLXI_13_3_161" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_3 (.D0(SUM[3]), 
                                          .D1(XLXN_73[3]), 
                                          .S0(SEL[3]), 
                                          .O(XLXN_20[3]));
-   (* HU_SET = "XLXI_13_4_446" *) 
+   (* HU_SET = "XLXI_13_4_160" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_4 (.D0(SUM[4]), 
                                          .D1(XLXN_73[4]), 
                                          .S0(SEL[4]), 
                                          .O(XLXN_20[4]));
-   (* HU_SET = "XLXI_13_5_445" *) 
+   (* HU_SET = "XLXI_13_5_159" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_5 (.D0(SUM[5]), 
                                          .D1(XLXN_73[5]), 
                                          .S0(SEL[5]), 
                                          .O(XLXN_20[5]));
-   (* HU_SET = "XLXI_13_6_444" *) 
+   (* HU_SET = "XLXI_13_6_158" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_6 (.D0(SUM[6]), 
                                          .D1(XLXN_73[6]), 
                                          .S0(SEL[6]), 
                                          .O(XLXN_20[6]));
-   (* HU_SET = "XLXI_13_7_443" *) 
+   (* HU_SET = "XLXI_13_7_157" *) 
    M2_1_HXILINX_ManualControl  XLXI_13_7 (.D0(SUM[7]), 
                                          .D1(XLXN_73[7]), 
                                          .S0(SEL[7]), 
@@ -555,12 +555,12 @@ module ManualControl(DOWN,
                                              .B(StartValue[7:0]), 
                                              .CO(), 
                                              .S(XLXN_209[7:0]));
-   (* HU_SET = "XLXI_18_452" *) 
+   (* HU_SET = "XLXI_18_166" *) 
    COMPM8_HXILINX_ManualControl  XLXI_18 (.A(XLXN_209[7:0]), 
                                          .B(EndValue[7:0]), 
                                          .GT(), 
                                          .LT(XLXN_124));
-   (* HU_SET = "XLXI_19_451" *) 
+   (* HU_SET = "XLXI_19_165" *) 
    COMPM8_HXILINX_ManualControl  XLXI_19 (.A(XLXN_209[7:0]), 
                                          .B(StartValue[7:0]), 
                                          .GT(XLXN_114), 

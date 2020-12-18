@@ -67,7 +67,13 @@
                 <trait valuetype="Boolean" />
             </attr>
         </signal>
-        <signal name="ESP_IN_P6" />
+        <signal name="ESP_IN_P6">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
         <signal name="ESP_CLK_P8">
             <attr value="True" name="CLOCK_DEDICATED_ROUTE">
                 <trait verilog="all:0 wsynth:1" />
@@ -82,7 +88,13 @@
                 <trait valuetype="Boolean" />
             </attr>
         </signal>
-        <signal name="ESP_IN_P21" />
+        <signal name="ESP_IN_P21">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
         <signal name="ESP_CLK_P16">
             <attr value="True" name="CLOCK_DEDICATED_ROUTE">
                 <trait verilog="all:0 wsynth:1" />
@@ -90,7 +102,13 @@
                 <trait valuetype="Boolean" />
             </attr>
         </signal>
-        <signal name="ESP_IN_P14" />
+        <signal name="ESP_IN_P14">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
         <signal name="ESP_CLK_P11">
             <attr value="True" name="CLOCK_DEDICATED_ROUTE">
                 <trait verilog="all:0 wsynth:1" />
@@ -98,15 +116,13 @@
                 <trait valuetype="Boolean" />
             </attr>
         </signal>
-        <signal name="ESP_IN_P9" />
-        <signal name="ESP_CLK_P7">
+        <signal name="ESP_IN_P9">
             <attr value="True" name="CLOCK_DEDICATED_ROUTE">
                 <trait verilog="all:0 wsynth:1" />
                 <trait vhdl="all:0 wa:1 wd:1" />
                 <trait valuetype="Boolean" />
             </attr>
         </signal>
-        <signal name="ESP_IN_P5" />
         <signal name="XLXN_1077(15:0)" />
         <signal name="XLXN_1080(15:0)" />
         <signal name="XLXN_1081(15:0)" />
@@ -119,7 +135,7 @@
         <signal name="XLXN_1268" />
         <signal name="XLXN_1269" />
         <signal name="XLXN_1270" />
-        <signal name="SW_MODE_P55" />
+        <signal name="SW_MODE_P58" />
         <signal name="XLXN_1279(15:0)" />
         <signal name="XLXN_1280(15:0)" />
         <signal name="XLXN_1281(15:0)" />
@@ -139,6 +155,23 @@
         <signal name="BIN10(1)" />
         <signal name="BIN10(2)" />
         <signal name="BIN10(3)" />
+        <signal name="XLXN_1299(15:0)" />
+        <signal name="XLXN_1300(15:0)" />
+        <signal name="XLXN_1301(15:0)" />
+        <signal name="ESP_IN_P5">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
+        <signal name="ESP_CLK_P7">
+            <attr value="True" name="CLOCK_DEDICATED_ROUTE">
+                <trait verilog="all:0 wsynth:1" />
+                <trait vhdl="all:0 wa:1 wd:1" />
+                <trait valuetype="Boolean" />
+            </attr>
+        </signal>
         <port polarity="Output" name="LED0_P67" />
         <port polarity="Output" name="LED1_P74" />
         <port polarity="Output" name="LED2_P75" />
@@ -164,11 +197,11 @@
         <port polarity="Input" name="ESP_IN_P14" />
         <port polarity="Input" name="ESP_CLK_P11" />
         <port polarity="Input" name="ESP_IN_P9" />
-        <port polarity="Input" name="ESP_CLK_P7" />
-        <port polarity="Input" name="ESP_IN_P5" />
-        <port polarity="Input" name="SW_MODE_P55" />
+        <port polarity="Input" name="SW_MODE_P58" />
         <port polarity="Output" name="SEG(6:0)" />
         <port polarity="Output" name="COM(3:0)" />
+        <port polarity="Input" name="ESP_IN_P5" />
+        <port polarity="Input" name="ESP_CLK_P7" />
         <blockdef name="m8_1e">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-224" y2="-224" x1="0" />
@@ -390,7 +423,7 @@
             <line x2="64" y1="-128" y2="-96" x1="64" />
         </blockdef>
         <blockdef name="ServoControl">
-            <timestamp>2020-12-15T18:47:17</timestamp>
+            <timestamp>2020-12-16T11:24:45</timestamp>
             <rect width="64" x="576" y="20" height="24" />
             <line x2="640" y1="32" y2="32" x1="576" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
@@ -470,9 +503,9 @@
             <blockpin signalname="XLXN_1039(15:0)" name="D2" />
             <blockpin signalname="XLXN_1040(15:0)" name="D3" />
             <blockpin signalname="XLXN_1041(15:0)" name="D4" />
-            <blockpin name="D5" />
-            <blockpin name="D6" />
-            <blockpin name="D7" />
+            <blockpin signalname="XLXN_1299(15:0)" name="D5" />
+            <blockpin signalname="XLXN_1300(15:0)" name="D6" />
+            <blockpin signalname="XLXN_1301(15:0)" name="D7" />
             <blockpin signalname="XLXN_1279(15:0)" name="E" />
             <blockpin signalname="XLXN_1280(15:0)" name="S0" />
             <blockpin signalname="XLXN_449(15:0)" name="S1" />
@@ -587,23 +620,19 @@
             <blockpin signalname="BIN10(3)" name="P" />
         </block>
         <block symbolname="buf" name="XLXI_339">
-            <blockpin signalname="SW_MODE_P55" name="I" />
+            <blockpin signalname="SW_MODE_P58" name="I" />
             <blockpin signalname="MODE(0)" name="O" />
         </block>
-        <block symbolname="ServoControl" name="XLXI_341">
-            <blockpin signalname="ESP_IN_P9" name="ESP_IN" />
-            <blockpin signalname="CLK_P123" name="CLK_P123" />
-            <blockpin signalname="ESP_CLK_P11" name="ESP_CLK" />
-            <blockpin signalname="SW_UP_P47" name="SW_UP" />
-            <blockpin signalname="SW_DOWN_P48" name="SW_DOWN" />
-            <blockpin signalname="XLXN_1281(15:0)" name="StartValue(15:0)" />
-            <blockpin signalname="XLXN_1282(15:0)" name="EndValue(15:0)" />
-            <blockpin signalname="XLXN_1267" name="Manual_EN" />
-            <blockpin signalname="SW_MODE_P55" name="MODE" />
-            <blockpin signalname="PWM_Servo1" name="PWM_Servo1" />
-            <blockpin signalname="XLXN_1038(15:0)" name="Reg_PIPO(15:0)" />
+        <block symbolname="gnd" name="XLXI_349(15:0)">
+            <blockpin signalname="XLXN_1299(15:0)" name="G" />
         </block>
-        <block symbolname="ServoControl" name="XLXI_345">
+        <block symbolname="gnd" name="XLXI_350(15:0)">
+            <blockpin signalname="XLXN_1300(15:0)" name="G" />
+        </block>
+        <block symbolname="gnd" name="XLXI_351(15:0)">
+            <blockpin signalname="XLXN_1301(15:0)" name="G" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_352">
             <blockpin signalname="ESP_IN_P21" name="ESP_IN" />
             <blockpin signalname="CLK_P123" name="CLK_P123" />
             <blockpin signalname="ESP_CLK_P23" name="ESP_CLK" />
@@ -612,24 +641,11 @@
             <blockpin signalname="XLXN_1080(15:0)" name="StartValue(15:0)" />
             <blockpin signalname="XLXN_1085(15:0)" name="EndValue(15:0)" />
             <blockpin signalname="XLXN_1269" name="Manual_EN" />
-            <blockpin signalname="SW_MODE_P55" name="MODE" />
+            <blockpin signalname="SW_MODE_P58" name="MODE" />
             <blockpin signalname="PWM_Servo3" name="PWM_Servo1" />
             <blockpin signalname="XLXN_1040(15:0)" name="Reg_PIPO(15:0)" />
         </block>
-        <block symbolname="ServoControl" name="XLXI_346">
-            <blockpin signalname="ESP_IN_P6" name="ESP_IN" />
-            <blockpin signalname="CLK_P123" name="CLK_P123" />
-            <blockpin signalname="ESP_CLK_P8" name="ESP_CLK" />
-            <blockpin signalname="SW_UP_P47" name="SW_UP" />
-            <blockpin signalname="SW_DOWN_P48" name="SW_DOWN" />
-            <blockpin signalname="XLXN_1081(15:0)" name="StartValue(15:0)" />
-            <blockpin signalname="XLXN_1086(15:0)" name="EndValue(15:0)" />
-            <blockpin signalname="XLXN_1270" name="Manual_EN" />
-            <blockpin signalname="SW_MODE_P55" name="MODE" />
-            <blockpin signalname="PWM_Servo4" name="PWM_Servo1" />
-            <blockpin signalname="XLXN_1041(15:0)" name="Reg_PIPO(15:0)" />
-        </block>
-        <block symbolname="ServoControl" name="XLXI_347">
+        <block symbolname="ServoControl" name="XLXI_354">
             <blockpin signalname="ESP_IN_P14" name="ESP_IN" />
             <blockpin signalname="CLK_P123" name="CLK_P123" />
             <blockpin signalname="ESP_CLK_P16" name="ESP_CLK" />
@@ -638,11 +654,37 @@
             <blockpin signalname="XLXN_1283(15:0)" name="StartValue(15:0)" />
             <blockpin signalname="XLXN_1284(15:0)" name="EndValue(15:0)" />
             <blockpin signalname="XLXN_1268" name="Manual_EN" />
-            <blockpin signalname="SW_MODE_P55" name="MODE" />
+            <blockpin signalname="SW_MODE_P58" name="MODE" />
             <blockpin signalname="PWM_Servo2" name="PWM_Servo1" />
             <blockpin signalname="XLXN_1039(15:0)" name="Reg_PIPO(15:0)" />
         </block>
-        <block symbolname="ServoControl" name="XLXI_348">
+        <block symbolname="ServoControl" name="XLXI_357">
+            <blockpin signalname="ESP_IN_P6" name="ESP_IN" />
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P8" name="ESP_CLK" />
+            <blockpin signalname="SW_UP_P47" name="SW_UP" />
+            <blockpin signalname="SW_DOWN_P48" name="SW_DOWN" />
+            <blockpin signalname="XLXN_1081(15:0)" name="StartValue(15:0)" />
+            <blockpin signalname="XLXN_1086(15:0)" name="EndValue(15:0)" />
+            <blockpin signalname="XLXN_1270" name="Manual_EN" />
+            <blockpin signalname="SW_MODE_P58" name="MODE" />
+            <blockpin signalname="PWM_Servo4" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_1041(15:0)" name="Reg_PIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_358">
+            <blockpin signalname="ESP_IN_P9" name="ESP_IN" />
+            <blockpin signalname="CLK_P123" name="CLK_P123" />
+            <blockpin signalname="ESP_CLK_P11" name="ESP_CLK" />
+            <blockpin signalname="SW_UP_P47" name="SW_UP" />
+            <blockpin signalname="SW_DOWN_P48" name="SW_DOWN" />
+            <blockpin signalname="XLXN_1281(15:0)" name="StartValue(15:0)" />
+            <blockpin signalname="XLXN_1282(15:0)" name="EndValue(15:0)" />
+            <blockpin signalname="XLXN_1267" name="Manual_EN" />
+            <blockpin signalname="SW_MODE_P58" name="MODE" />
+            <blockpin signalname="PWM_Servo1" name="PWM_Servo1" />
+            <blockpin signalname="XLXN_1038(15:0)" name="Reg_PIPO(15:0)" />
+        </block>
+        <block symbolname="ServoControl" name="XLXI_361">
             <blockpin signalname="ESP_IN_P5" name="ESP_IN" />
             <blockpin signalname="CLK_P123" name="CLK_P123" />
             <blockpin signalname="ESP_CLK_P7" name="ESP_CLK" />
@@ -651,7 +693,7 @@
             <blockpin signalname="XLXN_1077(15:0)" name="StartValue(15:0)" />
             <blockpin signalname="XLXN_1082(15:0)" name="EndValue(15:0)" />
             <blockpin signalname="XLXN_1266" name="Manual_EN" />
-            <blockpin signalname="SW_MODE_P55" name="MODE" />
+            <blockpin signalname="SW_MODE_P58" name="MODE" />
             <blockpin signalname="PWM_Servo0" name="PWM_Servo1" />
             <blockpin signalname="XLXN_1037(15:0)" name="Reg_PIPO(15:0)" />
         </block>
@@ -808,12 +850,6 @@
         <branch name="ESP_IN_P9">
             <wire x2="2752" y1="1936" y2="1936" x1="2000" />
         </branch>
-        <branch name="ESP_CLK_P7">
-            <wire x2="2752" y1="1280" y2="1280" x1="2000" />
-        </branch>
-        <branch name="ESP_IN_P5">
-            <wire x2="2752" y1="1216" y2="1216" x1="2000" />
-        </branch>
         <branch name="XLXN_1077(15:0)">
             <wire x2="2752" y1="1088" y2="1088" x1="2720" />
         </branch>
@@ -942,9 +978,9 @@
             <wire x2="2736" y1="3648" y2="3648" x1="1440" />
         </branch>
         <branch name="XLXN_1270">
-            <wire x2="1360" y1="2720" y2="2720" x1="1264" />
-            <wire x2="1360" y1="2720" y2="4384" x1="1360" />
-            <wire x2="2736" y1="4384" y2="4384" x1="1360" />
+            <wire x2="1648" y1="2720" y2="2720" x1="1264" />
+            <wire x2="1648" y1="2720" y2="4384" x1="1648" />
+            <wire x2="2736" y1="4384" y2="4384" x1="1648" />
         </branch>
         <instance x="2320" y="4096" name="XLXI_226" orien="R0">
         </instance>
@@ -974,8 +1010,6 @@
         <iomarker fontsize="28" x="2000" y="2656" name="ESP_IN_P14" orien="R180" />
         <iomarker fontsize="28" x="2000" y="2000" name="ESP_CLK_P11" orien="R180" />
         <iomarker fontsize="28" x="2000" y="1936" name="ESP_IN_P9" orien="R180" />
-        <iomarker fontsize="28" x="2000" y="1280" name="ESP_CLK_P7" orien="R180" />
-        <iomarker fontsize="28" x="2000" y="1216" name="ESP_IN_P5" orien="R180" />
         <branch name="XLXN_1279(15:0)">
             <wire x2="4512" y1="3504" y2="3504" x1="4320" />
         </branch>
@@ -1088,7 +1122,6 @@
         <bustap x2="3840" y1="4832" y2="4928" x1="3840" />
         <bustap x2="3920" y1="4832" y2="4928" x1="3920" />
         <bustap x2="4000" y1="4832" y2="4928" x1="4000" />
-        <iomarker fontsize="28" x="1984" y="5136" name="SW_MODE_P55" orien="R180" />
         <instance x="3856" y="5200" name="XLXI_333" orien="R0" />
         <instance x="3936" y="5200" name="XLXI_334" orien="R0" />
         <branch name="MODE(1)">
@@ -1106,8 +1139,9 @@
             <wire x2="4000" y1="4928" y2="4960" x1="4000" />
             <wire x2="4000" y1="4960" y2="5072" x1="4000" />
         </branch>
-        <branch name="SW_MODE_P55">
-            <wire x2="2272" y1="5136" y2="5136" x1="1984" />
+        <branch name="SW_MODE_P58">
+            <wire x2="2272" y1="5120" y2="5120" x1="2000" />
+            <wire x2="3536" y1="5120" y2="5120" x1="2272" />
             <wire x2="2752" y1="1344" y2="1344" x1="2272" />
             <wire x2="2272" y1="1344" y2="2064" x1="2272" />
             <wire x2="2752" y1="2064" y2="2064" x1="2272" />
@@ -1116,8 +1150,6 @@
             <wire x2="2272" y1="2784" y2="3520" x1="2272" />
             <wire x2="2272" y1="3520" y2="4256" x1="2272" />
             <wire x2="2272" y1="4256" y2="5120" x1="2272" />
-            <wire x2="2272" y1="5120" y2="5136" x1="2272" />
-            <wire x2="3536" y1="5120" y2="5120" x1="2272" />
             <wire x2="2736" y1="4256" y2="4256" x1="2272" />
             <wire x2="2736" y1="3520" y2="3520" x1="2272" />
         </branch>
@@ -1153,15 +1185,36 @@
             <wire x2="4000" y1="4608" y2="4640" x1="4000" />
             <wire x2="4000" y1="4640" y2="4672" x1="4000" />
         </branch>
-        <instance x="2752" y="2224" name="XLXI_341" orien="R0">
+        <branch name="XLXN_1299(15:0)">
+            <wire x2="4512" y1="3120" y2="3120" x1="4480" />
+        </branch>
+        <instance x="4352" y="3056" name="XLXI_349(15:0)" orien="R90" />
+        <branch name="XLXN_1300(15:0)">
+            <wire x2="4512" y1="3184" y2="3184" x1="4480" />
+        </branch>
+        <instance x="4352" y="3120" name="XLXI_350(15:0)" orien="R90" />
+        <instance x="4352" y="3184" name="XLXI_351(15:0)" orien="R90" />
+        <branch name="XLXN_1301(15:0)">
+            <wire x2="4512" y1="3248" y2="3248" x1="4480" />
+        </branch>
+        <instance x="2736" y="3680" name="XLXI_352" orien="R0">
         </instance>
-        <instance x="2736" y="3680" name="XLXI_345" orien="R0">
+        <instance x="2752" y="2944" name="XLXI_354" orien="R0">
         </instance>
-        <instance x="2736" y="4416" name="XLXI_346" orien="R0">
+        <instance x="2736" y="4416" name="XLXI_357" orien="R0">
         </instance>
-        <instance x="2752" y="2944" name="XLXI_347" orien="R0">
+        <instance x="2752" y="2224" name="XLXI_358" orien="R0">
         </instance>
-        <instance x="2752" y="1504" name="XLXI_348" orien="R0">
+        <branch name="ESP_IN_P5">
+            <wire x2="2752" y1="1216" y2="1216" x1="2000" />
+        </branch>
+        <branch name="ESP_CLK_P7">
+            <wire x2="2752" y1="1280" y2="1280" x1="2000" />
+        </branch>
+        <iomarker fontsize="28" x="2000" y="1280" name="ESP_CLK_P7" orien="R180" />
+        <iomarker fontsize="28" x="2000" y="1216" name="ESP_IN_P5" orien="R180" />
+        <iomarker fontsize="28" x="2000" y="5120" name="SW_MODE_P58" orien="R180" />
+        <instance x="2752" y="1504" name="XLXI_361" orien="R0">
         </instance>
     </sheet>
 </drawing>

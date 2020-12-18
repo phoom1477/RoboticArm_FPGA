@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : ServoControl.vf
-// /___/   /\     Timestamp : 12/16/2020 02:36:24
+// /___/   /\     Timestamp : 12/16/2020 21:48:24
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -219,6 +219,66 @@ module COMP16_HXILINX_ServoControl (EQ, A, B);
 endmodule
 `timescale 1ns / 1ps
 
+module RegPIPO_16_MUSER_ServoControl(CLK, 
+                                     DataIn, 
+                                     DataOut);
+
+    input CLK;
+    input [15:0] DataIn;
+   output [15:0] DataOut;
+   
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(DataIn[0]), 
+              .Q(DataOut[0]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(DataIn[1]), 
+              .Q(DataOut[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+               .D(DataIn[2]), 
+               .Q(DataOut[2]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+               .D(DataIn[3]), 
+               .Q(DataOut[3]));
+   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
+               .D(DataIn[4]), 
+               .Q(DataOut[4]));
+   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
+               .D(DataIn[5]), 
+               .Q(DataOut[5]));
+   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
+               .D(DataIn[6]), 
+               .Q(DataOut[6]));
+   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
+               .D(DataIn[7]), 
+               .Q(DataOut[7]));
+   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
+               .D(DataIn[12]), 
+               .Q(DataOut[12]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
+               .D(DataIn[13]), 
+               .Q(DataOut[13]));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
+               .D(DataIn[14]), 
+               .Q(DataOut[14]));
+   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
+               .D(DataIn[11]), 
+               .Q(DataOut[11]));
+   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
+               .D(DataIn[10]), 
+               .Q(DataOut[10]));
+   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
+               .D(DataIn[9]), 
+               .Q(DataOut[9]));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
+               .D(DataIn[8]), 
+               .Q(DataOut[8]));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
+               .D(DataIn[15]), 
+               .Q(DataOut[15]));
+endmodule
+`timescale 1ns / 1ps
+
 module DIV_500k_MUSER_ServoControl(CLK_IN, 
                                    CLK_OUT);
 
@@ -238,7 +298,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_256" *) 
+   (* HU_SET = "XLXI_1_412" *) 
    CD4CE_HXILINX_ServoControl  XLXI_1 (.C(XLXN_1), 
                                       .CE(XLXN_55), 
                                       .CLR(XLXN_8), 
@@ -248,7 +308,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
                                       .Q2(), 
                                       .Q3(), 
                                       .TC(XLXN_24));
-   (* HU_SET = "XLXI_2_257" *) 
+   (* HU_SET = "XLXI_2_413" *) 
    CD4CE_HXILINX_ServoControl  XLXI_2 (.C(CLK_IN), 
                                       .CE(XLXN_55), 
                                       .CLR(XLXN_8), 
@@ -260,7 +320,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
                                       .TC(XLXN_1));
    VCC  XLXI_13 (.P(XLXN_55));
    GND  XLXI_14 (.G(XLXN_8));
-   (* HU_SET = "XLXI_15_258" *) 
+   (* HU_SET = "XLXI_15_414" *) 
    CD4CE_HXILINX_ServoControl  XLXI_15 (.C(XLXN_24), 
                                        .CE(XLXN_55), 
                                        .CLR(XLXN_8), 
@@ -270,7 +330,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
                                        .Q2(), 
                                        .Q3(), 
                                        .TC(XLXN_25));
-   (* HU_SET = "XLXI_16_259" *) 
+   (* HU_SET = "XLXI_16_415" *) 
    CD4CE_HXILINX_ServoControl  XLXI_16 (.C(XLXN_25), 
                                        .CE(XLXN_55), 
                                        .CLR(XLXN_8), 
@@ -280,7 +340,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
                                        .Q2(), 
                                        .Q3(), 
                                        .TC(XLXN_27));
-   (* HU_SET = "XLXI_17_260" *) 
+   (* HU_SET = "XLXI_17_416" *) 
    CD4CE_HXILINX_ServoControl  XLXI_17 (.C(XLXN_27), 
                                        .CE(XLXN_55), 
                                        .CLR(XLXN_8), 
@@ -290,7 +350,7 @@ module DIV_500k_MUSER_ServoControl(CLK_IN,
                                        .Q2(), 
                                        .Q3(), 
                                        .TC(XLXN_53));
-   (* HU_SET = "XLXI_26_261" *) 
+   (* HU_SET = "XLXI_26_417" *) 
    CD4CE_HXILINX_ServoControl  XLXI_26 (.C(XLXN_53), 
                                        .CE(XLXN_55), 
                                        .CLR(CLK_OUT_DUMMY), 
@@ -549,42 +609,42 @@ module Counter_FB_8Bits_MUSER_ServoControl(CB,
    GND  XLXI_10_4 (.G(one1[5]));
    GND  XLXI_10_5 (.G(one1[6]));
    GND  XLXI_10_6 (.G(one1[7]));
-   (* HU_SET = "XLXI_13_0_269" *) 
+   (* HU_SET = "XLXI_13_0_425" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_0 (.D0(SUM[0]), 
                                         .D1(XLXN_73[0]), 
                                         .S0(SEL[0]), 
                                         .O(XLXN_20[0]));
-   (* HU_SET = "XLXI_13_1_268" *) 
+   (* HU_SET = "XLXI_13_1_424" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_1 (.D0(SUM[1]), 
                                         .D1(XLXN_73[1]), 
                                         .S0(SEL[1]), 
                                         .O(XLXN_20[1]));
-   (* HU_SET = "XLXI_13_2_267" *) 
+   (* HU_SET = "XLXI_13_2_423" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_2 (.D0(SUM[2]), 
                                         .D1(XLXN_73[2]), 
                                         .S0(SEL[2]), 
                                         .O(XLXN_20[2]));
-   (* HU_SET = "XLXI_13_3_266" *) 
+   (* HU_SET = "XLXI_13_3_422" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_3 (.D0(SUM[3]), 
                                         .D1(XLXN_73[3]), 
                                         .S0(SEL[3]), 
                                         .O(XLXN_20[3]));
-   (* HU_SET = "XLXI_13_4_265" *) 
+   (* HU_SET = "XLXI_13_4_421" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_4 (.D0(SUM[4]), 
                                         .D1(XLXN_73[4]), 
                                         .S0(SEL[4]), 
                                         .O(XLXN_20[4]));
-   (* HU_SET = "XLXI_13_5_264" *) 
+   (* HU_SET = "XLXI_13_5_420" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_5 (.D0(SUM[5]), 
                                         .D1(XLXN_73[5]), 
                                         .S0(SEL[5]), 
                                         .O(XLXN_20[5]));
-   (* HU_SET = "XLXI_13_6_263" *) 
+   (* HU_SET = "XLXI_13_6_419" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_6 (.D0(SUM[6]), 
                                         .D1(XLXN_73[6]), 
                                         .S0(SEL[6]), 
                                         .O(XLXN_20[6]));
-   (* HU_SET = "XLXI_13_7_262" *) 
+   (* HU_SET = "XLXI_13_7_418" *) 
    M2_1_HXILINX_ServoControl  XLXI_13_7 (.D0(SUM[7]), 
                                         .D1(XLXN_73[7]), 
                                         .S0(SEL[7]), 
@@ -669,12 +729,12 @@ module ManualControl_MUSER_ServoControl(DOWN,
                                             .B(StartValue[7:0]), 
                                             .CO(), 
                                             .S(XLXN_209[7:0]));
-   (* HU_SET = "XLXI_18_271" *) 
+   (* HU_SET = "XLXI_18_427" *) 
    COMPM8_HXILINX_ServoControl  XLXI_18 (.A(XLXN_209[7:0]), 
                                         .B(EndValue[7:0]), 
                                         .GT(), 
                                         .LT(XLXN_124));
-   (* HU_SET = "XLXI_19_270" *) 
+   (* HU_SET = "XLXI_19_426" *) 
    COMPM8_HXILINX_ServoControl  XLXI_19 (.A(XLXN_209[7:0]), 
                                         .B(StartValue[7:0]), 
                                         .GT(XLXN_114), 
@@ -715,66 +775,6 @@ module ManualControl_MUSER_ServoControl(DOWN,
 endmodule
 `timescale 1ns / 1ps
 
-module RegPIPO_16_MUSER_ServoControl(CLK, 
-                                     DataIn, 
-                                     DataOut);
-
-    input CLK;
-    input [15:0] DataIn;
-   output [15:0] DataOut;
-   
-   
-   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
-              .D(DataIn[0]), 
-              .Q(DataOut[0]));
-   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
-              .D(DataIn[1]), 
-              .Q(DataOut[1]));
-   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
-               .D(DataIn[2]), 
-               .Q(DataOut[2]));
-   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
-               .D(DataIn[3]), 
-               .Q(DataOut[3]));
-   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
-               .D(DataIn[4]), 
-               .Q(DataOut[4]));
-   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
-               .D(DataIn[5]), 
-               .Q(DataOut[5]));
-   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
-               .D(DataIn[6]), 
-               .Q(DataOut[6]));
-   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
-               .D(DataIn[7]), 
-               .Q(DataOut[7]));
-   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
-               .D(DataIn[12]), 
-               .Q(DataOut[12]));
-   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
-               .D(DataIn[13]), 
-               .Q(DataOut[13]));
-   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
-               .D(DataIn[14]), 
-               .Q(DataOut[14]));
-   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
-               .D(DataIn[11]), 
-               .Q(DataOut[11]));
-   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
-               .D(DataIn[10]), 
-               .Q(DataOut[10]));
-   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
-               .D(DataIn[9]), 
-               .Q(DataOut[9]));
-   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
-               .D(DataIn[8]), 
-               .Q(DataOut[8]));
-   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
-               .D(DataIn[15]), 
-               .Q(DataOut[15]));
-endmodule
-`timescale 1ns / 1ps
-
 module DIV_200_MUSER_ServoControl(CLK_IN, 
                                   CLK_OUT);
 
@@ -786,12 +786,12 @@ module DIV_200_MUSER_ServoControl(CLK_IN,
    wire XLXN_9;
    wire XLXN_20;
    
-   (* HU_SET = "XLXI_1_272" *) 
+   (* HU_SET = "XLXI_1_428" *) 
    FTC_HXILINX_ServoControl  XLXI_1 (.C(XLXN_3), 
                                     .CLR(XLXN_9), 
                                     .T(XLXN_20), 
                                     .Q(CLK_OUT));
-   (* HU_SET = "XLXI_2_273" *) 
+   (* HU_SET = "XLXI_2_429" *) 
    CD4CE_HXILINX_ServoControl  XLXI_2 (.C(XLXN_4), 
                                       .CE(XLXN_20), 
                                       .CLR(XLXN_9), 
@@ -801,7 +801,7 @@ module DIV_200_MUSER_ServoControl(CLK_IN,
                                       .Q2(), 
                                       .Q3(), 
                                       .TC(XLXN_3));
-   (* HU_SET = "XLXI_8_274" *) 
+   (* HU_SET = "XLXI_8_430" *) 
    CD4CE_HXILINX_ServoControl  XLXI_8 (.C(CLK_IN), 
                                       .CE(XLXN_20), 
                                       .CLR(XLXN_9), 
@@ -830,7 +830,7 @@ module PWM_Gen_MUSER_ServoControl(Duty,
    wire [15:0] XLXN_5;
    wire XLXN_7;
    
-   (* HU_SET = "XLXI_2_275" *) 
+   (* HU_SET = "XLXI_2_431" *) 
    CC16CE_HXILINX_ServoControl  XLXI_2 (.C(XLXN_1), 
                                        .CE(XLXN_2), 
                                        .CLR(XLXN_7), 
@@ -838,12 +838,12 @@ module PWM_Gen_MUSER_ServoControl(Duty,
                                        .Q(XLXN_5[15:0]), 
                                        .TC());
    VCC  XLXI_4 (.P(XLXN_2));
-   (* HU_SET = "XLXI_8_276" *) 
+   (* HU_SET = "XLXI_8_432" *) 
    COMPM16_HXILINX_ServoControl  XLXI_8 (.A(XLXN_5[15:0]), 
                                         .B(Duty[15:0]), 
                                         .GT(), 
                                         .LT(PWM));
-   (* HU_SET = "XLXI_10_277" *) 
+   (* HU_SET = "XLXI_10_433" *) 
    COMP16_HXILINX_ServoControl  XLXI_10 (.A(BIN2000[15:0]), 
                                         .B(XLXN_5[15:0]), 
                                         .EQ(XLXN_7));
@@ -881,7 +881,7 @@ module Counter16_TC_MUSER_ServoControl(CLK,
    wire XLXN_25;
    wire XLXN_26;
    
-   (* HU_SET = "XLXI_1_278" *) 
+   (* HU_SET = "XLXI_1_434" *) 
    CB4CE_HXILINX_ServoControl  XLXI_1 (.C(CLK), 
                                       .CE(XLXN_2), 
                                       .CLR(RESET), 
@@ -1001,90 +1001,84 @@ module ServoControl(CLK_P123,
    RegSIPO_16_MUSER_ServoControl  XLXI_33 (.CLK(ESP_CLK), 
                                           .DataIn(ESP_IN), 
                                           .DataOut(XLXN_78[15:0]));
-   RegPIPO_16_MUSER_ServoControl  XLXI_36 (.CLK(XLXN_70), 
-                                          .DataIn(XLXN_78[15:0]), 
-                                          .DataOut(XLXN_103[15:0]));
    Counter16_TC_MUSER_ServoControl  XLXI_37 (.CLK(ESP_CLK), 
                                             .TC(XLXN_70));
-   RegPIPO_16_MUSER_ServoControl  XLXI_38 (.CLK(CLK_P123), 
-                                          .DataIn(ManualOut[15:0]), 
-                                          .DataOut(XLXN_79[15:0]));
-   (* HU_SET = "XLXI_39_0_294" *) 
+   (* HU_SET = "XLXI_39_0_450" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_0 (.D0(XLXN_79[0]), 
                                         .D1(XLXN_103[0]), 
                                         .S0(XLXN_84[0]), 
                                         .O(XLXN_109[0]));
-   (* HU_SET = "XLXI_39_1_293" *) 
+   (* HU_SET = "XLXI_39_1_449" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_1 (.D0(XLXN_79[1]), 
                                         .D1(XLXN_103[1]), 
                                         .S0(XLXN_84[1]), 
                                         .O(XLXN_109[1]));
-   (* HU_SET = "XLXI_39_2_292" *) 
+   (* HU_SET = "XLXI_39_2_448" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_2 (.D0(XLXN_79[2]), 
                                         .D1(XLXN_103[2]), 
                                         .S0(XLXN_84[2]), 
                                         .O(XLXN_109[2]));
-   (* HU_SET = "XLXI_39_3_291" *) 
+   (* HU_SET = "XLXI_39_3_447" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_3 (.D0(XLXN_79[3]), 
                                         .D1(XLXN_103[3]), 
                                         .S0(XLXN_84[3]), 
                                         .O(XLXN_109[3]));
-   (* HU_SET = "XLXI_39_4_290" *) 
+   (* HU_SET = "XLXI_39_4_446" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_4 (.D0(XLXN_79[4]), 
                                         .D1(XLXN_103[4]), 
                                         .S0(XLXN_84[4]), 
                                         .O(XLXN_109[4]));
-   (* HU_SET = "XLXI_39_5_289" *) 
+   (* HU_SET = "XLXI_39_5_445" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_5 (.D0(XLXN_79[5]), 
                                         .D1(XLXN_103[5]), 
                                         .S0(XLXN_84[5]), 
                                         .O(XLXN_109[5]));
-   (* HU_SET = "XLXI_39_6_288" *) 
+   (* HU_SET = "XLXI_39_6_444" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_6 (.D0(XLXN_79[6]), 
                                         .D1(XLXN_103[6]), 
                                         .S0(XLXN_84[6]), 
                                         .O(XLXN_109[6]));
-   (* HU_SET = "XLXI_39_7_287" *) 
+   (* HU_SET = "XLXI_39_7_443" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_7 (.D0(XLXN_79[7]), 
                                         .D1(XLXN_103[7]), 
                                         .S0(XLXN_84[7]), 
                                         .O(XLXN_109[7]));
-   (* HU_SET = "XLXI_39_8_286" *) 
+   (* HU_SET = "XLXI_39_8_442" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_8 (.D0(XLXN_79[8]), 
                                         .D1(XLXN_103[8]), 
                                         .S0(XLXN_84[8]), 
                                         .O(XLXN_109[8]));
-   (* HU_SET = "XLXI_39_9_285" *) 
+   (* HU_SET = "XLXI_39_9_441" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_9 (.D0(XLXN_79[9]), 
                                         .D1(XLXN_103[9]), 
                                         .S0(XLXN_84[9]), 
                                         .O(XLXN_109[9]));
-   (* HU_SET = "XLXI_39_10_284" *) 
+   (* HU_SET = "XLXI_39_10_440" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_10 (.D0(XLXN_79[10]), 
                                          .D1(XLXN_103[10]), 
                                          .S0(XLXN_84[10]), 
                                          .O(XLXN_109[10]));
-   (* HU_SET = "XLXI_39_11_283" *) 
+   (* HU_SET = "XLXI_39_11_439" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_11 (.D0(XLXN_79[11]), 
                                          .D1(XLXN_103[11]), 
                                          .S0(XLXN_84[11]), 
                                          .O(XLXN_109[11]));
-   (* HU_SET = "XLXI_39_12_282" *) 
+   (* HU_SET = "XLXI_39_12_438" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_12 (.D0(XLXN_79[12]), 
                                          .D1(XLXN_103[12]), 
                                          .S0(XLXN_84[12]), 
                                          .O(XLXN_109[12]));
-   (* HU_SET = "XLXI_39_13_281" *) 
+   (* HU_SET = "XLXI_39_13_437" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_13 (.D0(XLXN_79[13]), 
                                          .D1(XLXN_103[13]), 
                                          .S0(XLXN_84[13]), 
                                          .O(XLXN_109[13]));
-   (* HU_SET = "XLXI_39_14_280" *) 
+   (* HU_SET = "XLXI_39_14_436" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_14 (.D0(XLXN_79[14]), 
                                          .D1(XLXN_103[14]), 
                                          .S0(XLXN_84[14]), 
                                          .O(XLXN_109[14]));
-   (* HU_SET = "XLXI_39_15_279" *) 
+   (* HU_SET = "XLXI_39_15_435" *) 
    M2_1_HXILINX_ServoControl  XLXI_39_15 (.D0(XLXN_79[15]), 
                                          .D1(XLXN_103[15]), 
                                          .S0(XLXN_84[15]), 
@@ -1168,4 +1162,10 @@ module ServoControl(CLK_P123,
    GND  XLXI_48_5 (.G(ManualOut[13]));
    GND  XLXI_48_6 (.G(ManualOut[14]));
    GND  XLXI_48_7 (.G(ManualOut[15]));
+   RegPIPO_16_MUSER_ServoControl  XLXI_51 (.CLK(XLXN_70), 
+                                          .DataIn(XLXN_78[15:0]), 
+                                          .DataOut(XLXN_103[15:0]));
+   RegPIPO_16_MUSER_ServoControl  XLXI_52 (.CLK(CLK_P123), 
+                                          .DataIn(ManualOut[15:0]), 
+                                          .DataOut(XLXN_79[15:0]));
 endmodule

@@ -1,7 +1,7 @@
 #Release 14.7 - par P.20131013 (nt64)
 #Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-#Wed Dec 16 02:57:13 2020
+#Wed Dec 16 22:31:07 2020
 
 #
 ## NOTE: This file is designed to be imported into a spreadsheet program
@@ -73,10 +73,10 @@ P51,,IOBM,IO_L31P_GCLK31_D14_2,UNUSED,,2,,,,,,,,,
 P52,,,VCCINT,,,,,,,,1.2,,,,
 P53,,,VCCAUX,,,,,,,,2.5,,,,
 P54,,,GND,,,,,,,,,,,,
-P55,SW_MODE_P55,IOB,IO_L30N_GCLK0_USERCCLK_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
+P55,,IOBS,IO_L30N_GCLK0_USERCCLK_2,UNUSED,,2,,,,,,,,,
 P56,,IOBM,IO_L30P_GCLK1_D13_2,UNUSED,,2,,,,,,,,,
 P57,,IOBS,IO_L14N_D12_2,UNUSED,,2,,,,,,,,,
-P58,,IOBM,IO_L14P_D11_2,UNUSED,,2,,,,,,,,,
+P58,SW_MODE_P58,IOB,IO_L14P_D11_2,INPUT,LVCMOS25*,2,,,,NONE,,LOCATED,NO,NONE,
 P59,,IOBS,IO_L13N_D10_2,UNUSED,,2,,,,,,,,,
 P60,,IOBM,IO_L13P_M1_2,UNUSED,,2,,,,,,,,,
 P61,,IOBS,IO_L12N_D2_MISO3_2,UNUSED,,2,,,,,,,,,

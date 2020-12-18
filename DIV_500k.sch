@@ -16,12 +16,7 @@
         <signal name="XLXN_8" />
         <signal name="XLXN_56" />
         <signal name="XLXN_58" />
-        <signal name="XLXN_59" />
-        <signal name="XLXN_61" />
-        <signal name="XLXN_63" />
         <signal name="CLK_OUT" />
-        <signal name="XLXN_65" />
-        <signal name="XLXN_66" />
         <signal name="XLXN_67" />
         <port polarity="Input" name="CLK_IN" />
         <port polarity="Output" name="CLK_OUT" />

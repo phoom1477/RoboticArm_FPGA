@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : main.vf
-// /___/   /\     Timestamp : 12/16/2020 02:56:30
+// /___/   /\     Timestamp : 12/16/2020 22:30:20
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -633,6 +633,66 @@ module CB2CE_HXILINX_main(CEO, Q0, Q1, TC, C, CE, CLR);
 endmodule
 `timescale 1ns / 1ps
 
+module RegPIPO_16_MUSER_main(CLK, 
+                             DataIn, 
+                             DataOut);
+
+    input CLK;
+    input [15:0] DataIn;
+   output [15:0] DataOut;
+   
+   
+   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+              .D(DataIn[0]), 
+              .Q(DataOut[0]));
+   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+              .D(DataIn[1]), 
+              .Q(DataOut[1]));
+   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
+               .D(DataIn[2]), 
+               .Q(DataOut[2]));
+   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
+               .D(DataIn[3]), 
+               .Q(DataOut[3]));
+   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
+               .D(DataIn[4]), 
+               .Q(DataOut[4]));
+   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
+               .D(DataIn[5]), 
+               .Q(DataOut[5]));
+   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
+               .D(DataIn[6]), 
+               .Q(DataOut[6]));
+   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
+               .D(DataIn[7]), 
+               .Q(DataOut[7]));
+   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
+               .D(DataIn[12]), 
+               .Q(DataOut[12]));
+   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
+               .D(DataIn[13]), 
+               .Q(DataOut[13]));
+   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
+               .D(DataIn[14]), 
+               .Q(DataOut[14]));
+   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
+               .D(DataIn[11]), 
+               .Q(DataOut[11]));
+   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
+               .D(DataIn[10]), 
+               .Q(DataOut[10]));
+   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
+               .D(DataIn[9]), 
+               .Q(DataOut[9]));
+   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
+               .D(DataIn[8]), 
+               .Q(DataOut[8]));
+   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
+               .D(DataIn[15]), 
+               .Q(DataOut[15]));
+endmodule
+`timescale 1ns / 1ps
+
 module DIV_500k_MUSER_main(CLK_IN, 
                            CLK_OUT);
 
@@ -1129,66 +1189,6 @@ module ManualControl_MUSER_main(DOWN,
 endmodule
 `timescale 1ns / 1ps
 
-module RegPIPO_16_MUSER_main(CLK, 
-                             DataIn, 
-                             DataOut);
-
-    input CLK;
-    input [15:0] DataIn;
-   output [15:0] DataOut;
-   
-   
-   FD #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
-              .D(DataIn[0]), 
-              .Q(DataOut[0]));
-   FD #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
-              .D(DataIn[1]), 
-              .Q(DataOut[1]));
-   FD #( .INIT(1'b0) ) XLXI_17 (.C(CLK), 
-               .D(DataIn[2]), 
-               .Q(DataOut[2]));
-   FD #( .INIT(1'b0) ) XLXI_18 (.C(CLK), 
-               .D(DataIn[3]), 
-               .Q(DataOut[3]));
-   FD #( .INIT(1'b0) ) XLXI_31 (.C(CLK), 
-               .D(DataIn[4]), 
-               .Q(DataOut[4]));
-   FD #( .INIT(1'b0) ) XLXI_32 (.C(CLK), 
-               .D(DataIn[5]), 
-               .Q(DataOut[5]));
-   FD #( .INIT(1'b0) ) XLXI_33 (.C(CLK), 
-               .D(DataIn[6]), 
-               .Q(DataOut[6]));
-   FD #( .INIT(1'b0) ) XLXI_34 (.C(CLK), 
-               .D(DataIn[7]), 
-               .Q(DataOut[7]));
-   FD #( .INIT(1'b0) ) XLXI_35 (.C(CLK), 
-               .D(DataIn[12]), 
-               .Q(DataOut[12]));
-   FD #( .INIT(1'b0) ) XLXI_36 (.C(CLK), 
-               .D(DataIn[13]), 
-               .Q(DataOut[13]));
-   FD #( .INIT(1'b0) ) XLXI_37 (.C(CLK), 
-               .D(DataIn[14]), 
-               .Q(DataOut[14]));
-   FD #( .INIT(1'b0) ) XLXI_38 (.C(CLK), 
-               .D(DataIn[11]), 
-               .Q(DataOut[11]));
-   FD #( .INIT(1'b0) ) XLXI_39 (.C(CLK), 
-               .D(DataIn[10]), 
-               .Q(DataOut[10]));
-   FD #( .INIT(1'b0) ) XLXI_40 (.C(CLK), 
-               .D(DataIn[9]), 
-               .Q(DataOut[9]));
-   FD #( .INIT(1'b0) ) XLXI_41 (.C(CLK), 
-               .D(DataIn[8]), 
-               .Q(DataOut[8]));
-   FD #( .INIT(1'b0) ) XLXI_42 (.C(CLK), 
-               .D(DataIn[15]), 
-               .Q(DataOut[15]));
-endmodule
-`timescale 1ns / 1ps
-
 module DIV_200_MUSER_main(CLK_IN, 
                           CLK_OUT);
 
@@ -1415,14 +1415,8 @@ module ServoControl_MUSER_main(CLK_P123,
    RegSIPO_16_MUSER_main  XLXI_33 (.CLK(ESP_CLK), 
                                   .DataIn(ESP_IN), 
                                   .DataOut(XLXN_78[15:0]));
-   RegPIPO_16_MUSER_main  XLXI_36 (.CLK(XLXN_70), 
-                                  .DataIn(XLXN_78[15:0]), 
-                                  .DataOut(XLXN_103[15:0]));
    Counter16_TC_MUSER_main  XLXI_37 (.CLK(ESP_CLK), 
                                     .TC(XLXN_70));
-   RegPIPO_16_MUSER_main  XLXI_38 (.CLK(CLK_P123), 
-                                  .DataIn(ManualOut[15:0]), 
-                                  .DataOut(XLXN_79[15:0]));
    (* HU_SET = "XLXI_39_0_38" *) 
    M2_1_HXILINX_main  XLXI_39_0 (.D0(XLXN_79[0]), 
                                 .D1(XLXN_103[0]), 
@@ -1582,6 +1576,12 @@ module ServoControl_MUSER_main(CLK_P123,
    GND  XLXI_48_5 (.G(ManualOut[13]));
    GND  XLXI_48_6 (.G(ManualOut[14]));
    GND  XLXI_48_7 (.G(ManualOut[15]));
+   RegPIPO_16_MUSER_main  XLXI_51 (.CLK(XLXN_70), 
+                                  .DataIn(XLXN_78[15:0]), 
+                                  .DataOut(XLXN_103[15:0]));
+   RegPIPO_16_MUSER_main  XLXI_52 (.CLK(CLK_P123), 
+                                  .DataIn(ManualOut[15:0]), 
+                                  .DataOut(XLXN_79[15:0]));
 endmodule
 `timescale 1ns / 1ps
 
@@ -5064,7 +5064,7 @@ module main(CLK_P123,
             ESP_IN_P21, 
             SEL_P45, 
             SW_DOWN_P48, 
-            SW_MODE_P55, 
+            SW_MODE_P58, 
             SW_UP_P47, 
             COM, 
             LED0_P67, 
@@ -5093,16 +5093,21 @@ module main(CLK_P123,
     input ESP_CLK_P16;
    (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_CLK_P23;
+   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_IN_P5;
+   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_IN_P6;
+   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_IN_P9;
+   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_IN_P14;
+   (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input ESP_IN_P21;
    (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input SEL_P45;
    (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input SW_DOWN_P48;
-    input SW_MODE_P55;
+    input SW_MODE_P58;
    (* CLOCK_DEDICATED_ROUTE = "TRUE" *) 
     input SW_UP_P47;
    output [3:0] COM;
@@ -5164,6 +5169,9 @@ module main(CLK_P123,
    wire [15:0] XLXN_1283;
    wire [15:0] XLXN_1284;
    wire [3:0] XLXN_1297;
+   wire [15:0] XLXN_1299;
+   wire [15:0] XLXN_1300;
+   wire [15:0] XLXN_1301;
    
    (* HU_SET = "XLXI_47_0_207" *) 
    M8_1E_HXILINX_main  XLXI_47_0 (.D0(XLXN_1037[0]), 
@@ -5171,9 +5179,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[0]), 
                                  .D3(XLXN_1040[0]), 
                                  .D4(XLXN_1041[0]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[0]), 
+                                 .D6(XLXN_1300[0]), 
+                                 .D7(XLXN_1301[0]), 
                                  .E(XLXN_1279[0]), 
                                  .S0(XLXN_1280[0]), 
                                  .S1(XLXN_449[0]), 
@@ -5185,9 +5193,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[1]), 
                                  .D3(XLXN_1040[1]), 
                                  .D4(XLXN_1041[1]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[1]), 
+                                 .D6(XLXN_1300[1]), 
+                                 .D7(XLXN_1301[1]), 
                                  .E(XLXN_1279[1]), 
                                  .S0(XLXN_1280[1]), 
                                  .S1(XLXN_449[1]), 
@@ -5199,9 +5207,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[2]), 
                                  .D3(XLXN_1040[2]), 
                                  .D4(XLXN_1041[2]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[2]), 
+                                 .D6(XLXN_1300[2]), 
+                                 .D7(XLXN_1301[2]), 
                                  .E(XLXN_1279[2]), 
                                  .S0(XLXN_1280[2]), 
                                  .S1(XLXN_449[2]), 
@@ -5213,9 +5221,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[3]), 
                                  .D3(XLXN_1040[3]), 
                                  .D4(XLXN_1041[3]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[3]), 
+                                 .D6(XLXN_1300[3]), 
+                                 .D7(XLXN_1301[3]), 
                                  .E(XLXN_1279[3]), 
                                  .S0(XLXN_1280[3]), 
                                  .S1(XLXN_449[3]), 
@@ -5227,9 +5235,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[4]), 
                                  .D3(XLXN_1040[4]), 
                                  .D4(XLXN_1041[4]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[4]), 
+                                 .D6(XLXN_1300[4]), 
+                                 .D7(XLXN_1301[4]), 
                                  .E(XLXN_1279[4]), 
                                  .S0(XLXN_1280[4]), 
                                  .S1(XLXN_449[4]), 
@@ -5241,9 +5249,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[5]), 
                                  .D3(XLXN_1040[5]), 
                                  .D4(XLXN_1041[5]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[5]), 
+                                 .D6(XLXN_1300[5]), 
+                                 .D7(XLXN_1301[5]), 
                                  .E(XLXN_1279[5]), 
                                  .S0(XLXN_1280[5]), 
                                  .S1(XLXN_449[5]), 
@@ -5255,9 +5263,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[6]), 
                                  .D3(XLXN_1040[6]), 
                                  .D4(XLXN_1041[6]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[6]), 
+                                 .D6(XLXN_1300[6]), 
+                                 .D7(XLXN_1301[6]), 
                                  .E(XLXN_1279[6]), 
                                  .S0(XLXN_1280[6]), 
                                  .S1(XLXN_449[6]), 
@@ -5269,9 +5277,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[7]), 
                                  .D3(XLXN_1040[7]), 
                                  .D4(XLXN_1041[7]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[7]), 
+                                 .D6(XLXN_1300[7]), 
+                                 .D7(XLXN_1301[7]), 
                                  .E(XLXN_1279[7]), 
                                  .S0(XLXN_1280[7]), 
                                  .S1(XLXN_449[7]), 
@@ -5283,9 +5291,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[8]), 
                                  .D3(XLXN_1040[8]), 
                                  .D4(XLXN_1041[8]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[8]), 
+                                 .D6(XLXN_1300[8]), 
+                                 .D7(XLXN_1301[8]), 
                                  .E(XLXN_1279[8]), 
                                  .S0(XLXN_1280[8]), 
                                  .S1(XLXN_449[8]), 
@@ -5297,9 +5305,9 @@ module main(CLK_P123,
                                  .D2(XLXN_1039[9]), 
                                  .D3(XLXN_1040[9]), 
                                  .D4(XLXN_1041[9]), 
-                                 .D5(), 
-                                 .D6(), 
-                                 .D7(), 
+                                 .D5(XLXN_1299[9]), 
+                                 .D6(XLXN_1300[9]), 
+                                 .D7(XLXN_1301[9]), 
                                  .E(XLXN_1279[9]), 
                                  .S0(XLXN_1280[9]), 
                                  .S1(XLXN_449[9]), 
@@ -5311,9 +5319,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[10]), 
                                   .D3(XLXN_1040[10]), 
                                   .D4(XLXN_1041[10]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[10]), 
+                                  .D6(XLXN_1300[10]), 
+                                  .D7(XLXN_1301[10]), 
                                   .E(XLXN_1279[10]), 
                                   .S0(XLXN_1280[10]), 
                                   .S1(XLXN_449[10]), 
@@ -5325,9 +5333,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[11]), 
                                   .D3(XLXN_1040[11]), 
                                   .D4(XLXN_1041[11]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[11]), 
+                                  .D6(XLXN_1300[11]), 
+                                  .D7(XLXN_1301[11]), 
                                   .E(XLXN_1279[11]), 
                                   .S0(XLXN_1280[11]), 
                                   .S1(XLXN_449[11]), 
@@ -5339,9 +5347,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[12]), 
                                   .D3(XLXN_1040[12]), 
                                   .D4(XLXN_1041[12]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[12]), 
+                                  .D6(XLXN_1300[12]), 
+                                  .D7(XLXN_1301[12]), 
                                   .E(XLXN_1279[12]), 
                                   .S0(XLXN_1280[12]), 
                                   .S1(XLXN_449[12]), 
@@ -5353,9 +5361,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[13]), 
                                   .D3(XLXN_1040[13]), 
                                   .D4(XLXN_1041[13]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[13]), 
+                                  .D6(XLXN_1300[13]), 
+                                  .D7(XLXN_1301[13]), 
                                   .E(XLXN_1279[13]), 
                                   .S0(XLXN_1280[13]), 
                                   .S1(XLXN_449[13]), 
@@ -5367,9 +5375,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[14]), 
                                   .D3(XLXN_1040[14]), 
                                   .D4(XLXN_1041[14]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[14]), 
+                                  .D6(XLXN_1300[14]), 
+                                  .D7(XLXN_1301[14]), 
                                   .E(XLXN_1279[14]), 
                                   .S0(XLXN_1280[14]), 
                                   .S1(XLXN_449[14]), 
@@ -5381,9 +5389,9 @@ module main(CLK_P123,
                                   .D2(XLXN_1039[15]), 
                                   .D3(XLXN_1040[15]), 
                                   .D4(XLXN_1041[15]), 
-                                  .D5(), 
-                                  .D6(), 
-                                  .D7(), 
+                                  .D5(XLXN_1299[15]), 
+                                  .D6(XLXN_1300[15]), 
+                                  .D7(XLXN_1301[15]), 
                                   .E(XLXN_1279[15]), 
                                   .S0(XLXN_1280[15]), 
                                   .S1(XLXN_449[15]), 
@@ -5594,58 +5602,106 @@ module main(CLK_P123,
    GND  XLXI_336 (.G(BIN10[0]));
    VCC  XLXI_337 (.P(BIN10[1]));
    VCC  XLXI_338 (.P(BIN10[3]));
-   BUF  XLXI_339 (.I(SW_MODE_P55), 
+   BUF  XLXI_339 (.I(SW_MODE_P58), 
                  .O(MODE[0]));
-   ServoControl_MUSER_main  XLXI_341 (.CLK_P123(CLK_P123), 
-                                     .EndValue(XLXN_1282[15:0]), 
-                                     .ESP_CLK(ESP_CLK_P11), 
-                                     .ESP_IN(ESP_IN_P9), 
-                                     .Manual_EN(XLXN_1267), 
-                                     .MODE(SW_MODE_P55), 
-                                     .StartValue(XLXN_1281[15:0]), 
-                                     .SW_DOWN(SW_DOWN_P48), 
-                                     .SW_UP(SW_UP_P47), 
-                                     .PWM_Servo1(PWM_Servo1), 
-                                     .Reg_PIPO(XLXN_1038[15:0]));
-   ServoControl_MUSER_main  XLXI_345 (.CLK_P123(CLK_P123), 
+   GND  XLXI_349_0 (.G(XLXN_1299[0]));
+   GND  XLXI_349_1 (.G(XLXN_1299[1]));
+   GND  XLXI_349_2 (.G(XLXN_1299[2]));
+   GND  XLXI_349_3 (.G(XLXN_1299[3]));
+   GND  XLXI_349_4 (.G(XLXN_1299[4]));
+   GND  XLXI_349_5 (.G(XLXN_1299[5]));
+   GND  XLXI_349_6 (.G(XLXN_1299[6]));
+   GND  XLXI_349_7 (.G(XLXN_1299[7]));
+   GND  XLXI_349_8 (.G(XLXN_1299[8]));
+   GND  XLXI_349_9 (.G(XLXN_1299[9]));
+   GND  XLXI_349_10 (.G(XLXN_1299[10]));
+   GND  XLXI_349_11 (.G(XLXN_1299[11]));
+   GND  XLXI_349_12 (.G(XLXN_1299[12]));
+   GND  XLXI_349_13 (.G(XLXN_1299[13]));
+   GND  XLXI_349_14 (.G(XLXN_1299[14]));
+   GND  XLXI_349_15 (.G(XLXN_1299[15]));
+   GND  XLXI_350_0 (.G(XLXN_1300[0]));
+   GND  XLXI_350_1 (.G(XLXN_1300[1]));
+   GND  XLXI_350_2 (.G(XLXN_1300[2]));
+   GND  XLXI_350_3 (.G(XLXN_1300[3]));
+   GND  XLXI_350_4 (.G(XLXN_1300[4]));
+   GND  XLXI_350_5 (.G(XLXN_1300[5]));
+   GND  XLXI_350_6 (.G(XLXN_1300[6]));
+   GND  XLXI_350_7 (.G(XLXN_1300[7]));
+   GND  XLXI_350_8 (.G(XLXN_1300[8]));
+   GND  XLXI_350_9 (.G(XLXN_1300[9]));
+   GND  XLXI_350_10 (.G(XLXN_1300[10]));
+   GND  XLXI_350_11 (.G(XLXN_1300[11]));
+   GND  XLXI_350_12 (.G(XLXN_1300[12]));
+   GND  XLXI_350_13 (.G(XLXN_1300[13]));
+   GND  XLXI_350_14 (.G(XLXN_1300[14]));
+   GND  XLXI_350_15 (.G(XLXN_1300[15]));
+   GND  XLXI_351_0 (.G(XLXN_1301[0]));
+   GND  XLXI_351_1 (.G(XLXN_1301[1]));
+   GND  XLXI_351_2 (.G(XLXN_1301[2]));
+   GND  XLXI_351_3 (.G(XLXN_1301[3]));
+   GND  XLXI_351_4 (.G(XLXN_1301[4]));
+   GND  XLXI_351_5 (.G(XLXN_1301[5]));
+   GND  XLXI_351_6 (.G(XLXN_1301[6]));
+   GND  XLXI_351_7 (.G(XLXN_1301[7]));
+   GND  XLXI_351_8 (.G(XLXN_1301[8]));
+   GND  XLXI_351_9 (.G(XLXN_1301[9]));
+   GND  XLXI_351_10 (.G(XLXN_1301[10]));
+   GND  XLXI_351_11 (.G(XLXN_1301[11]));
+   GND  XLXI_351_12 (.G(XLXN_1301[12]));
+   GND  XLXI_351_13 (.G(XLXN_1301[13]));
+   GND  XLXI_351_14 (.G(XLXN_1301[14]));
+   GND  XLXI_351_15 (.G(XLXN_1301[15]));
+   ServoControl_MUSER_main  XLXI_352 (.CLK_P123(CLK_P123), 
                                      .EndValue(XLXN_1085[15:0]), 
                                      .ESP_CLK(ESP_CLK_P23), 
                                      .ESP_IN(ESP_IN_P21), 
                                      .Manual_EN(XLXN_1269), 
-                                     .MODE(SW_MODE_P55), 
+                                     .MODE(SW_MODE_P58), 
                                      .StartValue(XLXN_1080[15:0]), 
                                      .SW_DOWN(SW_DOWN_P48), 
                                      .SW_UP(SW_UP_P47), 
                                      .PWM_Servo1(PWM_Servo3), 
                                      .Reg_PIPO(XLXN_1040[15:0]));
-   ServoControl_MUSER_main  XLXI_346 (.CLK_P123(CLK_P123), 
-                                     .EndValue(XLXN_1086[15:0]), 
-                                     .ESP_CLK(ESP_CLK_P8), 
-                                     .ESP_IN(ESP_IN_P6), 
-                                     .Manual_EN(XLXN_1270), 
-                                     .MODE(SW_MODE_P55), 
-                                     .StartValue(XLXN_1081[15:0]), 
-                                     .SW_DOWN(SW_DOWN_P48), 
-                                     .SW_UP(SW_UP_P47), 
-                                     .PWM_Servo1(PWM_Servo4), 
-                                     .Reg_PIPO(XLXN_1041[15:0]));
-   ServoControl_MUSER_main  XLXI_347 (.CLK_P123(CLK_P123), 
+   ServoControl_MUSER_main  XLXI_354 (.CLK_P123(CLK_P123), 
                                      .EndValue(XLXN_1284[15:0]), 
                                      .ESP_CLK(ESP_CLK_P16), 
                                      .ESP_IN(ESP_IN_P14), 
                                      .Manual_EN(XLXN_1268), 
-                                     .MODE(SW_MODE_P55), 
+                                     .MODE(SW_MODE_P58), 
                                      .StartValue(XLXN_1283[15:0]), 
                                      .SW_DOWN(SW_DOWN_P48), 
                                      .SW_UP(SW_UP_P47), 
                                      .PWM_Servo1(PWM_Servo2), 
                                      .Reg_PIPO(XLXN_1039[15:0]));
-   ServoControl_MUSER_main  XLXI_348 (.CLK_P123(CLK_P123), 
+   ServoControl_MUSER_main  XLXI_357 (.CLK_P123(CLK_P123), 
+                                     .EndValue(XLXN_1086[15:0]), 
+                                     .ESP_CLK(ESP_CLK_P8), 
+                                     .ESP_IN(ESP_IN_P6), 
+                                     .Manual_EN(XLXN_1270), 
+                                     .MODE(SW_MODE_P58), 
+                                     .StartValue(XLXN_1081[15:0]), 
+                                     .SW_DOWN(SW_DOWN_P48), 
+                                     .SW_UP(SW_UP_P47), 
+                                     .PWM_Servo1(PWM_Servo4), 
+                                     .Reg_PIPO(XLXN_1041[15:0]));
+   ServoControl_MUSER_main  XLXI_358 (.CLK_P123(CLK_P123), 
+                                     .EndValue(XLXN_1282[15:0]), 
+                                     .ESP_CLK(ESP_CLK_P11), 
+                                     .ESP_IN(ESP_IN_P9), 
+                                     .Manual_EN(XLXN_1267), 
+                                     .MODE(SW_MODE_P58), 
+                                     .StartValue(XLXN_1281[15:0]), 
+                                     .SW_DOWN(SW_DOWN_P48), 
+                                     .SW_UP(SW_UP_P47), 
+                                     .PWM_Servo1(PWM_Servo1), 
+                                     .Reg_PIPO(XLXN_1038[15:0]));
+   ServoControl_MUSER_main  XLXI_361 (.CLK_P123(CLK_P123), 
                                      .EndValue(XLXN_1082[15:0]), 
                                      .ESP_CLK(ESP_CLK_P7), 
                                      .ESP_IN(ESP_IN_P5), 
                                      .Manual_EN(XLXN_1266), 
-                                     .MODE(SW_MODE_P55), 
+                                     .MODE(SW_MODE_P58), 
                                      .StartValue(XLXN_1077[15:0]), 
                                      .SW_DOWN(SW_DOWN_P48), 
                                      .SW_UP(SW_UP_P47), 

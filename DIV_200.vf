@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : DIV_200.vf
-// /___/   /\     Timestamp : 12/16/2020 02:36:20
+// /___/   /\     Timestamp : 12/16/2020 21:48:20
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -102,12 +102,12 @@ module DIV_200(CLK_IN,
    wire XLXN_9;
    wire XLXN_20;
    
-   (* HU_SET = "XLXI_1_250" *) 
+   (* HU_SET = "XLXI_1_406" *) 
    FTC_HXILINX_DIV_200  XLXI_1 (.C(XLXN_3), 
                                .CLR(XLXN_9), 
                                .T(XLXN_20), 
                                .Q(CLK_OUT));
-   (* HU_SET = "XLXI_2_251" *) 
+   (* HU_SET = "XLXI_2_407" *) 
    CD4CE_HXILINX_DIV_200  XLXI_2 (.C(XLXN_4), 
                                  .CE(XLXN_20), 
                                  .CLR(XLXN_9), 
@@ -117,7 +117,7 @@ module DIV_200(CLK_IN,
                                  .Q2(), 
                                  .Q3(), 
                                  .TC(XLXN_3));
-   (* HU_SET = "XLXI_8_252" *) 
+   (* HU_SET = "XLXI_8_408" *) 
    CD4CE_HXILINX_DIV_200  XLXI_8 (.C(CLK_IN), 
                                  .CE(XLXN_20), 
                                  .CLR(XLXN_9), 
