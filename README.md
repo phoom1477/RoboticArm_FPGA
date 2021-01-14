@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/phoom1477/RoboticArmController_FPGA">
+  <a href="https://github.com/Phukphoom/RoboticArmController_FPGA">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -35,7 +35,7 @@
 ## Contributor
 - Nontakorn Jitchiranant https://github.com/nonkung51
 - Nithi Nomprawat https://github.com/MrNithi
-- Phukphoom Taphrae https://github.com/phoom1477
+- Phukphoom Taphrae https://github.com/Phukphoom
 - Raweeroj Thongdee https://github.com/redzenova
 
 <!-- LICENSE -->
@@ -65,12 +65,12 @@ SOFTWARE.
 ```
 <!-- Project Link -->
 ## Project Link
-Project Link [FPGA Part]: [https://github.com/phoom1477/RoboticArmController_FPGA](https://github.com/phoom1477/RoboticArmController_FPGA)
+Project Link [FPGA Part]: [https://github.com/Phukphoom/RoboticArmController_FPGA](https://github.com/Phukphoom/RoboticArmController_FPGA)
 
 Project Link [ESP Part]: [https://github.com/MrNithi/digital-system-fundamentals-assignment](https://github.com/MrNithi/digital-system-fundamentals-assignment)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/phoom1477/RoboticArmController_FPGA
-[contributors-url]: https://github.com/phoom1477/RoboticArmController_FPGA/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/Phukphoom/RoboticArmController_FPGA
+[contributors-url]: https://github.com/Phukphoom/RoboticArmController_FPGA/graphs/contributors
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg
-[license-url]: https://github.com/phoom1477/RoboticArmController_FPGA/blob/master/LICENSE
+[license-url]: https://github.com/Phukphoom/RoboticArmController_FPGA/blob/master/LICENSE
