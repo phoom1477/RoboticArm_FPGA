@@ -75,4 +75,4 @@ Project Link [ESP Part]: [https://github.com/MrNithi/digital-system-fundamentals
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg
 [license-url]: https://github.com/Phukphoom/RoboticArmController_FPGA/blob/master/LICENSE
 
-## Video Trailer [![Watch the video](https://github.com/Phukphoom/RoboticArmController_FPGA/tree/master/images/Trailer.jpg)](https://youtu.be/NNWv8OMK_wI)
+## Video Trailer [![Watch the video](https://github.com/Phukphoom/RoboticArmController_FPGA/tree/master/images/Trailer.JPG)](https://youtu.be/NNWv8OMK_wI)
